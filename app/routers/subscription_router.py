@@ -1,19 +1,15 @@
 from fastapi import APIRouter, Depends, HTTPException, Request, Response
 from app.middleware.rate_limit import limiter
-from datetime import datetime, timezone, timedelta
-from bson import ObjectId
-import re
 import os
 import urllib.parse
 from app.services.nlp_engine import GLOBAL_SYSTEM_SETTINGS
 
-from app.core.security import get_current_user, CurrentUser, require_hr
+from app.core.security import get_current_user, CurrentUser
 from app.schemas.common_schema import UserRole
 from app.schemas.subscription_plan_schema import TargetAudience
 from app.repositories.subscription_plan_repository import SubscriptionPlanRepository
-from app.repositories.company_repository import CompanyRepository
-from app.repositories.applicant_profile_repository import ApplicantProfileRepository
 from app.repositories.quota_transaction_repository import QuotaTransactionRepository
+from app.services.domain.subscription_service import SubscriptionService, OWNER_COMPANY, as_aware
 
 router = APIRouter(prefix="/api/v1/subscriptions", tags=["Billing & Subscriptions"])
 
@@ -23,6 +19,9 @@ async def get_active_plans(target: TargetAudience):
         "target_audience": target.value,
         "is_active": True
     }, sort=[("current_price", 1)])
+    for plan in plans:
+        plan["plan_type"] = SubscriptionService.get_plan_type(plan)
+        plan["credits_granted"] = SubscriptionService.get_plan_credits(plan)
     return {"status": "success", "data": plans}
 
 @router.get("/my-plan")
@@ -38,214 +37,102 @@ async def get_my_plan(current_user: CurrentUser = Depends(get_current_user)):
             "period_end": None
         }}
 
-    plan_info = None
-    if current_user.role in [UserRole.HR_OWNER.value, UserRole.HR_MEMBER.value]:
-        company = await CompanyRepository.get_by_id(current_user.company_id)
-        if not company:
-            raise HTTPException(status_code=404, detail="Không tìm thấy công ty")
-            
-        plan_id = company.get("current_plan_id")
-        plan_data = await SubscriptionPlanRepository.get_by_id(plan_id) if plan_id else None
-        
-        plan_info = {
-            "entity_type": "company",
-            "entity_id": current_user.company_id,
-            "current_plan": plan_data.get("name") if plan_data else "HR Cơ bản",
-            "current_plan_code": plan_data.get("plan_code") if plan_data else "hr_free",
-            "credits_remaining": company.get("credits_remaining", 0),
-            "period_start": company.get("current_period_start"),
-            "period_end": company.get("current_period_end")
-        }
-        
-    elif current_user.role == UserRole.APPLICANT.value:
-        profile = await ApplicantProfileRepository.get_by_user_id(current_user.id)
-        if not profile:
-            raise HTTPException(status_code=404, detail="Không tìm thấy hồ sơ ứng viên")
-            
-        plan_id = profile.get("current_plan_id")
-        plan_data = await SubscriptionPlanRepository.get_by_id(plan_id) if plan_id else None
-
-        plan_info = {
-            "entity_type": "applicant",
-            "entity_id": current_user.id,
-            "current_plan": plan_data.get("name") if plan_data else "Ứng viên Cơ bản",
-            "current_plan_code": plan_data.get("plan_code") if plan_data else "app_free",
-            "credits_remaining": profile.get("credits_remaining", 0),
-            "period_start": profile.get("current_period_start"),
-            "period_end": profile.get("current_period_end")
-        }
-
-    return {"status": "success", "data": plan_info}
+    owner_type, owner_id = SubscriptionService.resolve_owner(current_user)
+    return {"status": "success", "data": await SubscriptionService.get_plan_summary(owner_type, owner_id)}
 
 @router.get("/transactions")
 async def get_transactions(current_user: CurrentUser = Depends(get_current_user)):
-    query = {}
-    if current_user.role in [UserRole.HR_OWNER.value, UserRole.HR_MEMBER.value]:
-        query["company_id"] = current_user.company_id
-    else:
-        query["user_id"] = current_user.id
-        
+    owner_type, owner_id = SubscriptionService.resolve_owner(current_user)
+    # Dữ liệu cũ chưa có owner_type/owner_id → đọc thêm theo company_id / user_id
+    legacy_query = {"company_id": owner_id} if owner_type == OWNER_COMPANY else {"user_id": owner_id, "company_id": None}
+    query = {"$or": [{"owner_type": owner_type, "owner_id": owner_id}, legacy_query]}
+
     transactions = await QuotaTransactionRepository.find_many(query, sort=[("created_at", -1)], limit=100)
-    
     for tx in transactions:
         tx["id"] = tx.get("id") or str(tx.pop("_id", ""))
-        
+        tx["created_at"] = as_aware(tx.get("created_at"))
+
     return {"status": "success", "data": transactions}
 
 @router.post("/checkout/{plan_code}")
 @limiter.limit("20/day")
-# Bỏ require_hr để Applicant cũng được phép gọi API này tạo mã QR
 async def create_checkout_session(request: Request, response: Response, plan_code: str, current_user: CurrentUser = Depends(get_current_user)):
     plan = await SubscriptionPlanRepository.find_one({"plan_code": plan_code, "is_active": True})
     if not plan:
         raise HTTPException(status_code=404, detail="Gói cước không tồn tại hoặc đã ngừng bán")
-    
-    # Validation cơ bản
-    target_audience = plan.get("target_audience")
-    if target_audience == "hr" and current_user.role not in [UserRole.HR_OWNER.value, UserRole.HR_MEMBER.value]:
-        raise HTTPException(status_code=403, detail="Gói cước này chỉ dành cho Doanh nghiệp")
-    if target_audience == "applicant" and current_user.role != UserRole.APPLICANT.value:
-        raise HTTPException(status_code=403, detail="Gói cước này chỉ dành cho Ứng viên")
-        
-    # Logic kiểm tra Hạ cấp (Downgrade) dựa trên tier_level
-    current_plan_id = None
-    current_period_end = None
-    
-    if target_audience == "hr":
-        entity = await CompanyRepository.get_by_id(current_user.company_id)
-    else:
-        entity = await ApplicantProfileRepository.get_by_user_id(current_user.id)
-        
-    if entity:
-        current_plan_id = entity.get("current_plan_id")
-        current_period_end = entity.get("current_period_end")
-        
-    if current_plan_id and current_period_end:
-        if isinstance(current_period_end, str):
-            current_period_end = datetime.fromisoformat(current_period_end.replace("Z", "+00:00"))
-        if current_period_end.tzinfo is None:
-            current_period_end = current_period_end.replace(tzinfo=timezone.utc)
-            
-        if datetime.now(timezone.utc) < current_period_end:
-            current_plan = await SubscriptionPlanRepository.get_by_id(current_plan_id)
-            if current_plan:
-                old_tier = current_plan.get("tier_level", 0)
-                new_tier = plan.get("tier_level", 0)
-                
-                if new_tier < old_tier:
-                    raise HTTPException(
-                        status_code=400, 
-                        detail=f"Không thể hạ cấp (Downgrade) do gói hiện tại vẫn còn hạn sử dụng. Vui lòng chờ gói cũ hết hạn để mua gói này."
-                    )
+    if plan.get("current_price", 0) <= 0:
+        raise HTTPException(status_code=400, detail="Gói miễn phí đã được kích hoạt mặc định")
+
+    owner_type, owner_id = SubscriptionService.resolve_owner(current_user)
+    if SubscriptionService.owner_type_for_audience(plan.get("target_audience")) != owner_type:
+        detail = "Gói cước này chỉ dành cho Doanh nghiệp" if plan.get("target_audience") == "hr" else "Gói cước này chỉ dành cho Ứng viên"
+        raise HTTPException(status_code=403, detail=detail)
+
+    await SubscriptionService.assert_can_purchase(plan, owner_type, owner_id)
+    order = await SubscriptionService.create_order(plan, owner_type, owner_id, created_by=current_user.id)
 
     payment_config = GLOBAL_SYSTEM_SETTINGS.get("payment_config", {})
     bank_id = payment_config.get("bank_id", "MB")
     account_no = payment_config.get("account_no", "0123456789")
     account_name = payment_config.get("account_name", "CONG TY ATS")
     template = payment_config.get("template", "compact2")
-    
-    # ID Đích: HR dùng Company ID, Applicant dùng User ID
-    target_id = current_user.company_id if target_audience == "hr" else current_user.id
-    transfer_content = f"UPGRADE {target_id} {plan_code}".upper()
-    amount = plan.get("current_price", 0)
-    
+
+    # Nội dung CK = mã đơn hàng (chỉ gồm A-Z0-9 nên không bị ngân hàng cắt ký tự)
+    transfer_content = order["order_code"]
+    amount = order["amount"]
+
     encoded_content = urllib.parse.quote(transfer_content)
     encoded_name = urllib.parse.quote(account_name)
-    # Gắn biến template vào đường dẫn
     qr_url = f"https://img.vietqr.io/image/{bank_id}-{account_no}-{template}.png?amount={amount}&addInfo={encoded_content}&accountName={encoded_name}"
-    
+
     return {
         "status": "success",
         "data": {
+            "order_code": order["order_code"],
+            "plan_code": plan_code,
             "amount": amount,
             "transfer_content": transfer_content,
             "bank_account": account_no,
             "bank_name": bank_id,
             "account_name": account_name,
-            "qr_url": qr_url
+            "qr_url": qr_url,
+            "expires_at": order["expires_at"]
         }
     }
 
+@router.get("/orders")
+async def list_my_orders(current_user: CurrentUser = Depends(get_current_user)):
+    owner_type, owner_id = SubscriptionService.resolve_owner(current_user)
+    orders = await SubscriptionService.list_owner_orders(owner_type, owner_id)
+    return {"status": "success", "data": [SubscriptionService.present_order(o) for o in orders]}
+
+@router.get("/orders/{order_code}")
+async def get_my_order(order_code: str, current_user: CurrentUser = Depends(get_current_user)):
+    owner_type, owner_id = SubscriptionService.resolve_owner(current_user)
+    order = await SubscriptionService.get_owner_order(order_code, owner_type, owner_id)
+    return {"status": "success", "data": SubscriptionService.present_order(order)}
+
 @router.post("/webhook/sepay")
 async def sepay_webhook(request: Request):
+    # Fail closed: chưa cấu hình token thì từ chối toàn bộ
     sepay_token = os.getenv("SEPAY_WEBHOOK_TOKEN", "")
     auth_header = request.headers.get("Authorization", "")
-    
-    if sepay_token and auth_header != f"Bearer {sepay_token}" and auth_header != f"Apikey {sepay_token}":
+    if not sepay_token or auth_header not in (f"Bearer {sepay_token}", f"Apikey {sepay_token}"):
         raise HTTPException(status_code=401, detail="Xác thực Webhook thất bại. Request không hợp lệ.")
 
     payload = await request.json()
-    
-    if payload.get("transferType") != "in":
-        return {"status": "ignored", "message": "Chỉ xử lý tiền vào"}
-        
-    amount_paid = payload.get("transferAmount", 0)
-    content = payload.get("transactionContent", "").upper()
+    return await SubscriptionService.handle_sepay_webhook(payload)
 
-    match = re.search(r"UPGRADE\s+([A-F0-9]{24})\s+([A-Z0-9_]+)", content)
-    if not match:
-        return {"status": "ignored", "message": "Cú pháp chuyển khoản không hợp lệ"}
-        
-    company_id = match.group(1).lower()
-    plan_code = match.group(2).lower()
-    
-    plan = await SubscriptionPlanRepository.find_one({"plan_code": plan_code})
-    if not plan:
-        return {"status": "ignored", "message": "Mã gói cước không tồn tại"}
-        
-    if amount_paid < plan.get("current_price", 0):
-        return {"status": "ignored", "message": "Số tiền chuyển không đủ mua gói"}
+@router.post("/dev/simulate-payment/{order_code}")
+async def simulate_payment(order_code: str, current_user: CurrentUser = Depends(get_current_user)):
+    # Chỉ bật ở môi trường Dev/Test để kích hoạt đơn hàng mà không cần chuyển khoản thật
+    if os.getenv("ENABLE_PAYMENT_SIMULATION", "false").lower() != "true":
+        raise HTTPException(status_code=404, detail="Not Found")
 
-    target_id = match.group(1).lower()
-    target_audience = plan.get("target_audience")
-    
-    now = datetime.now(timezone.utc)
-    cycle_days = plan.get("billing_cycle_days", 30)
-    new_period_end = None if cycle_days == 0 else (now + timedelta(days=cycle_days))
-    features = plan.get("features", {})
+    owner_type, owner_id = SubscriptionService.resolve_owner(current_user)
+    order = await SubscriptionService.get_owner_order(order_code, owner_type, owner_id)
+    success, message = await SubscriptionService.mark_order_paid(order, actor_id=current_user.id, sepay_tx_id=f"SIMULATED_{order['order_code']}")
+    if not success:
+        raise HTTPException(status_code=400, detail=message)
 
-    if target_audience == "hr":
-        company = await CompanyRepository.get_by_id(target_id)
-        if not company: return {"status": "ignored", "message": "Không tìm thấy công ty"}
-        
-        granted_credits = features.get("monthly_ai_credits", 0)
-        await CompanyRepository.update_custom(
-            {"_id": ObjectId(target_id)},
-            {
-                "$set": {"current_plan_id": str(plan.get("id")), "current_period_start": now, "current_period_end": new_period_end},
-                "$inc": {"credits_remaining": granted_credits}
-            }
-        )
-        balance_after = company.get("credits_remaining", 0) + granted_credits
-        await QuotaTransactionRepository.create({
-            "company_id": target_id,
-            "user_id": "sepay_system",
-            "action_type": f"UPGRADE_{plan_code.upper()}",
-            "credit_cost": -granted_credits,
-            "balance_after": balance_after,
-            "created_at": now
-        })
-        
-    elif target_audience == "applicant":
-        profile = await ApplicantProfileRepository.get_by_user_id(target_id)
-        if not profile: return {"status": "ignored", "message": "Không tìm thấy hồ sơ ứng viên"}
-        
-        granted_credits = features.get("ai_credits", 0)
-        await ApplicantProfileRepository.update_custom(
-            {"_id": ObjectId(profile.get("id"))},
-            {
-                "$set": {"current_plan_id": str(plan.get("id")), "current_period_start": now, "current_period_end": new_period_end},
-                "$inc": {"credits_remaining": granted_credits}
-            }
-        )
-        balance_after = profile.get("credits_remaining", 0) + granted_credits
-        await QuotaTransactionRepository.create({
-            "company_id": None,
-            "user_id": target_id,
-            "action_type": f"UPGRADE_{plan_code.upper()}",
-            "credit_cost": -granted_credits,
-            "balance_after": balance_after,
-            "created_at": now
-        })
-
-    return {"status": "success", "message": f"Kích hoạt thành công gói {plan_code}"}
+    return {"status": "success", "message": f"[Giả lập] {message}"}

@@ -8,6 +8,10 @@ class TargetAudience(str, Enum):
     HR = "hr"
     APPLICANT = "applicant"
 
+class PlanType(str, Enum):
+    SUBSCRIPTION = "subscription"
+    TOPUP = "topup"
+
 class HRFeatures(BaseModel):
     max_active_jobs: int = Field(default=1, description="Số lượng Job tối đa mở cùng lúc")
     max_job_edits: int = Field(default=5, description="Giới hạn số lần sửa Job (chống lạm dụng API)")
@@ -36,6 +40,9 @@ class SubscriptionPlanCreate(BaseModel):
     display_order: int = Field(default=0, description="Thứ tự hiển thị trên UI")
     tier_level: int = Field(default=0, description="Cấp độ gói cước (VD: 0=Free, 1=Basic, 2=Pro, 3=Enterprise)")
     target_audience: TargetAudience = Field(...)
+    plan_type: PlanType = Field(default=PlanType.SUBSCRIPTION, description="subscription = thuê bao theo kỳ, topup = gói lẻ mua credit")
+    credits_granted: int = Field(default=0, ge=0, description="Số credit được cộng mỗi lần mua / mỗi kỳ")
+    credit_validity_days: Optional[int] = Field(default=None, ge=1, description="Chỉ cho topup: hạn dùng credit (ngày). None = không hết hạn")
     
     original_price: int = Field(default=0, ge=0)
     current_price: int = Field(default=0, ge=0, description="Giá thực thu (sau giảm giá)")
@@ -52,6 +59,9 @@ class SubscriptionPlanUpdate(BaseModel):
     badge: Optional[str] = None
     display_order: Optional[int] = None
     tier_level: Optional[int] = Field(None, description="Cấp độ gói cước")
+    plan_type: Optional[PlanType] = None
+    credits_granted: Optional[int] = Field(None, ge=0)
+    credit_validity_days: Optional[int] = Field(None, ge=1)
     original_price: Optional[int] = Field(None, ge=0)
     current_price: Optional[int] = Field(None, ge=0)
     features: Optional[Dict] = None

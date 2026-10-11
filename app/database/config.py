@@ -33,6 +33,9 @@ class Collections:
     SUBSCRIPTION_PLANS = "subscription_plans"
     PROMOTIONS = "promotions"
     QUOTA_TRANSACTIONS = "quota_transactions"
+    ORDERS = "orders"
+    SUBSCRIPTIONS = "subscriptions"
+    CREDIT_GRANTS = "credit_grants"
     SYSTEM_SETTINGS = "system_settings"
     APPLICANT_PROFILES = "applicant_profiles"
     COVER_LETTERS = "cover_letters"
@@ -58,6 +61,23 @@ async def connect_to_mongo():
             [("created_at", pymongo.ASCENDING)],
             expireAfterSeconds=7776000,
             name="ttl_90_days_audit_logs"
+        )
+
+        # Billing indexes
+        orders = db_instance.db[Collections.ORDERS]
+        await orders.create_index("order_code", unique=True, name="uniq_order_code")
+        await orders.create_index(
+            "sepay_tx_id", unique=True, name="uniq_sepay_tx_id",
+            partialFilterExpression={"sepay_tx_id": {"$type": "string"}}
+        )
+        await orders.create_index([("owner_type", 1), ("owner_id", 1), ("created_at", -1)], name="owner_created")
+
+        await db_instance.db[Collections.SUBSCRIPTIONS].create_index(
+            [("owner_type", 1), ("owner_id", 1)], unique=True, name="uniq_active_subscription",
+            partialFilterExpression={"status": "active"}
+        )
+        await db_instance.db[Collections.CREDIT_GRANTS].create_index(
+            [("owner_type", 1), ("owner_id", 1), ("expires_at", 1)], name="owner_expires"
         )
         
         REDIS_URL = os.getenv("REDIS_URL", "")
