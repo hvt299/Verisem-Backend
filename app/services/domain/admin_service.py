@@ -6,7 +6,7 @@ from bson import ObjectId
 from fastapi import HTTPException, BackgroundTasks
 
 from app.schemas.common_schema import (
-    CompanyStatus, AuditAction, NotificationType, NotificationActorType, 
+    CompanyStatus, AuditAction, UserRole, NotificationType, NotificationActorType, 
     NotificationActionType, NotificationReadStatus, ReportStatus, 
     JobStatus, TicketStatus
 )
@@ -24,6 +24,7 @@ from app.repositories.support_ticket_repository import SupportTicketRepository
 from app.repositories.blog_repository import BlogRepository
 
 from app.services.audit_service import log_action
+from app.services.domain.subscription_service import SubscriptionService, OWNER_COMPANY, OWNER_APPLICANT
 from app.services.nlp_engine import refresh_system_settings, initialize_skill_map
 from app.services.email_service import send_ticket_reply_email
 from app.database.config import db_instance
@@ -310,6 +311,41 @@ class AdminService:
             after_state={"is_active": payload.is_active}
         )
         return {"status": "success", "message": f"Đã {action_msg} gói cước thành công"}
+
+    @staticmethod
+    async def grant_subscription_plan(payload, current_admin):
+        plan = await SubscriptionPlanRepository.find_one({"plan_code": payload.plan_code})
+        if not plan:
+            raise HTTPException(status_code=404, detail="Không tìm thấy gói cước")
+
+        user = await UserRepository.get_by_email(payload.email)
+        if not user:
+            raise HTTPException(status_code=404, detail="Không tìm thấy tài khoản với email này")
+
+        role = user.get("role")
+        target_audience = plan.get("target_audience")
+        if target_audience == "hr":
+            if role not in [UserRole.HR_OWNER.value, UserRole.HR_MEMBER.value] or not user.get("company_id"):
+                raise HTTPException(status_code=400, detail="Gói Doanh nghiệp chỉ cấp được cho tài khoản HR có công ty")
+            owner_type, target_id, target_type = OWNER_COMPANY, user.get("company_id"), "company"
+        else:
+            if role != UserRole.APPLICANT.value:
+                raise HTTPException(status_code=400, detail="Gói Ứng viên chỉ cấp được cho tài khoản Ứng viên")
+            owner_type, target_id, target_type = OWNER_APPLICANT, user.get("id"), "user"
+
+        await SubscriptionService.admin_grant_plan(plan, owner_type, target_id, actor_id=current_admin.id,
+                                                   cycle_days_override=payload.days)
+
+        await log_action(
+            actor_id=current_admin.id,
+            actor_role=current_admin.role,
+            action=AuditAction.PLAN_GRANTED,
+            target_type=target_type,
+            target_id=target_id,
+            note=payload.note or f"Admin cấp gói {payload.plan_code} cho {payload.email}",
+            after_state={"plan_code": payload.plan_code, "days": payload.days}
+        )
+        return {"status": "success", "message": f"Đã cấp gói {plan.get('name')} cho {payload.email}"}
 
     # ==========================================
     # SYSTEM SETTINGS & MASTER DATA

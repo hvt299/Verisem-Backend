@@ -67,6 +67,7 @@ class AuditAction(str, Enum):
     PLAN_CREATED = "plan_created"
     PLAN_UPDATED = "plan_updated"
     PLAN_STATUS_TOGGLED = "plan_status_toggled"
+    PLAN_GRANTED = "plan_granted"
     SYSTEM_SETTINGS_UPDATED = "system_settings_updated"
     SKILL_CREATED = "skill_created"
     SKILL_UPDATED = "skill_updated"
