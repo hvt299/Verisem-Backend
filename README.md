@@ -65,8 +65,8 @@ Hệ thống được xây dựng trên nền tảng **Python 3.11+**, ứng d�
 | :--- | :--- | :--- |
 | **[FastAPI](https://fastapi.tiangolo.com/)** | `^0.115.0` | Khung ứng dụng Web ASGI hiệu năng cao, tự động sinh tài liệu chuẩn OpenAPI |
 | **[Uvicorn](https://www.uvicorn.org/)** | `^0.30.0` | Máy chủ Web ASGI bất đồng bộ tối ưu hóa bởi `uvloop` |
-| **[Pydantic v2](https://docs.pydantic.dev/)** | `[email] ^2.8.0` | Xác thực cấu trúc dữ liệu đầu vào và đầu ra dựa trên Rust Core |
-| **[Python-Multipart](https://github.com/Kludex/python-multipart)** | `^0.0.9` | Xử lý luồng tải lên nhị phân (Binary Streaming) cho tài liệu `.pdf` và `.docx` |
+| **[Pydantic v2](https://docs.pydantic.dev/)** | `[email] ^2.10.0` | Xác thực cấu trúc dữ liệu đầu vào và đầu ra dựa trên Rust Core |
+| **[Python-Multipart](https://github.com/Kludex/python-multipart)** | `^0.0.32` | Xử lý luồng tải lên nhị phân (Binary Streaming) cho tài liệu `.pdf` và `.docx` |
 
 ---
 
@@ -74,7 +74,7 @@ Hệ thống được xây dựng trên nền tảng **Python 3.11+**, ứng d�
 
 | Công nghệ / Thư viện | Phiên bản | Vai trò Kỹ thuật |
 | :--- | :--- | :--- |
-| **[Google GenAI SDK](https://github.com/google/google-genai)** | `latest` | Tích hợp các mô hình ngôn ngữ lớn: **Gemini 3.6 Flash**, **3.1 Flash-Lite**, **2.5 Flash** |
+| **[Google GenAI SDK](https://github.com/google/google-genai)** | `^2.28.0` | Tích hợp các mô hình ngôn ngữ lớn: **Gemini 3.6 Flash**, **3.1 Flash-Lite**, **2.5 Flash** |
 | **[BGE-M3 (Colab Service)](https://huggingface.co/BAAI/bge-m3)** | `v1.5` | Mô hình véc-tơ hóa đa ngôn ngữ (1024 chiều), xử lý chuyên sâu ngữ nghĩa tiếng Việt |
 | **[Okapi BM25 Engine](https://en.wikipedia.org/wiki/Okapi_BM25)** | `Module nội bộ` | Truy xuất từ vựng thưa (Sparse Retrieval) có chuẩn hóa độ dài tài liệu và tần suất từ khóa |
 | **[NumPy](https://numpy.org/)** | `1.26.4` | Tính toán ma trận đại số tuyến tính, chuẩn hóa véc-tơ $L_2$ và độ đo Cosine Similarity |
@@ -87,9 +87,9 @@ Hệ thống được xây dựng trên nền tảng **Python 3.11+**, ứng d�
 | Công nghệ / Thư viện | Phiên bản | Vai trò Kỹ thuật |
 | :--- | :--- | :--- |
 | **[PyMuPDF (fitz)](https://pymupdf.readthedocs.io/)** | `^1.24.0` | Phân tích cây đối tượng PDF: trích xuất tọa độ Bounding Box, kích thước font chữ và màu sắc |
-| **[pdfplumber](https://github.com/jsvine/pdfplumber)** | `^0.11.0` | Trích xuất văn bản có cấu trúc và bảng biểu phức tạp |
-| **[python-docx](https://python-docx.readthedocs.io/)** | `^1.1.0` | Phân tích cây OpenXML Word, truy quét thuộc tính ký tự ẩn (`run.font.hidden`) |
-| **[BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)** | `^4.12.3` | Chuẩn hóa và loại bỏ các thẻ HTML sinh ra từ trình soạn thảo rich-text |
+| **[pdfplumber & Pillow](https://github.com/jsvine/pdfplumber)** | `^0.11.10 / ^13.0.0` | Trích xuất văn bản có cấu trúc; tích hợp Pillow 13.0.0 vá 36 lỗ hổng bảo mật rủi ro cao |
+| **[python-docx](https://python-docx.readthedocs.io/)** | `^1.2.0` | Phân tích cây OpenXML Word, truy quét thuộc tính ký tự ẩn (`run.font.hidden`) |
+| **[BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)** | `^4.15.0` | Chuẩn hóa và loại bỏ các thẻ HTML sinh ra từ trình soạn thảo rich-text |
 
 ---
 
@@ -97,11 +97,12 @@ Hệ thống được xây dựng trên nền tảng **Python 3.11+**, ứng d�
 
 | Công nghệ / Thư viện | Phiên bản | Vai trò Kỹ thuật |
 | :--- | :--- | :--- |
-| **[Motor](https://motor.readthedocs.io/) & [MongoDB Atlas](https://www.mongodb.com/)** | `^3.5.0` | Trình điều khiển cơ sở dữ liệu NoSQL bất đồng bộ |
-| **[Redis & Hiredis](https://redis.io/)** | `^5.0.8` | Bộ đệm tốc độ cao (In-memory Cache) lưu cấu hình động và quản lý phiên làm việc |
-| **[SlowAPI](https://slowapi.readthedocs.io/)** | `^0.1.9` | Kiểm soát tần suất truy vấn (Rate Limiting) phòng ngừa tấn công vét cạn và quá tải |
-| **[PyJWT & Passlib (Bcrypt)](https://pyjwt.readthedocs.io/)** | `^2.9.0 / ^1.7.4` | Cấp phát token định danh JWT và mã hóa bảo mật mật khẩu một chiều |
-| **[APScheduler](https://apscheduler.readthedocs.io/)** | `^3.10.4` | Bộ lập lịch tác vụ định kỳ nền (Cronjobs) quản lý hạn ngạch và trạng thái tin tuyển dụng |
+| **[Motor](https://motor.readthedocs.io/) & [MongoDB Atlas](https://www.mongodb.com/)** | `^3.7.0` | Trình điều khiển cơ sở dữ liệu NoSQL bất đồng bộ |
+| **[Redis & Hiredis](https://redis.io/)** | `^8.1.0 / ^3.4.0` | Bộ đệm tốc độ cao (In-memory Cache) lưu cấu hình động và quản lý phiên làm việc |
+| **[SlowAPI](https://slowapi.readthedocs.io/)** | `^0.1.10` | Kiểm soát tần suất truy vấn (Rate Limiting) phòng ngừa tấn công vét cạn và quá tải |
+| **[PyJWT & Passlib (Bcrypt)](https://pyjwt.readthedocs.io/)** | `^2.15.0 / ^1.7.4` | Cấp phát token định danh JWT và mã hóa bảo mật mật khẩu một chiều |
+| **[APScheduler](https://apscheduler.readthedocs.io/)** | `^3.11.0` | Bộ lập lịch tác vụ định kỳ nền (Cronjobs) quản lý hạn ngạch và trạng thái tin tuyển dụng |
+| **[Certifi](https://certifiio.readthedocs.io/)** | `2026.10.23` | Thẩm định chứng chỉ số TLS/SSL (bản vá bảo mật khắc phục lỗ hổng PYSEC-2026-4320) |
 | **[Cloudinary SDK](https://cloudinary.com/)** | `1.38.0` | Quản lý và lưu trữ tài nguyên đa phương tiện đám mây (Logo, Avatar, Đính kèm) |
 | **[Brevo API](https://www.brevo.com/)** | `^8.0.0` | Dịch vụ gửi email thông báo tự động, mã xác thực OTP và lời mời phỏng vấn |
 
