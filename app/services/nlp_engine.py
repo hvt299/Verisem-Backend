@@ -62,7 +62,7 @@ DEFAULT_SYSTEM_SETTINGS = {
     "payment_config": {
         "bank_id": "MB",
         "account_no": "0123456789",
-        "account_name": "CONG TY TNHH ATS SYSTEM",
+        "account_name": "CONG TY TNHH VERISEM",
         "template": "compact2"
     }
 }
@@ -380,8 +380,16 @@ async def analyze_cv_text(text: str) -> Dict:
         "portfolio": social_links.get("portfolio", [])
     }
 
-def get_normalized_skill(raw_skill: str, industry: str = "all") -> str:
+def get_normalized_skill(raw_skill, industry: str = "all") -> str:
+    if isinstance(raw_skill, dict):
+        raw_skill = raw_skill.get("name") or raw_skill.get("skill") or raw_skill.get("title") or ""
+    elif not isinstance(raw_skill, str):
+        raw_skill = str(raw_skill or "")
+        
     raw_lower = raw_skill.lower().strip()
+    if not raw_lower:
+        return ""
+        
     target_skill_map = INDUSTRY_SKILL_MAP.get(industry, INDUSTRY_SKILL_MAP.get("all", {}))
     
     for root, variants in target_skill_map.items():
@@ -423,14 +431,28 @@ def verify_skill_context(text: str, skills: list, industry: str = "other") -> di
     
     skill_confidence = {}
     for skill in skills:
+        if isinstance(skill, dict):
+            skill_name = skill.get("name") or skill.get("skill") or skill.get("title") or ""
+        else:
+            skill_name = str(skill or "")
+            
+        skill_name = skill_name.strip()
+        if not skill_name:
+            continue
+            
+        norm_name = get_normalized_skill(skill_name, industry)
         confidence = 0.5
         for sentence in sentences:
-            if skill.lower() in sentence.lower():
+            sentence_lower = sentence.lower()
+            if skill_name.lower() in sentence_lower or (norm_name and norm_name in sentence_lower):
                 words = sentence.split()
-                if len(words) > 5 and any(verb in sentence.lower() for verb in valid_verbs):
+                if len(words) > 5 and any(verb in sentence_lower for verb in valid_verbs):
                     confidence = 1.0
                     break
-        skill_confidence[skill] = confidence
+        if norm_name:
+            skill_confidence[norm_name] = confidence
+        skill_confidence[skill_name.lower()] = confidence
+        skill_confidence[skill_name] = confidence
     return skill_confidence
 
 def calculate_skill_score(cv_skills: set, cv_skill_exp: dict, cv_yoe: float, jd_required: list, jd_preferred: list, skill_confidence: dict):
@@ -554,7 +576,7 @@ def score_cv(cv_data: dict, jd_data: dict) -> dict:
     cv_raw_text = cv_data.get("raw_text", "")
     cv_skills_list = cv_data.get("skills", [])
     
-    cv_skills = {get_normalized_skill(skill, industry) for skill in cv_skills_list}
+    cv_skills = {get_normalized_skill(skill, industry) for skill in cv_skills_list if get_normalized_skill(skill, industry)}
 
     skill_confidence = verify_skill_context(cv_raw_text, cv_skills_list, industry=industry)
 
@@ -644,14 +666,16 @@ def score_cv(cv_data: dict, jd_data: dict) -> dict:
         if isinstance(req, dict) and req.get("is_knockout") and req.get("name") in missing_required_skills:
             missing_knockouts.append(req.get("name"))
 
-    cv_langs_text = " ".join(cv_data.get("languages", [])).lower()
+    raw_langs = cv_data.get("languages", [])
+    cv_langs_text = " ".join(l.get("name", "") if isinstance(l, dict) else str(l) for l in raw_langs).lower()
     for lang in jd_data.get("languages", []):
         if isinstance(lang, dict) and lang.get("is_knockout"):
             lang_name = lang.get("name", "").lower()
             if lang_name not in cv_langs_text:
                 missing_knockouts.append(lang.get("name"))
 
-    cv_certs_text = " ".join(cv_data.get("certifications", [])).lower()
+    raw_certs = cv_data.get("certifications", [])
+    cv_certs_text = " ".join(c.get("name", "") if isinstance(c, dict) else str(c) for c in raw_certs).lower()
     for cert in jd_data.get("required_certifications", []):
         if isinstance(cert, dict) and cert.get("is_knockout"):
             cert_name = cert.get("name", "").lower()

@@ -1,5 +1,5 @@
-from fastapi import APIRouter, Depends, HTTPException, Body, BackgroundTasks, Query, HTTPException, Depends
-from typing import List
+from fastapi import APIRouter, Depends, HTTPException, Body, BackgroundTasks, Query
+from typing import List, Optional, Dict, Any
 from datetime import datetime, timezone
 from bson import ObjectId
 
@@ -32,10 +32,14 @@ BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
 async def rescore_all_applications_for_job(job_id: str, jd_data: dict, current_user: CurrentUser = Depends(require_hr)):
     await ensure_job_manager(job_id, current_user)
-    applications = await ApplicationRepository.find_all({"job_id": job_id}, limit=None)
+    db = db_instance.db
     jd_search_text = jd_data.get("jd_search_text", "")
     
-    for app in applications:
+    # Sử dụng MongoDB cursor stream thay vì load all vào RAM tránh OOM
+    cursor = db[Collections.APPLICATIONS].find({"job_id": job_id})
+    processed_count = 0
+    
+    async for app in cursor:
         cv_id = app.get("cv_snapshot", {}).get("cv_document_id")
         if not cv_id:
             continue
@@ -62,9 +66,11 @@ async def rescore_all_applications_for_job(job_id: str, jd_data: dict, current_u
         }
         
         new_score = score_cv(cv_data_for_scoring, jd_data)
+        app_id = app.get("_id") or app.get("id")
+        await ApplicationRepository.update_by_query({"_id": ObjectId(app_id)}, {"$set": {"ai_score": new_score}})
+        processed_count += 1
         
-        await ApplicationRepository.update_by_query({"_id": ObjectId(app.get("id"))}, {"$set": {"ai_score": new_score}})
-    print(f"Background Task Hoàn tất: Đã chấm lại {len(applications)} CV cho Job {job_id}")
+    print(f"Background Task Hoàn tất: Đã chấm lại {processed_count} CV cho Job {job_id}")
 
 @router.post("/")
 async def create_job(job: JobCreateEnterprise, current_user: CurrentUser = Depends(require_hr)):
@@ -374,36 +380,97 @@ async def get_dashboard_metrics(
         data = await AnalyticsService.get_owner_dashboard_metrics(current_user.company_id)
         return {"status": "success", "data": data}
 
-@router.get("/public/list", response_model=List[JobResponse])
-async def get_public_jobs():
-    pipeline = [
-        {"$match": {"status": JobStatus.OPEN.value}},
-        {"$sort": {"created_at": -1}},
-        {"$limit": 100},
-        {
-            "$lookup": {
-                "from": Collections.COMPANIES,
-                "let": {"c_id": {"$toObjectId": "$company_id"}},
-                "pipeline": [
-                    {"$match": {"$expr": {"$eq": ["$_id", "$$c_id"]}, "status": CompanyStatus.VERIFIED.value}},
-                    {"$project": {"name": 1}}
-                ],
-                "as": "company_info"
-            }
-        },
-        {"$unwind": {"path": "$company_info", "preserveNullAndEmptyArrays": False}}
-    ]
+@router.get("/public/list")
+async def get_public_jobs(
+    page: Optional[int] = Query(None, ge=1, description="Số trang"),
+    page_size: Optional[int] = Query(None, ge=1, le=100, description="Kích thước trang"),
+    q: Optional[str] = Query(None, description="Từ khóa tìm kiếm (text index)"),
+    status: Optional[str] = Query(None, description="Lọc theo trạng thái việc làm")
+):
+    from app.database.config import db_instance
+    import json
+    import math
+
+    redis = db_instance.redis
+    cache_key = f"cache:jobs:public:list:p{page}_s{page_size}_q{q}_st{status}" if (page or q or status) else "cache:jobs:public:list_v3"
+    if redis:
+        try:
+            cached = await redis.get(cache_key)
+            if cached:
+                return json.loads(cached)
+        except Exception:
+            pass
+
+    db = db_instance.db
+    # 1. Map name & logo của các công ty verified
+    v_comps = await db[Collections.COMPANIES].find(
+        {"status": CompanyStatus.VERIFIED.value},
+        {"_id": 1, "name": 1, "logo_url": 1}
+    ).to_list(500)
+    comp_map = {str(c["_id"]): c for c in v_comps}
+
+    # 2. Xây dựng query tối ưu với Text Index & Compound Index
+    if status and status.strip():
+        query = {"status": status.strip(), "deleted_at": None}
+    else:
+        query = {"status": {"$in": [JobStatus.OPEN.value, JobStatus.CLOSED.value, JobStatus.EXPIRED.value]}, "deleted_at": None}
+    if q and q.strip():
+        query["$text"] = {"$search": q.strip()}
+
+    projection = {"jd_vector_ref": 0, "jd_search_text": 0}
     
-    jobs = await JobRepository.aggregate_jobs(pipeline)
-    
+    if page is not None:
+        page_val = page
+        limit_val = page_size or 20
+        skip_val = (page_val - 1) * limit_val
+        total = await db[Collections.JOBS].count_documents(query)
+        cursor = db[Collections.JOBS].find(query, projection).sort("created_at", -1).skip(skip_val).limit(limit_val)
+        raw_jobs = await cursor.to_list(limit_val)
+    else:
+        page_val = None
+        limit_val = 1000
+        total = None
+        cursor = db[Collections.JOBS].find(query, projection).sort("created_at", -1).limit(1000)
+        raw_jobs = await cursor.to_list(1000)
+
     result = []
-    for job in jobs:
-        job["id"] = job.get("id") or str(job.pop("_id", ""))
-        job["company_name"] = job.get("company_info", {}).get("name", "Công ty Ẩn danh")
-        job.pop("company_info", None)
+    for job in raw_jobs:
+        cid = str(job.get("company_id", ""))
+        comp_info = comp_map.get(cid)
+        if comp_info:
+            job["company_name"] = comp_info.get("name") or job.get("company_name", "Công ty Ẩn danh")
+            job["company_logo"] = comp_info.get("logo_url")
+        else:
+            job["company_name"] = job.get("company_name", "Công ty Ẩn danh")
+            
+        job["id"] = str(job.pop("_id", ""))
+        if "created_at" in job and isinstance(job["created_at"], datetime):
+            job["created_at"] = job["created_at"].isoformat()
+        if "updated_at" in job and isinstance(job["updated_at"], datetime):
+            job["updated_at"] = job["updated_at"].isoformat()
+        if "deadline" in job and isinstance(job["deadline"], datetime):
+            job["deadline"] = job["deadline"].isoformat()
+
         result.append(job)
-        
-    return result
+
+    if page is not None:
+        response_payload = {
+            "items": result,
+            "total": total,
+            "page": page_val,
+            "page_size": limit_val,
+            "total_pages": math.ceil(total / limit_val) if limit_val > 0 else 1
+        }
+    else:
+        response_payload = result
+
+    if redis and response_payload:
+        try:
+            await redis.set(cache_key, json.dumps(response_payload, default=str), ex=60)
+        except Exception:
+            pass
+
+    return response_payload
 
 @router.get("/public/{job_id}", response_model=JobResponse)
 async def get_public_job_detail(job_id: str):

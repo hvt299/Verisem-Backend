@@ -31,10 +31,20 @@ class AIScoringService:
         raw_text = cv_record.get("raw_text", "")
         top_sentences = get_top_contributing_sentences(raw_text, jd_search_text)
 
+        raw_skills = cv_record.get("extracted_skills", [])
+        normalized_skills = []
+        for sk in raw_skills:
+            if isinstance(sk, dict):
+                name = sk.get("name") or sk.get("skill") or sk.get("title")
+                if name:
+                    normalized_skills.append(name.strip())
+            elif isinstance(sk, str) and sk.strip():
+                normalized_skills.append(sk.strip())
+
         cv_data_for_scoring = {
             "raw_text": raw_text,
             "word_count": len((raw_text or "").split()),
-            "skills": cv_record.get("extracted_skills", []),
+            "skills": normalized_skills,
             "years_of_experience": cv_record.get("candidate_info", {}).get("years_of_experience", 0),
             "skill_experience": cv_record.get("candidate_info", {}).get("skill_experience", {}),
             "education_level": cv_record.get("candidate_info", {}).get("education_level", "Không đề cập"),

@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "6acb9e0a1e2f07c0cb1da34a",
+    "owner_type": "applicant",
+    "owner_id": "6aaaadba6292df43bb17ce56",
+    "source": "subscription",
+    "source_ref": "6acb9e091e2f07c0cb1da349",
+    "amount_granted": 500,
+    "amount_remaining": 500,
+    "expires_at": "2027-10-11 14:32:41.831000",
+    "created_at": "2026-10-11 14:32:42.025000"
+  },
+  {
+    "_id": "6acb9f58f760e936979bb20e",
+    "owner_type": "applicant",
+    "owner_id": "6aaaadba6292df43bb17ce56",
+    "source": "topup",
+    "source_ref": "6acb9f57f760e936979bb20d",
+    "amount_granted": 50,
+    "amount_remaining": 50,
+    "expires_at": null,
+    "created_at": "2026-10-11 14:38:16.828000"
+  }
+]

@@ -1,3 +1,4 @@
+import os
 from typing import Optional
 import re
 from fastapi import APIRouter, Depends, Body, BackgroundTasks, Request, Response
@@ -44,6 +45,7 @@ class ExternalCVLinkDTO(BaseModel):
 class ProfileUpdate(BaseModel):
     full_name: Optional[str] = None
     avatar: Optional[str] = None
+    avatar_url: Optional[str] = None
     phone: Optional[str] = None
     bio: Optional[str] = None
     job_title_internal: Optional[str] = None
@@ -118,7 +120,23 @@ async def verify_email(request: Request, response: Response, token: str, backgro
 @router.post("/login", response_model=Token)
 @limiter.limit("5/minute")
 async def login_for_access_token(request: Request, response: Response, user_credentials: UserLogin = Body(...)):
-    return await AuthService.login(user_credentials)
+    result = await AuthService.login(user_credentials)
+    is_secure = os.getenv("ENVIRONMENT", "development").lower() == "production"
+    response.set_cookie(
+        key="token",
+        value=result["access_token"],
+        httponly=True,
+        secure=is_secure,
+        samesite="lax",
+        max_age=86400 * 30,
+        path="/"
+    )
+    return result
+
+@router.post("/logout")
+async def logout(response: Response):
+    response.delete_cookie(key="token", path="/")
+    return {"message": "Đăng xuất thành công"}
 
 @router.post("/forgot-password")
 @limiter.limit("5/day")
@@ -140,6 +158,17 @@ async def google_login(request: Request, response: Response, background_tasks: B
     result = await AuthService.google_login(social_request, background_tasks)
     if result.get("action") == "require_role":
         return JSONResponse(status_code=202, content=result)
+    if "access_token" in result:
+        is_secure = os.getenv("ENVIRONMENT", "development").lower() == "production"
+        response.set_cookie(
+            key="token",
+            value=result["access_token"],
+            httponly=True,
+            secure=is_secure,
+            samesite="lax",
+            max_age=86400 * 30,
+            path="/"
+        )
     return result
 
 @router.post("/linkedin")
@@ -148,6 +177,17 @@ async def linkedin_login(request: Request, response: Response, background_tasks:
     result = await AuthService.linkedin_login(social_request, background_tasks)
     if result.get("action") == "require_role":
         return JSONResponse(status_code=202, content=result)
+    if "access_token" in result:
+        is_secure = os.getenv("ENVIRONMENT", "development").lower() == "production"
+        response.set_cookie(
+            key="token",
+            value=result["access_token"],
+            httponly=True,
+            secure=is_secure,
+            samesite="lax",
+            max_age=86400 * 30,
+            path="/"
+        )
     return result
 
 # =====================================================================

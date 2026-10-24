@@ -630,4 +630,5 @@ class SubscriptionService:
             "period_start": as_aware(sub.get("period_start")) if sub else None,
             "period_end": as_aware(sub.get("period_end")) if sub else None,
             "credits": {"total": balance, "breakdown": await cls.get_credit_breakdown(owner_type, owner_id)},
+            "features": plan.get("features", {}) if plan else {},
         }

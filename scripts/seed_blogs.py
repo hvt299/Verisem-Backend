@@ -1,4 +1,5 @@
 import asyncio
+import re
 from datetime import datetime, timezone, timedelta
 from app.database.config import connect_to_mongo, close_mongo_connection
 from app.repositories.blog_repository import BlogRepository
@@ -542,25 +543,100 @@ BLOG_POSTS = [
 ]
 
 
+def enrich_blog_metadata(post, index):
+    cat = post.get("category", "")
+    title_lower = post.get("title", "").lower()
+
+    # Sinh tags thông minh
+    tags = []
+    if cat == "cv_writing":
+        tags = ["CV ATS", "Tối ưu hồ sơ", "Kỹ năng viết CV"]
+    elif cat == "interview":
+        tags = ["Phỏng vấn STAR", "Mẹo phỏng vấn", "Thương lượng lương"]
+    elif cat == "career_path":
+        tags = ["Định hướng nghề nghiệp", "Phát triển bản thân", "Kỹ năng mềm"]
+    elif cat == "hr_corner":
+        tags = ["HR Tech", "Chiến lược tuyển dụng", "Giữ chân nhân tài"]
+    
+    if "ats" in title_lower:
+        tags.append("Chuẩn ATS")
+    if "lương" in title_lower:
+        tags.append("Mức lương")
+    if "ai" in title_lower:
+        tags.append("AI Tuyển dụng")
+    if "kinh nghiệm" in title_lower or "sinh viên" in title_lower:
+        tags.append("Fresher")
+
+    role_map = {
+        "cv_writing": "Chuyên gia Đánh giá Hồ sơ & ATS",
+        "interview": "Cố vấn Nhân sự & Phỏng vấn Cấp cao",
+        "career_path": "Chuyên gia Tư vấn Lộ trình Sự nghiệp",
+        "hr_corner": "Chuyên gia Chiến lược Tuyển dụng",
+    }
+
+    raw_html = post.get("content_html", "")
+    text = re.sub(r'<[^>]+>', ' ', raw_html).strip()
+    text = re.sub(r'\s+', ' ', text)
+    summary = text[:175].strip() + "…" if len(text) > 175 else text
+
+    # Extract H2 key takeaways
+    h2_matches = re.findall(r'<h2[^>]*>(.*?)</h2>', raw_html)
+    key_takeaways = [re.sub(r'<[^>]+>', '', m).strip() for m in h2_matches[:4]]
+    if not key_takeaways:
+        key_takeaways = [
+            "Tối ưu từ khóa chuyên môn phù hợp với yêu cầu tuyển dụng.",
+            "Định lượng thành tích bằng số liệu cụ thể và rõ ràng.",
+            "Chuẩn bị kỹ lưỡng trước các câu hỏi tình huống thực tế."
+        ]
+
+    return {
+        "summary": summary,
+        "tags": list(dict.fromkeys(tags))[:4],
+        "is_featured": (index == 0),
+        "is_hot": (index in [0, 1, 3, 5]),
+        "author_role": role_map.get(cat, "Ban Biên Tập Chuyên Môn"),
+        "author_avatar": f"https://ui-avatars.com/api/?name=Ban+Bien+Tap&background=0284c7&color=fff&bold=true",
+        "author_bio": "Đội ngũ cố vấn và chuyên gia của Verisem, chuyên nghiên cứu phương pháp tối ưu hóa tuyển dụng và kết nối nhân tài ứng dụng công nghệ AI.",
+        "key_takeaways": key_takeaways,
+        "target_audience": "hr" if cat == "hr_corner" else "applicant",
+        "likes_count": 45 + (index * 14) % 120,
+    }
+
 async def seed_blogs():
+    import re
     await connect_to_mongo()
 
     inserted = 0
+    updated = 0
     now = datetime.now(timezone.utc)
     for index, post in enumerate(BLOG_POSTS):
         slug = AdminService._generate_slug(post["title"])
-        if await BlogRepository.find_one({"slug": slug}):
-            print(f"Bỏ qua (đã tồn tại): {slug}")
+        metadata = enrich_blog_metadata(post, index)
+        existing = await BlogRepository.find_one({"slug": slug})
+        
+        if existing:
+            # Cập nhật các trường mới cho dữ liệu bài viết đã tồn tại
+            await BlogRepository.update_custom(
+                {"slug": slug},
+                {"$set": {
+                    **metadata,
+                    "view_count": existing.get("view_count") or (350 + index * 95),
+                    "updated_at": now,
+                }}
+            )
+            updated += 1
+            print(f"Đã cập nhật trường mới: {slug}")
             continue
 
         created_at = now - timedelta(days=index)
         await BlogRepository.create({
             **post,
+            **metadata,
             "content_html": post["content_html"].strip(),
             "is_published": True,
             "slug": slug,
             "reading_time_minutes": AdminService._calculate_reading_time(post["content_html"]),
-            "view_count": 0,
+            "view_count": 350 + index * 95,
             "created_by_admin_id": None,
             "created_at": created_at,
             "updated_at": created_at,
@@ -568,7 +644,7 @@ async def seed_blogs():
         inserted += 1
         print(f"Đã thêm bài viết: {slug}")
 
-    print(f"Hoàn tất! Đã thêm {inserted} bài viết.")
+    print(f"Hoàn tất! Đã thêm mới {inserted} bài viết và cập nhật trường mới cho {updated} bài viết.")
     await close_mongo_connection()
 
 

@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "6acb9e091e2f07c0cb1da349",
+    "owner_type": "applicant",
+    "owner_id": "6aaaadba6292df43bb17ce56",
+    "plan_id": "6a97991f9da5a97d8a773601",
+    "plan_code": "app_vip_yearly",
+    "order_id": "6acb9e021e2f07c0cb1da348",
+    "status": "active",
+    "period_start": "2026-10-11 14:32:41.831000",
+    "period_end": "2027-10-11 14:32:41.831000",
+    "created_at": "2026-10-11 14:32:41.831000"
+  }
+]

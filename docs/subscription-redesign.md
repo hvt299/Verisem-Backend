@@ -1,7 +1,7 @@
 # Thiết kế lại luồng Đăng ký gói & Credit
 
 > Trạng thái: **Đã triển khai giai đoạn 0–2 (+ một phần giai đoạn 3) – cần review**. Xem mục 10.
-> Phạm vi: Backend (`CV-Ranking-Backend`) + phần Billing của Frontend (`CV-Ranking-Web`)
+> Phạm vi: Backend (`Verisem-Backend`) + phần Billing của Frontend (`Verisem-Web`)
 
 ## 1. Bối cảnh
 

@@ -1,11 +1,17 @@
 import os
+import sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
 import pymongo
 from motor.motor_asyncio import AsyncIOMotorClient
 from dotenv import load_dotenv
 
 load_dotenv()
 
-MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017/cv-ranking")
+MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017/verisem")
 
 import redis.asyncio as aioredis
 
@@ -50,7 +56,7 @@ class Collections:
     SUPPORT_TICKETS = "support_tickets"
     BLOG_POSTS = "blog_posts"
 
-MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "cv-ranking")
+MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "verisem")
 
 async def connect_to_mongo():
     try:
@@ -83,19 +89,19 @@ async def connect_to_mongo():
         REDIS_URL = os.getenv("REDIS_URL", "")
         if REDIS_URL.startswith(("redis://", "rediss://", "unix://")):
             db_instance.redis = aioredis.from_url(REDIS_URL, decode_responses=True)
-            print("Da ket noi thanh cong voi MongoDB va Redis Cache!")
+            print("Đã kết nối thành công với MongoDB và Redis Cache!")
         else:
             db_instance.redis = None
-            print("Da ket noi MongoDB! (Bo qua Redis Cache do REDIS_URL dang dung RAM ao)")
+            print("Đã kết nối MongoDB! (Bỏ qua Redis Cache do REDIS_URL đang dùng RAM ảo)")
     except Exception as e:
-        print(f"Loi ket noi DB/Redis: {e}")
+        print(f"Lỗi kết nối DB/Redis: {e}")
 
 async def close_mongo_connection():
     if db_instance.client is not None:
         db_instance.client.close()
     if db_instance.redis is not None:
         await db_instance.redis.close()
-    print("Da ngat ket noi DB & Redis!")
+    print("Đã ngắt kết nối DB & Redis!")
 
 def get_db():
     return db_instance.db

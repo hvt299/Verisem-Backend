@@ -42,10 +42,21 @@ async def require_applicant(current_user: CurrentUser = Depends(get_current_user
 def _prepare_cv_for_scoring(cv_doc: dict, job: dict) -> dict:
     raw_text = cv_doc.get("raw_text", "")
     top_sentences = get_top_contributing_sentences(raw_text, job.get("jd_search_text", ""))
+    
+    raw_skills = cv_doc.get("extracted_skills", [])
+    normalized_skills = []
+    for sk in raw_skills:
+        if isinstance(sk, dict):
+            name = sk.get("name") or sk.get("skill") or sk.get("title")
+            if name:
+                normalized_skills.append(name.strip())
+        elif isinstance(sk, str) and sk.strip():
+            normalized_skills.append(sk.strip())
+
     return {
         "raw_text": raw_text,
         "word_count": len((raw_text or "").split()),
-        "skills": cv_doc.get("extracted_skills", []),
+        "skills": normalized_skills,
         "years_of_experience": cv_doc.get("candidate_info", {}).get("years_of_experience", 0),
         "skill_experience": cv_doc.get("candidate_info", {}).get("skill_experience", {}),
         "education_level": cv_doc.get("candidate_info", {}).get("education_level", "Không đề cập"),

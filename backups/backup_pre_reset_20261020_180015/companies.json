@@ -1,0 +1,533 @@
+[
+  {
+    "_id": "6a91481be228e500c5c6eb02",
+    "name": "Công ty Cổ phần Giáo dục YOLA",
+    "tax_code": "0309819876-001",
+    "size": "501-1000",
+    "address": "259 Trần Hưng Đạo",
+    "website": "https://yola.vn",
+    "status": "pending_verification",
+    "created_at": "2026-09-13 10:00:00",
+    "verified_at": "2026-08-30 04:17:21",
+    "credits_remaining": 80,
+    "profile_view_count": 1850,
+    "view_count": 1850,
+    "benefits": [
+      "Học Tiếng Anh miễn phí",
+      "Team building",
+      "Thưởng doanh số"
+    ],
+    "industries": [
+      "education"
+    ],
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "ward_code": "",
+      "ward_name": "",
+      "district_code": "",
+      "district_name": "",
+      "street_address": "259 Trần Hưng Đạo",
+      "full_address_snapshot": "Quận 1, TP.HCM"
+    },
+    "social_links": {
+      "facebook": "https://www.facebook.com/YOLAEducation",
+      "linkedin": "https://www.linkedin.com/company/yola"
+    },
+    "updated_at": "2026-09-08 06:00:00",
+    "logo_url": "https://yola.vn/wp-content/uploads/2025/10/1200.png",
+    "description": "<p>YOLA là tổ chức giáo dục chuyên đào tạo Tiếng Anh học thuật và kỹ năng toàn diện cho thanh thiếu niên.</p>",
+    "banner_url": "https://jobsgo.vn/media/img/employer/2252-cover-app.jpg",
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735f0",
+    "gallery_urls": [
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514247/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_943ca950.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514248/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_505c5464.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514403/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_76824128.jpg"
+    ],
+    "kyc_approved_at": "2026-08-30 04:17:21.042000",
+    "verified_by_admin_id": "6a91481be228e500c5c6e6a1"
+  },
+  {
+    "_id": "6a91481be228e500c5c6eb03",
+    "name": "Tập đoàn Đất Xanh",
+    "tax_code": "0303104343-001",
+    "size": "1000+",
+    "address": "2W Ung Văn Khiêm",
+    "website": "https://datxanh.vn",
+    "status": "suspended",
+    "created_at": "2026-09-11 11:00:00",
+    "verified_at": "2026-08-30 04:17:21",
+    "credits_remaining": 200,
+    "profile_view_count": 3100,
+    "view_count": 3100,
+    "benefits": [
+      "Hoa hồng cao",
+      "Đào tạo kỹ năng sale",
+      "Du lịch nước ngoài"
+    ],
+    "industries": [
+      "realestate"
+    ],
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "ward_code": "",
+      "ward_name": "",
+      "district_code": "",
+      "district_name": "",
+      "street_address": "2W Ung Văn Khiêm",
+      "full_address_snapshot": "Bình Thạnh, TP.HCM"
+    },
+    "social_links": {
+      "facebook": "https://www.facebook.com/DatXanhGroup",
+      "linkedin": "https://www.linkedin.com/company/datxanh"
+    },
+    "updated_at": "2026-09-08 06:00:00",
+    "logo_url": "https://cdn.haitrieu.com/wp-content/uploads/2022/03/Artboard-2-1.png",
+    "description": "<p>Đất Xanh là tập đoàn kinh tế bất động sản hàng đầu, chuyên cung cấp các giải pháp an cư toàn diện.</p>",
+    "banner_url": "https://datxanh.group/wp-content/uploads/2022/10/DXG-Lien-he-4.jpg",
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735f0",
+    "gallery_urls": [
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514247/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_943ca950.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514248/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_505c5464.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514403/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_76824128.jpg"
+    ],
+    "kyc_approved_at": "2026-08-30 04:17:21.042000",
+    "verified_by_admin_id": "6a91481be228e500c5c6e6a1"
+  },
+  {
+    "_id": "6a91481be228e500c5c6e6a8",
+    "name": "NashTech Vietnam",
+    "tax_code": "0302001111-001",
+    "size": "1000+",
+    "address": "Tòa nhà Etown, 364 Cộng Hòa, Tân Bình, TP.HCM",
+    "website": "https://nashtechglobal.com",
+    "status": "pending_verification",
+    "created_at": "2026-09-12 12:00:00",
+    "verified_at": "2026-08-30 04:17:21",
+    "credits_remaining": 80,
+    "profile_view_count": 1120,
+    "view_count": 1120,
+    "benefits": [
+      "Bảo hiểm sức khỏe cao cấp",
+      "Môi trường làm việc quốc tế",
+      "Company trip"
+    ],
+    "industries": [
+      "it",
+      "software_outsourcing"
+    ],
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "ward_code": "",
+      "ward_name": "",
+      "district_code": "",
+      "district_name": "",
+      "street_address": "364 Cộng Hòa",
+      "full_address_snapshot": "Tân Bình, TP.HCM"
+    },
+    "social_links": {
+      "facebook": "https://www.facebook.com/NashTechVN",
+      "linkedin": "https://www.linkedin.com/company/nashtech"
+    },
+    "updated_at": "2026-09-08 06:00:00",
+    "logo_url": "https://thanhnien.mediacdn.vn/Uploaded/quochung.qc/2020_01_16/nashtech/nash_tech_primary_pos_srgb_OYCJ.png?width=500",
+    "description": "<p>NashTech là một phần của tập đoàn Harvey Nash Group có trụ sở tại Vương quốc Anh.</p>",
+    "banner_url": "https://jobsgo.vn/media/img/employer/561-cover-app.jpg",
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735f0",
+    "gallery_urls": [
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514247/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_943ca950.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514248/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_505c5464.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514403/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_76824128.jpg"
+    ],
+    "kyc_approved_at": "2026-08-30 04:17:21.042000",
+    "verified_by_admin_id": "6a91481be228e500c5c6e6a1"
+  },
+  {
+    "_id": "6a91481be228e500c5c6e6a0",
+    "name": "Trung tâm phát triển phần mềm - Đại học Đà Nẵng",
+    "tax_code": "0400478538-001",
+    "size": "51-200",
+    "address": "41 Lê Duẩn",
+    "website": "https://sdc.udn.vn",
+    "status": "verified",
+    "created_at": "2026-08-28 08:34:35.480000",
+    "kyc_approved_at": "2026-08-30 04:17:21.042000",
+    "verified_at": "2026-08-30 04:17:21.042000",
+    "verified_by_admin_id": "6a91481be228e500c5c6e6a1",
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735f3",
+    "profile_view_count": 194,
+    "view_count": 194,
+    "benefits": [
+      "Lương tháng 13",
+      "Bảo hiểm xã hội"
+    ],
+    "gallery_urls": [
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514247/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_943ca950.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514248/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_505c5464.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514403/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_76824128.jpg"
+    ],
+    "industries": [
+      "it",
+      "electronics_telecom",
+      "education"
+    ],
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "48",
+      "province_name": "Đà Nẵng",
+      "ward_code": "20242",
+      "ward_name": "Hải Châu",
+      "district_code": "",
+      "district_name": "",
+      "street_address": "41 Lê Duẩn",
+      "full_address_snapshot": ""
+    },
+    "social_links": {
+      "facebook": "https://www.facebook.com/sdc.udn",
+      "linkedin": "https://www.linkedin.com/in/sdc.udn",
+      "youtube": "http://youtube.com/@sdc.udn"
+    },
+    "updated_at": "2026-09-08 11:07:14.320000",
+    "logo_url": "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788853898/ats_cv_library/usr_6a91481be228e500c5c6e6a1_l_0898c4cc.png",
+    "banner_url": "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788853902/ats_cv_library/usr_6a91481be228e500c5c6e6a1_b_5c9ac42c.webp",
+    "description": "<p><i><strong>Trung tâm Phát triển Phần mềm - Đại học Đà Nẵng là một đơn vị trực thuộc Đại học Đà Nẵng do Bộ Giáo dục và Đào tạo thành lập vào năm 2000, chúng tôi được đánh giá cao trong lĩnh vực đào tạo, nghiên cứu, thực hiện dự án và tổ chức khảo thí quốc tế tại khu vực miền Trung - Tây Nguyên.</strong></i></p><p>&nbsp;</p><p><strong>Về Đào tạo:</strong> Trung tâm Phát triển Phần mềm với vai trò là partner của tập đoàn Microsoft chúng tôi tự tin đơn vị đi đầu trong lĩnh vực đào tạo phần mềm, đào tạo chuyển đổi số tại khu vực miền Trung - Tây Nguyên. Với đội ngũ giảng viên giàu kinh nghiệm và kiến thức chuyên môn sâu rộng, chúng tôi cung cấp các khóa học đào tạo về các công nghệ thông tin hàng đầu như Microsoft, Oracle, Cisco, Red Hat, VMware và nhiều nền tảng phần mềm khác. Ngoài ra, Trung tâm còn tổ chức các khóa đào tạo tại doanh nghiệp để giúp cải thiện năng lực nhân viên và tăng cường năng suất kinh doanh.</p><p>&nbsp;</p><p><strong>Về Nghiên cứu phát triển phần mềm, thực hiện dự án:</strong> Trung tâm Phát triển Phần mềm là một đơn vị có uy tín cao trông việc nghiên cứu cũng như thực hiện dự án. Chúng tôi đang thực hiện nhiều dự án nghiên cứu phát triển phần mềm đa dạng trong nhiều lĩnh vực như trí tuệ nhân tạo, big data, blockchain, IoT, an toàn thông tin và nhiều lĩnh vực công nghệ khác. Các dự án này được thực hiện bởi các chuyên gia và kỹ sư phần mềm tại Trung tâm và được phối hợp với các tổ chức đối tác trong và ngoài nước thực hiện.</p><p>&nbsp;</p><p><strong>Về Khảo thí quốc tế:</strong> Trung tâm Phát triển Phần mềm cũng là một địa điểm khảo thí uy tín của các chứng chỉ quốc tế như Cisco, CCNA, Tester, Autodesk, AWS, Linux và nhiều chứng chỉ khác được ủy quyền trực tiếp từ Pearson VUE. Chúng tôi có đội ngũ giám thị chuyên nghiệp và nhiều kinh nghiệm, đảm bảo tính chính xác và khách quan của các kỳ thi. Ngoài ra, Trung tâm còn tổ chức các khóa học ôn tập phục vụ công tác khảo thí, giúp học viên nâng cao năng lực và cơ hội cao nhận được các chứng chỉ cao cấp được công nhận trên toàn thế giới.</p>",
+    "save_count": 2,
+    "follower_count": -2
+  },
+  {
+    "_id": "6a91481be228e500c5c6e6a4",
+    "name": "VNG Corporation",
+    "tax_code": "0303456789-001",
+    "size": "1000+",
+    "address": "VNG Campus, Khu chế xuất Tân Thuận, Quận 7, TP.HCM",
+    "website": "https://vng.com.vn",
+    "status": "verified",
+    "created_at": "2026-09-13 10:00:00",
+    "verified_at": "2026-08-30 04:17:21",
+    "credits_remaining": 100,
+    "profile_view_count": 2403,
+    "view_count": 2403,
+    "benefits": [
+      "Gym & Pool",
+      "Bảo hiểm cao cấp",
+      "Thưởng performance"
+    ],
+    "industries": [
+      "it",
+      "game",
+      "fintech"
+    ],
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "ward_code": "",
+      "ward_name": "",
+      "district_code": "",
+      "district_name": "",
+      "street_address": "Khu chế xuất Tân Thuận",
+      "full_address_snapshot": "VNG Campus, Quận 7, TP.HCM"
+    },
+    "social_links": {
+      "facebook": "https://www.facebook.com/VNGCorporation",
+      "linkedin": "https://www.linkedin.com/company/vng-corporation"
+    },
+    "updated_at": "2026-09-08 06:00:00",
+    "logo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/VNG_Corp._logo.svg/3840px-VNG_Corp._logo.svg.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "description": "<p>VNG là một trong những công ty công nghệ hàng đầu Việt Nam.</p>",
+    "banner_url": "https://corp.vcdn.vn/products/upload/vng/source/News/cong-ty-vng-o-dau-2.jpg",
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735f0",
+    "gallery_urls": [
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514247/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_943ca950.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514248/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_505c5464.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514403/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_76824128.jpg"
+    ],
+    "kyc_approved_at": "2026-08-30 04:17:21.042000",
+    "verified_by_admin_id": "6a91481be228e500c5c6e6a1"
+  },
+  {
+    "_id": "6a91481be228e500c5c6e6a2",
+    "name": "FPT Software",
+    "tax_code": "0100756812-001",
+    "size": "1000+",
+    "address": "Khu công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội",
+    "website": "https://fptsoftware.com",
+    "status": "verified",
+    "created_at": "2026-09-12 09:00:00",
+    "verified_at": "2026-08-30 04:17:21",
+    "credits_remaining": 50,
+    "profile_view_count": 1543,
+    "view_count": 1543,
+    "benefits": [
+      "Bảo hiểm sức khỏe",
+      "Du lịch hàng năm",
+      "Lương tháng 13"
+    ],
+    "industries": [
+      "it",
+      "software_outsourcing"
+    ],
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "ward_code": "",
+      "ward_name": "",
+      "district_code": "",
+      "district_name": "",
+      "street_address": "Khu công nghệ cao Hòa Lạc",
+      "full_address_snapshot": "Khu công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội"
+    },
+    "social_links": {
+      "facebook": "https://www.facebook.com/fptsoftware",
+      "linkedin": "https://www.linkedin.com/company/fpt-software"
+    },
+    "updated_at": "2026-09-08 06:00:00",
+    "logo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/FPT_Software_logo.svg/960px-FPT_Software_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+    "description": "<p>FPT Software là công ty tiên phong trong lĩnh vực xuất khẩu phần mềm tại Việt Nam.</p>",
+    "banner_url": "https://static.workventure.com/uploads/images/companies/gallery/original/image-fpt-software-thailand-co-ltd-1-320211022184533.jpg",
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735f0",
+    "gallery_urls": [
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514247/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_943ca950.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514248/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_505c5464.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514403/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_76824128.jpg"
+    ],
+    "kyc_approved_at": "2026-08-30 04:17:21.042000",
+    "verified_by_admin_id": "6a91481be228e500c5c6e6a1"
+  },
+  {
+    "_id": "6a91481be228e500c5c6e6a6",
+    "name": "Viettel Solutions",
+    "tax_code": "0100109106-001",
+    "size": "1000+",
+    "address": "Tòa nhà Viettel, Số 1 Trần Hữu Dực, Nam Từ Liêm, Hà Nội",
+    "website": "https://solutions.viettel.vn",
+    "status": "verified",
+    "created_at": "2026-09-12 11:00:00",
+    "verified_at": "2026-08-30 04:17:21",
+    "credits_remaining": 30,
+    "profile_view_count": 860,
+    "view_count": 860,
+    "benefits": [
+      "Phụ cấp ăn trưa",
+      "Bảo hiểm sức khỏe",
+      "Thưởng quý"
+    ],
+    "industries": [
+      "it",
+      "telecom"
+    ],
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "ward_code": "",
+      "ward_name": "",
+      "district_code": "",
+      "district_name": "",
+      "street_address": "Số 1 Trần Hữu Dực",
+      "full_address_snapshot": "Nam Từ Liêm, Hà Nội"
+    },
+    "social_links": {
+      "facebook": "https://www.facebook.com/viettelsolutions",
+      "linkedin": "https://www.linkedin.com/company/viettel-solutions"
+    },
+    "updated_at": "2026-09-08 06:00:00",
+    "logo_url": "https://chuyendoisocongthuong.gov.vn/wp-content/uploads/2023/11/viettelsol.png",
+    "description": "<p>Giải pháp Công nghệ Thông tin - Viettel Solutions.</p>",
+    "banner_url": "https://media.licdn.com/dms/image/v2/D563DAQH__KDZl8qqEg/image-scale_191_1128/B56ZyIYaKKKsAc-/0/1771814639799/viettel_busines_solutions_cover?e=2147483647&v=beta&t=VRNXvPBUi-pdFvc7cF-lxmLUKYej9HvGi4iA98RQD8w",
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735f0",
+    "gallery_urls": [
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514247/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_943ca950.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514248/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_505c5464.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514403/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_76824128.jpg"
+    ],
+    "kyc_approved_at": "2026-08-30 04:17:21.042000",
+    "verified_by_admin_id": "6a91481be228e500c5c6e6a1"
+  },
+  {
+    "_id": "6a91481be228e500c5c6eb01",
+    "name": "Ngân hàng TMCP Kỹ Thương Việt Nam (Techcombank)",
+    "tax_code": "0100230800-001",
+    "size": "1000+",
+    "address": "6 Quang Trung, Hoàn Kiếm, Hà Nội",
+    "website": "https://techcombank.com",
+    "status": "verified",
+    "created_at": "2026-09-13 09:00:00",
+    "verified_at": "2026-08-30 04:17:21",
+    "credits_remaining": 150,
+    "profile_view_count": 4572,
+    "view_count": 4572,
+    "benefits": [
+      "Bảo hiểm sức khỏe cao cấp",
+      "Thưởng Tết 3-5 tháng",
+      "Lãi suất vay ưu đãi"
+    ],
+    "industries": [
+      "finance"
+    ],
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "ward_code": "",
+      "ward_name": "",
+      "district_code": "",
+      "district_name": "",
+      "street_address": "6 Quang Trung",
+      "full_address_snapshot": "Hoàn Kiếm, Hà Nội"
+    },
+    "social_links": {
+      "facebook": "https://www.facebook.com/Techcombank",
+      "linkedin": "https://www.linkedin.com/company/techcombank"
+    },
+    "updated_at": "2026-09-08 06:00:00",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Techcombank_logo.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=original",
+    "description": "<p>Techcombank là một trong những ngân hàng TMCP lớn nhất Việt Nam, dẫn đầu về số hóa và chất lượng dịch vụ tài chính.</p>",
+    "banner_url": "https://cafefnew.mediacdn.vn/Images/Uploaded/Share/TCB_20230926102136.jpg",
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735f0",
+    "gallery_urls": [
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514247/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_943ca950.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514248/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_505c5464.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514403/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_76824128.jpg"
+    ],
+    "kyc_approved_at": "2026-08-30 04:17:21.042000",
+    "verified_by_admin_id": "6a91481be228e500c5c6e6a1",
+    "save_count": 4,
+    "follower_count": -3
+  },
+  {
+    "_id": "6a91481be228e500c5c6eb05",
+    "name": "Công ty Cổ phần Vàng Bạc Đá Quý Phú Nhuận (PNJ)",
+    "tax_code": "0300521758-001",
+    "size": "1000+",
+    "address": "170E Phan Đăng Lưu",
+    "website": "https://pnj.com.vn",
+    "status": "rejected",
+    "created_at": "2026-09-11 13:00:00",
+    "verified_at": "2026-08-30 04:17:21",
+    "credits_remaining": 250,
+    "profile_view_count": 5202,
+    "view_count": 5202,
+    "benefits": [
+      "Mua trang sức giá ưu đãi",
+      "Thưởng theo lợi nhuận",
+      "Bảo hiểm PNJ Care"
+    ],
+    "industries": [
+      "retail_lifestyle"
+    ],
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "ward_code": "",
+      "ward_name": "",
+      "district_code": "",
+      "district_name": "",
+      "street_address": "170E Phan Đăng Lưu",
+      "full_address_snapshot": "Phú Nhuận, TP.HCM"
+    },
+    "social_links": {
+      "facebook": "https://www.facebook.com/PNJ.COM.VN",
+      "linkedin": "https://www.linkedin.com/company/pnj"
+    },
+    "updated_at": "2026-09-08 06:00:00",
+    "logo_url": "https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-PNJ.png",
+    "description": "<p>PNJ là thương hiệu trang sức hàng đầu Việt Nam, vươn tầm Châu Á với triết lý kinh doanh phát triển bền vững.</p>",
+    "banner_url": "https://upload.fidovn.com/picture/20251211/4a6043f5f69d41f1b06d982466390d3a.png",
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735f0",
+    "gallery_urls": [
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514247/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_943ca950.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514248/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_505c5464.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514403/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_76824128.jpg"
+    ],
+    "kyc_approved_at": "2026-08-30 04:17:21.042000",
+    "verified_by_admin_id": "6a91481be228e500c5c6e6a1"
+  },
+  {
+    "_id": "6a91481be228e500c5c6eb04",
+    "name": "Dentsu Việt Nam",
+    "tax_code": "0300800555-001",
+    "size": "501-1000",
+    "address": "29A Nguyễn Đình Chiểu",
+    "website": "https://dentsu.com/vn",
+    "status": "pending_verification",
+    "created_at": "2026-09-09 12:00:00",
+    "verified_at": "2026-08-30 04:17:21",
+    "credits_remaining": 120,
+    "profile_view_count": 2750,
+    "view_count": 2750,
+    "benefits": [
+      "Môi trường sáng tạo",
+      "Happy Hour",
+      "Lương thưởng cạnh tranh"
+    ],
+    "industries": [
+      "marketing"
+    ],
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "ward_code": "",
+      "ward_name": "",
+      "district_code": "",
+      "district_name": "",
+      "street_address": "29A Nguyễn Đình Chiểu",
+      "full_address_snapshot": "Quận 1, TP.HCM"
+    },
+    "social_links": {
+      "facebook": "https://www.facebook.com/DentsuVN",
+      "linkedin": "https://www.linkedin.com/company/dentsu-vietnam"
+    },
+    "updated_at": "2026-09-08 06:00:00",
+    "logo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Dentsu_logo.svg/1280px-Dentsu_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+    "description": "<p>Dentsu là tập đoàn truyền thông và quảng cáo đa quốc gia, cung cấp các giải pháp marketing sáng tạo và hiệu quả.</p>",
+    "banner_url": "https://cdn.advertisingvietnam.com/wp-content/uploads/2019/12/dentsu-thumbal.jpg",
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735f0",
+    "gallery_urls": [
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514247/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_943ca950.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514248/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_505c5464.webp",
+      "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1788514403/ats_cv_library/usr_6a91481be228e500c5c6e6a1_g_76824128.jpg"
+    ],
+    "kyc_approved_at": "2026-08-30 04:17:21.042000",
+    "verified_by_admin_id": "6a91481be228e500c5c6e6a1"
+  }
+]

@@ -403,18 +403,102 @@ class AnalyticsService:
         for day in trend_chart:
             day["cv_count"] = trend_dict.get(day["date"], 0)
 
-        # 4. Word Cloud (Real Data using skills from cv_snapshot)
-        skills_pipeline = [
-            {"$match": {"job_id": {"$in": job_ids}, "deleted_at": None, "applied_at": {"$gte": thirty_days_ago}, "cv_snapshot.extracted_skills": {"$exists": True, "$type": "array"}}},
-            {"$unwind": "$cv_snapshot.extracted_skills"},
-            {"$group": {"_id": "$cv_snapshot.extracted_skills", "count": {"$sum": 1}}},
-            {"$sort": {"count": -1}},
-            {"$limit": 10}
-        ]
-        raw_skills = await ApplicationRepository.aggregate_applications(skills_pipeline)
+        # 4. Word Cloud (Real Data using skills from cv_snapshot & ai_score)
+        from collections import Counter
+        skills_counter = Counter()
+
+        apps_for_skills = await ApplicationRepository.find_many(
+            {"$or": [{"job_id": {"$in": job_ids}}, {"company_id": company_id}]},
+            projection={"cv_snapshot.extracted_skills": 1, "ai_score.skill_details": 1},
+            limit=500
+        )
+
+        for app in apps_for_skills:
+            snap = app.get("cv_snapshot") or {}
+            extracted = snap.get("extracted_skills") or []
+            has_extracted = False
+            for s in extracted:
+                name = None
+                if isinstance(s, dict):
+                    name = s.get("name") or s.get("skill")
+                elif isinstance(s, str):
+                    name = s
+                if name and isinstance(name, str) and name.strip():
+                    clean_name = name.strip().lower()
+                    skills_counter[clean_name] += 1
+                    has_extracted = True
+
+            # If no extracted_skills, try ai_score.skill_details
+            if not has_extracted:
+                ai = app.get("ai_score") or {}
+                skill_details = ai.get("skill_details") or []
+                for s in skill_details:
+                    name = None
+                    if isinstance(s, dict):
+                        name = s.get("skill")
+                    elif isinstance(s, str):
+                        name = s
+                    if name and isinstance(name, str) and name.strip():
+                        clean_name = name.strip().lower()
+                        skills_counter[clean_name] += 1
+
+        # Fallback to job requirements if no candidate skills found yet
+        if not skills_counter and jobs:
+            full_jobs = await JobRepository.find_many({"company_id": company_id}, projection={"required_skills": 1, "preferred_skills": 1}, limit=50)
+            for j in full_jobs:
+                for req in (j.get("required_skills") or []):
+                    if isinstance(req, str) and req.strip():
+                        skills_counter[req.strip().lower()] += 1
+                for pref in (j.get("preferred_skills") or []):
+                    if isinstance(pref, str) and pref.strip():
+                        skills_counter[pref.strip().lower()] += 1
+
+        skill_formatting_map = {
+            "react": "React",
+            "reactjs": "ReactJS",
+            "node.js": "Node.js",
+            "nodejs": "Node.js",
+            "typescript": "TypeScript",
+            "javascript": "JavaScript",
+            "python": "Python",
+            "docker": "Docker",
+            "kubernetes": "Kubernetes",
+            "aws": "AWS",
+            "azure": "Azure",
+            "gcp": "GCP",
+            "sql": "SQL",
+            "postgresql": "PostgreSQL",
+            "mongodb": "MongoDB",
+            "redis": "Redis",
+            "restful api": "RESTful API",
+            "rest api": "REST API",
+            "graphql": "GraphQL",
+            "next.js": "Next.js",
+            "nextjs": "Next.js",
+            "vue.js": "Vue.js",
+            "vuejs": "Vue.js",
+            "angular": "Angular",
+            "html": "HTML",
+            "css": "CSS",
+            "tailwind css": "Tailwind CSS",
+            "tailwind": "Tailwind CSS",
+            "git": "Git",
+            "ci/cd": "CI/CD",
+            "devops": "DevOps",
+            "microservices": "Microservices",
+            "agile": "Agile/Scrum",
+            "scrum": "Scrum",
+            "figma": "Figma",
+            "ui/ux": "UI/UX",
+        }
+
         skills_word_cloud = []
-        for item in raw_skills:
-            skills_word_cloud.append({"text": item.get("_id"), "value": item["count"]})
+        for raw_k, count in skills_counter.most_common(16):
+            formatted_name = skill_formatting_map.get(raw_k, raw_k.title())
+            skills_word_cloud.append({
+                "text": formatted_name,
+                "value": count
+            })
         
         # 5. Education Levels (Real Data)
         edu_pipeline = [
@@ -667,6 +751,25 @@ class AnalyticsService:
         total_cvs = await ApplicationRepository.count_documents({"deleted_at": None})
         new_cvs = await ApplicationRepository.count_documents({"deleted_at": None, "applied_at": {"$gte": time_ago}})
 
+        pending_companies_list = await CompanyRepository.find_many(
+            {"deleted_at": None, "status": CompanyStatus.PENDING_VERIFICATION.value},
+            limit=10,
+            sort=[("created_at", -1)]
+        )
+        recent_pending_companies = []
+        for c in pending_companies_list:
+            created_at_val = c.get("created_at")
+            created_at_str = created_at_val.isoformat() if isinstance(created_at_val, datetime) else (str(created_at_val) if created_at_val else None)
+            comp_id_val = str(c.get("id") or c.get("_id") or "")
+            recent_pending_companies.append({
+                "id": comp_id_val,
+                "_id": comp_id_val,
+                "name": c.get("name", "Chưa cập nhật"),
+                "logo_url": c.get("logo_url"),
+                "tax_code": c.get("tax_code", ""),
+                "created_at": created_at_str
+            })
+
         return {
             "overview_stats": {
                 "total_users": {"value": total_users, "trend": new_users},
@@ -675,7 +778,8 @@ class AnalyticsService:
                 "active_jobs": {"value": total_jobs, "trend": new_jobs},
                 "total_cvs": {"value": total_cvs, "trend": new_cvs},
                 "system_health": {"value": "100%", "trend": "OK"}
-            }
+            },
+            "recent_pending_companies": recent_pending_companies
         }
 
 
@@ -986,16 +1090,29 @@ class AnalyticsService:
             {"$match": {"deleted_at": None, "created_at": {"$gte": now - timedelta(days=days)}}},
             {"$group": {"_id": "$status", "count": {"$sum": 1}}}
         ])
-        ticket_status_chart = []
+        
+        status_config = {
+            "open": {"name": "Mở", "color": "var(--color-error-500)"},
+            "in_progress": {"name": "Đang xử lý", "color": "var(--color-warning-500)"},
+            "waiting_for_user": {"name": "Chờ phản hồi", "color": "var(--color-info-500)"},
+            "resolved": {"name": "Đã giải quyết", "color": "var(--color-success-500)"},
+            "closed": {"name": "Đã đóng", "color": "#94a3b8"}
+        }
+
+        status_grouped = {}
         for item in raw_ticket_status:
-            status = item.get("_id")
+            s_raw = item.get("_id")
             count = item["count"]
-            if status == "open":
-                ticket_status_chart.append({"name": "Mở", "value": count, "color": "var(--color-error-500)"})
-            elif status == "in_progress":
-                ticket_status_chart.append({"name": "Đang xử lý", "value": count, "color": "var(--color-warning-500)"})
-            else:
-                ticket_status_chart.append({"name": "Đã giải quyết", "value": count, "color": "var(--color-success-500)"})
+            cfg = status_config.get(s_raw, {"name": "Khác", "color": "#cbd5e1"})
+            lbl = cfg["name"]
+            if lbl not in status_grouped:
+                status_grouped[lbl] = {"value": 0, "color": cfg["color"]}
+            status_grouped[lbl]["value"] += count
+
+        ticket_status_chart = [
+            {"name": name, "value": data["value"], "color": data["color"]}
+            for name, data in status_grouped.items()
+        ]
 
 
         raw_job_status = await JobRepository.aggregate_jobs([

@@ -1,0 +1,163 @@
+[
+  {
+    "_id": "6a9799229c1cd75987482e53",
+    "setting_type": "global_config",
+    "industry_weights": {
+      "it": [
+        0.5,
+        0.2,
+        0.25,
+        0.05,
+        0.35
+      ],
+      "electronics_telecom": [
+        0.45,
+        0.2,
+        0.2,
+        0.15,
+        0.4
+      ],
+      "manufacturing": [
+        0.4,
+        0.2,
+        0.3,
+        0.1,
+        0.45
+      ],
+      "construction": [
+        0.4,
+        0.15,
+        0.3,
+        0.15,
+        0.45
+      ],
+      "energy_agriculture": [
+        0.4,
+        0.15,
+        0.25,
+        0.2,
+        0.5
+      ],
+      "sales": [
+        0.3,
+        0.35,
+        0.25,
+        0.1,
+        0.75
+      ],
+      "marketing": [
+        0.35,
+        0.35,
+        0.2,
+        0.1,
+        0.7
+      ],
+      "customer_service": [
+        0.25,
+        0.4,
+        0.25,
+        0.1,
+        0.75
+      ],
+      "retail_lifestyle": [
+        0.25,
+        0.3,
+        0.35,
+        0.1,
+        0.65
+      ],
+      "logistics": [
+        0.35,
+        0.2,
+        0.3,
+        0.15,
+        0.6
+      ],
+      "hr_admin_legal": [
+        0.35,
+        0.3,
+        0.2,
+        0.15,
+        0.65
+      ],
+      "finance": [
+        0.35,
+        0.2,
+        0.25,
+        0.2,
+        0.45
+      ],
+      "accounting": [
+        0.4,
+        0.15,
+        0.25,
+        0.2,
+        0.4
+      ],
+      "healthcare": [
+        0.35,
+        0.1,
+        0.25,
+        0.3,
+        0.3
+      ],
+      "education": [
+        0.3,
+        0.2,
+        0.2,
+        0.3,
+        0.6
+      ],
+      "law": [
+        0.3,
+        0.25,
+        0.2,
+        0.25,
+        0.4
+      ],
+      "labor": [
+        0.3,
+        0.1,
+        0.5,
+        0.1,
+        0.5
+      ],
+      "driver": [
+        0.4,
+        0.05,
+        0.45,
+        0.1,
+        0.5
+      ],
+      "design": [
+        0.45,
+        0.25,
+        0.2,
+        0.1,
+        0.6
+      ],
+      "default": [
+        0.4,
+        0.3,
+        0.2,
+        0.1,
+        0.5
+      ]
+    },
+    "action_costs": {
+      "REVERSE_MATCHING": 5,
+      "AI_INTERVIEW_GEN": 2,
+      "HR_PARSE_CV": 0,
+      "HR_MAP_CV_AI_SCORE": 0,
+      "HR_MAP_BATCH_CV_AI_SCORE": 0,
+      "APPLICANT_SELF_SCORE": 0,
+      "APPLICANT_AI_CV_REVIEW": 1
+    },
+    "payment_config": {
+      "bank_id": "MB",
+      "account_no": "0123456789",
+      "account_name": "CONG TY TNHH VERISEM",
+      "template": "compact2"
+    }
+  }
+]

@@ -1,3 +1,8 @@
+import sys
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
 from app.core import env
 
 from fastapi import FastAPI
@@ -25,7 +30,7 @@ from app.repositories.company_repository import CompanyRepository
 from app.repositories.audit_repository import AuditRepository
 from app.schemas.common_schema import JobStatus, SubscriptionTier
 
-logger = logging.getLogger("ats_cron")
+logger = logging.getLogger("verisem_cron")
 scheduler = AsyncIOScheduler()
 
 async def auto_expire_jobs():
@@ -87,9 +92,9 @@ async def lifespan(app: FastAPI):
     await close_mongo_connection()
 
 app = FastAPI(
-    title="ATS SYSTEM",
-    version="2.0.0", 
-    description="Hệ thống Quản lý Tuyển dụng và Đánh giá Ứng viên tự động bằng AI",
+    title="Verisem API",
+    version="3.0.0", 
+    description="Verisem (Version 3.0) - Nền tảng Quản trị Tuyển dụng và Đánh giá Ứng viên Thông minh ứng dụng Trí tuệ Nhân tạo",
     lifespan=lifespan
 )
 
@@ -124,7 +129,7 @@ app.include_router(subscription_router.router)
 
 @app.get("/", tags=["Health Check"])
 def root():
-    return {"message": "ATS System API is running smoothly!"}
+    return {"message": "Verisem API v3.0 is running smoothly!"}
 
 @app.get("/ping", tags=["Health Check"])
 def ping():

@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "6ab733c80eaefb2cdd06ec07",
+    "user_id": "6a914ae9e228e500c5c6e6a2",
+    "job_id": "6a9fc98523432d5867fe10e9"
+  },
+  {
+    "_id": "6ab72b75454a58256948ee18",
+    "user_id": "6a914ae9e228e500c5c6e6a2",
+    "job_id": "6a9fc98523432d5867fe10eb",
+    "deleted_at": "2026-09-26 02:29:45.372000"
+  },
+  {
+    "_id": "6ab72e160eaefb2cdd06ec02",
+    "user_id": "6a914ae9e228e500c5c6e6a2",
+    "job_id": "6a9fc98523432d5867fe10ea",
+    "deleted_at": "2026-09-26 02:52:12.898000"
+  }
+]
