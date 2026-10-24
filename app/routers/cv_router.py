@@ -15,7 +15,6 @@ from app.repositories.cv_repository import CVRepository
 from app.repositories.notification_repository import NotificationRepository
 from app.repositories.user_interactions_repository import TalentPoolRepository
 from app.repositories.applicant_profile_repository import ApplicantProfileRepository
-from app.repositories.quota_transaction_repository import QuotaTransactionRepository
 from app.repositories.cover_letter_repository import CoverLetterRepository
 
 from app.services.ai_scoring_service import AIScoringService
@@ -24,7 +23,7 @@ from app.services.vector_engine import compress_jd_data, get_embedding
 from app.services.nlp_engine import GLOBAL_SYSTEM_SETTINGS
 from app.core.security import ensure_job_manager, require_hr, require_hr_or_admin, get_scope_filter, CurrentUser
 from app.middleware.rate_limit import limiter
-from app.middleware.subscription import require_tier, require_credits
+from app.middleware.subscription import require_tier, require_credits, charge_company_credits, refund_company_credits, refund_charged_credits
 from app.services.storage_service import upload_file_to_cloudinary, delete_file_from_cloudinary
 from app.services.email_service import send_interview_email
 from app.services.llm_service import generate_interview_questions
@@ -236,22 +235,7 @@ async def map_multiple_cvs_to_job(
         raise HTTPException(status_code=503, detail="Hệ thống chưa cấu hình giá cho tính năng chấm điểm hàng loạt.")
         
     cost = len(cv_ids) * unit_cost
-    success = await CompanyRepository.deduct_ai_credits(current_user.company_id, cost)
-    if not success:
-        raise HTTPException(
-            status_code=402, 
-            detail=f"Tài khoản không đủ Credit AI. Cần {cost} credits để chấm điểm {len(cv_ids)} CV."
-        )
-        
-    company = await CompanyRepository.get_by_id(current_user.company_id)
-    await QuotaTransactionRepository.create({
-        "company_id": current_user.company_id,
-        "user_id": current_user.id,
-        "action_type": "HR_MAP_BATCH_CV_AI_SCORE",
-        "credit_cost": cost,
-        "balance_after": company.get("credits_remaining", 0),
-        "created_at": datetime.now(timezone.utc)
-    })
+    credit_parts = await charge_company_credits(current_user, "HR_MAP_BATCH_CV_AI_SCORE", cost)
 
     try:
         jd_data = await JobRepository.find_one({"_id": ObjectId(job_id), **scope_filter})
@@ -319,6 +303,11 @@ async def map_multiple_cvs_to_job(
 
         except Exception as e:
             errors.append(f"Lỗi khi xử lý CV ID {cv_id}: {str(e)}")
+
+    # Hoàn credit cho các CV không chấm được
+    failed_count = len(cv_ids) - successful_maps
+    if failed_count > 0 and credit_parts:
+        await refund_company_credits(current_user, credit_parts, "HR_MAP_BATCH_CV_AI_SCORE", amount=failed_count * unit_cost)
 
     return {
         "message": f"Đã ghép nối thành công {successful_maps}/{len(cv_ids)} CV.",
@@ -598,6 +587,7 @@ async def toggle_application_viewed(
 @router.get("/applications/{app_id}/ai-interview", dependencies=[Depends(require_hr_or_admin)])
 async def get_ai_interview_questions(
     app_id: str, 
+    request: Request,
     current_user: CurrentUser = Depends(require_hr_or_admin),
     scope_filter: dict = Depends(get_scope_filter),
     # LƯU Ý: CẤM XÓA VĨNH VIỄN ĐOẠN NÀY
@@ -626,10 +616,14 @@ async def get_ai_interview_questions(
     cv_text = cv_record.get("raw_text", "")
     jd_text = job_record.get("jd_search_text", "")
 
-    questions = await generate_interview_questions(cv_text, jd_text)
+    try:
+        questions = await generate_interview_questions(cv_text, jd_text)
+    except Exception:
+        questions = None
 
     if not questions:
-        raise HTTPException(status_code=500, detail="AI đang bận, không thể sinh câu hỏi lúc này")
+        await refund_charged_credits(request, current_user)
+        raise HTTPException(status_code=500, detail="AI đang bận, không thể sinh câu hỏi lúc này. Credit đã được hoàn lại.")
 
     await ApplicationRepository.update_by_query(filter_query, {"$set": {"ai_interview_questions": questions, "updated_at": datetime.now(timezone.utc)}})
 

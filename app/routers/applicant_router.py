@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 from bson import ObjectId
 from datetime import datetime, timezone
 
+from app.services.domain.subscription_service import SubscriptionService, OWNER_APPLICANT
 from app.core.security import get_current_user, CurrentUser
 from app.database.config import Collections
 from app.repositories.applicant_profile_repository import ApplicantProfileRepository
@@ -250,30 +251,7 @@ class AddCoverLetterUrlRequest(BaseModel):
     display_name: str = Field(default="Thư giới thiệu (Từ URL)")
 
 async def get_applicant_plan_features(user_id: str) -> dict:
-    async def _get_free_features():
-        free_plan = await SubscriptionPlanRepository.find_one({"plan_code": "app_free", "is_active": True})
-        if free_plan:
-            return free_plan.get("features", {})
-        return {
-            "max_cv_uploads": 2, 
-            "max_cover_letters_uploads": 2, 
-            "max_job_applies_per_day": 5, 
-            "max_self_scores_per_day": 3, 
-            "ai_credits": 0,
-            "has_pro_badge": False,
-            "can_use_ai_cv_review": False
-        }
-
-    profile = await ApplicantProfileRepository.get_by_user_id(user_id)
-    if not profile:
-        return await _get_free_features()
-    
-    plan_id = profile.get("current_plan_id")
-    if not plan_id:
-        return await _get_free_features()
-        
-    plan = await SubscriptionPlanRepository.get_by_id(plan_id)
-    return plan.get("features", {}) if plan else await _get_free_features()
+    return await SubscriptionService.get_features(OWNER_APPLICANT, user_id)
 
 @router.post("/library/upload")
 @limiter.limit("20/day")

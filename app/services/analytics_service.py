@@ -341,10 +341,9 @@ class AnalyticsService:
             return {"is_pro_active": False, "data": None, "message": "Công ty không tồn tại"}
 
         # Require PRO
-        plan_id = company.get("current_plan_id")
-        from app.repositories.subscription_plan_repository import SubscriptionPlanRepository
-        plan_data = await SubscriptionPlanRepository.get_by_id(plan_id) if plan_id else None
-        is_pro = plan_data and plan_data.get("plan_code") not in ["hr_free", "app_free"]
+        from app.services.domain.subscription_service import SubscriptionService, OWNER_COMPANY
+        _, active_sub = await SubscriptionService.get_current_plan(OWNER_COMPANY, company_id)
+        is_pro = active_sub is not None
 
         if not is_pro:
             return {
@@ -1045,20 +1044,19 @@ class AnalyticsService:
 
         # 7. Subscriptions
         from app.repositories.subscription_plan_repository import SubscriptionPlanRepository
-        from app.database.config import get_db
+        from app.database.config import get_db, Collections
         plans = await SubscriptionPlanRepository.find_many()
         plan_dict = {str(p["id"]): p["name"] for p in plans}
         db = get_db()
-        tier_pipeline = [
-            {"$match": {"deleted_at": None}},
-            {"$group": {"_id": "$current_plan_id", "count": {"$sum": 1}}}
-        ]
-        raw_company_tiers = await CompanyRepository.aggregate_companies(tier_pipeline)
-        raw_applicant_tiers = await db.applicant_profiles.aggregate(tier_pipeline).to_list(length=100)
-        tier_counts = {}
-        for item in raw_company_tiers + raw_applicant_tiers:
-            pid = item.get("_id")
-            tier_counts[pid] = tier_counts.get(pid, 0) + item["count"]
+        # Đếm theo subscription đang active; còn lại là gói Miễn phí
+        raw_active_tiers = await db[Collections.SUBSCRIPTIONS].aggregate([
+            {"$match": {"status": "active", "$or": [{"period_end": None}, {"period_end": {"$gt": now}}]}},
+            {"$group": {"_id": "$plan_id", "count": {"$sum": 1}}}
+        ]).to_list(length=100)
+        total_owners = await db[Collections.COMPANIES].count_documents({"deleted_at": None}) \
+            + await db[Collections.APPLICANT_PROFILES].count_documents({"deleted_at": None})
+        tier_counts = {item["_id"]: item["count"] for item in raw_active_tiers}
+        tier_counts[None] = max(total_owners - sum(tier_counts.values()), 0)
         subscription_tier_chart = []
         pie_colors = ["#94a3b8", "#3b82f6", "#8b5cf6", "#ec4899", "#f59e0b", "#10b981", "#ef4444", "#06b6d4"]
         for plan_id, count in tier_counts.items():

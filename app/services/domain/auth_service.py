@@ -39,6 +39,7 @@ from bson import ObjectId
 from fastapi import HTTPException, BackgroundTasks
 from fastapi.responses import JSONResponse
 
+from app.services.domain.subscription_service import SubscriptionService, OWNER_COMPANY, OWNER_APPLICANT
 from app.schemas.common_schema import UserRole, CompanyStatus, JobStatus, utc_now, AuditAction, ApplicationSource
 from app.repositories.user_repository import UserRepository
 from app.repositories.company_repository import CompanyRepository
@@ -75,16 +76,10 @@ class AuthService:
             "created_at": datetime.now(timezone.utc)
         }
 
-        free_plan = await SubscriptionPlanRepository.find_one({"plan_code": "hr_free", "is_active": True})
-        if free_plan:
-            company_doc.update({
-                "current_plan_id": str(free_plan.get("id")),
-                "credits_remaining": free_plan.get("features", {}).get("monthly_ai_credits", 0),
-                "current_period_start": datetime.now(timezone.utc),
-                "current_period_end": None
-            })
-
-        return await CompanyRepository.create(company_doc)
+        company_id = await CompanyRepository.create(company_doc)
+        # Gói Free không cần bản ghi subscription, chỉ tặng credit khởi tạo (nếu có)
+        await SubscriptionService.grant_free_credits(OWNER_COMPANY, str(company_id))
+        return company_id
 
     @staticmethod
     async def register(payload, background_tasks: BackgroundTasks):
@@ -139,16 +134,8 @@ class AuthService:
         if payload.role == UserRole.APPLICANT:
             profile_data = {"user_id": str(user_id), "created_at": datetime.now(timezone.utc)}
             
-            free_plan = await SubscriptionPlanRepository.find_one({"plan_code": "app_free", "is_active": True})
-            if free_plan:
-                profile_data.update({
-                    "current_plan_id": str(free_plan.get("id")),
-                    "credits_remaining": free_plan.get("features", {}).get("ai_credits", 0),
-                    "current_period_start": datetime.now(timezone.utc),
-                    "current_period_end": None
-                })
-                
             await ApplicantProfileRepository.create(profile_data)
+            await SubscriptionService.grant_free_credits(OWNER_APPLICANT, str(user_id))
 
         verify_token = jwt.encode({"sub": str(user_id), "exp": datetime.now(timezone.utc) + timedelta(days=1)}, JWT_SECRET, algorithm=ALGORITHM)
         send_verification_email(background_tasks, payload.email, payload.full_name, verify_token)
@@ -292,16 +279,8 @@ class AuthService:
             if role_val == UserRole.APPLICANT.value or role_val == UserRole.APPLICANT:
                 profile_data = {"user_id": str(user_id), "created_at": datetime.now(timezone.utc), "deleted_at": None}
                 
-                free_plan = await SubscriptionPlanRepository.find_one({"plan_code": "app_free", "is_active": True})
-                if free_plan:
-                    profile_data.update({
-                        "current_plan_id": str(free_plan.get("id")),
-                        "credits_remaining": free_plan.get("features", {}).get("ai_credits", 0),
-                        "current_period_start": datetime.now(timezone.utc),
-                        "current_period_end": None
-                    })
-                    
                 await ApplicantProfileRepository.create(profile_data)
+                await SubscriptionService.grant_free_credits(OWNER_APPLICANT, str(user_id))
                 
             user = await UserRepository.get_by_id(user_id)
 

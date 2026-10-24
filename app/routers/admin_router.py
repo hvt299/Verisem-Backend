@@ -36,6 +36,12 @@ class UpdateUserStatusRequest(BaseModel):
 class TogglePlanStatusRequest(BaseModel):
     is_active: bool = Field(..., description="Trạng thái Ẩn/Hiện gói cước")
 
+class GrantPlanRequest(BaseModel):
+    email: EmailStr = Field(..., description="Email của HR (cấp cho cả công ty) hoặc Ứng viên")
+    plan_code: str = Field(..., description="Mã gói cước cần cấp")
+    days: Optional[int] = Field(default=None, ge=0, description="Số ngày sử dụng. Để trống = theo chu kỳ của gói, 0 = vĩnh viễn")
+    note: Optional[str] = Field(default=None, description="Lý do cấp gói (VD: tặng khách, bù sự cố)")
+
 class SystemSettingsUpdate(BaseModel):
     industry_weights: Optional[dict] = None
     action_costs: Optional[dict] = None
@@ -239,10 +245,14 @@ async def get_admin_analytics(days: int = Query(14, ge=7, le=9999, description="
 # SUBSCRIPTION & PRICING
 # ==========================================
 from app.repositories.subscription_plan_repository import SubscriptionPlanRepository
+from app.services.domain.subscription_service import SubscriptionService
 
 @router.get("/subscriptions/plans", dependencies=[Depends(require_admin)])
 async def get_all_subscription_plans():
     plans = await SubscriptionPlanRepository.find_many({}, sort=[("created_at", -1)])
+    for plan in plans:
+        plan["plan_type"] = SubscriptionService.get_plan_type(plan)
+        plan["credits_granted"] = SubscriptionService.get_plan_credits(plan)
     return plans
 
 @router.post("/subscriptions/plans", dependencies=[Depends(require_admin)])
@@ -256,6 +266,10 @@ async def update_subscription_plan(plan_id: str, payload: SubscriptionPlanUpdate
 @router.patch("/subscriptions/plans/{plan_id}/status", dependencies=[Depends(require_admin)])
 async def toggle_subscription_plan_status(plan_id: str, payload: TogglePlanStatusRequest, current_admin: CurrentUser = Depends(require_admin)):
     return await AdminService.toggle_subscription_plan_status(plan_id, payload, current_admin)
+
+@router.post("/subscriptions/grant", dependencies=[Depends(require_admin)])
+async def grant_subscription_plan(payload: GrantPlanRequest, current_admin: CurrentUser = Depends(require_admin)):
+    return await AdminService.grant_subscription_plan(payload, current_admin)
 
 @router.delete("/subscriptions/plans/{plan_id}", dependencies=[Depends(require_admin)])
 async def delete_subscription_plan(plan_id: str, current_admin: CurrentUser = Depends(require_admin)):
