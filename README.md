@@ -143,19 +143,19 @@ Trong đó:
 
 ---
 
-#### Chi tiết Thành phần Đậm đặc ($\mathcal{S}_{\text{dense}}$):
+#### Chi tiết Thành phần Đậm đặc ($S_{\text{dense}}$):
 
-Tài liệu CV được cắt thành các đoạn trượt có độ dài 300 từ với độ gối đầu 50 từ. Mỗi phân đoạn được ánh xạ thành véc-tơ $\mathbf{v}_i \in \mathbb{R}^{1024}$ và đối sánh Cosine Similarity với véc-tơ yêu cầu $\mathbf{u}_{\text{jd}}$:
+Tài liệu CV được cắt thành các đoạn trượt có độ dài 300 từ với độ gối đầu 50 từ. Mỗi phân đoạn được ánh xạ thành véc-tơ đặc trưng 1024 chiều và đối sánh tương đồng Cosine với véc-tơ yêu cầu của vị trí công việc:
 
 $$
-\text{Sim}(\mathbf{v}_i, \mathbf{u}_{\text{jd}}) = \frac{\mathbf{v}_i \cdot \mathbf{u}_{\text{jd}}}{\|\mathbf{v}_i\|_2 \|\mathbf{u}_{\text{jd}}\|_2} \times 100
+\text{Sim}(\mathbf{v}_i, \mathbf{u}_{\text{jd}}) = \frac{\mathbf{v}_i \cdot \mathbf{u}_{\text{jd}}}{\|\mathbf{v}_i\|_2 \|\mathbf{u}_{\text{jd}}\|_2} \times 100 \quad (\mathbf{v}_i, \mathbf{u}_{\text{jd}} \in \mathbb{R}^{1024})
 $$
 
 Hệ thống áp dụng phương pháp **Top-K Pooling ($K=3$)** lấy trung bình của 3 đoạn có độ tương đồng cao nhất nhằm đại diện chính xác cho năng lực nổi bật của ứng viên mà không bị làm loãng bởi các đoạn văn bản ít liên quan.
 
 ---
 
-#### Chi tiết Thành phần Thưa ($\mathcal{S}_{\text{sparse}}$):
+#### Chi tiết Thành phần Thưa ($S_{\text{sparse}}$):
 
 Triển khai thuật toán **Okapi BM25** với tham số $k_1 = 1.5$ và hệ số phạt độ dài $b = 0.75$:
 
@@ -176,7 +176,7 @@ Trong tuyển dụng hiện đại, ứng viên thường sử dụng các thủ
    * Cỡ chữ $< 2.0\text{ pt}$: Phạt mức nghiêm trọng (+45 điểm rủi ro).
    * $2.0\text{ pt} \le$ Cỡ chữ $< 4.0\text{ pt}$: Phạt cảnh cáo (+15 điểm rủi ro).
 3. **Phát hiện Ký tự Nằm Ngoài Khung Nhìn (Off-screen Bounding Box):**
-   Tính toán tọa độ Bounding Box $[x_0, y_0, x_1, y_1]$ của từng ký tự đối chiếu với khổ trang $W \times H$. Ghi nhận vi phạm khi: $x_0 < -5 \lor y_0 < -5 \lor x_1 > W + 5 \lor y_1 > H + 5$ (cộng 40 điểm rủi ro).
+   Tính toán tọa độ Bounding Box `[x0, y0, x1, y1]` của từng ký tự đối chiếu với khổ trang `W x H`. Ghi nhận vi phạm khi `x0 < -5` hoặc `y0 < -5` hoặc `x1 > W + 5` hoặc `y1 > H + 5` (cộng 40 điểm rủi ro).
 4. **Đo lường Mật độ Nhồi nhét Từ khóa (Keyword Stuffing Density):**
    Đối chiếu mật độ kỹ năng xuất hiện bất thường trong một câu ngắn với cây phân loại kỹ năng `INDUSTRY_SKILL_MAP`. Nếu tỷ lệ từ khóa vượt quá 50% số từ mà không tạo thành cấu trúc câu hoàn chỉnh, hệ thống sẽ gắn nhãn thao túng thuật toán.
 5. **Truy soát Thẻ Thuộc tính Ẩn trong OpenXML DOCX:**
@@ -204,24 +204,28 @@ $$
 $$
 
 Trong đó:
-* **Điểm Kỹ năng Chuyên môn ($\mathcal{S}_{\text{skill}}$):** Xác thực ngữ cảnh sử dụng kỹ năng (`verify_skill_context`) thay vì đối sánh từ khóa bề mặt đơn thuần. Kỹ năng bắt buộc (Required Skills) có trọng số ưu tiên gấp 2.5 lần kỹ năng cộng thêm (Preferred Skills).
-* **Điểm Kinh nghiệm Làm việc ($\mathcal{S}_{\text{exp}}$):** Đánh giá mức độ tiệm cận giữa số năm kinh nghiệm thực tế $Y_{\text{cv}}$ và yêu cầu tối thiểu $Y_{\text{req}}$. Hồ sơ vượt yêu cầu được gắn nhãn năng lực vượt trội.
-* **Điểm Trình độ Học vấn ($\mathcal{S}_{\text{edu}}$):** Chuẩn hóa theo phân cấp văn bằng (Cử nhân, Thạc sĩ, Tiến sĩ, Chứng chỉ nghề).
+* **Điểm Kỹ năng Chuyên môn ($S_{\text{skill}}$):** Xác thực ngữ cảnh sử dụng kỹ năng (`verify_skill_context`) thay vì đối sánh từ khóa bề mặt đơn thuần. Kỹ năng bắt buộc (Required Skills) có trọng số ưu tiên gấp 2.5 lần kỹ năng cộng thêm (Preferred Skills).
+* **Điểm Kinh nghiệm Làm việc ($S_{\text{exp}}$):** Đánh giá mức độ tiệm cận giữa số năm kinh nghiệm thực tế của ứng viên và yêu cầu tối thiểu của công việc. Hồ sơ vượt yêu cầu được gắn nhãn năng lực vượt trội.
+* **Điểm Trình độ Học vấn ($S_{\text{edu}}$):** Chuẩn hóa theo phân cấp văn bằng (Cử nhân, Thạc sĩ, Tiến sĩ, Chứng chỉ nghề).
 
 #### Hàm Suy giảm Phi tuyến (Non-linear Penalty Functions):
 
 Hệ thống áp dụng hàm Logistic Sigmoid phi tuyến nhằm phản ánh mức độ ổn định trong lộ trình nghề nghiệp của ứng viên:
 
-* **Hàm Phạt Gián đoạn Sự nghiệp ($\mathcal{P}_{\text{gap}}$):** Tính toán dựa trên số tháng trống gián đoạn lớn nhất giữa các mốc công việc ($G_{\text{months}}$):
+* **Hàm Phạt Gián đoạn Sự nghiệp ($P_{\text{gap}}$):** Tính toán dựa trên số tháng trống gián đoạn lớn nhất giữa các mốc công việc ($G$ tháng):
 
 $$
 \mathcal{P}_{\text{gap}} = \begin{cases} 
-0.0, & \text{khi } G_{\text{months}} \le 3 \\ 
-\dfrac{25.0}{1 + e^{-0.4 \cdot (G_{\text{months}} - 12.0)}}, & \text{khi } G_{\text{months}} > 3 
+0.0, & \text{khi } G \le 3 \\ 
+\dfrac{25.0}{1 + e^{-0.4 \cdot (G - 12.0)}}, & \text{khi } G > 3 
 \end{cases}
 $$
 
-* **Hàm Phạt Tần suất Nhảy việc ($\mathcal{P}_{\text{hop}}$):** Xác định theo thời gian gắn bó trung bình cho mỗi công ty $\tau = \dfrac{\text{YoE}}{\max(\text{job\_hops}, 1)}$:
+* **Hàm Phạt Tần suất Nhảy việc ($P_{\text{hop}}$):** Xác định theo thời gian gắn bó trung bình cho mỗi công ty ($\tau$ năm):
+
+$$
+\tau = \frac{\text{YoE}}{\max(N_{\text{hops}}, 1)}
+$$
 
 $$
 \mathcal{P}_{\text{hop}} = \begin{cases} 
