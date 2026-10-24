@@ -86,7 +86,7 @@ def get_base_html(inner_content: str) -> str:
                           </table>
                         </td>
                         <td style="vertical-align: middle;">
-                          <span style="font-size: 22px; font-weight: 900; letter-spacing: -0.02em; color: #ffffff;">ATS<span style="color: #bfdbfe;">SYSTEM</span></span>
+                          <span style="font-size: 22px; font-weight: 900; letter-spacing: -0.02em; color: #ffffff;">VERI<span style="color: #bfdbfe;">SEM</span></span>
                         </td>
                       </tr>
                     </table>
@@ -108,7 +108,7 @@ def get_base_html(inner_content: str) -> str:
                 <tr>
                   <td style="padding: 24px 32px 32px; border-top: 1px solid {COLOR_BORDER};">
                     <p style="margin: 0 0 6px; font-size: 12px; color: {COLOR_TEXT_SUBTLE}; text-align: center;">
-                      © 2026 ATS System. Bản quyền đã được bảo hộ.
+                      © 2026 Verisem. Bản quyền đã được bảo hộ.
                     </p>
                     <p style="margin: 0; font-size: 12px; color: {COLOR_TEXT_SUBTLE}; text-align: center;">
                       Nền tảng Quản trị Tuyển dụng Ứng dụng Trí tuệ Nhân tạo
@@ -126,7 +126,7 @@ def get_base_html(inner_content: str) -> str:
 I18N_MESSAGES = {
     "vi": {
         "verify": {
-            "subject": "Kích hoạt tài khoản Hệ thống ATS",
+            "subject": "Kích hoạt tài khoản Hệ thống Verisem",
             "content": f"""
                 <p style="font-size: 16px; margin: 0 0 16px;">Xin chào <strong>{{name}}</strong>,</p>
                 <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Chào mừng bạn đến với Hệ thống Quản lý Tuyển dụng AI. Vui lòng bấm vào nút bên dưới để xác thực địa chỉ email và kích hoạt tài khoản của bạn:</p>
@@ -166,7 +166,7 @@ I18N_MESSAGES = {
             "subject": "Thư mời tham gia quản lý tuyển dụng tại {company_name}",
             "content": f"""
                 <p style="font-size: 16px; margin: 0 0 16px;">Xin chào,</p>
-                <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Bạn vừa nhận được lời mời từ <strong style="color: {COLOR_TEXT};">{{inviter_name}}</strong> để tham gia quản trị hệ thống tuyển dụng của công ty <strong style="color: {COLOR_TEXT};">{{company_name}}</strong> trên nền tảng ATS.</p>
+                <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Bạn vừa nhận được lời mời từ <strong style="color: {COLOR_TEXT};">{{inviter_name}}</strong> để tham gia quản trị hệ thống tuyển dụng của công ty <strong style="color: {COLOR_TEXT};">{{company_name}}</strong> trên nền tảng Verisem.</p>
                 <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Vui lòng bấm vào nút bên dưới để tạo tài khoản và tham gia không gian làm việc:</p>
                 <div style="text-align: center; margin: 32px 0;">
                   <a href="{{link}}" style="background-color: {COLOR_SUCCESS_500}; color: #ffffff; padding: 14px 32px; text-decoration: none; border-radius: 12px; font-weight: 700; font-size: 15px; display: inline-block;">CHẤP NHẬN LỜI MỜI</a>
@@ -200,21 +200,21 @@ I18N_MESSAGES = {
             """
         },
         "ticket_reply": {
-            "subject": "[ATS System] Phản hồi yêu cầu hỗ trợ #{ticket_id}",
+            "subject": "[Verisem] Phản hồi yêu cầu hỗ trợ #{ticket_id}",
             "content": f"""
                 <p style="font-size: 16px; margin: 0 0 16px;">Xin chào <strong>{{name}}</strong>,</p>
-                <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Cảm ơn bạn đã liên hệ với bộ phận hỗ trợ của ATS. Chúng tôi đã xem xét yêu cầu của bạn (Mã: <strong>#{str("{{ticket_id}}")}</strong>) và xin phản hồi như sau:</p>
+                <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Cảm ơn bạn đã liên hệ với bộ phận hỗ trợ của Verisem. Chúng tôi đã xem xét yêu cầu của bạn (Mã: <strong>#{str("{{ticket_id}}")}</strong>) và xin phản hồi như sau:</p>
                 <div style="background-color: {COLOR_BACKGROUND}; border-left: 4px solid {COLOR_PRIMARY_600}; border-radius: 8px; padding: 16px 18px; margin: 20px 0; color: {COLOR_TEXT}; white-space: pre-wrap;">
                     {{reply_message}}
                 </div>
                 <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Nếu bạn có bất kỳ thắc mắc nào khác, vui lòng phản hồi lại email này.</p>
-                <p style="margin: 0;">Trân trọng,<br/><strong>Đội ngũ Hỗ trợ ATS</strong></p>
+                <p style="margin: 0;">Trân trọng,<br/><strong>Đội ngũ Hỗ trợ Verisem</strong></p>
             """
         }
     },
     "en": {
         "verify": {
-            "subject": "Activate your ATS Account",
+            "subject": "Activate your Verisem Account",
             "content": f"""
                 <p style="font-size: 16px; margin: 0 0 16px;">Hello <strong>{{name}}</strong>,</p>
                 <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Welcome to our AI Recruitment System. Please click the button below to verify your email and activate your account:</p>
@@ -254,7 +254,7 @@ I18N_MESSAGES = {
             "subject": "Invitation to join recruitment team at {company_name}",
             "content": f"""
                 <p style="font-size: 16px; margin: 0 0 16px;">Hello,</p>
-                <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">You have been invited by <strong style="color: {COLOR_TEXT};">{{inviter_name}}</strong> to join the recruitment team for <strong style="color: {COLOR_TEXT};">{{company_name}}</strong> on our ATS platform.</p>
+                <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">You have been invited by <strong style="color: {COLOR_TEXT};">{{inviter_name}}</strong> to join the recruitment team for <strong style="color: {COLOR_TEXT};">{{company_name}}</strong> on our Verisem platform.</p>
                 <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Please click the button below to create your account and join the workspace:</p>
                 <div style="text-align: center; margin: 32px 0;">
                   <a href="{{link}}" style="background-color: {COLOR_SUCCESS_500}; color: #ffffff; padding: 14px 32px; text-decoration: none; border-radius: 12px; font-weight: 700; font-size: 15px; display: inline-block;">ACCEPT INVITATION</a>
@@ -263,15 +263,15 @@ I18N_MESSAGES = {
             """
         },
         "ticket_reply": {
-            "subject": "[ATS System] Support Ticket Reply #{ticket_id}",
+            "subject": "[Verisem] Support Ticket Reply #{ticket_id}",
             "content": f"""
                 <p style="font-size: 16px; margin: 0 0 16px;">Hello <strong>{{name}}</strong>,</p>
-                <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Thank you for contacting ATS Support. We have reviewed your request (Ticket ID: <strong>#{str("{{ticket_id}}")}</strong>) and here is our response:</p>
+                <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">Thank you for contacting Verisem Support. We have reviewed your request (Ticket ID: <strong>#{str("{{ticket_id}}")}</strong>) and here is our response:</p>
                 <div style="background-color: {COLOR_BACKGROUND}; border-left: 4px solid {COLOR_PRIMARY_600}; border-radius: 8px; padding: 16px 18px; margin: 20px 0; color: {COLOR_TEXT}; white-space: pre-wrap;">
                     {{reply_message}}
                 </div>
                 <p style="margin: 0 0 16px; color: {COLOR_TEXT_MUTED};">If you have any further questions, please feel free to reply directly to this email.</p>
-                <p style="margin: 0;">Best regards,<br/><strong>ATS Support Team</strong></p>
+                <p style="margin: 0;">Best regards,<br/><strong>Verisem Support Team</strong></p>
             """
         }
     }
@@ -289,7 +289,7 @@ async def send_email_via_brevo(to_email: str, subject: str, html_content: str):
         "content-type": "application/json"
     }
     payload = {
-        "sender": {"name": "ATSSYSTEM", "email": SENDER_EMAIL},
+        "sender": {"name": "Verisem", "email": SENDER_EMAIL},
         "to": [{"email": to_email}],
         "subject": subject,
         "htmlContent": html_content

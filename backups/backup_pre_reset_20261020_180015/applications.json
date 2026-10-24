@@ -1,0 +1,421 @@
+[
+  {
+    "_id": "6ab66953a31f9e5049225900",
+    "job_id": "6a9fbbe350fec98bc02c5a69",
+    "cv_snapshot": {
+      "cv_document_id": "6ab66948a31f9e50492258ff",
+      "display_name": "Intern_Full-stack_Web_Developer_HuaVietThai.pdf",
+      "filename": "Intern_Full-stack_Web_Developer_HuaVietThai.pdf",
+      "file_url": "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1790339405/ats_cv_library/Intern_Full-stack_Web_Develope_483672b0.pdf",
+      "candidate_info": {
+        "full_name": "Hứa Viết Thái",
+        "email": "huavietthai299@gmail.com",
+        "phone": "0766747419",
+        "github": "github.com/hvt299",
+        "linkedin": null,
+        "portfolio": [
+          "tinnhadat24h.com"
+        ],
+        "skill_experience": {
+          "javascript": 1,
+          "nestjs": 1.5,
+          "next.js": 2,
+          "node.js": 1,
+          "react": 1.5,
+          "php": 0.5,
+          "ats": 0.5,
+          "ci/cd": 1,
+          "docker": 1,
+          "fastapi": 1,
+          "mongodb": 1,
+          "natural language processing": 0.5,
+          "figma": 0.5,
+          "mysql": 0.5,
+          "postgresql": 0.5,
+          "postman": 0.92,
+          "react native": 0.5,
+          "sepay": 0.42,
+          "bge-m3": 0.33,
+          "typescript": 0.92,
+          "python": 0.33,
+          "git/github": 1.17
+        },
+        "education_level": "Cử nhân",
+        "years_of_experience": 1.17,
+        "languages": [
+          "Tiếng Anh (TOEIC 630)"
+        ],
+        "certifications": [
+          "TOEIC 630"
+        ],
+        "job_hops": 2,
+        "gap_months": 1,
+        "fraud_analysis": {
+          "detected": false,
+          "risk_score": 0,
+          "penalty": 0,
+          "reasons": [],
+          "evidence": []
+        }
+      },
+      "extracted_skills": [
+        "ats",
+        "ci/cd",
+        "computer vision",
+        "docker",
+        "fastapi",
+        "figma",
+        "illustrator",
+        "javascript",
+        "mongodb",
+        "mysql",
+        "natural language processing",
+        "nestjs",
+        "next.js",
+        "node.js",
+        "php",
+        "postgresql",
+        "postman",
+        "python",
+        "react",
+        "react native",
+        "toeic",
+        "typescript"
+      ]
+    },
+    "company_id": "6a91481be228e500c5c6e6a0",
+    "source": "hr_sourced",
+    "status": "new",
+    "ai_score": {
+      "total_score": 0,
+      "match_tier": "NOT_RECOMMENDED",
+      "badges": [
+        {
+          "type": "EXPERIENCE",
+          "label": "Vượt kỳ vọng kinh nghiệm",
+          "color": "purple"
+        },
+        {
+          "type": "KNOCKOUT",
+          "label": "Thiếu yêu cầu cứng: SQL",
+          "color": "red"
+        }
+      ],
+      "score_breakdown": {
+        "skills_score": 0,
+        "experience_score": 100,
+        "education_score": 100,
+        "nlp_score": 0,
+        "penalty_score": 39.91
+      },
+      "skill_details": [
+        {
+          "skill": "SQL",
+          "matched": false,
+          "confidence": 0,
+          "years_experience": 0,
+          "is_knockout": true
+        },
+        {
+          "skill": "English",
+          "matched": false,
+          "confidence": 0,
+          "years_experience": 0,
+          "is_knockout": false
+        }
+      ],
+      "top_contributing_sentences": [],
+      "matched_skills": []
+    },
+    "applied_at": "2026-09-25 12:30:11.741000",
+    "cover_letter_id": null
+  },
+  {
+    "_id": "6aaf360ce8a2cb72a5801a9d",
+    "job_id": "6a9fbbe350fec98bc02c5a69",
+    "cv_snapshot": {
+      "cv_document_id": "6aadf89c3506f4b72bd72bd6",
+      "display_name": "Nguyen-Van-An-TopCV.vn-080426.172918.pdf",
+      "filename": "Nguyen-Van-An-TopCV.vn-080426.172918.pdf",
+      "file_url": "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1789786268/ats_cv_library/Nguyen-Van-An-TopCV_f2711701.pdf",
+      "candidate_info": {
+        "email": "nguyenvanan.fe@gmail.com",
+        "phone": "0901234567",
+        "github": "github.com/annguyen-dev",
+        "linkedin": "linkedin.com/in/annguyen-fe",
+        "portfolio": [],
+        "skill_experience": {
+          "laravel": 5.5,
+          "mysql": 5,
+          "php": 6,
+          "react": 0.5,
+          "rest api": 0.5
+        },
+        "education_level": "Cử nhân",
+        "years_of_experience": 3.83,
+        "fraud_analysis": {
+          "detected": false,
+          "risk_score": 0,
+          "penalty": 0,
+          "reasons": [],
+          "evidence": []
+        }
+      },
+      "extracted_skills": [
+        "css",
+        "facebook pixel",
+        "google analytics",
+        "html",
+        "javascript",
+        "laravel",
+        "mysql",
+        "next.js",
+        "php",
+        "react",
+        "rest api",
+        "typescript"
+      ]
+    },
+    "company_id": "6a91481be228e500c5c6e6a0",
+    "source": "hr_sourced",
+    "status": "rejected",
+    "ai_score": {
+      "total_score": 5,
+      "match_tier": "NOT_RECOMMENDED",
+      "badges": [
+        {
+          "type": "EXPERIENCE",
+          "label": "Vượt kỳ vọng kinh nghiệm",
+          "color": "purple"
+        },
+        {
+          "type": "KNOCKOUT",
+          "label": "Thiếu yêu cầu cứng: SQL",
+          "color": "red"
+        }
+      ],
+      "score_breakdown": {
+        "skills_score": 0,
+        "experience_score": 100,
+        "education_score": 100,
+        "nlp_score": 0,
+        "penalty_score": 25
+      },
+      "skill_details": [
+        {
+          "skill": "SQL",
+          "matched": false,
+          "confidence": 0,
+          "years_experience": 0,
+          "is_knockout": true
+        },
+        {
+          "skill": "English",
+          "matched": false,
+          "confidence": 0,
+          "years_experience": 0,
+          "is_knockout": false
+        }
+      ],
+      "top_contributing_sentences": [],
+      "matched_skills": []
+    },
+    "applied_at": "2026-09-20 01:25:32.768000",
+    "cover_letter_id": null,
+    "ai_interview_questions": [
+      {
+        "question": "Trong mục tiêu nghề nghiệp, bạn có đề cập \"hơn 6 năm kinh nghiệm\". Tuy nhiên, dựa trên thời gian làm việc tại ABC Solutions (09/2020 - 05/2021) và TechCorp (06/2021 - Nay), tổng kinh nghiệm chuyên nghiệp của bạn là khoảng 4 năm. Bạn có thể giải thích rõ hơn về sự khác biệt này không?",
+        "reason": "Có sự không khớp rõ ràng giữa số năm kinh nghiệm được tuyên bố trong mục tiêu nghề nghiệp (hơn 6 năm) và tổng thời gian làm việc thực tế được liệt kê trong phần kinh nghiệm (khoảng 4 năm). Đây là một điểm đáng ngờ về tính trung thực và độ chính xác của thông tin ứng viên cung cấp.",
+        "suggested_answer": "Đỗ: Ứng viên giải thích rõ ràng, hợp lý về các giai đoạn làm việc khác (ví dụ: kinh nghiệm freelance, dự án cá nhân lớn, thực tập có tính chất công việc chuyên nghiệp không liệt kê rõ ràng) hoặc có sự nhầm lẫn trong cách tính toán và nhanh chóng đính chính. Trượt: Ứng viên ấp úng, không giải thích được, hoặc đưa ra lý do không thuyết phục (ví dụ: tính cả thời gian học đại học, hoặc chỉ là 'ước lượng')."
+      },
+      {
+        "question": "Tại TechCorp, bạn \"chủ trì phát triển hệ thống SaaS quản lý nhân sự\". Với tổng kinh nghiệm chuyên nghiệp khoảng 4 năm, bạn đã đảm nhận vai trò \"chủ trì\" như thế nào? Cụ thể, bạn đã đóng góp gì vào việc thiết kế kiến trúc tổng thể của hệ thống backend, đặc biệt là trong việc xử lý các vấn đề về scalability, maintainability, và security cho một hệ thống SaaS phức tạp?",
+        "reason": "Vai trò 'chủ trì' (lead/architect) thường đòi hỏi kinh nghiệm sâu rộng hơn 4 năm. Câu hỏi này nhằm đánh giá mức độ thực sự của vai trò này, khả năng tư duy kiến trúc và giải quyết các vấn đề phức tạp của hệ thống, thay vì chỉ là người triển khai tính năng.",
+        "suggested_answer": "Đỗ: Ứng viên mô tả chi tiết về quá trình tham gia thiết kế kiến trúc, các quyết định kỹ thuật đã đưa ra, cách giải quyết các thách thức về hiệu năng, bảo mật, và khả năng mở rộng (ví dụ: microservices, caching, queueing, design patterns). Trượt: Ứng viên chỉ nói chung chung về việc code các tính năng, không đi sâu vào các khía cạnh kiến trúc, hoặc thể hiện sự thiếu hiểu biết về các khái niệm scalability, maintainability, security ở cấp độ hệ thống."
+      },
+      {
+        "question": "Bạn đã xây dựng \"hệ thống xác thực phân quyền phức tạp\" và \"tối ưu hóa truy vấn giúp tăng 30% tốc độ tải trang\". Bạn có thể mô tả cụ thể về độ phức tạp của hệ thống phân quyền đó (ví dụ: RBAC, ABAC, multi-tenancy) và cách bạn đã triển khai nó trong Laravel không? Đồng thời, hãy chia sẻ chi tiết về các kỹ thuật tối ưu hóa truy vấn bạn đã áp dụng và cách bạn đo lường con số 30% đó.",
+        "reason": "Các tuyên bố về 'phức tạp' và 'tăng 30% tốc độ' là những điểm mạnh cần được kiểm chứng. Câu hỏi này đi sâu vào kiến thức kỹ thuật thực tế, khả năng giải thích chi tiết và phương pháp đo lường kết quả của ứng viên.",
+        "suggested_answer": "Đỗ: Ứng viên giải thích rõ ràng về mô hình phân quyền (RBAC/ABAC), các thư viện/cơ chế đã sử dụng (Laravel Gates/Policies, Spatie Permission) và các thách thức. Đối với tối ưu hóa, mô tả các kỹ thuật cụ thể (indexing, eager loading, query caching), công cụ đo lường (Laravel Debugbar, Blackfire, New Relic) và phương pháp so sánh. Trượt: Ứng viên chỉ nói chung chung về việc sử dụng thư viện có sẵn, không hiểu rõ về các mô hình phân quyền, hoặc không thể giải thích chi tiết về các kỹ thuật tối ưu hóa và cách đo lường kết quả."
+      },
+      {
+        "question": "Trong vai trò Frontend/Fullstack Developer tại TechCorp, bạn có đề cập đến việc \"Quản lý vận hành hệ thống trên các môi trường hosting, bảo mật và xử lý lỗi hệ thống website định kỳ\". Bạn có thể chia sẻ cụ thể hơn về các công việc vận hành bạn đã thực hiện, các công cụ bạn đã sử dụng (ví dụ: Docker, CI/CD, monitoring tools), và kinh nghiệm của bạn trong việc xử lý các sự cố hệ thống nghiêm trọng (ví dụ: downtime, tấn công bảo mật) không?",
+        "reason": "Kỹ năng vận hành hệ thống là quan trọng đối với một Fullstack Developer, đặc biệt khi 'chủ trì' một hệ thống SaaS. Câu hỏi này nhằm đánh giá chiều sâu kiến thức và kinh nghiệm thực tế của ứng viên trong lĩnh vực DevOps/Ops, một khía cạnh thường bị bỏ qua hoặc chỉ có kiến thức bề mặt ở các developer.",
+        "suggested_answer": "Đỗ: Ứng viên mô tả các tác vụ cụ thể (deployments, backups, server configuration, log analysis), các công cụ (Nginx, Apache, Docker, Jenkins/GitLab CI, Prometheus/Grafana, ELK stack), và các tình huống xử lý sự cố thực tế, bao gồm cả các biện pháp phòng ngừa và khắc phục. Trượt: Ứng viên chỉ nói chung chung về việc 'kiểm tra hệ thống', không nêu được công cụ cụ thể, hoặc không có kinh nghiệm thực tế về xử lý sự cố nghiêm trọng."
+      }
+    ],
+    "updated_at": "2026-09-25 11:34:45.593000",
+    "is_viewed": true,
+    "viewed_at": "2026-09-20 01:36:31.128000",
+    "status_history": [
+      {
+        "from_status": "new",
+        "to_status": "reviewing",
+        "changed_by_user_id": "6a91481be228e500c5c6e6a1",
+        "changed_at": "2026-09-25 10:18:05.647000"
+      },
+      {
+        "from_status": "reviewing",
+        "to_status": "rejected",
+        "changed_by_user_id": "6a91481be228e500c5c6e6a1",
+        "changed_at": "2026-09-25 10:18:08.640000"
+      },
+      {
+        "from_status": "rejected",
+        "to_status": "hired",
+        "changed_by_user_id": "6a91481be228e500c5c6e6a1",
+        "changed_at": "2026-09-25 10:18:37.919000"
+      },
+      {
+        "from_status": "hired",
+        "to_status": "new",
+        "changed_by_user_id": "6a91481be228e500c5c6e6a1",
+        "changed_at": "2026-09-25 10:19:52.415000"
+      },
+      {
+        "from_status": "new",
+        "to_status": "hired",
+        "changed_by_user_id": "6a91481be228e500c5c6e6a1",
+        "changed_at": "2026-09-25 10:20:01.247000"
+      },
+      {
+        "from_status": "hired",
+        "to_status": "new",
+        "changed_by_user_id": "6a91481be228e500c5c6e6a1",
+        "changed_at": "2026-09-25 10:30:48.711000"
+      },
+      {
+        "from_status": "new",
+        "to_status": "hired",
+        "changed_by_user_id": "6a91481be228e500c5c6e6a1",
+        "changed_at": "2026-09-25 10:31:07.408000"
+      },
+      {
+        "from_status": "hired",
+        "to_status": "rejected",
+        "changed_by_user_id": "6a91481be228e500c5c6e6a1",
+        "changed_at": "2026-09-25 11:34:45.593000"
+      }
+    ]
+  },
+  {
+    "_id": "6ab7358db9eaa993a56af0cb",
+    "job_id": "6a9fbbe350fec98bc02c5a69",
+    "cv_id": "6ab6b13ff6ce6206f069be5f",
+    "cv_snapshot": {
+      "cv_document_id": "6ab6b13ff6ce6206f069be5f",
+      "display_name": "Intern Mobile Developer - Nguyễn Hiệp",
+      "filename": "Intern Mobile Developer - Nguyễn Hiệp.pdf",
+      "file_url": "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1790357822/ats_cv_library/Intern%20Mobile%20Developer%20-%20Nguy_4a92ae39.pdf",
+      "candidate_info": {
+        "full_name": "NGUYỄN HIỆP",
+        "email": "nguyenhiep240804@gmail.com",
+        "phone": "0898534022",
+        "github": "https://github.com/hiepn24",
+        "linkedin": null,
+        "portfolio": [
+          "3.35/4.0",
+          "tinnhadat24h.com"
+        ],
+        "education_level": "Cử nhân",
+        "years_of_experience": 0.7,
+        "skill_experience": {
+          "java": 0.7,
+          "javascript": 0.7,
+          "php": 0.7,
+          "react native": 0.5,
+          "next.js": 0.5,
+          "nestjs": 0.5,
+          "java spring boot": 0.5,
+          "firebase": 0.5,
+          "mysql": 0.5,
+          "mongodb": 0.5,
+          "github": 0.7,
+          "figma": 0.5,
+          "linux ubuntu": 0.5,
+          "postman": 0.5,
+          "typescript": 0.3
+        },
+        "languages": [
+          "Tiếng Anh (Toeic 620)"
+        ],
+        "certifications": [
+          "Java Web Advanced"
+        ],
+        "job_hops": 2,
+        "gap_months": 0,
+        "fraud_analysis": {
+          "detected": false,
+          "risk_score": 0,
+          "penalty": 0,
+          "reasons": [],
+          "evidence": []
+        }
+      },
+      "extracted_skills": [
+        "figma",
+        "firebase",
+        "http",
+        "https",
+        "java",
+        "javascript",
+        "linux",
+        "mongodb",
+        "mysql",
+        "nestjs",
+        "next.js",
+        "node.js",
+        "php",
+        "postman",
+        "react",
+        "react native",
+        "spring",
+        "spring boot",
+        "toeic",
+        "typescript"
+      ]
+    },
+    "company_id": "6a91481be228e500c5c6e6a0",
+    "applicant_user_id": "6a914ae9e228e500c5c6e6a2",
+    "source": "applicant_apply",
+    "status": "new",
+    "ai_score": {
+      "total_score": 0,
+      "match_tier": "NOT_RECOMMENDED",
+      "badges": [
+        {
+          "type": "KNOCKOUT",
+          "label": "Thiếu yêu cầu cứng: SQL",
+          "color": "red"
+        }
+      ],
+      "score_breakdown": {
+        "skills_score": 0,
+        "experience_score": 70,
+        "education_score": 100,
+        "nlp_score": 0,
+        "penalty_score": 43.09
+      },
+      "skill_details": [
+        {
+          "skill": "SQL",
+          "matched": false,
+          "confidence": 0,
+          "years_experience": 0,
+          "is_knockout": true
+        },
+        {
+          "skill": "English",
+          "matched": false,
+          "confidence": 0,
+          "years_experience": 0,
+          "is_knockout": false
+        }
+      ],
+      "top_contributing_sentences": [],
+      "matched_skills": []
+    },
+    "applied_at": "2026-09-26 03:01:33.688000",
+    "cover_letter_id": null
+  }
+]

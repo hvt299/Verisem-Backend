@@ -429,6 +429,8 @@ class AuthService:
 
         if profile_data.avatar is not None:
             user_update["avatar_url"] = profile_data.avatar
+        elif getattr(profile_data, "avatar_url", None) is not None:
+            user_update["avatar_url"] = profile_data.avatar_url
 
         if user_update:
             user_update["updated_at"] = datetime.now(timezone.utc)

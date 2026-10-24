@@ -1,7 +1,7 @@
 import httpx
-from typing import List
+from typing import List, Optional, Dict, Any
 from bson import ObjectId
-from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks, Body
+from fastapi import APIRouter, Depends, HTTPException, BackgroundTasks, Body, Query
 from datetime import datetime, timedelta, timezone
 import jwt
 
@@ -157,7 +157,7 @@ async def lookup_tax_code(request: Request, response: Response, tax_code: str):
 @router.get("/members", dependencies=[Depends(require_hr)])
 async def get_company_members(current_user: CurrentUser = Depends(require_hr)):
     projection = {"hashed_password": 0, "reset_password_token": 0, "reset_password_expires": 0}
-    members = await UserRepository.find_many({"company_id": current_user.company_id}, projection=projection, limit=100)
+    members = await UserRepository.find_many({"company_id": current_user.company_id}, projection=projection, sort=[("created_at", -1)], limit=0)
     return members
 
 @router.get("/settings", dependencies=[Depends(require_hr)])
@@ -282,7 +282,7 @@ async def invite_hr_member(
 
 @router.get("/{company_id}/analytics")
 async def get_company_analytics(company_id: str, days: int = 30, current_user: CurrentUser = Depends(require_hr)):
-    if current_user.role != UserRole.HR_OWNER.value or current_user.company_id != company_id:
+    if current_user.role not in [UserRole.HR_OWNER.value, UserRole.HR_MEMBER.value] or current_user.company_id != company_id:
         raise HTTPException(
             status_code=403, 
             detail="Bạn không có quyền xem dữ liệu phân tích của công ty này"
@@ -293,26 +293,104 @@ async def get_company_analytics(company_id: str, days: int = 30, current_user: C
     result["status"] = "success"
     return result
 
-@router.get("/public/list", response_model=List[CompanyResponse])
-async def get_public_companies():
-    pipeline = [
-        {"$match": {"status": CompanyStatus.VERIFIED.value}},
-        {"$sort": {"avg_rating": -1, "view_count": -1, "created_at": -1}},
-        {"$limit": 100}
-    ]
+@router.get("/public/list")
+async def get_public_companies(
+    page: Optional[int] = Query(None, ge=1, description="Số trang"),
+    page_size: Optional[int] = Query(None, ge=1, le=100, description="Kích thước trang"),
+    q: Optional[str] = Query(None, description="Từ khóa tìm kiếm (text index)")
+):
+    from app.database.config import db_instance, Collections
+    import json
+    import math
+
+    page_int = page if isinstance(page, int) else None
+    page_size_int = page_size if isinstance(page_size, int) else None
+    q_str = q.strip() if isinstance(q, str) and q.strip() else None
+
+    redis = db_instance.redis
+    cache_key = f"cache:companies:public:list_v2:p{page_int}_s{page_size_int}_q{q_str}" if (page_int or q_str) else "cache:companies:public:list_v2"
+    if redis:
+        try:
+            cached = await redis.get(cache_key)
+            if cached:
+                return json.loads(cached)
+        except Exception:
+            pass
+
+    db = db_instance.db
+    query = {"status": CompanyStatus.VERIFIED.value, "deleted_at": None}
+    if q_str:
+        query["$text"] = {"$search": q_str}
+
+    if page_int is not None:
+        page_val = page_int
+        limit_val = page_size_int or 20
+        skip_val = (page_val - 1) * limit_val
+        total = await db[Collections.COMPANIES].count_documents(query)
+        cursor = db[Collections.COMPANIES].find(query).sort([("avg_rating", -1), ("view_count", -1), ("created_at", -1)]).skip(skip_val).limit(limit_val)
+        companies = await cursor.to_list(limit_val)
+    else:
+        page_val = None
+        limit_val = 100
+        total = None
+        cursor = db[Collections.COMPANIES].find(query).sort([("avg_rating", -1), ("view_count", -1), ("created_at", -1)]).limit(100)
+        companies = await cursor.to_list(100)
+    # Tính số lượng việc làm đang mở (active) của các công ty
+    comp_ids = [str(c.get("id") or c.get("_id")) for c in companies if c.get("id") or c.get("_id")]
+    now_iso = datetime.now(timezone.utc).isoformat()
     
-    companies = await CompanyRepository.aggregate_companies(pipeline)
-    
+    active_jobs_cursor = db[Collections.JOBS].find(
+        {
+            "company_id": {"$in": comp_ids},
+            "status": "open",
+            "deleted_at": None,
+            "$or": [
+                {"deadline": None},
+                {"deadline": {"$gte": now_iso}}
+            ]
+        },
+        {"company_id": 1}
+    )
+    job_counts = {}
+    async for j in active_jobs_cursor:
+        cid = str(j.get("company_id") or "")
+        if cid:
+            job_counts[cid] = job_counts.get(cid, 0) + 1
+
     result = []
     for comp in companies:
-        comp["id"] = comp.get("id") or str(comp.pop("_id", ""))
-        
+        comp_id = comp.get("id") or str(comp.pop("_id", ""))
+        comp["id"] = comp_id
+        comp["active_jobs_count"] = job_counts.get(comp_id, 0)
         if "current_plan_id" in comp and comp["current_plan_id"] is not None:
             comp["current_plan_id"] = str(comp["current_plan_id"])
+        if "created_at" in comp and isinstance(comp["created_at"], datetime):
+            comp["created_at"] = comp["created_at"].isoformat()
+        if "updated_at" in comp and isinstance(comp["updated_at"], datetime):
+            comp["updated_at"] = comp["updated_at"].isoformat()
+        if "verified_at" in comp and isinstance(comp["verified_at"], datetime):
+            comp["verified_at"] = comp["verified_at"].isoformat()
             
         result.append(comp)
+
+    if page_int is not None:
+        response_payload = {
+            "items": result,
+            "total": total,
+            "page": page_val,
+            "page_size": limit_val,
+            "total_pages": math.ceil(total / limit_val) if limit_val > 0 else 1
+        }
+    else:
+        response_payload = result
+
+    if redis and response_payload:
+        try:
+            await redis.set(cache_key, json.dumps(response_payload, default=str), ex=120)
+        except Exception:
+            pass
         
-    return result
+    return response_payload
 
 @router.get("/public/{company_id}", response_model=CompanyResponse)
 async def get_public_company_detail(company_id: str):

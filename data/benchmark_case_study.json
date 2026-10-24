@@ -1,0 +1,3243 @@
+{
+  "benchmark_jobs": [
+    {
+      "job_key": "job_it_fullstack_fpt",
+      "company_name": "Công ty TNHH Phần mềm FPT (FPT Software)",
+      "company_tax": "0100756812-001",
+      "industry": "it",
+      "title": "Senior Fullstack Engineer (ReactJS / NodeJS / TypeScript)",
+      "job_level": "Senior",
+      "employment_type": "Full-time",
+      "work_mode": "Hybrid",
+      "headcount": 2,
+      "min_yoe": 4.0,
+      "salary": {
+        "min_salary": 35000000,
+        "max_salary": 55000000,
+        "currency": "VND"
+      },
+      "location": {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Cầu Giấy",
+        "address_detail": "Tòa nhà FPT, Phố Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội"
+      },
+      "required_skills": [
+        "react",
+        "node.js",
+        "typescript",
+        "postgresql",
+        "restful api"
+      ],
+      "knockout_skills": [
+        "react",
+        "node.js"
+      ],
+      "preferred_skills": [
+        "docker",
+        "redis",
+        "next.js",
+        "aws"
+      ],
+      "languages": [
+        "English"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect",
+        "TOEIC"
+      ],
+      "education": {
+        "min_level": "Đại học",
+        "preferred_majors": [
+          "Công nghệ thông tin",
+          "Kỹ thuật phần mềm"
+        ]
+      },
+      "score_weights": {
+        "skills_weight": 0.4,
+        "nlp_weight": 0.25,
+        "experience_weight": 0.25,
+        "education_weight": 0.1
+      },
+      "description": "FPT Software đang tìm kiếm 02 Kỹ sư Fullstack Cao cấp (Senior Fullstack Engineer) để dẫn dắt kỹ thuật và phát triển hệ sinh thái phần mềm Enterprise quy mô lớn cho các đối tác quốc tế tại Nhật Bản và Bắc Mỹ. Bạn sẽ chịu trách nhiệm thiết kế kiến trúc hệ thống microservices, phát triển các API hiệu năng cao và xây dựng giao diện ứng dụng web mượt mà, bảo mật.",
+      "requirements": "- Tối thiểu 4 năm kinh nghiệm phát triển phần mềm Web Fullstack với React.js và Node.js/TypeScript.\n- Thành thạo kiến trúc Microservices, RESTful API và cơ sở dữ liệu quan hệ PostgreSQL (tối ưu hóa query, index, transaction).\n- Có kinh nghiệm với Docker container, Redis Caching và triển khai hệ thống trên AWS Cloud.\n- Tốt nghiệp Đại học chuyên ngành CNTT / Kỹ thuật phần mềm hoặc tương đương.\n- Trình độ tiếng Anh giao tiếp tốt (tương đương TOEIC 700+ hoặc IELTS 6.0+).",
+      "benefits": "- Mức lương cạnh tranh: 35.000.000 - 55.000.000 VNĐ/tháng + Thưởng dự án và tháng lương 13.\n- Gói bảo hiểm FPT Care cao cấp cho nhân viên và người thân.\n- Cơ hội Onsite Nhật Bản, Mỹ, Singapore ngắn và dài hạn.\n- Làm việc Hybrid linh hoạt (2 ngày làm việc tại nhà/tuần).\n- Môi trường làm việc chuẩn quốc tế, trang thiết bị Macbook Pro hiện đại."
+    },
+    {
+      "job_key": "job_it_backend_ai_vng",
+      "company_name": "Công ty Cổ phần VNG (VNG Corporation)",
+      "company_tax": "0303456789-001",
+      "industry": "it",
+      "title": "Backend Python / AI Engineer (FastAPI, PyTorch, Vector Search)",
+      "job_level": "Middle",
+      "employment_type": "Full-time",
+      "work_mode": "Office",
+      "headcount": 3,
+      "min_yoe": 2.5,
+      "salary": {
+        "min_salary": 25000000,
+        "max_salary": 45000000,
+        "currency": "VND"
+      },
+      "location": {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 7",
+        "address_detail": "VNG Campus, Đường số 13, KCX Tân Thuận, Quận 7, TP.HCM"
+      },
+      "required_skills": [
+        "python",
+        "fastapi",
+        "docker",
+        "pytorch",
+        "mongodb"
+      ],
+      "knockout_skills": [
+        "python",
+        "fastapi"
+      ],
+      "preferred_skills": [
+        "langchain",
+        "redis",
+        "milvus",
+        "kubernetes"
+      ],
+      "languages": [
+        "English"
+      ],
+      "certifications": [
+        "Google Cloud Professional Cloud Architect"
+      ],
+      "education": {
+        "min_level": "Đại học",
+        "preferred_majors": [
+          "Khoa học máy tính",
+          "Trí tuệ nhân tạo",
+          "Hệ thống thông tin"
+        ]
+      },
+      "score_weights": {
+        "skills_weight": 0.45,
+        "nlp_weight": 0.25,
+        "experience_weight": 0.2,
+        "education_weight": 0.1
+      },
+      "description": "VNG tìm kiếm Kỹ sư Backend AI phát triển thế hệ sản phẩm số thông minh tiếp theo cho hệ sinh thái Zalo & Game. Bạn sẽ trực tiếp tham gia xây dựng các dịch vụ AI microservices hiệu năng cao, tích hợp mô hình ngôn ngữ lớn (LLM), vector search (Milvus/FAISS) và xử lý dữ liệu lớn thời gian thực.",
+      "requirements": "- Tối thiểu 2.5 năm kinh nghiệm lập trình Backend bằng Python, thành thạo framework FastAPI/Asynchronous.\n- Hiểu sâu về Deep Learning, Machine Learning và sử dụng thành thạo PyTorch hoặc TensorFlow.\n- Có kinh nghiệm thực chiến với Vector Database (Milvus, Qdrant, ChromaDB) và thư viện LangChain.\n- Thành thạo MongoDB, Redis, đóng gói container Docker.\n- Khả năng đọc hiểu tài liệu nghiên cứu AI bằng tiếng Anh tốt.",
+      "benefits": "- Mức thu nhập: 25.000.000 - 45.000.000 VNĐ/tháng + ESOP thưởng cổ phần theo hiệu quả công việc.\n- Khu phức hợp VNG Campus chuẩn Silicon Valley: Phòng gym, hồ bơi, căng-tin miễn phí đồ ăn/thức uống cả ngày.\n- Gói bảo hiểm sức khỏe quốc tế PVI.\n- Được cấp máy tính Mac Studio / Alienware chuyên dụng train model."
+    },
+    {
+      "job_key": "job_it_devops_viettel",
+      "company_name": "Tổng Công ty Giải pháp Doanh nghiệp Viettel (Viettel Solutions)",
+      "company_tax": "0100109106-001",
+      "industry": "it",
+      "title": "Senior DevOps & Cloud Infrastructure Engineer (AWS, Kubernetes, CI/CD)",
+      "job_level": "Senior",
+      "employment_type": "Full-time",
+      "work_mode": "Office",
+      "headcount": 1,
+      "min_yoe": 3.5,
+      "salary": {
+        "min_salary": 32000000,
+        "max_salary": 50000000,
+        "currency": "VND"
+      },
+      "location": {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Nam Từ Liêm",
+        "address_detail": "Tòa nhà Viettel, Số 1 Trần Hữu Dực, Mỹ Đình, Nam Từ Liêm, Hà Nội"
+      },
+      "required_skills": [
+        "aws",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "ci/cd"
+      ],
+      "knockout_skills": [
+        "aws",
+        "kubernetes"
+      ],
+      "preferred_skills": [
+        "prometheus",
+        "grafana",
+        "linux",
+        "ansible"
+      ],
+      "languages": [
+        "English"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect",
+        "Cisco Certified Network Associate (CCNA)"
+      ],
+      "education": {
+        "min_level": "Đại học",
+        "preferred_majors": [
+          "Công nghệ thông tin",
+          "Điện tử viễn thông",
+          "An toàn thông tin"
+        ]
+      },
+      "score_weights": {
+        "skills_weight": 0.4,
+        "nlp_weight": 0.2,
+        "experience_weight": 0.3,
+        "education_weight": 0.1
+      },
+      "description": "Viettel Solutions cần tuyển 01 Chuyên gia DevOps & Hạ tầng Điện toán đám mây để quy hoạch, xây dựng và tối ưu hóa hạ tầng viễn thông/nền tảng số phục vụ hàng chục triệu người dùng. Chịu trách nhiệm kiến trúc đa vùng trên AWS, cụm Kubernetes tự động mở rộng và đường ống CI/CD bảo mật chuẩn DevSecOps.",
+      "requirements": "- Tối thiểu 3.5 năm kinh nghiệm thực chiến về Cloud AWS và điều phối container Kubernetes (EKS/K8s on-premise).\n- Thành thạo Infrastructure as Code (IaC) với Terraform/CloudFormation.\n- Làm chủ các công cụ CI/CD: GitLab CI, GitHub Actions, Jenkins, ArgoCD.\n- Có kiến thức vững chắc về Linux Kernel, Network Security, Zero-Trust Architecture.\n- Ưu tiên ứng viên có chứng chỉ AWS DevOps Professional hoặc CKA (Certified Kubernetes Administrator).",
+      "benefits": "- Mức lương: 32.000.000 - 50.000.000 VNĐ/tháng + Phụ cấp quân đội, thưởng các dịp Lễ lớn lên đến 4-6 tháng lương/năm.\n- Cơ hội thăng tiến trở thành Solution Architect hoặc Giám đốc Kỹ thuật Hạ tầng.\n- Được tài trợ 100% kinh phí thi các chứng chỉ quốc tế cấp cao (CKA, AWS Pro, CISSP)."
+    },
+    {
+      "job_key": "job_it_mobile_vnpay",
+      "company_name": "Công ty Cổ phần Giải pháp Thanh toán Việt Nam (VNPAY)",
+      "company_tax": "0102182292-001",
+      "industry": "it",
+      "title": "Mobile Application Engineer (Flutter / Dart / Clean Architecture)",
+      "job_level": "Middle",
+      "employment_type": "Full-time",
+      "work_mode": "Office",
+      "headcount": 2,
+      "min_yoe": 2.0,
+      "salary": {
+        "min_salary": 22000000,
+        "max_salary": 38000000,
+        "currency": "VND"
+      },
+      "location": {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Đống Đa",
+        "address_detail": "Tầng 8, Tòa nhà Khách sạn Thể thao, Hào Nam, Cát Linh, Đống Đa, Hà Nội"
+      },
+      "required_skills": [
+        "flutter",
+        "dart",
+        "restful api",
+        "state management"
+      ],
+      "knockout_skills": [
+        "flutter"
+      ],
+      "preferred_skills": [
+        "firebase",
+        "socket.io",
+        "react native",
+        "ci/cd"
+      ],
+      "languages": [
+        "English"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "education": {
+        "min_level": "Đại học",
+        "preferred_majors": [
+          "Công nghệ thông tin",
+          "Khoa học máy tính"
+        ]
+      },
+      "score_weights": {
+        "skills_weight": 0.45,
+        "nlp_weight": 0.2,
+        "experience_weight": 0.25,
+        "education_weight": 0.1
+      },
+      "description": "VNPAY tìm kiếm Kỹ sư Lập trình Di động (Mobile Engineer) phát triển ứng dụng Ví VNPAY và các giải pháp thanh toán điện tử trên nền tảng Android/iOS. Bạn sẽ phát triển các module thanh toán, quét mã QR, chuyển tiền, liên kết thẻ ngân hàng đảm bảo bảo mật tài chính khắt khe theo tiêu chuẩn PCI-DSS.",
+      "requirements": "- Tối thiểu 2 năm kinh nghiệm lập trình ứng dụng di động bằng Flutter & Dart.\n- Nắm vững kiến trúc phần mềm Clean Architecture, BLoC Pattern / Riverpod State Management.\n- Kinh nghiệm tích hợp RESTful API, WebSocket, mã hóa dữ liệu (RSA, AES) và bảo mật ứng dụng di động.\n- Đã từng có ứng dụng phát hành trực tiếp lên Google Play Store và Apple App Store.\n- Khả năng tư duy logic tốt, cẩn trọng trong từng dòng code tài chính.",
+      "benefits": "- Mức lương: 22.000.000 - 38.000.000 VNĐ/tháng + Thưởng doanh thu định kỳ.\n- Khám sức khỏe định kỳ VIP hàng năm tại Bệnh viện Quốc tế Thu Cúc/Vinmec.\n- Trợ cấp ăn trưa, gửi xe và đào tạo chứng chỉ tài chính công nghệ."
+    },
+    {
+      "job_key": "job_finance_data_analyst_techcombank",
+      "company_name": "Ngân hàng Thương mại Cổ phần Kỹ thương Việt Nam (Techcombank)",
+      "company_tax": "0100230800-001",
+      "industry": "accounting_auditing",
+      "title": "Senior Data Analyst & Business Intelligence Specialist (SQL, Power BI, Python)",
+      "job_level": "Middle",
+      "employment_type": "Full-time",
+      "work_mode": "Hybrid",
+      "headcount": 2,
+      "min_yoe": 2.5,
+      "salary": {
+        "min_salary": 24000000,
+        "max_salary": 40000000,
+        "currency": "VND"
+      },
+      "location": {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 1",
+        "address_detail": "Tòa nhà Techcombank, Số 23 Lê Duẩn, Phường Bến Nghé, Quận 1, TP.HCM"
+      },
+      "required_skills": [
+        "sql",
+        "power bi",
+        "python",
+        "data modeling",
+        "excel"
+      ],
+      "knockout_skills": [
+        "sql",
+        "power bi"
+      ],
+      "preferred_skills": [
+        "tableau",
+        "dax",
+        "data warehouse",
+        "etl"
+      ],
+      "languages": [
+        "English"
+      ],
+      "certifications": [
+        "Microsoft Certified: Azure Solutions Architect Expert",
+        "TOEIC",
+        "IELTS"
+      ],
+      "education": {
+        "min_level": "Đại học",
+        "preferred_majors": [
+          "Hệ thống thông tin quản lý",
+          "Kinh tế",
+          "Tài chính ngân hàng",
+          "Khoa học dữ liệu"
+        ]
+      },
+      "score_weights": {
+        "skills_weight": 0.4,
+        "nlp_weight": 0.2,
+        "experience_weight": 0.3,
+        "education_weight": 0.1
+      },
+      "description": "Techcombank tuyển dụng Chuyên viên Phân tích Dữ liệu Cao cấp (Senior Data Analyst) thuộc Khối Phân tích Dữ liệu & AI. Bạn sẽ biến dữ liệu hàng triệu khách hàng thành những thông tin chi tiết hữu ích (Actionable Insights) phục vụ chiến lược sản phẩm thẻ, tín dụng và phòng chống gian lận giao dịch.",
+      "requirements": "- Tối thiểu 2.5 năm kinh nghiệm trong vai trò Data Analyst / BI Analyst trong lĩnh vực Tài chính, Ngân hàng hoặc E-commerce.\n- Kỹ năng truy vấn SQL xuất sắc (viết các stored procedure phức tạp, Window functions, tối ưu query).\n- Sử dụng thành thạo Power BI, viết DAX phức tạp và thiết kế Data Model chuẩn Star/Snowflake Schema.\n- Biết sử dụng Python (Pandas, Numpy, Matplotlib) để phân tích thống kê và tự động hóa báo cáo.\n- Kỹ năng giao tiếp và thuyết trình dữ liệu (Data Storytelling) trước Ban lãnh đạo tốt.",
+      "benefits": "- Mức lương: 24.000.000 - 40.000.000 VNĐ/tháng + Thưởng hiệu suất cuối năm từ 3 - 5 tháng lương.\n- Vay vốn ngân hàng với lãi suất ưu đãi đặc biệt dành cho cán bộ nhân viên Techcombank.\n- Trải nghiệm môi trường làm việc Agile số 1 ngành ngân hàng tại Việt Nam."
+    }
+  ],
+  "candidates": [
+    {
+      "id_code": "cand_01",
+      "target_job_key": "job_it_fullstack_fpt",
+      "name": "Nguyễn Hoàng Long",
+      "email": "nguyen.hoang.long.dev@gmail.com",
+      "phone": "0912.345.678",
+      "gender": "Nam",
+      "dob": "1997-04-12",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Cầu Giấy",
+        "address": "Số 18 Dịch Vọng Hậu, Cầu Giấy, Hà Nội"
+      },
+      "headline": "Lead Fullstack Engineer | 5.5 năm kinh nghiệm React.js, Node.js, TypeScript & AWS",
+      "desired_job_title": "Senior Fullstack Engineer",
+      "plan_code": "app_vip_yearly",
+      "target_status": "hired",
+      "target_score": 95.0,
+      "score_breakdown": {
+        "skills_score": 98.0,
+        "experience_score": 100.0,
+        "education_score": 100.0,
+        "nlp_score": 94.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Bách Khoa Hà Nội",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2019,
+        "rank": "Giỏi"
+      },
+      "yoe": 5.5,
+      "skills": [
+        "react",
+        "node.js",
+        "typescript",
+        "postgresql",
+        "restful api",
+        "docker",
+        "redis",
+        "next.js",
+        "aws",
+        "graphql"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect",
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần Công nghệ Tiki",
+          "role": "Senior Fullstack Developer",
+          "period": "03/2022 - Hiện tại (2 năm 8 tháng)",
+          "projects": "Xây dựng cổng thanh toán và quản lý đơn hàng Merchant Portal phục vụ 50,000 người bán hàng hoạt động hàng ngày.",
+          "responsibilities": "- Thiết kế kiến trúc backend Node.js (NestJS) kết nối PostgreSQL chịu tải 15,000 req/s.\n- Tối ưu hóa truy vấn SQL, triển khai Redis Caching giảm thời gian phản hồi API từ 320ms xuống 65ms.\n- Dẫn dắt đội ngũ Frontend 5 thành viên chuyển đổi giao diện sang React 18 & Next.js SSR.",
+          "tech_stack": "React.js, Node.js, TypeScript, PostgreSQL, Redis, Docker, AWS (ECS, RDS, S3)"
+        },
+        {
+          "company": "Công ty TNHH SmartOSC",
+          "role": "Fullstack Developer",
+          "period": "07/2019 - 02/2022 (2 năm 8 tháng)",
+          "projects": "Phát triển các giải pháp E-Commerce cho thị trường Úc và Singapore.",
+          "responsibilities": "- Xây dựng hệ thống RESTful API bằng Express.js & TypeScript.\n- Xây dựng giao diện Responsive chuẩn Single Page Application với React.js & Redux Toolkit.",
+          "tech_stack": "React.js, Node.js, TypeScript, MySQL, Docker, RESTful API"
+        }
+      ],
+      "cover_letter": "Kính gửi Ban Tuyển dụng FPT Software,\n\nTôi là Nguyễn Hoàng Long, Kỹ sư Fullstack với hơn 5.5 năm kinh nghiệm chuyên sâu trong hệ sinh thái React.js, Node.js/TypeScript và điện toán đám mây AWS. Trong suốt quá trình làm việc tại Tiki và SmartOSC, tôi đã trực tiếp thiết kế và bảo trì các hệ thống Enterprise phục vụ hàng chục ngàn người dùng đồng thời, với trọng tâm là tối ưu hóa hiệu năng PostgreSQL và độ tin cậy của dịch vụ.\n\nĐược biết FPT Software đang mở rộng các dự án chuyển đổi số quy mô lớn cho đối tác toàn cầu, tôi rất mong muốn được đóng góp năng lực kỹ thuật và kinh nghiệm dẫn dắt dự án để cùng công ty phát triển các sản phẩm phần mềm chuẩn quốc tế.\n\nTrân trọng,\nNguyễn Hoàng Long",
+      "eval_note": "Ứng viên hoàn hảo: Điểm kỹ năng và kinh nghiệm tối đa, bằng Giỏi ĐH Bách Khoa, chứng chỉ AWS Architect, YOE 5.5 năm vượt yêu cầu 4 năm. Đạt trạng thái Trúng tuyển (Hired)."
+    },
+    {
+      "id_code": "cand_02",
+      "target_job_key": "job_it_fullstack_fpt",
+      "name": "Trần Minh Quang",
+      "email": "quang.tran.engineer@gmail.com",
+      "phone": "0983.112.233",
+      "gender": "Nam",
+      "dob": "1998-08-20",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Thanh Xuân",
+        "address": "Chung cư Golden Land, 275 Nguyễn Trãi, Thanh Xuân, Hà Nội"
+      },
+      "headline": "Senior Fullstack Developer | 4.5 năm kinh nghiệm React, NestJS & PostgreSQL",
+      "desired_job_title": "Senior Fullstack Engineer",
+      "plan_code": "app_pro_monthly",
+      "target_status": "offered",
+      "target_score": 88.5,
+      "score_breakdown": {
+        "skills_score": 90.0,
+        "experience_score": 92.0,
+        "education_score": 95.0,
+        "nlp_score": 88.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Trường ĐH Công Nghệ - ĐHQGHN",
+        "major": "Kỹ thuật Máy tính",
+        "degree": "Kỹ sư",
+        "grad_year": 2020,
+        "rank": "Khá"
+      },
+      "yoe": 4.5,
+      "skills": [
+        "react",
+        "node.js",
+        "typescript",
+        "postgresql",
+        "restful api",
+        "docker",
+        "redis",
+        "next.js"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần MISA",
+          "role": "Senior Fullstack Developer",
+          "period": "09/2021 - Hiện tại (3 năm 2 tháng)",
+          "projects": "Nền tảng Quản trị Doanh nghiệp MISA AMIS.",
+          "responsibilities": "- Lập trình các module quản lý nhân sự và chấm công tự động bằng ReactJS và NestJS.\n- Thiết kế cơ sở dữ liệu PostgreSQL chuẩn hóa, xử lý giao dịch tài chính an toàn.\n- Đóng gói ứng dụng microservices bằng Docker và triển khai tự động CI/CD.",
+          "tech_stack": "React, NestJS, TypeScript, PostgreSQL, Docker, Redis"
+        }
+      ],
+      "cover_letter": "Dear Hiring Team at FPT Software,\n\nI am writing to express my strong interest in the Senior Fullstack Engineer position. With 4.5 years of hands-on experience mastering TypeScript across both frontend (React.js, Next.js) and backend (Node.js, NestJS, PostgreSQL), I have led the architecture of mission-critical business modules handling millions of daily records at MISA.\n\nI am confident that my technical expertise, problem-solving mindset, and professional English proficiency will make an immediate positive impact on your enterprise delivery team.\n\nSincerely,\nTran Minh Quang",
+      "eval_note": "Hồ sơ rất mạnh: 4.5 năm YOE, đúng stack React/Node/PostgreSQL/TS, phỏng vấn chuyên môn đạt xuất sắc. Đã phát hành thư mời nhận việc (Offered)."
+    },
+    {
+      "id_code": "cand_03",
+      "target_job_key": "job_it_fullstack_fpt",
+      "name": "Lê Tuấn Kiệt",
+      "email": "kiet.letuan98@gmail.com",
+      "phone": "0904.556.789",
+      "gender": "Nam",
+      "dob": "1998-11-05",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Cầu Giấy",
+        "address": "Số 45 Trần Thái Tông, Cầu Giấy, Hà Nội"
+      },
+      "headline": "Fullstack Web Engineer | 4 năm kinh nghiệm ReactJS, NodeJS & Cloud Services",
+      "desired_job_title": "Senior Fullstack Engineer",
+      "plan_code": "app_pro_monthly",
+      "target_status": "interview",
+      "target_score": 82.0,
+      "score_breakdown": {
+        "skills_score": 85.0,
+        "experience_score": 88.0,
+        "education_score": 90.0,
+        "nlp_score": 81.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Học viện Công nghệ Bưu chính Viễn thông",
+        "major": "Công nghệ Đa phương tiện",
+        "degree": "Cử nhân",
+        "grad_year": 2020,
+        "rank": "Khá"
+      },
+      "yoe": 4.0,
+      "skills": [
+        "react",
+        "node.js",
+        "typescript",
+        "postgresql",
+        "restful api",
+        "docker",
+        "redis"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "KMS Technology Vietnam",
+          "role": "Software Engineer",
+          "period": "10/2020 - Hiện tại (4 năm)",
+          "projects": "Hệ sinh thái ứng dụng chăm sóc sức khỏe cho khách hàng Mỹ.",
+          "responsibilities": "- Lập trình Frontend ReactJS với thiết kế chuẩn atomic design.\n- Xây dựng API Express.js kết nối PostgreSQL và lưu cache bằng Redis.",
+          "tech_stack": "React, TypeScript, Node.js, Express, PostgreSQL, Redis"
+        }
+      ],
+      "cover_letter": "Kính gửi Bộ phận Tuyển dụng FPT Software,\n\nTôi có 4 năm kinh nghiệm làm việc trong môi trường outsource phần mềm quốc tế tại KMS Technology. Tôi thông thạo ReactJS và NodeJS, luôn chú trọng đến tính mở rộng và bảo mật của ứng dụng. Rất mong có cơ hội trao đổi trực tiếp tại buổi phỏng vấn.\n\nTrân trọng,\nLê Tuấn Kiệt",
+      "interview_schedule": {
+        "interview_time": "09:30 - 25/10/2026",
+        "location": "Tòa nhà FPT, Phố Duy Tân, Cầu Giấy, Hà Nội",
+        "meeting_link": null,
+        "message": "Phỏng vấn kỹ thuật vòng 1 với Tech Lead."
+      },
+      "eval_note": "Đáp ứng đầy đủ yêu cầu: 4 năm YOE, thành thạo React/Node/Postgres. Đã lên lịch phỏng vấn trực tiếp (Interview)."
+    },
+    {
+      "id_code": "cand_04",
+      "target_job_key": "job_it_fullstack_fpt",
+      "name": "Phạm Quỳnh Anh",
+      "email": "quynhanh.phamit@gmail.com",
+      "phone": "0978.223.344",
+      "gender": "Nữ",
+      "dob": "1999-03-15",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Ba Đình",
+        "address": "Số 12 Liễu Giai, Ba Đình, Hà Nội"
+      },
+      "headline": "Fullstack Developer | 3.5 năm kinh nghiệm React.js, Node.js & UI/UX Optimization",
+      "desired_job_title": "Fullstack Engineer",
+      "plan_code": "app_plus_monthly",
+      "target_status": "interview",
+      "target_score": 77.0,
+      "score_breakdown": {
+        "skills_score": 82.0,
+        "experience_score": 75.0,
+        "education_score": 90.0,
+        "nlp_score": 78.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Bách Khoa Hà Nội",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2021,
+        "rank": "Giỏi"
+      },
+      "yoe": 3.5,
+      "skills": [
+        "react",
+        "node.js",
+        "typescript",
+        "postgresql",
+        "restful api",
+        "next.js"
+      ],
+      "certifications": [
+        "IELTS"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "VTI Cloud Corporation",
+          "role": "Fullstack Engineer",
+          "period": "05/2021 - Hiện tại (3.5 năm)",
+          "projects": "Xây dựng SaaS Cloud Management Portal.",
+          "responsibilities": "- Lập trình giao diện quản lý máy chủ bằng React và Next.js.\n- Viết REST API bằng Node.js và quản trị database PostgreSQL.",
+          "tech_stack": "React.js, Node.js, TypeScript, PostgreSQL, REST API"
+        }
+      ],
+      "cover_letter": "Kính gửi Ban Tuyển dụng FPT Software,\n\nTôi là Phạm Quỳnh Anh, tốt nghiệp loại Giỏi ĐH Bách Khoa Hà Nội và có 3.5 năm kinh nghiệm Fullstack. Tôi tự tin khả năng nắm bắt nhanh các công nghệ mới và phối hợp hiệu quả trong nhóm dự án Agile.\n\nTrân trọng,\nPhạm Quỳnh Anh",
+      "interview_schedule": {
+        "interview_time": "14:00 - 26/10/2026",
+        "location": "Online via Google Meet",
+        "meeting_link": "https://meet.google.com/fpt-eng-interview",
+        "message": "Phỏng vấn trực tuyến với Project Manager và HR."
+      },
+      "eval_note": "Ứng viên tiềm năng: YOE 3.5 năm (hơi sát mốc 4 năm) nhưng bằng Giỏi Bách Khoa, tiếng Anh IELTS 7.0 và kỹ năng React/Node rất chắc. Mời phỏng vấn (Interview)."
+    },
+    {
+      "id_code": "cand_05",
+      "target_job_key": "job_it_fullstack_fpt",
+      "name": "Vũ Hải Đăng",
+      "email": "haidang.vu98@gmail.com",
+      "phone": "0934.123.987",
+      "gender": "Nam",
+      "dob": "1998-05-18",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Đống Đa",
+        "address": "Số 89 Chùa Bộc, Đống Đa, Hà Nội"
+      },
+      "headline": "Web Developer | 3 năm kinh nghiệm ReactJS, NodeJS & MySQL",
+      "desired_job_title": "Fullstack Developer",
+      "plan_code": "app_plus_monthly",
+      "target_status": "reviewing",
+      "target_score": 70.0,
+      "score_breakdown": {
+        "skills_score": 72.0,
+        "experience_score": 68.0,
+        "education_score": 85.0,
+        "nlp_score": 72.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Giao thông Vận tải",
+        "major": "Hệ thống Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 3.0,
+      "skills": [
+        "react",
+        "node.js",
+        "restful api",
+        "postgresql",
+        "docker"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty TNHH Phần mềm GMO-Z.com RUNSYSTEM",
+          "role": "Frontend & Node.js Developer",
+          "period": "06/2021 - Hiện tại (3 năm)",
+          "projects": "Phát triển các cổng thông tin nội bộ cho khách hàng Nhật Bản.",
+          "responsibilities": "- Lập trình giao diện bằng ReactJS.\n- Viết các API CRUD kết nối cơ sở dữ liệu MySQL và PostgreSQL.",
+          "tech_stack": "ReactJS, Node.js, JavaScript, MySQL, PostgreSQL"
+        }
+      ],
+      "cover_letter": "Kính gửi Quý công ty FPT Software,\n\nTôi đã có 3 năm kinh nghiệm phát triển web với React và Node.js. Tôi rất mong có cơ hội học hỏi và nâng cao trình độ kỹ thuật tại môi trường chuyên nghiệp của FPT.\n\nTrân trọng,\nVũ Hải Đăng",
+      "eval_note": "Khớp các kỹ năng chính nhưng kinh nghiệm mới đạt 3 năm (yêu cầu 4 năm) và chưa chuyên sâu TypeScript. Đang trong giai đoạn xem xét kỹ hồ sơ (Reviewing)."
+    },
+    {
+      "id_code": "cand_06",
+      "target_job_key": "job_it_fullstack_fpt",
+      "name": "Đỗ Thành Nam",
+      "email": "nam.dothanh99@gmail.com",
+      "phone": "0965.889.900",
+      "gender": "Nam",
+      "dob": "1999-10-10",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Hà Đông",
+        "address": "KĐT Văn Quán, Hà Đông, Hà Nội"
+      },
+      "headline": "Junior/Middle Fullstack Engineer | 2.5 năm kinh nghiệm React, Express.js",
+      "desired_job_title": "Fullstack Developer",
+      "plan_code": "app_free",
+      "target_status": "reviewing",
+      "target_score": 64.5,
+      "score_breakdown": {
+        "skills_score": 68.0,
+        "experience_score": 55.0,
+        "education_score": 85.0,
+        "nlp_score": 66.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Công nghiệp Hà Nội",
+        "major": "Công nghệ Thông tin",
+        "degree": "Cử nhân",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 2.5,
+      "skills": [
+        "react",
+        "node.js",
+        "restful api",
+        "postgresql",
+        "typescript"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty TNHH Giải pháp Phần mềm Sapo",
+          "role": "Web Developer",
+          "period": "11/2021 - Hiện tại (2.5 năm)",
+          "projects": "Module quản lý kho hàng ứng dụng Sapo POS.",
+          "responsibilities": "- Lập trình màn hình danh mục sản phẩm ReactJS.\n- Viết API xử lý tồn kho Node.js Express.",
+          "tech_stack": "ReactJS, Node.js, Express, PostgreSQL"
+        }
+      ],
+      "cover_letter": "Kính gửi FPT Software, tôi gửi hồ sơ ứng tuyển vị trí Fullstack Engineer với mong muốn đóng góp sức trẻ và kinh nghiệm lập trình React/Node.js của mình.",
+      "eval_note": "Kỹ năng cơ bản tốt nhưng YOE 2.5 năm còn non so với chuẩn Senior (4 năm). Cần HR và Tech Lead cân nhắc phỏng vấn mức Middle (Reviewing)."
+    },
+    {
+      "id_code": "cand_07",
+      "target_job_key": "job_it_fullstack_fpt",
+      "name": "Bùi Thị Mai",
+      "email": "maibui.tech@gmail.com",
+      "phone": "0944.332.112",
+      "gender": "Nữ",
+      "dob": "2001-07-25",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Cầu Giấy",
+        "address": "Số 56 Doãn Kế Thiện, Mai Dịch, Cầu Giấy, Hà Nội"
+      },
+      "headline": "Junior Fullstack Developer | 1.5 năm kinh nghiệm React & Node.js",
+      "desired_job_title": "Fullstack Developer",
+      "plan_code": "app_free",
+      "target_status": "new",
+      "target_score": 56.0,
+      "score_breakdown": {
+        "skills_score": 65.0,
+        "experience_score": 35.0,
+        "education_score": 90.0,
+        "nlp_score": 58.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Bách Khoa Hà Nội",
+        "major": "Hệ thống Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2023,
+        "rank": "Khá"
+      },
+      "yoe": 1.5,
+      "skills": [
+        "react",
+        "node.js",
+        "typescript",
+        "restful api"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "FPT Telecom",
+          "role": "Junior Developer",
+          "period": "07/2023 - Hiện tại (1 năm)",
+          "projects": "Xây dựng portal quản lý hóa đơn khách hàng nội bộ.",
+          "responsibilities": "- Lập trình form nhập liệu và báo cáo bằng React.js và Node.js.",
+          "tech_stack": "React, Node.js, MySQL"
+        }
+      ],
+      "cover_letter": "Kính gửi Anh/Chị Tuyển dụng, em là sinh viên mới tốt nghiệp Bách Khoa có 1.5 năm kinh nghiệm, mong muốn ứng tuyển thử sức với dự án Enterprise lớn của FPT Software.",
+      "eval_note": "Hồ sơ mới nộp (New): Ứng viên tiềm năng nhưng kinh nghiệm Junior (1.5 năm), thiếu chứng chỉ và kinh nghiệm xử lý hệ thống tải cao."
+    },
+    {
+      "id_code": "cand_08",
+      "target_job_key": "job_it_fullstack_fpt",
+      "name": "Hoàng Trọng Phúc",
+      "email": "phuc.hoangtrong@gmail.com",
+      "phone": "0918.776.655",
+      "gender": "Nam",
+      "dob": "1996-12-03",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Hoàng Mai",
+        "address": "KĐT Linh Đàm, Hoàng Mai, Hà Nội"
+      },
+      "headline": "Backend PHP Developer chuyển hướng Fullstack React & Node.js",
+      "desired_job_title": "Web Developer",
+      "plan_code": "app_free",
+      "target_status": "new",
+      "target_score": 51.5,
+      "score_breakdown": {
+        "skills_score": 52.0,
+        "experience_score": 60.0,
+        "education_score": 80.0,
+        "nlp_score": 50.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Viện ĐH Mở Hà Nội",
+        "major": "Công nghệ Thông tin",
+        "degree": "Cử nhân",
+        "grad_year": 2018,
+        "rank": "Trung bình Khá"
+      },
+      "yoe": 4.0,
+      "skills": [
+        "node.js",
+        "postgresql",
+        "restful api",
+        "docker"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty CP Truyền thông VMG",
+          "role": "PHP Laravel Developer",
+          "period": "2019 - 2023 (4 năm)",
+          "projects": "Xây dựng các cổng dịch vụ nội dung số trên nền PHP/MySQL.",
+          "responsibilities": "- Lập trình CMS backend bằng Laravel.\n- Mới tự học React và Node.js trong 6 tháng gần đây.",
+          "tech_stack": "PHP, Laravel, MySQL, JavaScript, Node.js cơ bản"
+        }
+      ],
+      "cover_letter": "Kính gửi công ty, tôi có 4 năm kinh nghiệm lập trình phần mềm và đang chủ động chuyển dịch chuyên môn sang React & Node.js. Rất mong được công ty tạo cơ hội.",
+      "eval_note": "Hồ sơ mới nộp (New): 4 năm YOE nhưng chủ yếu làm PHP/Laravel, kỹ năng React.js còn ở mức nhập môn."
+    },
+    {
+      "id_code": "cand_09",
+      "target_job_key": "job_it_fullstack_fpt",
+      "name": "Trương Minh Tiến",
+      "email": "tientm.design@gmail.com",
+      "phone": "0971.009.911",
+      "gender": "Nam",
+      "dob": "1999-02-14",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Bắc Từ Liêm",
+        "address": "Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội"
+      },
+      "headline": "Frontend Web Designer | HTML, CSS, jQuery & Vue.js",
+      "desired_job_title": "Frontend Developer",
+      "plan_code": "app_free",
+      "target_status": "rejected",
+      "target_score": 38.0,
+      "score_breakdown": {
+        "skills_score": 30.0,
+        "experience_score": 40.0,
+        "education_score": 75.0,
+        "nlp_score": 42.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Cao đẳng FPT Polytechnic",
+        "major": "Thiết kế Website",
+        "degree": "Cao đẳng",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 2.0,
+      "skills": [
+        "restful api"
+      ],
+      "certifications": [],
+      "languages": [],
+      "experience": [
+        {
+          "company": "Công ty Thiết kế Web Á Châu",
+          "role": "Frontend Designer",
+          "period": "2022 - Hiện tại (2 năm)",
+          "projects": "Cắt HTML/CSS và hiệu ứng banner website tin tức.",
+          "responsibilities": "- Cắt giao diện từ Figma sang HTML/CSS/jQuery.\n- Viết Vue.js đơn giản.",
+          "tech_stack": "HTML5, CSS3, Bootstrap, jQuery, Vue.js cơ bản"
+        }
+      ],
+      "cover_letter": "Tôi nộp CV ứng tuyển vị trí lập trình viên với mong muốn học hỏi thêm về Node.js.",
+      "rejection_reason": "Hồ sơ thiếu kỹ năng bắt buộc (Knockout Skills): Không có kinh nghiệm lập trình React.js và Node.js ở cấp độ Senior.",
+      "eval_note": "Từ chối (Rejected): Thiếu cả 2 kỹ năng cốt lõi React và Node.js, bằng cấp Cao đẳng, kinh nghiệm chuyên về cắt HTML/CSS cơ bản."
+    },
+    {
+      "id_code": "cand_10",
+      "target_job_key": "job_it_fullstack_fpt",
+      "name": "Lý Bảo Ngọc",
+      "email": "baongoc.lybusiness@gmail.com",
+      "phone": "0902.998.877",
+      "gender": "Nữ",
+      "dob": "2000-09-08",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Hai Bà Trưng",
+        "address": "Phố Huế, Hai Bà Trưng, Hà Nội"
+      },
+      "headline": "Cử nhân Quản trị Kinh doanh đam mê Công nghệ Thông tin",
+      "desired_job_title": "Tập sự Fullstack Developer",
+      "plan_code": "app_free",
+      "target_status": "rejected",
+      "target_score": 22.0,
+      "score_breakdown": {
+        "skills_score": 15.0,
+        "experience_score": 10.0,
+        "education_score": 50.0,
+        "nlp_score": 25.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Thương mại",
+        "major": "Quản trị Kinh doanh",
+        "degree": "Cử nhân",
+        "grad_year": 2022,
+        "rank": "Khá"
+      },
+      "yoe": 0.5,
+      "skills": [],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty TNHH Bất động sản Đất Xanh",
+          "role": "Nhân viên Telesales & Admin",
+          "period": "2022 - 2023 (1 năm)",
+          "projects": "Quản lý dữ liệu khách hàng trên Excel và hỗ trợ đăng bài website.",
+          "responsibilities": "- Nhập liệu thông tin bất động sản.\n- Tự học chứng chỉ tin học văn phòng.",
+          "tech_stack": "Word, Excel, PowerPoint"
+        }
+      ],
+      "cover_letter": "Em tốt nghiệp ngành Quản trị Kinh doanh nhưng rất yêu thích lập trình và mong muốn được đào tạo từ đầu tại FPT.",
+      "rejection_reason": "Hồ sơ trái ngành hoàn toàn, không có nền tảng học vấn và kinh nghiệm lập trình phần mềm phù hợp với vị trí Senior Fullstack.",
+      "eval_note": "Từ chối (Rejected): Trái ngành, không có kỹ năng lập trình, 0 năm kinh nghiệm IT."
+    },
+    {
+      "id_code": "cand_11",
+      "target_job_key": "job_it_backend_ai_vng",
+      "name": "Đặng Quốc Huy",
+      "email": "huy.dangquoc.ai@gmail.com",
+      "phone": "0909.112.244",
+      "gender": "Nam",
+      "dob": "1997-06-15",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 7",
+        "address": "Chung cư Sunrise City, Nguyễn Hữu Thọ, Quận 7, TP.HCM"
+      },
+      "headline": "Senior AI Backend Engineer | 4.5 năm Python, FastAPI, PyTorch & Vector Database",
+      "desired_job_title": "Backend Python / AI Engineer",
+      "plan_code": "app_vip_monthly",
+      "target_status": "hired",
+      "target_score": 94.5,
+      "score_breakdown": {
+        "skills_score": 96.0,
+        "experience_score": 95.0,
+        "education_score": 100.0,
+        "nlp_score": 93.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Khoa học Tự nhiên - ĐHQG TP.HCM",
+        "major": "Khoa học Máy tính (Chuyên ngành Trí tuệ Nhân tạo)",
+        "degree": "Thạc sĩ",
+        "grad_year": 2021,
+        "rank": "Xuất sắc"
+      },
+      "yoe": 4.5,
+      "skills": [
+        "python",
+        "fastapi",
+        "docker",
+        "pytorch",
+        "mongodb",
+        "langchain",
+        "redis",
+        "milvus",
+        "kubernetes"
+      ],
+      "certifications": [
+        "Google Cloud Professional Cloud Architect"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "VinAI Research",
+          "role": "AI Software Engineer",
+          "period": "08/2021 - Hiện tại (3 năm 2 tháng)",
+          "projects": "Xây dựng hệ thống tìm kiếm ngữ nghĩa và trợ lý ảo thông minh cho xe điện VinFast.",
+          "responsibilities": "- Thiết kế dịch vụ FastAPI xử lý hơn 10 triệu lượt vector similarity search mỗi ngày trên Milvus.\n- Fine-tune mô hình embedding BGE-M3 và PhoBERT cho tiếng Việt đạt độ chính xác F1-score 91.5%.\n- Đóng gói container Docker và triển khai trên cụm GPU Kubernetes.",
+          "tech_stack": "Python, FastAPI, PyTorch, Milvus, Docker, MongoDB, Redis, Kubernetes"
+        }
+      ],
+      "cover_letter": "Dear VNG Talent Team,\n\nI am writing to express my eager desire to join VNG Corporation as a Backend Python / AI Engineer. Holding a Master's degree in Computer Science with 4.5 years building production AI services at VinAI, I specialize in low-latency FastAPI architectures, PyTorch pipelines, and scalable vector search on Milvus.\n\nWith VNG's ambitious AI strategy in Vietnam, I am ready to deploy high-impact models serving tens of millions of active users.\n\nBest regards,\nDang Quoc Huy",
+      "eval_note": "Ứng viên tinh hoa: Thạc sĩ chuyên ngành AI, 4.5 năm kinh nghiệm thực chiến VinAI với PyTorch/Milvus/FastAPI, chứng chỉ Google Cloud Architect. Đạt mức tuyển dụng (Hired)."
+    },
+    {
+      "id_code": "cand_12",
+      "target_job_key": "job_it_backend_ai_vng",
+      "name": "Ngô Tuấn Anh",
+      "email": "tuananh.ngo.dev@gmail.com",
+      "phone": "0918.445.566",
+      "gender": "Nam",
+      "dob": "1998-12-05",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 1",
+        "address": "Số 15 Lê Thánh Tôn, Bến Nghé, Quận 1, TP.HCM"
+      },
+      "headline": "Backend Python Developer | 3.5 năm kinh nghiệm FastAPI, PyTorch & Microservices",
+      "desired_job_title": "Backend Python Engineer",
+      "plan_code": "app_pro_monthly",
+      "target_status": "offered",
+      "target_score": 87.0,
+      "score_breakdown": {
+        "skills_score": 88.0,
+        "experience_score": 88.0,
+        "education_score": 90.0,
+        "nlp_score": 86.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Bách Khoa TP.HCM",
+        "major": "Kỹ thuật Phần mềm",
+        "degree": "Kỹ sư",
+        "grad_year": 2020,
+        "rank": "Giỏi"
+      },
+      "yoe": 3.5,
+      "skills": [
+        "python",
+        "fastapi",
+        "docker",
+        "pytorch",
+        "mongodb",
+        "redis",
+        "langchain"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần Dịch vụ Di động Trực tuyến (Ví MoMo)",
+          "role": "Backend Engineer (Data & AI)",
+          "period": "01/2021 - Hiện tại (3.5 năm)",
+          "projects": "Xây dựng hệ thống gợi ý chương trình khuyến mãi theo thời gian thực.",
+          "responsibilities": "- Xây dựng các API FastAPI phục vụ mô hình Recommendation System.\n- Quản lý dữ liệu phi cấu trúc trên MongoDB và caching trên Redis cluster.",
+          "tech_stack": "Python, FastAPI, PyTorch, MongoDB, Redis, Docker"
+        }
+      ],
+      "cover_letter": "Kính gửi Ban Tuyển dụng VNG, tôi có 3.5 năm phát triển backend Python tại MoMo, chuyên tích hợp model AI vào microservices. Tôi tin rằng năng lực của mình sẽ đóng góp tốt cho các dịch vụ số của VNG.",
+      "eval_note": "Rất phù hợp: 3.5 năm YOE, kinh nghiệm tài chính công nghệ MoMo, thành thạo FastAPI và PyTorch. Đã gửi Offer tuyển dụng (Offered)."
+    },
+    {
+      "id_code": "cand_13",
+      "target_job_key": "job_it_backend_ai_vng",
+      "name": "Võ Hoài Nam",
+      "email": "nam.vohoai99@gmail.com",
+      "phone": "0938.771.122",
+      "gender": "Nam",
+      "dob": "1999-04-18",
+      "location": {
+        "province_code": "79",
+        "district_name": "Thành phố Thủ Đức",
+        "address": "Khu đô thị Sala, Mai Chí Thọ, Thủ Đức, TP.HCM"
+      },
+      "headline": "AI Backend Engineer | 3 năm kinh nghiệm Python, FastAPI, MongoDB & Docker",
+      "desired_job_title": "AI Backend Engineer",
+      "plan_code": "app_pro_monthly",
+      "target_status": "interview",
+      "target_score": 81.0,
+      "score_breakdown": {
+        "skills_score": 84.0,
+        "experience_score": 80.0,
+        "education_score": 90.0,
+        "nlp_score": 80.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Công nghệ Thông tin - ĐHQG TP.HCM",
+        "major": "Khoa học Dữ liệu",
+        "degree": "Kỹ sư",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 3.0,
+      "skills": [
+        "python",
+        "fastapi",
+        "docker",
+        "pytorch",
+        "mongodb",
+        "redis"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Katalon Vietnam",
+          "role": "Software Engineer",
+          "period": "07/2021 - Hiện tại (3 năm)",
+          "projects": "Tính năng AI-driven Test Automation.",
+          "responsibilities": "- Lập trình backend dịch vụ test thông minh bằng FastAPI và Python.\n- Tích hợp PyTorch model phân loại lỗi tự động.",
+          "tech_stack": "Python, FastAPI, Docker, MongoDB, PyTorch"
+        }
+      ],
+      "cover_letter": "Kính gửi Bộ phận Tuyển dụng VNG, tôi có 3 năm kinh nghiệm làm việc với FastAPI và PyTorch tại Katalon. Rất mong được tham gia phỏng vấn chuyên môn tại VNG Campus.",
+      "interview_schedule": {
+        "interview_time": "10:00 - 27/10/2026",
+        "location": "VNG Campus, Đường số 13, KCX Tân Thuận, Quận 7, TP.HCM",
+        "meeting_link": null,
+        "message": "Phỏng vấn kỹ thuật trực tiếp tại VNG Campus."
+      },
+      "eval_note": "Khớp chuẩn yêu cầu: 3 năm kinh nghiệm, kỹ năng FastAPI và PyTorch tốt. Đã lên lịch phỏng vấn (Interview)."
+    },
+    {
+      "id_code": "cand_14",
+      "target_job_key": "job_it_backend_ai_vng",
+      "name": "Phan Thùy Trang",
+      "email": "thuytrang.phan99@gmail.com",
+      "phone": "0977.889.900",
+      "gender": "Nữ",
+      "dob": "1999-08-30",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 3",
+        "address": "Số 204 Nam Kỳ Khởi Nghĩa, Quận 3, TP.HCM"
+      },
+      "headline": "Python Backend Developer | 3 năm kinh nghiệm FastAPI, Django & Docker",
+      "desired_job_title": "Backend Developer",
+      "plan_code": "app_plus_monthly",
+      "target_status": "interview",
+      "target_score": 78.0,
+      "score_breakdown": {
+        "skills_score": 80.0,
+        "experience_score": 80.0,
+        "education_score": 85.0,
+        "nlp_score": 77.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học FPT TP.HCM",
+        "major": "Kỹ thuật Phần mềm",
+        "degree": "Kỹ sư",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 3.0,
+      "skills": [
+        "python",
+        "fastapi",
+        "docker",
+        "mongodb",
+        "pytorch"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Tyme Vietnam",
+          "role": "Backend Engineer",
+          "period": "09/2021 - Hiện tại (3 năm)",
+          "projects": "Ngân hàng số TymeBank.",
+          "responsibilities": "- Lập trình các microservices bằng FastAPI và Docker.\n- Xử lý dữ liệu khách hàng bảo mật trên MongoDB.",
+          "tech_stack": "Python, FastAPI, Docker, MongoDB"
+        }
+      ],
+      "cover_letter": "Dear VNG Recruitment Team, I have 3 years of software engineering experience focusing on Python FastAPI and containerized microservices. I am enthusiastic about applying my skills to VNG's innovative AI products.",
+      "interview_schedule": {
+        "interview_time": "15:30 - 28/10/2026",
+        "location": "Online via Zoom",
+        "meeting_link": "https://vng.zoom.us/j/backend-ai-interview",
+        "message": "Technical round with Engineering Lead."
+      },
+      "eval_note": "Hồ sơ đạt tiêu chuẩn tốt: 3 năm kinh nghiệm ngân hàng số, backend FastAPI vững. Mời phỏng vấn trực tuyến (Interview)."
+    },
+    {
+      "id_code": "cand_15",
+      "target_job_key": "job_it_backend_ai_vng",
+      "name": "Dương Đức Minh",
+      "email": "ducminh.duong98@gmail.com",
+      "phone": "0915.223.311",
+      "gender": "Nam",
+      "dob": "1998-03-22",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận Bình Thạnh",
+        "address": "Số 48 Điện Biên Phủ, Bình Thạnh, TP.HCM"
+      },
+      "headline": "Python Developer | 2.5 năm kinh nghiệm Django, Flask & REST API",
+      "desired_job_title": "Python Developer",
+      "plan_code": "app_plus_monthly",
+      "target_status": "reviewing",
+      "target_score": 71.0,
+      "score_breakdown": {
+        "skills_score": 72.0,
+        "experience_score": 72.0,
+        "education_score": 85.0,
+        "nlp_score": 71.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Sư phạm Kỹ thuật TP.HCM",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 2.5,
+      "skills": [
+        "python",
+        "fastapi",
+        "docker",
+        "mongodb"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty TNHH Phần mềm BAP",
+          "role": "Python Developer",
+          "period": "12/2021 - Hiện tại (2.5 năm)",
+          "projects": "Phát triển các cổng thông tin và CRM cho đối tác Nhật.",
+          "responsibilities": "- Lập trình backend bằng Django và mới chuyển một số module sang FastAPI.\n- Đóng gói container với Docker.",
+          "tech_stack": "Python, Django, FastAPI, Docker, PostgreSQL"
+        }
+      ],
+      "cover_letter": "Kính gửi VNG, tôi có 2.5 năm kinh nghiệm lập trình backend bằng Python và đang nghiên cứu sâu về PyTorch. Rất mong được gia nhập đội ngũ VNG.",
+      "eval_note": "Đáp ứng điều kiện kinh nghiệm tối thiểu 2.5 năm, kỹ năng Python tốt nhưng kiến thức PyTorch và Vector search cần được kiểm tra thêm (Reviewing)."
+    },
+    {
+      "id_code": "cand_16",
+      "target_job_key": "job_it_backend_ai_vng",
+      "name": "Trịnh Văn Dũng",
+      "email": "dung.trinhvan99@gmail.com",
+      "phone": "0988.665.544",
+      "gender": "Nam",
+      "dob": "1999-11-12",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận Phú Nhuận",
+        "address": "Số 72 Phan Xích Long, Phú Nhuận, TP.HCM"
+      },
+      "headline": "Data Engineer / Python Developer | 2 năm kinh nghiệm ETL & Machine Learning",
+      "desired_job_title": "Backend Python Engineer",
+      "plan_code": "app_free",
+      "target_status": "reviewing",
+      "target_score": 64.0,
+      "score_breakdown": {
+        "skills_score": 65.0,
+        "experience_score": 60.0,
+        "education_score": 85.0,
+        "nlp_score": 65.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Tôn Đức Thắng",
+        "major": "Khoa học Máy tính",
+        "degree": "Cử nhân",
+        "grad_year": 2022,
+        "rank": "Khá"
+      },
+      "yoe": 2.0,
+      "skills": [
+        "python",
+        "pytorch",
+        "docker",
+        "mongodb"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần VNG (ZaloPay Intern & Fresher)",
+          "role": "Junior Data Engineer",
+          "period": "03/2022 - Hiện tại (2 năm)",
+          "projects": "Xử lý đường ống dữ liệu giao dịch cho hệ thống phân tích.",
+          "responsibilities": "- Viết script Python cào và xử lý dữ liệu tự động.\n- Huấn luyện mô hình phân loại với PyTorch.",
+          "tech_stack": "Python, PyTorch, SQL, Docker"
+        }
+      ],
+      "cover_letter": "Kính gửi Ban Tuyển dụng, em từng có thời gian thực tập tại ZaloPay và mong muốn trở lại cống hiến cho VNG ở vị trí Backend AI.",
+      "eval_note": "Ứng viên nội bộ tiềm năng nhưng YOE mới 2 năm và thiên về Data Pipeline hơn là Web API FastAPI. Đang xem xét chuyển giao phỏng vấn (Reviewing)."
+    },
+    {
+      "id_code": "cand_17",
+      "target_job_key": "job_it_backend_ai_vng",
+      "name": "Cao Đình Bách",
+      "email": "bach.caodinh2002@gmail.com",
+      "phone": "0901.334.455",
+      "gender": "Nam",
+      "dob": "2002-01-20",
+      "location": {
+        "province_code": "79",
+        "district_name": "Thành phố Thủ Đức",
+        "address": "Khu phố 6, Linh Trung, Thủ Đức, TP.HCM"
+      },
+      "headline": "AI Research Fresher | Tốt nghiệp Xuất sắc ĐH Quốc tế ĐHQG TP.HCM",
+      "desired_job_title": "Junior AI Engineer",
+      "plan_code": "app_free",
+      "target_status": "new",
+      "target_score": 57.0,
+      "score_breakdown": {
+        "skills_score": 68.0,
+        "experience_score": 25.0,
+        "education_score": 100.0,
+        "nlp_score": 62.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Quốc tế - ĐHQG TP.HCM",
+        "major": "Khoa học Dữ liệu",
+        "degree": "Kỹ sư",
+        "grad_year": 2024,
+        "rank": "Xuất sắc"
+      },
+      "yoe": 0.5,
+      "skills": [
+        "python",
+        "fastapi",
+        "pytorch",
+        "docker"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "AI Lab - International University",
+          "role": "Research Assistant",
+          "period": "2023 - 2024 (1 năm)",
+          "projects": "Nghiên cứu mô hình ngôn ngữ lớn cho tóm tắt văn bản y khoa.",
+          "responsibilities": "- Fine-tune mô hình Transformers bằng PyTorch.\n- Viết demo API bằng FastAPI.",
+          "tech_stack": "Python, PyTorch, HuggingFace, FastAPI"
+        }
+      ],
+      "cover_letter": "Dear VNG Team, I recently graduated with High Distinction in Data Science and published a paper on NLP. I aspire to bring my algorithmic expertise to VNG.",
+      "eval_note": "Mới nộp (New): Học vấn xuất sắc, điểm lý thuyết AI cao nhưng kinh nghiệm thực tế chỉ có 0.5 năm nghiên cứu tại trường."
+    },
+    {
+      "id_code": "cand_18",
+      "target_job_key": "job_it_backend_ai_vng",
+      "name": "Lâm Nhật Huy",
+      "email": "huy.lamnhat@gmail.com",
+      "phone": "0933.882.211",
+      "gender": "Nam",
+      "dob": "1999-05-14",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 10",
+        "address": "Số 136 Lý Thường Kiệt, Quận 10, TP.HCM"
+      },
+      "headline": "Data Analyst muốn chuyển hướng sang AI Backend Engineering",
+      "desired_job_title": "AI Backend Developer",
+      "plan_code": "app_free",
+      "target_status": "new",
+      "target_score": 51.0,
+      "score_breakdown": {
+        "skills_score": 50.0,
+        "experience_score": 55.0,
+        "education_score": 80.0,
+        "nlp_score": 52.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Kinh tế TP.HCM (UEH)",
+        "major": "Hệ thống Thông tin Kinh doanh",
+        "degree": "Cử nhân",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 2.0,
+      "skills": [
+        "python",
+        "mongodb"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần Tiki",
+          "role": "Data Analyst",
+          "period": "2022 - Hiện tại (2 năm)",
+          "projects": "Xây dựng dashboard hành vi người dùng.",
+          "responsibilities": "- Phân tích dữ liệu bằng Python và SQL.\n- Viết script tự động hóa báo cáo.",
+          "tech_stack": "Python, Pandas, SQL, Tableau"
+        }
+      ],
+      "cover_letter": "Kính gửi công ty, tôi đã có 2 năm phân tích dữ liệu và tự học FastAPI để ứng tuyển vị trí này.",
+      "eval_note": "Mới nộp (New): Kỹ năng thiên về phân tích số liệu Pandas/SQL, chưa có kinh nghiệm xây dựng hệ thống web API và Deep Learning."
+    },
+    {
+      "id_code": "cand_19",
+      "target_job_key": "job_it_backend_ai_vng",
+      "name": "Lưu Gia Huy",
+      "email": "giahuy.luu.java@gmail.com",
+      "phone": "0945.667.788",
+      "gender": "Nam",
+      "dob": "1998-07-29",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận Tân Bình",
+        "address": "Số 10 Phổ Quang, Phường 2, Tân Bình, TP.HCM"
+      },
+      "headline": "Backend Java Developer | 3 năm kinh nghiệm Spring Boot & Microservices",
+      "desired_job_title": "Backend Engineer",
+      "plan_code": "app_free",
+      "target_status": "rejected",
+      "target_score": 36.0,
+      "score_breakdown": {
+        "skills_score": 25.0,
+        "experience_score": 70.0,
+        "education_score": 85.0,
+        "nlp_score": 38.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Bách Khoa TP.HCM",
+        "major": "Điện tử Viễn thông",
+        "degree": "Kỹ sư",
+        "grad_year": 2020,
+        "rank": "Khá"
+      },
+      "yoe": 3.0,
+      "skills": [
+        "docker"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "NashTech Vietnam",
+          "role": "Java Developer",
+          "period": "2021 - 2024 (3 năm)",
+          "projects": "Phát triển hệ thống ngân hàng cho khách hàng châu Âu.",
+          "responsibilities": "- Lập trình backend bằng Java Spring Boot.\n- Quản trị cơ sở dữ liệu Oracle.",
+          "tech_stack": "Java, Spring Boot, Oracle DB, Docker"
+        }
+      ],
+      "cover_letter": "Tôi là kỹ sư backend Java có 3 năm kinh nghiệm muốn thử sức với lĩnh vực AI tại VNG.",
+      "rejection_reason": "Hồ sơ chuyên môn Java, không đáp ứng yêu cầu bắt buộc (Knockout Skills): Python và framework FastAPI, thiếu kinh nghiệm AI/PyTorch.",
+      "eval_note": "Từ chối (Rejected): Thiếu kỹ năng cốt lõi Python và FastAPI, chuyên môn hoàn toàn là Java Spring Boot."
+    },
+    {
+      "id_code": "cand_20",
+      "target_job_key": "job_it_backend_ai_vng",
+      "name": "Hà Mỹ Duyên",
+      "email": "myduyen.ha.translator@gmail.com",
+      "phone": "0916.332.255",
+      "gender": "Nữ",
+      "dob": "2000-11-05",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 1",
+        "address": "Đinh Tiên Hoàng, Đa Kao, Quận 1, TP.HCM"
+      },
+      "headline": "Cử nhân Ngôn ngữ Anh yêu thích Công nghệ Trí tuệ Nhân tạo",
+      "desired_job_title": "AI Trainee",
+      "plan_code": "app_free",
+      "target_status": "rejected",
+      "target_score": 20.0,
+      "score_breakdown": {
+        "skills_score": 10.0,
+        "experience_score": 10.0,
+        "education_score": 50.0,
+        "nlp_score": 22.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Khoa học Xã hội và Nhân văn TP.HCM",
+        "major": "Ngôn ngữ Anh",
+        "degree": "Cử nhân",
+        "grad_year": 2022,
+        "rank": "Giỏi"
+      },
+      "yoe": 0.0,
+      "skills": [],
+      "certifications": [
+        "IELTS"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Trung tâm Anh ngữ VUS",
+          "role": "Giáo viên tiếng Anh & Biên dịch",
+          "period": "2022 - 2024 (2 năm)",
+          "projects": "Giảng dạy IELTS và biên dịch tài liệu học thuật.",
+          "responsibilities": "- Soạn giáo án và dịch thuật văn bản.",
+          "tech_stack": "MS Office"
+        }
+      ],
+      "cover_letter": "Em có tiếng Anh IELTS 8.0 và muốn học việc về AI tại VNG.",
+      "rejection_reason": "Chưa có bằng cấp hoặc kinh nghiệm chuyên môn liên quan đến Kỹ thuật phần mềm / Trí tuệ nhân tạo.",
+      "eval_note": "Từ chối (Rejected): Trái ngành ngôn ngữ, 0 kỹ năng lập trình phần mềm."
+    },
+    {
+      "id_code": "cand_21",
+      "target_job_key": "job_it_devops_viettel",
+      "name": "Tạ Đình Phong",
+      "email": "phong.tadinh.devops@gmail.com",
+      "phone": "0982.556.778",
+      "gender": "Nam",
+      "dob": "1996-03-10",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Cầu Giấy",
+        "address": "Số 9 Duy Tân, Cầu Giấy, Hà Nội"
+      },
+      "headline": "Lead Cloud & DevOps Engineer | 5 năm kinh nghiệm AWS, Kubernetes, Terraform & CI/CD",
+      "desired_job_title": "Senior DevOps Engineer",
+      "plan_code": "app_vip_yearly",
+      "target_status": "hired",
+      "target_score": 95.0,
+      "score_breakdown": {
+        "skills_score": 98.0,
+        "experience_score": 100.0,
+        "education_score": 100.0,
+        "nlp_score": 93.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Bách Khoa Hà Nội",
+        "major": "Kỹ thuật Điện tử Viễn thông",
+        "degree": "Kỹ sư",
+        "grad_year": 2018,
+        "rank": "Giỏi"
+      },
+      "yoe": 5.0,
+      "skills": [
+        "aws",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "ci/cd",
+        "prometheus",
+        "grafana",
+        "linux",
+        "ansible"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect",
+        "Cisco Certified Network Associate (CCNA)",
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Ngân hàng TMCP Kỹ Thương Việt Nam (Techcombank)",
+          "role": "Senior Cloud DevOps Engineer",
+          "period": "04/2021 - Hiện tại (3 năm 6 tháng)",
+          "projects": "Xây dựng nền tảng hạ tầng Hybrid Cloud phục vụ ứng dụng Mobile Banking mới.",
+          "responsibilities": "- Quản lý cụm Kubernetes (EKS) hơn 120 worker nodes với cơ chế Auto-scaling và Zero-downtime deployment.\n- Tự động hóa 100% provisioning hạ tầng AWS bằng Terraform (IaC).\n- Xây dựng hệ thống giám sát tập trung Prometheus, Grafana và cảnh báo Alertmanager.",
+          "tech_stack": "AWS, Kubernetes, Terraform, Docker, GitLab CI, Prometheus, Grafana, Linux"
+        }
+      ],
+      "cover_letter": "Kính gửi Ban Tuyển dụng Tổng Công ty Giải pháp Doanh nghiệp Viettel,\n\nTôi là Tạ Đình Phong, kỹ sư tốt nghiệp ĐH Bách Khoa Hà Nội với 5 năm kinh nghiệm chuyên sâu trong kiến trúc điện toán đám mây AWS và điều phối container Kubernetes quy mô lớn tại các tổ chức tài chính hàng đầu. Sở hữu chứng chỉ AWS Solutions Architect và nền tảng viễn thông vững vàng, tôi tự tin sẽ đóng góp xuất sắc vào sứ mệnh xây dựng hạ tầng số an toàn, bảo mật và chịu tải cao của Viettel Solutions.\n\nTrân trọng,\nTạ Đình Phong",
+      "eval_note": "Xuất sắc toàn diện: 5 năm kinh nghiệm ngân hàng số, chứng chỉ AWS Architect, quản lý cụm K8s >120 nodes, tốt nghiệp Bách Khoa Hà Nội. Đạt tuyển dụng (Hired)."
+    },
+    {
+      "id_code": "cand_22",
+      "target_job_key": "job_it_devops_viettel",
+      "name": "Bùi Đức Anh",
+      "email": "ducanh.bui.cloud@gmail.com",
+      "phone": "0913.889.922",
+      "gender": "Nam",
+      "dob": "1997-09-18",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Nam Từ Liêm",
+        "address": "KĐT Mỹ Đình 1, Nam Từ Liêm, Hà Nội"
+      },
+      "headline": "Senior DevOps Engineer | 4 năm kinh nghiệm AWS, Kubernetes & GitOps",
+      "desired_job_title": "Senior DevOps Engineer",
+      "plan_code": "app_pro_monthly",
+      "target_status": "offered",
+      "target_score": 89.0,
+      "score_breakdown": {
+        "skills_score": 92.0,
+        "experience_score": 92.0,
+        "education_score": 95.0,
+        "nlp_score": 87.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Trường ĐH Công Nghệ - ĐHQGHN",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2019,
+        "rank": "Khá"
+      },
+      "yoe": 4.0,
+      "skills": [
+        "aws",
+        "kubernetes",
+        "docker",
+        "terraform",
+        "ci/cd",
+        "linux",
+        "ansible"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "CMC Telecom",
+          "role": "Cloud Infrastructure Engineer",
+          "period": "08/2020 - Hiện tại (4 năm)",
+          "projects": "Quy hoạch và chuyển đổi hạ tầng cho khối khách hàng doanh nghiệp lên CMC Cloud & AWS.",
+          "responsibilities": "- Viết mã nguồn Terraform tạo VPC, Subnet, EKS, RDS tự động.\n- Thiết lập đường ống CI/CD bằng Jenkins và GitLab CI.",
+          "tech_stack": "AWS, Kubernetes, Terraform, Docker, Linux, GitLab CI"
+        }
+      ],
+      "cover_letter": "Dear Viettel Solutions Hiring Team,\n\nI have 4 years of proven hands-on experience designing cloud infrastructure on AWS and deploying production Kubernetes workloads. Having managed enterprise migrations at CMC Telecom, I am eager to contribute to Viettel's telecom cloud solutions.\n\nBest regards,\nBui Duc Anh",
+      "eval_note": "Rất phù hợp: 4 năm YOE, chứng chỉ AWS Architect, thành thạo Terraform/K8s/Linux. Đã phát hành Offer (Offered)."
+    },
+    {
+      "id_code": "cand_23",
+      "target_job_key": "job_it_devops_viettel",
+      "name": "Nguyễn Trọng Đại",
+      "email": "trongdai.nguyen98@gmail.com",
+      "phone": "0975.334.411",
+      "gender": "Nam",
+      "dob": "1998-02-12",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Bắc Từ Liêm",
+        "address": "Hoàng Quốc Việt, Bắc Từ Liêm, Hà Nội"
+      },
+      "headline": "DevOps Engineer | 3.5 năm kinh nghiệm Docker, K8s, CI/CD & Linux Administration",
+      "desired_job_title": "DevOps Engineer",
+      "plan_code": "app_pro_monthly",
+      "target_status": "interview",
+      "target_score": 82.5,
+      "score_breakdown": {
+        "skills_score": 86.0,
+        "experience_score": 85.0,
+        "education_score": 90.0,
+        "nlp_score": 81.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Học viện Kỹ thuật Quân sự",
+        "major": "An toàn Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2020,
+        "rank": "Giỏi"
+      },
+      "yoe": 3.5,
+      "skills": [
+        "aws",
+        "kubernetes",
+        "docker",
+        "ci/cd",
+        "linux",
+        "terraform"
+      ],
+      "certifications": [
+        "Cisco Certified Network Associate (CCNA)"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty An ninh mạng Viettel (Viettel Cyber Security)",
+          "role": "SecOps Engineer",
+          "period": "10/2020 - Hiện tại (3.5 năm)",
+          "projects": "Xây dựng hạ tầng SOC và hệ thống giám sát an ninh mạng.",
+          "responsibilities": "- Triển khai container hóa các dịch vụ trên cụm Kubernetes.\n- Thiết lập đường ống CI/CD tự động quét mã bảo mật.",
+          "tech_stack": "Kubernetes, Docker, Linux, GitLab CI, AWS"
+        }
+      ],
+      "cover_letter": "Kính gửi Ban Lãnh đạo Viettel Solutions, tôi là cựu học viên Học viện Kỹ thuật Quân sự có 3.5 năm công tác trong ngành an toàn thông tin quân đội. Tôi mong muốn tiếp tục cống hiến cho Viettel.",
+      "interview_schedule": {
+        "interview_time": "09:00 - 26/10/2026",
+        "location": "Tòa nhà Viettel, Số 1 Trần Hữu Dực, Nam Từ Liêm, Hà Nội",
+        "meeting_link": null,
+        "message": "Phỏng vấn trực tiếp tại trụ sở Viettel Solutions."
+      },
+      "eval_note": "Khớp chuẩn yêu cầu: Tốt nghiệp trường quân sự, 3.5 năm kinh nghiệm, có chứng chỉ CCNA và am hiểu văn hóa Viettel. Lên lịch phỏng vấn (Interview)."
+    },
+    {
+      "id_code": "cand_24",
+      "target_job_key": "job_it_devops_viettel",
+      "name": "Lê Hồng Sơn",
+      "email": "son.lehong.cloud@gmail.com",
+      "phone": "0968.123.456",
+      "gender": "Nam",
+      "dob": "1999-07-04",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Đống Đa",
+        "address": "Số 102 Trường Chinh, Đống Đa, Hà Nội"
+      },
+      "headline": "Cloud Engineer | 3 năm kinh nghiệm AWS Cloud & GitHub Actions",
+      "desired_job_title": "DevOps Engineer",
+      "plan_code": "app_plus_monthly",
+      "target_status": "interview",
+      "target_score": 76.5,
+      "score_breakdown": {
+        "skills_score": 78.0,
+        "experience_score": 75.0,
+        "education_score": 90.0,
+        "nlp_score": 77.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Bách Khoa Hà Nội",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 3.0,
+      "skills": [
+        "aws",
+        "docker",
+        "terraform",
+        "ci/cd",
+        "linux"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "VNG Corporation (VNG Cloud)",
+          "role": "Cloud Support & Deployment",
+          "period": "05/2021 - Hiện tại (3 năm)",
+          "projects": "Hỗ trợ khách hàng doanh nghiệp triển khai kiến trúc đám mây.",
+          "responsibilities": "- Quản lý tài nguyên AWS và VNG Cloud bằng Terraform.\n- Thiết lập đường ống CI/CD với GitHub Actions.",
+          "tech_stack": "AWS, Terraform, Docker, Linux, GitHub Actions"
+        }
+      ],
+      "cover_letter": "Kính gửi Viettel Solutions, tôi có 3 năm kinh nghiệm Cloud AWS và chứng chỉ AWS Solutions Architect. Rất mong được trao đổi chi tiết tại buổi phỏng vấn.",
+      "interview_schedule": {
+        "interview_time": "14:00 - 27/10/2026",
+        "location": "Online via Microsoft Teams",
+        "meeting_link": "https://teams.microsoft.com/l/viettel-interview",
+        "message": "Phỏng vấn kỹ thuật trực tuyến với Trưởng phòng Hạ tầng."
+      },
+      "eval_note": "Đáp ứng tốt: 3 năm kinh nghiệm AWS, có chứng chỉ AWS Architect, điểm trừ nhỏ là Kubernetes ở mức cơ bản. Mời phỏng vấn (Interview)."
+    },
+    {
+      "id_code": "cand_25",
+      "target_job_key": "job_it_devops_viettel",
+      "name": "Phan Văn Hậu",
+      "email": "hau.phanvan97@gmail.com",
+      "phone": "0936.445.522",
+      "gender": "Nam",
+      "dob": "1997-10-25",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Thanh Xuân",
+        "address": "Số 334 Nguyễn Trãi, Thanh Xuân, Hà Nội"
+      },
+      "headline": "System Administrator chuyển hướng DevOps | 3.5 năm Linux & Docker",
+      "desired_job_title": "DevOps Engineer",
+      "plan_code": "app_plus_monthly",
+      "target_status": "reviewing",
+      "target_score": 69.0,
+      "score_breakdown": {
+        "skills_score": 68.0,
+        "experience_score": 80.0,
+        "education_score": 80.0,
+        "nlp_score": 68.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Học viện Bưu chính Viễn thông",
+        "major": "Kỹ thuật Điện tử Viễn thông",
+        "degree": "Kỹ sư",
+        "grad_year": 2020,
+        "rank": "Trung bình Khá"
+      },
+      "yoe": 3.5,
+      "skills": [
+        "docker",
+        "linux",
+        "ci/cd",
+        "aws"
+      ],
+      "certifications": [
+        "Cisco Certified Network Associate (CCNA)"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty CP Hạ tầng Viễn thông CMC",
+          "role": "Linux System Admin",
+          "period": "11/2020 - Hiện tại (3.5 năm)",
+          "projects": "Quản trị cụm máy chủ dữ liệu nội bộ.",
+          "responsibilities": "- Cài đặt và cấu hình hệ điều hành Linux CentOS/Ubuntu.\n- Viết Bash script tự động hóa sao lưu và đóng gói Docker.",
+          "tech_stack": "Linux, Bash Script, Docker, Nginx, Nagios"
+        }
+      ],
+      "cover_letter": "Kính gửi Viettel Solutions, tôi có 3.5 năm kinh nghiệm quản trị hệ thống Linux và đang bổ sung kiến thức về Kubernetes để chuyển đổi vị trí DevOps.",
+      "eval_note": "Nền tảng Linux và mạng viễn thông rất chắc (CCNA), nhưng kiến thức chuyên sâu về Kubernetes và Terraform chưa nhiều. Đang xem xét (Reviewing)."
+    },
+    {
+      "id_code": "cand_26",
+      "target_job_key": "job_it_devops_viettel",
+      "name": "Đinh Quang Huy",
+      "email": "huy.dinhquang98@gmail.com",
+      "phone": "0987.332.110",
+      "gender": "Nam",
+      "dob": "1998-08-14",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Hà Đông",
+        "address": "Mộ Lao, Hà Đông, Hà Nội"
+      },
+      "headline": "Cloud DevOps | 2.5 năm GCP & Azure Cloud",
+      "desired_job_title": "Cloud Infrastructure Engineer",
+      "plan_code": "app_free",
+      "target_status": "reviewing",
+      "target_score": 63.5,
+      "score_breakdown": {
+        "skills_score": 65.0,
+        "experience_score": 65.0,
+        "education_score": 85.0,
+        "nlp_score": 62.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Công nghiệp Hà Nội",
+        "major": "Công nghệ Thông tin",
+        "degree": "Cử nhân",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 2.5,
+      "skills": [
+        "kubernetes",
+        "docker",
+        "ci/cd",
+        "linux"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần Magenest",
+          "role": "DevOps Engineer",
+          "period": "02/2022 - Hiện tại (2.5 năm)",
+          "projects": "Triển khai hạ tầng E-Commerce trên Google Cloud.",
+          "responsibilities": "- Quản lý cụm GKE trên GCP.\n- Thiết lập CI/CD bằng GitLab CI.",
+          "tech_stack": "GCP, Kubernetes, Docker, GitLab CI"
+        }
+      ],
+      "cover_letter": "Kính gửi Viettel Solutions, tôi muốn ứng tuyển để mở rộng sang mảng AWS Cloud và viễn thông doanh nghiệp.",
+      "eval_note": "Có kinh nghiệm Kubernetes trên GCP nhưng JD yêu cầu chuyên sâu AWS và Terraform. Cần Tech Lead đánh giá thêm (Reviewing)."
+    },
+    {
+      "id_code": "cand_27",
+      "target_job_key": "job_it_devops_viettel",
+      "name": "Vũ Minh Châu",
+      "email": "minhchau.vu.devops@gmail.com",
+      "phone": "0944.887.766",
+      "gender": "Nữ",
+      "dob": "2001-04-10",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Hoàng Mai",
+        "address": "Tân Mai, Hoàng Mai, Hà Nội"
+      },
+      "headline": "Junior DevOps Engineer | 1 năm kinh nghiệm CI/CD & Docker",
+      "desired_job_title": "DevOps Engineer",
+      "plan_code": "app_free",
+      "target_status": "new",
+      "target_score": 55.0,
+      "score_breakdown": {
+        "skills_score": 60.0,
+        "experience_score": 30.0,
+        "education_score": 90.0,
+        "nlp_score": 56.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Học viện Công nghệ Bưu chính Viễn thông",
+        "major": "An toàn Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2023,
+        "rank": "Khá"
+      },
+      "yoe": 1.0,
+      "skills": [
+        "docker",
+        "ci/cd",
+        "linux",
+        "aws"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "VNPT Technology",
+          "role": "Junior DevOps",
+          "period": "2023 - 2024 (1 năm)",
+          "projects": "Hỗ trợ quản trị hệ thống build tự động.",
+          "responsibilities": "- Viết file cấu hình Jenkins CI và đóng gói Docker image.",
+          "tech_stack": "Jenkins, Docker, Linux, Git"
+        }
+      ],
+      "cover_letter": "Kính gửi Viettel Solutions, em mới tốt nghiệp có 1 năm kinh nghiệm làm DevOps và mong muốn được đào tạo nâng cao.",
+      "eval_note": "Mới nộp (New): Ứng viên mới tốt nghiệp 1 năm kinh nghiệm, chưa đủ số năm yêu cầu (3.5 năm) cho vị trí Senior."
+    },
+    {
+      "id_code": "cand_28",
+      "target_job_key": "job_it_devops_viettel",
+      "name": "Nguyễn Tuấn Linh",
+      "email": "tuanlinh.network96@gmail.com",
+      "phone": "0912.883.399",
+      "gender": "Nam",
+      "dob": "1996-06-20",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Long Biên",
+        "address": "Ngọc Lâm, Long Biên, Hà Nội"
+      },
+      "headline": "Kỹ sư Mạng CCNP muốn chuyển sang mảng Cloud Infrastructure",
+      "desired_job_title": "Cloud Infrastructure Engineer",
+      "plan_code": "app_free",
+      "target_status": "new",
+      "target_score": 50.0,
+      "score_breakdown": {
+        "skills_score": 48.0,
+        "experience_score": 60.0,
+        "education_score": 85.0,
+        "nlp_score": 49.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Bách Khoa Hà Nội",
+        "major": "Điện tử Viễn thông",
+        "degree": "Kỹ sư",
+        "grad_year": 2018,
+        "rank": "Khá"
+      },
+      "yoe": 4.0,
+      "skills": [
+        "linux",
+        "docker"
+      ],
+      "certifications": [
+        "Cisco Certified Network Associate (CCNA)"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "FPT Telecom International",
+          "role": "Network Engineer",
+          "period": "2019 - 2023 (4 năm)",
+          "projects": "Vận hành mạng Data Center.",
+          "responsibilities": "- Cấu hình Router, Switch Cisco, Juniper và Firewall Fortigate.",
+          "tech_stack": "Cisco, Routing, Switching, Firewall"
+        }
+      ],
+      "cover_letter": "Tôi có 4 năm kinh nghiệm mạng viễn thông và muốn ứng tuyển vào hạ tầng đám mây Viettel.",
+      "eval_note": "Mới nộp (New): Kinh nghiệm chuyên về mạng phần cứng Network Switch/Router, chưa có kinh nghiệm thực tế về AWS và Kubernetes."
+    },
+    {
+      "id_code": "cand_29",
+      "target_job_key": "job_it_devops_viettel",
+      "name": "Trần Quốc Toản",
+      "email": "quoctoan.ithelpdesk@gmail.com",
+      "phone": "0981.229.988",
+      "gender": "Nam",
+      "dob": "1998-12-14",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Cầu Giấy",
+        "address": "Xuân Thủy, Cầu Giấy, Hà Nội"
+      },
+      "headline": "IT Helpdesk & Hỗ trợ kỹ thuật phần cứng văn phòng",
+      "desired_job_title": "IT Support Engineer",
+      "plan_code": "app_free",
+      "target_status": "rejected",
+      "target_score": 35.0,
+      "score_breakdown": {
+        "skills_score": 25.0,
+        "experience_score": 40.0,
+        "education_score": 75.0,
+        "nlp_score": 36.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Cao đẳng Công nghệ Thông tin Hà Nội",
+        "major": "Quản trị Mạng",
+        "degree": "Cao đẳng",
+        "grad_year": 2020,
+        "rank": "Trung bình"
+      },
+      "yoe": 2.0,
+      "skills": [],
+      "certifications": [],
+      "languages": [],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần Thương mại Hoàng Hà",
+          "role": "IT Helpdesk",
+          "period": "2021 - 2023 (2 năm)",
+          "projects": "Bảo trì máy tính và mạng LAN văn phòng.",
+          "responsibilities": "- Cài đặt Windows, máy in, sửa chữa mạng nội bộ công ty.",
+          "tech_stack": "Windows, LAN, Hardware"
+        }
+      ],
+      "cover_letter": "Tôi có 2 năm sửa chữa máy tính muốn ứng tuyển vào làm hạ tầng máy chủ.",
+      "rejection_reason": "Chưa có kinh nghiệm thực tế về kiến trúc Cloud AWS và điều phối container Kubernetes ở cấp độ Senior.",
+      "eval_note": "Từ chối (Rejected): Thiếu cả 2 kỹ năng cốt lõi AWS và Kubernetes, kinh nghiệm thuộc mảng Helpdesk phần cứng."
+    },
+    {
+      "id_code": "cand_30",
+      "target_job_key": "job_it_devops_viettel",
+      "name": "Phạm Thùy Linh",
+      "email": "thuylinh.phamfinance@gmail.com",
+      "phone": "0904.112.233",
+      "gender": "Nữ",
+      "dob": "1999-09-09",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Hoàn Kiếm",
+        "address": "Hàng Bông, Hoàn Kiếm, Hà Nội"
+      },
+      "headline": "Kế toán viên doanh nghiệp tìm kiếm cơ hội mới",
+      "desired_job_title": "Nhân viên văn phòng",
+      "plan_code": "app_free",
+      "target_status": "rejected",
+      "target_score": 23.0,
+      "score_breakdown": {
+        "skills_score": 10.0,
+        "experience_score": 20.0,
+        "education_score": 60.0,
+        "nlp_score": 24.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Học viện Tài chính",
+        "major": "Kế toán Doanh nghiệp",
+        "degree": "Cử nhân",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 0.0,
+      "skills": [],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty TNHH Dịch vụ Kế toán Đại Nam",
+          "role": "Kế toán viên",
+          "period": "2021 - 2023 (2 năm)",
+          "projects": "Lập báo cáo thuế cho doanh nghiệp vừa và nhỏ.",
+          "responsibilities": "- Nhập chứng từ và hạch toán sổ sách.",
+          "tech_stack": "Phần mềm MISA"
+        }
+      ],
+      "cover_letter": "Tôi nộp CV ứng tuyển vào Viettel Solutions.",
+      "rejection_reason": "Hồ sơ không thuộc lĩnh vực Công nghệ thông tin / Hạ tầng mạng, không đáp ứng tiêu chuẩn tuyển dụng kỹ thuật.",
+      "eval_note": "Từ chối (Rejected): Trái ngành tài chính kế toán, không có kỹ năng IT."
+    },
+    {
+      "id_code": "cand_31",
+      "target_job_key": "job_it_mobile_vnpay",
+      "name": "Lê Hoàng Long",
+      "email": "longle.mobile@gmail.com",
+      "phone": "0912.998.833",
+      "gender": "Nam",
+      "dob": "1997-11-20",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Đống Đa",
+        "address": "Số 68 Thái Hà, Trung Liệt, Đống Đa, Hà Nội"
+      },
+      "headline": "Senior Mobile Developer | 4 năm kinh nghiệm Flutter, Dart & Clean Architecture",
+      "desired_job_title": "Mobile Application Engineer",
+      "plan_code": "app_vip_monthly",
+      "target_status": "hired",
+      "target_score": 93.5,
+      "score_breakdown": {
+        "skills_score": 95.0,
+        "experience_score": 95.0,
+        "education_score": 95.0,
+        "nlp_score": 92.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Bách Khoa Hà Nội",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2019,
+        "rank": "Giỏi"
+      },
+      "yoe": 4.0,
+      "skills": [
+        "flutter",
+        "dart",
+        "restful api",
+        "state management",
+        "firebase",
+        "socket.io",
+        "ci/cd"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần VNG (ZaloPay Mobile Team)",
+          "role": "Senior Flutter Developer",
+          "period": "05/2021 - Hiện tại (3 năm 5 tháng)",
+          "projects": "Phát triển các module liên kết ngân hàng và thanh toán QR code trên ứng dụng ví ZaloPay.",
+          "responsibilities": "- Áp dụng Clean Architecture và BLoC pattern tối ưu trải nghiệm người dùng với hơn 5 triệu lượt tải.\n- Đảm bảo chuẩn bảo mật tài chính PCI-DSS, mã hóa RSA cho các giao dịch nhạy cảm.\n- Thiết lập CI/CD tự động build bản cài đặt lên TestFlight và Google Play Internal.",
+          "tech_stack": "Flutter, Dart, BLoC, RESTful API, WebSocket, Fastlane, Git"
+        }
+      ],
+      "cover_letter": "Kính gửi Ban Tuyển dụng VNPAY,\n\nTôi là Lê Hoàng Long, kỹ sư lập trình di động với 4 năm kinh nghiệm thực chiến chuyên sâu với Flutter và Dart trong lĩnh vực Fintech tại ZaloPay. Tôi luôn đặt tính bảo mật, hiệu năng ổn định và trải nghiệm mượt mà của khách hàng lên hàng đầu.\n\nVới mong muốn đồng hành cùng nền tảng thanh toán điện tử số 1 Việt Nam, tôi rất vinh hạnh được cống hiến năng lực kỹ thuật của mình tại VNPAY.\n\nTrân trọng,\nLê Hoàng Long",
+      "eval_note": "Rất xuất sắc: 4 năm chuyên làm ví điện tử ZaloPay, thành thạo Flutter/BLoC/bảo mật thanh toán, tốt nghiệp ĐH Bách Khoa. Đạt tuyển dụng (Hired)."
+    },
+    {
+      "id_code": "cand_32",
+      "target_job_key": "job_it_mobile_vnpay",
+      "name": "Nguyễn Thị Thu Hà",
+      "email": "thuha.mobiledev@gmail.com",
+      "phone": "0984.556.677",
+      "gender": "Nữ",
+      "dob": "1998-05-16",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Thanh Xuân",
+        "address": "Số 19 Lê Văn Lương, Thanh Xuân, Hà Nội"
+      },
+      "headline": "Mobile Software Engineer | 3.5 năm Flutter & Native Android",
+      "desired_job_title": "Mobile Engineer",
+      "plan_code": "app_pro_monthly",
+      "target_status": "offered",
+      "target_score": 86.5,
+      "score_breakdown": {
+        "skills_score": 90.0,
+        "experience_score": 88.0,
+        "education_score": 90.0,
+        "nlp_score": 84.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Trường ĐH Công Nghệ - ĐHQGHN",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2020,
+        "rank": "Khá"
+      },
+      "yoe": 3.5,
+      "skills": [
+        "flutter",
+        "dart",
+        "restful api",
+        "state management",
+        "firebase"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần MISA",
+          "role": "Mobile Developer",
+          "period": "09/2020 - Hiện tại (3.5 năm)",
+          "projects": "Ứng dụng Quản lý tài chính cá nhân MISA Money Keeper.",
+          "responsibilities": "- Lập trình ứng dụng di động đa nền tảng bằng Flutter & Dart.\n- Tích hợp đồng bộ hóa dữ liệu thời gian thực và lưu trữ offline bằng SQLite/Hive.",
+          "tech_stack": "Flutter, Dart, Provider/BLoC, SQLite, REST API"
+        }
+      ],
+      "cover_letter": "Kính gửi VNPAY, tôi có 3.5 năm kinh nghiệm lập trình ứng dụng tài chính trên Flutter. Tôi tự tin vào khả năng viết code sạch, dễ bảo trì và phối hợp nhóm tốt.",
+      "eval_note": "Hồ sơ rất tốt: 3.5 năm làm app tài chính cá nhân MISA, am hiểu Flutter và xử lý offline. Đã phát hành Offer (Offered)."
+    },
+    {
+      "id_code": "cand_33",
+      "target_job_key": "job_it_mobile_vnpay",
+      "name": "Trần Đình Trọng",
+      "email": "trong.trandinh99@gmail.com",
+      "phone": "0973.112.990",
+      "gender": "Nam",
+      "dob": "1999-01-15",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Ba Đình",
+        "address": "Số 47 Đội Cấn, Ba Đình, Hà Nội"
+      },
+      "headline": "Flutter Developer | 3 năm kinh nghiệm BLoC Pattern & UI Animation",
+      "desired_job_title": "Flutter Developer",
+      "plan_code": "app_pro_monthly",
+      "target_status": "interview",
+      "target_score": 80.0,
+      "score_breakdown": {
+        "skills_score": 82.0,
+        "experience_score": 80.0,
+        "education_score": 85.0,
+        "nlp_score": 80.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Sư phạm Kỹ thuật Hưng Yên",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 3.0,
+      "skills": [
+        "flutter",
+        "dart",
+        "restful api",
+        "state management",
+        "firebase"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Appota Corporation",
+          "role": "Mobile Developer",
+          "period": "06/2021 - Hiện tại (3 năm)",
+          "projects": "Ứng dụng ví thanh toán dịch vụ giải trí AppotaPay.",
+          "responsibilities": "- Lập trình giao diện người dùng và tích hợp cổng thanh toán.\n- Tối ưu hóa render danh sách giao dịch không bị giật lag.",
+          "tech_stack": "Flutter, Dart, BLoC, RESTful API, Git"
+        }
+      ],
+      "cover_letter": "Kính gửi VNPAY, tôi có 3 năm kinh nghiệm phát triển ứng dụng ví AppotaPay bằng Flutter. Rất mong được gặp gỡ phỏng vấn trực tiếp tại VNPAY Tower.",
+      "interview_schedule": {
+        "interview_time": "15:00 - 25/10/2026",
+        "location": "Tầng 8, Tòa nhà Khách sạn Thể thao, Hào Nam, Đống Đa, Hà Nội",
+        "meeting_link": null,
+        "message": "Phỏng vấn trực tiếp với Mobile Tech Lead."
+      },
+      "eval_note": "Khớp chuẩn yêu cầu: 3 năm kinh nghiệm Flutter trong mảng ví thanh toán. Mời phỏng vấn trực tiếp (Interview)."
+    },
+    {
+      "id_code": "cand_34",
+      "target_job_key": "job_it_mobile_vnpay",
+      "name": "Phạm Tuấn Khang",
+      "email": "khang.pham99@gmail.com",
+      "phone": "0966.332.118",
+      "gender": "Nam",
+      "dob": "1999-07-28",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Cầu Giấy",
+        "address": "Số 10 Hồ Tùng Mậu, Mai Dịch, Cầu Giấy, Hà Nội"
+      },
+      "headline": "Cross-platform Mobile Developer | 2.5 năm Flutter & React Native",
+      "desired_job_title": "Mobile Engineer",
+      "plan_code": "app_plus_monthly",
+      "target_status": "interview",
+      "target_score": 75.0,
+      "score_breakdown": {
+        "skills_score": 78.0,
+        "experience_score": 72.0,
+        "education_score": 85.0,
+        "nlp_score": 75.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Công nghệ Giao thông Vận tải",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 2.5,
+      "skills": [
+        "flutter",
+        "dart",
+        "restful api",
+        "react native"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty TNHH MOR Software",
+          "role": "Mobile Developer",
+          "period": "11/2021 - Hiện tại (2.5 năm)",
+          "projects": "Xây dựng các ứng dụng đặt lịch và thương mại điện tử.",
+          "responsibilities": "- Lập trình ứng dụng Flutter cho khách hàng Nhật Bản.\n- Tích hợp API định vị GPS và thanh toán thẻ.",
+          "tech_stack": "Flutter, Dart, React Native, REST API"
+        }
+      ],
+      "cover_letter": "Dear VNPAY Hiring Team, I have 2.5 years of experience building cross-platform applications with Flutter and React Native. I look forward to contributing to your mobile engineering team.",
+      "interview_schedule": {
+        "interview_time": "10:30 - 26/10/2026",
+        "location": "Online via Google Meet",
+        "meeting_link": "https://meet.google.com/vnpay-mobile-interview",
+        "message": "Phỏng vấn kỹ thuật trực tuyến vòng 1."
+      },
+      "eval_note": "Đáp ứng điều kiện: 2.5 năm kinh nghiệm Flutter, có sản phẩm thực tế trên App Store. Lên lịch phỏng vấn online (Interview)."
+    },
+    {
+      "id_code": "cand_35",
+      "target_job_key": "job_it_mobile_vnpay",
+      "name": "Đoàn Thế Anh",
+      "email": "theanh.doan98@gmail.com",
+      "phone": "0915.778.899",
+      "gender": "Nam",
+      "dob": "1998-12-02",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Hai Bà Trưng",
+        "address": "Số 250 Bạch Mai, Hai Bà Trưng, Hà Nội"
+      },
+      "headline": "Flutter Developer | 2 năm kinh nghiệm phát triển ứng dụng E-Commerce",
+      "desired_job_title": "Flutter Developer",
+      "plan_code": "app_plus_monthly",
+      "target_status": "reviewing",
+      "target_score": 68.0,
+      "score_breakdown": {
+        "skills_score": 70.0,
+        "experience_score": 65.0,
+        "education_score": 80.0,
+        "nlp_score": 68.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Viện Đại học Mở Hà Nội",
+        "major": "Tin học Ứng dụng",
+        "degree": "Cử nhân",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 2.0,
+      "skills": [
+        "flutter",
+        "dart",
+        "restful api",
+        "firebase"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty TNHH Giải pháp Số VinaLink",
+          "role": "Mobile Developer",
+          "period": "03/2022 - Hiện tại (2 năm)",
+          "projects": "Xây dựng các ứng dụng bán hàng tích hợp Firebase.",
+          "responsibilities": "- Lập trình giao diện Flutter và kết nối REST API.",
+          "tech_stack": "Flutter, Dart, Firebase, REST API"
+        }
+      ],
+      "cover_letter": "Kính gửi VNPAY, tôi có 2 năm kinh nghiệm lập trình Flutter và mong muốn được làm việc trong môi trường thanh toán điện tử lớn.",
+      "eval_note": "Đáp ứng mức tối thiểu 2 năm YOE, kinh nghiệm chủ yếu làm ứng dụng bán lẻ quy mô nhỏ, chưa làm việc nhiều với chuẩn bảo mật tài chính. Đang xem xét (Reviewing)."
+    },
+    {
+      "id_code": "cand_36",
+      "target_job_key": "job_it_mobile_vnpay",
+      "name": "Mai Văn Đạt",
+      "email": "dat.maivan.android@gmail.com",
+      "phone": "0948.112.299",
+      "gender": "Nam",
+      "dob": "1997-04-08",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Bắc Từ Liêm",
+        "address": "Đức Thắng, Bắc Từ Liêm, Hà Nội"
+      },
+      "headline": "Android Native Developer chuyển hướng sang Flutter | 3 năm kinh nghiệm",
+      "desired_job_title": "Mobile Developer",
+      "plan_code": "app_free",
+      "target_status": "reviewing",
+      "target_score": 64.0,
+      "score_breakdown": {
+        "skills_score": 62.0,
+        "experience_score": 75.0,
+        "education_score": 80.0,
+        "nlp_score": 63.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Mỏ - Địa chất",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2020,
+        "rank": "Khá"
+      },
+      "yoe": 3.0,
+      "skills": [
+        "restful api",
+        "flutter",
+        "dart"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty CP Phát triển Công nghệ CyberSoft",
+          "role": "Android Developer",
+          "period": "2021 - 2024 (3 năm)",
+          "projects": "Ứng dụng nội bộ bằng Java/Kotlin và tự học Flutter 6 tháng.",
+          "responsibilities": "- Lập trình ứng dụng Android Native bằng Kotlin.\n- Tham gia viết module Flutter thử nghiệm.",
+          "tech_stack": "Kotlin, Java, Android SDK, Flutter cơ bản"
+        }
+      ],
+      "cover_letter": "Kính gửi VNPAY, tôi có nền tảng Android Native vững vàng và có thể làm cầu nối Native Module rất tốt cho ứng dụng Flutter.",
+      "eval_note": "Nền tảng Native Android tốt nhưng kinh nghiệm thực tế với Flutter mới ở mức nhập môn 6 tháng. Đang xem xét (Reviewing)."
+    },
+    {
+      "id_code": "cand_37",
+      "target_job_key": "job_it_mobile_vnpay",
+      "name": "Hồ Gia Bảo",
+      "email": "giabao.ho.mobile@gmail.com",
+      "phone": "0905.334.221",
+      "gender": "Nam",
+      "dob": "2001-10-18",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Cầu Giấy",
+        "address": "Trần Quốc Vượng, Cầu Giấy, Hà Nội"
+      },
+      "headline": "Junior Mobile Developer | Tốt nghiệp ĐH Bách Khoa Đà Nẵng",
+      "desired_job_title": "Flutter Developer",
+      "plan_code": "app_free",
+      "target_status": "new",
+      "target_score": 56.0,
+      "score_breakdown": {
+        "skills_score": 65.0,
+        "experience_score": 30.0,
+        "education_score": 90.0,
+        "nlp_score": 58.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Bách Khoa - ĐH Đà Nẵng",
+        "major": "Công nghệ Thông tin",
+        "degree": "Kỹ sư",
+        "grad_year": 2023,
+        "rank": "Khá"
+      },
+      "yoe": 1.0,
+      "skills": [
+        "flutter",
+        "dart",
+        "restful api"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "FPT Software Đà Nẵng",
+          "role": "Fresher Mobile",
+          "period": "2023 - 2024 (1 năm)",
+          "projects": "Tham gia bảo trì ứng dụng di động cho thị trường Nhật Bản.",
+          "responsibilities": "- Sửa lỗi UI và viết unit test cho các màn hình Flutter.",
+          "tech_stack": "Flutter, Dart, Git"
+        }
+      ],
+      "cover_letter": "Kính gửi VNPAY, em mới ra trường có 1 năm kinh nghiệm làm việc tại FPT Software và mong muốn gắn bó lâu dài với VNPAY.",
+      "eval_note": "Mới nộp (New): Ứng viên trẻ tiềm năng nhưng chỉ mới có 1 năm kinh nghiệm (yêu cầu 2 năm trở lên)."
+    },
+    {
+      "id_code": "cand_38",
+      "target_job_key": "job_it_mobile_vnpay",
+      "name": "Nguyễn Khánh Linh",
+      "email": "khanhlinh.frontendweb@gmail.com",
+      "phone": "0932.119.988",
+      "gender": "Nữ",
+      "dob": "2000-03-25",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Đống Đa",
+        "address": "Tôn Đức Thắng, Đống Đa, Hà Nội"
+      },
+      "headline": "Web Frontend Developer tìm cơ hội chuyển hướng Mobile Flutter",
+      "desired_job_title": "Mobile Developer",
+      "plan_code": "app_free",
+      "target_status": "new",
+      "target_score": 52.0,
+      "score_breakdown": {
+        "skills_score": 50.0,
+        "experience_score": 45.0,
+        "education_score": 85.0,
+        "nlp_score": 52.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Học viện Bưu chính Viễn thông",
+        "major": "Công nghệ Đa phương tiện",
+        "degree": "Cử nhân",
+        "grad_year": 2022,
+        "rank": "Khá"
+      },
+      "yoe": 1.5,
+      "skills": [
+        "restful api",
+        "react native"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần VNPAY (Khối Web Marketing)",
+          "role": "Frontend Web Developer",
+          "period": "2022 - 2024 (1.5 năm)",
+          "projects": "Phát triển landing page và portal chiến dịch khuyến mại.",
+          "responsibilities": "- Lập trình giao diện bằng React.js và CSS3.",
+          "tech_stack": "React.js, HTML5, CSS3, JavaScript"
+        }
+      ],
+      "cover_letter": "Kính gửi Khối Mobile VNPAY, em đang làm Web tại công ty và mong muốn chuyển sang Khối Kỹ thuật ứng dụng di động.",
+      "eval_note": "Mới nộp (New): Ứng viên nội bộ làm Web React, chưa có kinh nghiệm thực tế lập trình Flutter/Dart."
+    },
+    {
+      "id_code": "cand_39",
+      "target_job_key": "job_it_mobile_vnpay",
+      "name": "Lâm Văn Phúc",
+      "email": "phuc.lamtester@gmail.com",
+      "phone": "0972.883.311",
+      "gender": "Nam",
+      "dob": "1998-09-12",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Thanh Xuân",
+        "address": "Khương Đình, Thanh Xuân, Hà Nội"
+      },
+      "headline": "QC / Manual Tester ứng dụng di động",
+      "desired_job_title": "Mobile Tester / QC",
+      "plan_code": "app_free",
+      "target_status": "rejected",
+      "target_score": 37.0,
+      "score_breakdown": {
+        "skills_score": 25.0,
+        "experience_score": 50.0,
+        "education_score": 75.0,
+        "nlp_score": 38.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Kinh doanh và Công nghệ Hà Nội",
+        "major": "Tin học Quản lý",
+        "degree": "Cử nhân",
+        "grad_year": 2021,
+        "rank": "Trung bình Khá"
+      },
+      "yoe": 2.0,
+      "skills": [
+        "restful api"
+      ],
+      "certifications": [],
+      "languages": [],
+      "experience": [
+        {
+          "company": "Công ty TNHH Phần mềm Kaopiz",
+          "role": "Software Tester (QC)",
+          "period": "2022 - 2024 (2 năm)",
+          "projects": "Kiểm thử chức năng ứng dụng di động Android/iOS.",
+          "responsibilities": "- Viết testcase và thực hiện manual test trên thiết bị thật.",
+          "tech_stack": "Postman, Jira, TestRail"
+        }
+      ],
+      "cover_letter": "Tôi có 2 năm test ứng dụng di động muốn nộp vào VNPAY.",
+      "rejection_reason": "Ứng viên chuyên về Kiểm thử chất lượng (QA/QC), không có kỹ năng lập trình mã nguồn phần mềm bằng Flutter & Dart.",
+      "eval_note": "Từ chối (Rejected): Thiếu kỹ năng knockout lập trình Flutter, chuyên môn chỉ là Manual Tester."
+    },
+    {
+      "id_code": "cand_40",
+      "target_job_key": "job_it_mobile_vnpay",
+      "name": "Bùi Thanh Hương",
+      "email": "thanhhuong.designer@gmail.com",
+      "phone": "0906.118.822",
+      "gender": "Nữ",
+      "dob": "2000-06-19",
+      "location": {
+        "province_code": "01",
+        "district_name": "Quận Cầu Giấy",
+        "address": "Nghĩa Tân, Cầu Giấy, Hà Nội"
+      },
+      "headline": "UI/UX Mobile Designer | Thiết kế giao diện ứng dụng trên Figma",
+      "desired_job_title": "UI/UX Designer",
+      "plan_code": "app_free",
+      "target_status": "rejected",
+      "target_score": 24.0,
+      "score_breakdown": {
+        "skills_score": 10.0,
+        "experience_score": 25.0,
+        "education_score": 60.0,
+        "nlp_score": 26.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Mỹ thuật Công nghiệp",
+        "major": "Thiết kế Đồ họa",
+        "degree": "Cử nhân",
+        "grad_year": 2022,
+        "rank": "Khá"
+      },
+      "yoe": 1.0,
+      "skills": [],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty TNHH Truyền thông Novaon",
+          "role": "UI Designer",
+          "period": "2023 - 2024 (1 năm)",
+          "projects": "Thiết kế giao diện ứng dụng di động và banner quảng cáo.",
+          "responsibilities": "- Vẽ wireframe, prototype và design system trên Figma.",
+          "tech_stack": "Figma, Adobe XD, Photoshop"
+        }
+      ],
+      "cover_letter": "Em thiết kế UI/UX cho ứng dụng mobile rất đẹp và muốn ứng tuyển vào VNPAY.",
+      "rejection_reason": "Vị trí tuyển dụng là Kỹ sư lập trình phần mềm Mobile (Software Engineer), không tuyển chuyên viên thiết kế đồ họa UI/UX.",
+      "eval_note": "Từ chối (Rejected): Chuyên môn thiết kế đồ họa Figma, 0 kỹ năng lập trình mã nguồn."
+    },
+    {
+      "id_code": "cand_41",
+      "target_job_key": "job_finance_data_analyst_techcombank",
+      "name": "Nguyễn Thùy Dương",
+      "email": "thuyduong.data@gmail.com",
+      "phone": "0908.223.355",
+      "gender": "Nữ",
+      "dob": "1997-02-18",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 1",
+        "address": "Số 40 Tôn Đức Thắng, Bến Nghé, Quận 1, TP.HCM"
+      },
+      "headline": "Lead Data Analyst | 4 năm kinh nghiệm Phân tích Dữ liệu Ngân hàng, SQL, Power BI & Python",
+      "desired_job_title": "Senior Data Analyst",
+      "plan_code": "app_vip_yearly",
+      "target_status": "hired",
+      "target_score": 94.0,
+      "score_breakdown": {
+        "skills_score": 96.0,
+        "experience_score": 95.0,
+        "education_score": 98.0,
+        "nlp_score": 91.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Kinh tế Quốc dân (NEU)",
+        "major": "Kinh tế Lượng & Phân tích Dữ liệu",
+        "degree": "Thạc sĩ",
+        "grad_year": 2021,
+        "rank": "Xuất sắc"
+      },
+      "yoe": 4.0,
+      "skills": [
+        "sql",
+        "power bi",
+        "python",
+        "data modeling",
+        "excel",
+        "tableau",
+        "dax",
+        "data warehouse",
+        "etl"
+      ],
+      "certifications": [
+        "Microsoft Certified: Azure Solutions Architect Expert",
+        "TOEIC",
+        "IELTS"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Ngân hàng TMCP Quân Đội (MBBank)",
+          "role": "Senior BI & Data Analyst",
+          "period": "06/2021 - Hiện tại (3 năm 4 tháng)",
+          "projects": "Xây dựng hệ thống Data Mart và Dashboard giám sát rủi ro tín dụng cá nhân.",
+          "responsibilities": "- Tối ưu hóa các câu lệnh SQL trên Data Warehouse Oracle & BigQuery với bảng hơn 50 triệu giao dịch.\n- Thiết kế Data Model chuẩn Star Schema và xây dựng 15 Executive Dashboards trên Power BI phục vụ Ban Điều hành.\n- Sử dụng Python (Pandas, Scikit-learn) phân khúc khách hàng (Customer Segmentation) tăng tỷ lệ chuyển đổi vay tiêu dùng thêm 18%.",
+          "tech_stack": "SQL, Power BI, Python, DAX, BigQuery, Excel Advanced, Data Modeling"
+        }
+      ],
+      "cover_letter": "Kính gửi Khối Phân tích Dữ liệu Ngân hàng Techcombank,\n\nTôi là Nguyễn Thùy Dương, Thạc sĩ Kinh tế Lượng với 4 năm kinh nghiệm trực tiếp tại Khối Dữ liệu của MBBank. Tôi sở hữu chứng chỉ Microsoft Certified Data Analyst và năng lực kết hợp giữa tư duy mô hình hóa tài chính cùng kỹ thuật truy vấn dữ liệu lớn SQL/Python.\n\nNgưỡng mộ định hướng chuyển đổi số lấy dữ liệu làm trọng tâm của Techcombank, tôi rất mong muốn được đóng góp chuyên môn phân tích để mang lại giá trị kinh doanh tối ưu nhất cho ngân hàng.\n\nTrân trọng,\nNguyễn Thùy Dương",
+      "eval_note": "Ứng viên xuất sắc: Thạc sĩ Kinh tế Lượng NEU, 4 năm kinh nghiệm trực tiếp ngành ngân hàng, thành thạo SQL/DAX/PowerBI và phân tích Python. Đạt tuyển dụng (Hired)."
+    },
+    {
+      "id_code": "cand_42",
+      "target_job_key": "job_finance_data_analyst_techcombank",
+      "name": "Trần Văn Khang",
+      "email": "khang.tranvan.bi@gmail.com",
+      "phone": "0917.445.566",
+      "gender": "Nam",
+      "dob": "1998-08-22",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 3",
+        "address": "Số 180 Nguyễn Đình Chiểu, Quận 3, TP.HCM"
+      },
+      "headline": "Senior BI Analyst | 3.5 năm kinh nghiệm SQL, Power BI & Data Modeling",
+      "desired_job_title": "Senior BI Specialist",
+      "plan_code": "app_pro_monthly",
+      "target_status": "offered",
+      "target_score": 88.0,
+      "score_breakdown": {
+        "skills_score": 90.0,
+        "experience_score": 88.0,
+        "education_score": 90.0,
+        "nlp_score": 86.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Ngoại Thương (FTU)",
+        "major": "Tài chính Quốc tế",
+        "degree": "Cử nhân",
+        "grad_year": 2020,
+        "rank": "Giỏi"
+      },
+      "yoe": 3.5,
+      "skills": [
+        "sql",
+        "power bi",
+        "python",
+        "data modeling",
+        "excel",
+        "dax"
+      ],
+      "certifications": [
+        "IELTS"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần Shopee Việt Nam",
+          "role": "Business Intelligence Specialist",
+          "period": "09/2020 - Hiện tại (3.5 năm)",
+          "projects": "Theo dõi hiệu quả chiến dịch khuyến mại Mega Sale và hành vi người dùng.",
+          "responsibilities": "- Viết các truy vấn SQL phức tạp phân tích Retention Rate và LTV.\n- Xây dựng hệ thống báo cáo tự động trên Power BI.",
+          "tech_stack": "SQL, Power BI, Presto, Python, Excel"
+        }
+      ],
+      "cover_letter": "Dear Techcombank Hiring Team,\n\nI have 3.5 years of experience delivering impactful business intelligence solutions at Shopee Vietnam. Combining strong commercial acumen from Foreign Trade University with advanced SQL and Power BI modeling skills, I am excited to apply for the Senior Data Analyst position.\n\nSincerely,\nTran Van Khang",
+      "eval_note": "Hồ sơ rất mạnh: 3.5 năm làm BI tại Shopee, kỹ năng SQL và Data Modeling sắc bén, tiếng Anh IELTS 7.5. Đã gửi Offer (Offered)."
+    },
+    {
+      "id_code": "cand_43",
+      "target_job_key": "job_finance_data_analyst_techcombank",
+      "name": "Lê Minh Tú",
+      "email": "minhtu.le.data@gmail.com",
+      "phone": "0985.334.112",
+      "gender": "Nam",
+      "dob": "1999-04-14",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 7",
+        "address": "KĐT Phú Mỹ Hưng, Quận 7, TP.HCM"
+      },
+      "headline": "Data Analyst | 3 năm kinh nghiệm SQL, Power BI & Financial Reporting",
+      "desired_job_title": "Data Analyst",
+      "plan_code": "app_pro_monthly",
+      "target_status": "interview",
+      "target_score": 81.0,
+      "score_breakdown": {
+        "skills_score": 84.0,
+        "experience_score": 82.0,
+        "education_score": 85.0,
+        "nlp_score": 79.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Kinh tế TP.HCM (UEH)",
+        "major": "Hệ thống Thông tin Quản lý (MIS)",
+        "degree": "Cử nhân",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 3.0,
+      "skills": [
+        "sql",
+        "power bi",
+        "data modeling",
+        "excel",
+        "python"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Ngân hàng TMCP Phương Đông (OCB)",
+          "role": "Data Analyst",
+          "period": "07/2021 - Hiện tại (3 năm)",
+          "projects": "Báo cáo phân tích doanh số và chỉ tiêu kinh doanh chi nhánh.",
+          "responsibilities": "- Khai thác dữ liệu từ Core Banking bằng SQL.\n- Thiết kế dashboard theo dõi tiến độ KPI trên Power BI.",
+          "tech_stack": "SQL, Power BI, Excel, Oracle Core Banking"
+        }
+      ],
+      "cover_letter": "Kính gửi Techcombank, tôi có 3 năm kinh nghiệm làm việc với dữ liệu ngân hàng tại OCB. Tôi tự tin vào khả năng phân tích số liệu chuẩn xác và mong muốn được phỏng vấn trực tiếp.",
+      "interview_schedule": {
+        "interview_time": "09:30 - 27/10/2026",
+        "location": "Tòa nhà Techcombank, Số 23 Lê Duẩn, Phường Bến Nghé, Quận 1, TP.HCM",
+        "meeting_link": null,
+        "message": "Phỏng vấn trực tiếp tại Hội sở Techcombank TP.HCM."
+      },
+      "eval_note": "Rất phù hợp: 3 năm kinh nghiệm trong ngành ngân hàng (OCB), thành thạo SQL và Power BI. Đã lên lịch phỏng vấn (Interview)."
+    },
+    {
+      "id_code": "cand_44",
+      "target_job_key": "job_finance_data_analyst_techcombank",
+      "name": "Phạm Phương Thảo",
+      "email": "phuongthao.data99@gmail.com",
+      "phone": "0934.887.654",
+      "gender": "Nữ",
+      "dob": "1999-10-05",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận Bình Thạnh",
+        "address": "Số 152 Nguyễn Hữu Cảnh, Bình Thạnh, TP.HCM"
+      },
+      "headline": "BI Specialist | 2.5 năm kinh nghiệm Power BI, SQL & Data Visualization",
+      "desired_job_title": "BI Specialist",
+      "plan_code": "app_plus_monthly",
+      "target_status": "interview",
+      "target_score": 77.0,
+      "score_breakdown": {
+        "skills_score": 80.0,
+        "experience_score": 74.0,
+        "education_score": 85.0,
+        "nlp_score": 76.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Học viện Tài chính",
+        "major": "Tài chính Doanh nghiệp",
+        "degree": "Cử nhân",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 2.5,
+      "skills": [
+        "sql",
+        "power bi",
+        "excel",
+        "data modeling"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần Đầu tư Thế Giới Di Động (MWG)",
+          "role": "Data Analyst",
+          "period": "11/2021 - Hiện tại (2.5 năm)",
+          "projects": "Theo dõi tồn kho và tối ưu hóa chuỗi cung ứng Bách Hóa Xanh.",
+          "responsibilities": "- Truy vấn SQL trích xuất dữ liệu bán hàng.\n- Xây dựng dashboard trực quan bằng Power BI.",
+          "tech_stack": "SQL, Power BI, DAX, Excel"
+        }
+      ],
+      "cover_letter": "Kính gửi Ban Tuyển dụng Techcombank, tôi có 2.5 năm kinh nghiệm thiết kế báo cáo dữ liệu Power BI tại MWG và muốn áp dụng kinh nghiệm vào lĩnh vực ngân hàng.",
+      "interview_schedule": {
+        "interview_time": "14:00 - 28/10/2026",
+        "location": "Online via Zoom",
+        "meeting_link": "https://techcombank.zoom.us/j/bi-interview",
+        "message": "Phỏng vấn kỹ thuật phân tích số liệu trực tuyến."
+      },
+      "eval_note": "Đáp ứng điều kiện: 2.5 năm kinh nghiệm bán lẻ lớn (MWG), kỹ năng Power BI và DAX tốt. Mời phỏng vấn trực tuyến (Interview)."
+    },
+    {
+      "id_code": "cand_45",
+      "target_job_key": "job_finance_data_analyst_techcombank",
+      "name": "Vũ Tuấn Kiệt",
+      "email": "tuankiet.vu.analytics@gmail.com",
+      "phone": "0916.112.443",
+      "gender": "Nam",
+      "dob": "1998-06-30",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận Tân Bình",
+        "address": "Số 2 Hoàng Hoa Thám, Tân Bình, TP.HCM"
+      },
+      "headline": "Data Analyst | 2 năm kinh nghiệm SQL & Google Data Studio",
+      "desired_job_title": "Data Analyst",
+      "plan_code": "app_plus_monthly",
+      "target_status": "reviewing",
+      "target_score": 70.0,
+      "score_breakdown": {
+        "skills_score": 72.0,
+        "experience_score": 68.0,
+        "education_score": 80.0,
+        "nlp_score": 70.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Mở TP.HCM",
+        "major": "Kế toán Kiểm toán",
+        "degree": "Cử nhân",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 2.0,
+      "skills": [
+        "sql",
+        "power bi",
+        "excel",
+        "python"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty CP Dược phẩm An Khang",
+          "role": "Data Analyst",
+          "period": "2022 - Hiện tại (2 năm)",
+          "projects": "Báo cáo doanh số bán thuốc toàn chuỗi.",
+          "responsibilities": "- Lập trình script Python cào dữ liệu và tổng hợp trên SQL Server.",
+          "tech_stack": "SQL Server, Excel, Power BI cơ bản, Python"
+        }
+      ],
+      "cover_letter": "Kính gửi Techcombank, tôi có 2 năm phân tích dữ liệu bán lẻ và mong muốn được phát triển trong ngành tài chính.",
+      "eval_note": "Kỹ năng SQL và Excel tốt nhưng kinh nghiệm mới 2 năm và Power BI ở mức cơ bản, chưa có kinh nghiệm tài chính ngân hàng. Đang xem xét (Reviewing)."
+    },
+    {
+      "id_code": "cand_46",
+      "target_job_key": "job_finance_data_analyst_techcombank",
+      "name": "Đặng Hoàng Nam",
+      "email": "hoangnam.dang99@gmail.com",
+      "phone": "0982.990.114",
+      "gender": "Nam",
+      "dob": "1999-12-10",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 10",
+        "address": "Số 268 Tô Hiến Thành, Quận 10, TP.HCM"
+      },
+      "headline": "Junior Data Analyst | 2 năm SQL & Báo cáo tài chính",
+      "desired_job_title": "Data Analyst",
+      "plan_code": "app_free",
+      "target_status": "reviewing",
+      "target_score": 65.0,
+      "score_breakdown": {
+        "skills_score": 66.0,
+        "experience_score": 62.0,
+        "education_score": 85.0,
+        "nlp_score": 64.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Kinh tế Quốc dân",
+        "major": "Tài chính Ngân hàng",
+        "degree": "Cử nhân",
+        "grad_year": 2021,
+        "rank": "Khá"
+      },
+      "yoe": 2.0,
+      "skills": [
+        "sql",
+        "excel",
+        "data modeling",
+        "power bi"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty TNHH Chứng khoán Mirae Asset",
+          "role": "Chuyên viên Dữ liệu Khách hàng",
+          "period": "2022 - 2024 (2 năm)",
+          "projects": "Quản lý dữ liệu giao dịch chứng khoán của khách hàng.",
+          "responsibilities": "- Truy vấn dữ liệu giao dịch và lập bảng biểu báo cáo.",
+          "tech_stack": "SQL, Excel Advanced"
+        }
+      ],
+      "cover_letter": "Kính gửi Techcombank, tôi có bằng Tài chính Ngân hàng và 2 năm kinh nghiệm dữ liệu chứng khoán.",
+      "eval_note": "Bằng cấp đúng ngành tài chính ngân hàng, SQL tốt nhưng DAX và Power BI chuyên sâu còn yếu so với yêu cầu Senior (Reviewing)."
+    },
+    {
+      "id_code": "cand_47",
+      "target_job_key": "job_finance_data_analyst_techcombank",
+      "name": "Nguyễn Bích Ngọc",
+      "email": "bichngoc.stats@gmail.com",
+      "phone": "0941.223.889",
+      "gender": "Nữ",
+      "dob": "2002-05-18",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 5",
+        "address": "An Dương Vương, Quận 5, TP.HCM"
+      },
+      "headline": "Fresher Data Analyst | Tốt nghiệp Giỏi Thống kê Kinh tế UEH",
+      "desired_job_title": "Junior Data Analyst",
+      "plan_code": "app_free",
+      "target_status": "new",
+      "target_score": 58.0,
+      "score_breakdown": {
+        "skills_score": 68.0,
+        "experience_score": 25.0,
+        "education_score": 95.0,
+        "nlp_score": 60.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Kinh tế TP.HCM (UEH)",
+        "major": "Thống kê Kinh doanh",
+        "degree": "Cử nhân",
+        "grad_year": 2024,
+        "rank": "Giỏi"
+      },
+      "yoe": 0.5,
+      "skills": [
+        "sql",
+        "power bi",
+        "python",
+        "excel"
+      ],
+      "certifications": [
+        "TOEIC"
+      ],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Nghiên cứu Thị trường NielsenIQ",
+          "role": "Data Analyst Intern",
+          "period": "2023 - 2024 (6 tháng)",
+          "projects": "Xử lý số liệu khảo sát thị trường tiêu dùng.",
+          "responsibilities": "- Làm sạch dữ liệu và tạo biểu đồ báo cáo trên Power BI.",
+          "tech_stack": "SQL, Power BI, Excel, SPSS"
+        }
+      ],
+      "cover_letter": "Kính gửi Techcombank, em vừa tốt nghiệp loại Giỏi chuyên ngành Thống kê và mong muốn được ứng tuyển vị trí phân tích dữ liệu.",
+      "eval_note": "Mới nộp (New): Học vấn tốt, nắm vững lý thuyết thống kê nhưng mới tốt nghiệp, thiếu kinh nghiệm thực chiến."
+    },
+    {
+      "id_code": "cand_48",
+      "target_job_key": "job_finance_data_analyst_techcombank",
+      "name": "Trương Vĩnh Kỳ",
+      "email": "vinhky.truongacc@gmail.com",
+      "phone": "0918.776.221",
+      "gender": "Nam",
+      "dob": "1997-11-03",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận Gò Vấp",
+        "address": "Quang Trung, Gò Vấp, TP.HCM"
+      },
+      "headline": "Kế toán tổng hợp muốn học hỏi phân tích dữ liệu BI",
+      "desired_job_title": "Data Analyst",
+      "plan_code": "app_free",
+      "target_status": "new",
+      "target_score": 51.0,
+      "score_breakdown": {
+        "skills_score": 45.0,
+        "experience_score": 60.0,
+        "education_score": 80.0,
+        "nlp_score": 50.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Tài chính - Marketing",
+        "major": "Kế toán Doanh nghiệp",
+        "degree": "Cử nhân",
+        "grad_year": 2019,
+        "rank": "Khá"
+      },
+      "yoe": 3.0,
+      "skills": [
+        "excel",
+        "sql"
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Công ty Cổ phần Dệt may Thành Công",
+          "role": "Kế toán Tổng hợp",
+          "period": "2020 - 2023 (3 năm)",
+          "projects": "Quyết toán sổ sách và báo cáo tài chính hàng tháng.",
+          "responsibilities": "- Lập báo cáo bằng Excel và phần mềm kế toán.",
+          "tech_stack": "Excel, MISA, ERP"
+        }
+      ],
+      "cover_letter": "Tôi có 3 năm làm kế toán và đang học thêm khóa học SQL/Power BI để chuyển đổi ngành nghề.",
+      "eval_note": "Mới nộp (New): 3 năm kinh nghiệm kế toán, thành thạo Excel nhưng kỹ năng truy vấn SQL cơ bản, chưa có kinh nghiệm BI."
+    },
+    {
+      "id_code": "cand_49",
+      "target_job_key": "job_finance_data_analyst_techcombank",
+      "name": "Lê Quốc Cường",
+      "email": "cuong.lequoc.credit@gmail.com",
+      "phone": "0976.112.554",
+      "gender": "Nam",
+      "dob": "1998-01-22",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 11",
+        "address": "Lạc Long Quân, Quận 11, TP.HCM"
+      },
+      "headline": "Chuyên viên Tín dụng Khách hàng Cá nhân",
+      "desired_job_title": "Nhân viên Ngân hàng",
+      "plan_code": "app_free",
+      "target_status": "rejected",
+      "target_score": 39.0,
+      "score_breakdown": {
+        "skills_score": 20.0,
+        "experience_score": 65.0,
+        "education_score": 80.0,
+        "nlp_score": 40.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Ngân hàng TP.HCM (HUB)",
+        "major": "Tài chính Ngân hàng",
+        "degree": "Cử nhân",
+        "grad_year": 2020,
+        "rank": "Khá"
+      },
+      "yoe": 2.5,
+      "skills": [
+        "excel"
+      ],
+      "certifications": [],
+      "languages": [],
+      "experience": [
+        {
+          "company": "Ngân hàng TMCP Việt Nam Thịnh Vượng (VPBank)",
+          "role": "Chuyên viên Khách hàng Cá nhân",
+          "period": "2021 - 2023 (2.5 năm)",
+          "projects": "Tìm kiếm khách hàng vay mua nhà và mở thẻ tín dụng.",
+          "responsibilities": "- Tư vấn gói vay, thẩm định hồ sơ giấy tờ khách hàng.",
+          "tech_stack": "MS Word, Excel"
+        }
+      ],
+      "cover_letter": "Tôi có 2.5 năm làm việc tại VPBank muốn ứng tuyển vào vị trí văn phòng tại Techcombank.",
+      "rejection_reason": "Hồ sơ chưa có kỹ năng chuyên môn về truy vấn dữ liệu SQL và xây dựng báo cáo BI, không đáp ứng yêu cầu kỹ thuật phân tích số liệu.",
+      "eval_note": "Từ chối (Rejected): Thiếu kỹ năng knockout SQL và Power BI, chuyên môn thuần về sales tín dụng."
+    },
+    {
+      "id_code": "cand_50",
+      "target_job_key": "job_finance_data_analyst_techcombank",
+      "name": "Hoàng Thị Thùy",
+      "email": "thuyhoang.hospitality@gmail.com",
+      "phone": "0909.887.112",
+      "gender": "Nữ",
+      "dob": "2000-08-11",
+      "location": {
+        "province_code": "79",
+        "district_name": "Quận 4",
+        "address": "Bến Vân Đồn, Quận 4, TP.HCM"
+      },
+      "headline": "Cử nhân Quản trị Khách sạn & Lễ tân",
+      "desired_job_title": "Nhân viên Lễ tân",
+      "plan_code": "app_free",
+      "target_status": "rejected",
+      "target_score": 21.0,
+      "score_breakdown": {
+        "skills_score": 10.0,
+        "experience_score": 15.0,
+        "education_score": 50.0,
+        "nlp_score": 22.0,
+        "penalty_score": 0.0
+      },
+      "education": {
+        "school": "Đại học Văn Lang",
+        "major": "Quản trị Khách sạn",
+        "degree": "Cử nhân",
+        "grad_year": 2022,
+        "rank": "Khá"
+      },
+      "yoe": 0.0,
+      "skills": [],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "experience": [
+        {
+          "company": "Khách sạn Caravelle Sài Gòn",
+          "role": "Nhân viên Lễ tân",
+          "period": "2022 - 2023 (1 năm)",
+          "projects": "Đón tiếp khách quốc tế và quản lý đặt phòng.",
+          "responsibilities": "- Check-in, check-out và giải quyết yêu cầu của khách.",
+          "tech_stack": "Phần mềm Opera"
+        }
+      ],
+      "cover_letter": "Em muốn tìm kiếm công việc mới tại ngân hàng Techcombank.",
+      "rejection_reason": "Chuyên ngành và kinh nghiệm không đáp ứng tiêu chuẩn tuyển dụng Chuyên viên Phân tích Dữ liệu Cao cấp.",
+      "eval_note": "Từ chối (Rejected): Trái ngành khách sạn, không có kỹ năng phân tích dữ liệu."
+    }
+  ]
+}

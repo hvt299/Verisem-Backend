@@ -1,0 +1,224 @@
+[
+  {
+    "_id": "6ab64a7e578a186c857ba704",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "hr_owner",
+    "action": "application_status_changed",
+    "target_type": "application",
+    "target_id": "6aaf360ce8a2cb72a5801a9d",
+    "before_state": {
+      "status": "rejected"
+    },
+    "after_state": {
+      "status": "hired"
+    },
+    "note": "Đổi trạng thái ứng viên: rejected -> hired",
+    "created_at": "2026-09-25 10:18:38.017000"
+  },
+  {
+    "_id": "6ab64d587c69771472c73705",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "hr_owner",
+    "action": "application_status_changed",
+    "target_type": "application",
+    "target_id": "6aaf360ce8a2cb72a5801a9d",
+    "before_state": {
+      "status": "hired"
+    },
+    "after_state": {
+      "status": "new"
+    },
+    "note": "Đổi trạng thái ứng viên: hired -> new",
+    "created_at": "2026-09-25 10:30:48.798000"
+  },
+  {
+    "_id": "6aa988fca920ca7448798f86",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "admin",
+    "action": "company_updated",
+    "target_type": "company",
+    "target_id": "6a91481be228e500c5c6eb04",
+    "before_state": {
+      "status": "verified",
+      "address": "Lim Tower 3, 29A Nguyễn Đình Chiểu, Quận 1, TP.HCM"
+    },
+    "after_state": {
+      "status": "pending_verification",
+      "address": "29A Nguyễn Đình Chiểu"
+    },
+    "note": "Admin cập nhật thông tin công ty",
+    "created_at": "2026-09-15 18:05:48.892000"
+  },
+  {
+    "_id": "6aa988b6a920ca7448798f84",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "admin",
+    "action": "company_updated",
+    "target_type": "company",
+    "target_id": "6a91481be228e500c5c6eb05",
+    "before_state": {
+      "status": "verified",
+      "address": "170E Phan Đăng Lưu, Phú Nhuận, TP.HCM"
+    },
+    "after_state": {
+      "status": "rejected",
+      "address": "170E Phan Đăng Lưu"
+    },
+    "note": "Admin cập nhật thông tin công ty",
+    "created_at": "2026-09-15 18:04:38.263000"
+  },
+  {
+    "_id": "6aa988eba920ca7448798f85",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "admin",
+    "action": "company_updated",
+    "target_type": "company",
+    "target_id": "6a91481be228e500c5c6eb02",
+    "before_state": {
+      "status": "verified",
+      "address": "259 Trần Hưng Đạo, Quận 1, TP.HCM"
+    },
+    "after_state": {
+      "status": "pending_verification",
+      "address": "259 Trần Hưng Đạo"
+    },
+    "note": "Admin cập nhật thông tin công ty",
+    "created_at": "2026-09-15 18:05:31.658000"
+  },
+  {
+    "_id": "6ab64ac8578a186c857ba705",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "hr_owner",
+    "action": "application_status_changed",
+    "target_type": "application",
+    "target_id": "6aaf360ce8a2cb72a5801a9d",
+    "before_state": {
+      "status": "hired"
+    },
+    "after_state": {
+      "status": "new"
+    },
+    "note": "Đổi trạng thái ứng viên: hired -> new",
+    "created_at": "2026-09-25 10:19:52.522000"
+  },
+  {
+    "_id": "6ab64ad1578a186c857ba706",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "hr_owner",
+    "action": "application_status_changed",
+    "target_type": "application",
+    "target_id": "6aaf360ce8a2cb72a5801a9d",
+    "before_state": {
+      "status": "new"
+    },
+    "after_state": {
+      "status": "hired"
+    },
+    "note": "Đổi trạng thái ứng viên: new -> hired",
+    "created_at": "2026-09-25 10:20:01.346000"
+  },
+  {
+    "_id": "6ab65c5575329367f54fc67f",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "hr_owner",
+    "action": "application_status_changed",
+    "target_type": "application",
+    "target_id": "6aaf360ce8a2cb72a5801a9d",
+    "before_state": {
+      "status": "hired"
+    },
+    "after_state": {
+      "status": "rejected"
+    },
+    "note": "Đổi trạng thái ứng viên: hired -> rejected",
+    "created_at": "2026-09-25 11:34:45.715000"
+  },
+  {
+    "_id": "6a93aed18b9ab08e33f69803",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "admin",
+    "action": "company_verified",
+    "target_type": "company",
+    "target_id": "6a91481be228e500c5c6e6a0",
+    "before_state": {
+      "verified_by_admin_id": null,
+      "status": "pending_verification",
+      "verified_at": null,
+      "kyc_approved_at": null
+    },
+    "after_state": {
+      "verified_by_admin_id": "6a91481be228e500c5c6e6a1",
+      "status": "verified",
+      "verified_at": "2026-08-30 04:17:21.042000",
+      "kyc_approved_at": "2026-08-30 04:17:21.042000"
+    },
+    "note": "Duyệt thành công",
+    "created_at": "2026-08-30 04:17:21.086000"
+  },
+  {
+    "_id": "6aa988a9a920ca7448798f83",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "admin",
+    "action": "company_updated",
+    "target_type": "company",
+    "target_id": "6a91481be228e500c5c6eb03",
+    "before_state": {
+      "status": "verified",
+      "address": "2W Ung Văn Khiêm, Quận Bình Thạnh, TP.HCM"
+    },
+    "after_state": {
+      "status": "suspended",
+      "address": "2W Ung Văn Khiêm"
+    },
+    "note": "Admin cập nhật thông tin công ty",
+    "created_at": "2026-09-15 18:04:25.888000"
+  },
+  {
+    "_id": "6ab64a5d578a186c857ba702",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "hr_owner",
+    "action": "application_status_changed",
+    "target_type": "application",
+    "target_id": "6aaf360ce8a2cb72a5801a9d",
+    "before_state": {
+      "status": "new"
+    },
+    "after_state": {
+      "status": "reviewing"
+    },
+    "note": "Đổi trạng thái ứng viên: new -> reviewing",
+    "created_at": "2026-09-25 10:18:05.749000"
+  },
+  {
+    "_id": "6ab64a60578a186c857ba703",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "hr_owner",
+    "action": "application_status_changed",
+    "target_type": "application",
+    "target_id": "6aaf360ce8a2cb72a5801a9d",
+    "before_state": {
+      "status": "reviewing"
+    },
+    "after_state": {
+      "status": "rejected"
+    },
+    "note": "Đổi trạng thái ứng viên: reviewing -> rejected",
+    "created_at": "2026-09-25 10:18:08.857000"
+  },
+  {
+    "_id": "6ab64d6b7c69771472c73706",
+    "actor_id": "6a91481be228e500c5c6e6a1",
+    "actor_role": "hr_owner",
+    "action": "application_status_changed",
+    "target_type": "application",
+    "target_id": "6aaf360ce8a2cb72a5801a9d",
+    "before_state": {
+      "status": "new"
+    },
+    "after_state": {
+      "status": "hired"
+    },
+    "note": "Đổi trạng thái ứng viên: new -> hired",
+    "created_at": "2026-09-25 10:31:07.514000"
+  }
+]

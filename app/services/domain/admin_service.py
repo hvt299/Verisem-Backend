@@ -1,3 +1,4 @@
+from typing import Optional
 from datetime import datetime, timezone
 import re
 import math
@@ -35,13 +36,22 @@ class AdminService:
     # USER MANAGEMENT
     # ==========================================
     @staticmethod
-    async def list_users():
+    async def list_users(role: Optional[str] = None, search: Optional[str] = None):
         projection = {
             "hashed_password": 0, 
             "reset_password_token": 0, 
             "reset_password_expires": 0
         }
-        users = await UserRepository.find_many({}, projection=projection, limit=500)
+        query = {}
+        if role and role != "All":
+            query["role"] = role
+        if search and search.strip():
+            escaped_search = re.escape(search.strip())
+            query["$or"] = [
+                {"email": {"$regex": escaped_search, "$options": "i"}},
+                {"full_name": {"$regex": escaped_search, "$options": "i"}}
+            ]
+        users = await UserRepository.find_many(query, projection=projection, sort=[("created_at", -1)], limit=0)
         return users
 
     @staticmethod

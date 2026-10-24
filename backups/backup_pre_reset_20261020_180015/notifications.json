@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "6ab7358db9eaa993a56af0cc",
+    "recipient_user_id": "6a91481be228e500c5c6e6a1",
+    "recipient_type": "hr_user",
+    "sender_id": "6a914ae9e228e500c5c6e6a2",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Data Analyst'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6ab7358db9eaa993a56af0cb"
+    },
+    "payload": {
+      "job_id": "6a9fbbe350fec98bc02c5a69",
+      "applicant_name": "Intern Mobile Developer - Nguyễn Hiệp"
+    },
+    "action_url": "/hr/jobs/6a9fbbe350fec98bc02c5a69",
+    "status": "unread",
+    "created_at": "2026-09-26 03:01:33.746000"
+  }
+]

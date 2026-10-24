@@ -1,0 +1,640 @@
+[
+  {
+    "_id": "6a97991f9da5a97d8a7735f7",
+    "plan_code": "hr_topup_100",
+    "name": "Nạp 100 Credit AI",
+    "description": "Bơm Credit sử dụng tức thì.",
+    "badge": "Nạp lẻ",
+    "display_order": 8,
+    "tier_level": 0,
+    "target_audience": "hr",
+    "original_price": 0,
+    "current_price": 50000,
+    "currency": "VND",
+    "billing_cycle_days": 0,
+    "features": {
+      "monthly_ai_credits": 100
+    },
+    "display_features": [
+      "+100 Credit AI cộng dồn vĩnh viễn"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735fa",
+    "plan_code": "hr_topup_5000",
+    "name": "Nạp 5.000 Credit AI",
+    "description": "Bơm Credit sử dụng tức thì.",
+    "badge": "Nạp lẻ",
+    "display_order": 11,
+    "tier_level": 0,
+    "target_audience": "hr",
+    "original_price": 0,
+    "current_price": 1500000,
+    "currency": "VND",
+    "billing_cycle_days": 0,
+    "features": {
+      "monthly_ai_credits": 5000
+    },
+    "display_features": [
+      "+5.000 Credit AI cộng dồn vĩnh viễn"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735f8",
+    "plan_code": "hr_topup_500",
+    "name": "Nạp 500 Credit AI",
+    "description": "Bơm Credit sử dụng tức thì.",
+    "badge": "Nạp lẻ",
+    "display_order": 9,
+    "tier_level": 0,
+    "target_audience": "hr",
+    "original_price": 0,
+    "current_price": 200000,
+    "currency": "VND",
+    "billing_cycle_days": 0,
+    "features": {
+      "monthly_ai_credits": 500
+    },
+    "display_features": [
+      "+500 Credit AI cộng dồn vĩnh viễn"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735fd",
+    "plan_code": "app_plus_yearly",
+    "name": "App Plus (1 Năm)",
+    "description": "Nâng cao năng lực cạnh tranh với AI.",
+    "badge": "Tiết kiệm 16%",
+    "display_order": 3,
+    "tier_level": 1,
+    "target_audience": "applicant",
+    "original_price": 348000,
+    "current_price": 290000,
+    "currency": "VND",
+    "billing_cycle_days": 365,
+    "features": {
+      "max_cv_uploads": 5,
+      "max_cover_letters_uploads": 5,
+      "max_job_applies_per_day": 15,
+      "max_self_scores_per_day": 10,
+      "ai_credits": 50,
+      "has_pro_badge": false,
+      "can_use_ai_cv_review": true
+    },
+    "display_features": [
+      "Chu kỳ thanh toán 1 năm",
+      "Tất cả quyền lợi App Plus",
+      "Làm mới Credit & Quotas mỗi 30 ngày"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735f9",
+    "plan_code": "hr_topup_1500",
+    "name": "Nạp 1.500 Credit AI",
+    "description": "Bơm Credit sử dụng tức thì.",
+    "badge": "Nạp lẻ",
+    "display_order": 10,
+    "tier_level": 0,
+    "target_audience": "hr",
+    "original_price": 0,
+    "current_price": 500000,
+    "currency": "VND",
+    "billing_cycle_days": 0,
+    "features": {
+      "monthly_ai_credits": 1500
+    },
+    "display_features": [
+      "+1.500 Credit AI cộng dồn vĩnh viễn"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735fb",
+    "plan_code": "app_free",
+    "name": "App Basic",
+    "description": "Hành trang cơ bản cho ứng viên.",
+    "badge": "Miễn phí",
+    "display_order": 1,
+    "tier_level": 0,
+    "target_audience": "applicant",
+    "original_price": 0,
+    "current_price": 0,
+    "currency": "VND",
+    "billing_cycle_days": 0,
+    "features": {
+      "max_cv_uploads": 2,
+      "max_cover_letters_uploads": 2,
+      "max_job_applies_per_day": 5,
+      "max_self_scores_per_day": 3,
+      "ai_credits": 0,
+      "has_pro_badge": false,
+      "can_use_ai_cv_review": false
+    },
+    "display_features": [
+      "Lưu 2 CV & 2 Thư giới thiệu",
+      "Ứng tuyển 5 lần / ngày",
+      "Xem điểm số độ khớp (3 lần/ngày)"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735f1",
+    "plan_code": "hr_growth_monthly",
+    "name": "HR Growth",
+    "description": "Giải pháp AI mở rộng cho SMEs.",
+    "badge": "Phổ biến",
+    "display_order": 2,
+    "tier_level": 1,
+    "target_audience": "hr",
+    "original_price": 599000,
+    "current_price": 499000,
+    "currency": "VND",
+    "billing_cycle_days": 30,
+    "features": {
+      "max_active_jobs": 3,
+      "max_job_edits": 20,
+      "max_rescores_per_job": 5,
+      "monthly_ai_credits": 500,
+      "max_cv_parses_per_month": 100,
+      "can_use_reverse_matching": true,
+      "can_set_hot_job": false,
+      "can_export_analytics": false,
+      "can_customize_ai_weights": false
+    },
+    "display_features": [
+      "Mở 3 chiến dịch cùng lúc",
+      "Parse 100 CV / tháng",
+      "Mở khóa Săn ứng viên (AI Matching)",
+      "Cấp 500 Credit AI / tháng"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735fc",
+    "plan_code": "app_plus_monthly",
+    "name": "App Plus",
+    "description": "Nâng cao năng lực cạnh tranh với AI.",
+    "badge": "Phổ biến",
+    "display_order": 2,
+    "tier_level": 1,
+    "target_audience": "applicant",
+    "original_price": 39000,
+    "current_price": 29000,
+    "currency": "VND",
+    "billing_cycle_days": 30,
+    "features": {
+      "max_cv_uploads": 5,
+      "max_cover_letters_uploads": 5,
+      "max_job_applies_per_day": 15,
+      "max_self_scores_per_day": 10,
+      "ai_credits": 50,
+      "has_pro_badge": false,
+      "can_use_ai_cv_review": true
+    },
+    "display_features": [
+      "Lưu 5 CV & 5 Thư giới thiệu",
+      "Ứng tuyển 15 lần / ngày",
+      "Mở khóa AI Sửa lỗi CV chi tiết",
+      "Cấp 50 Credit AI / tháng"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735fe",
+    "plan_code": "app_pro_monthly",
+    "name": "App Pro",
+    "description": "Nổi bật giữa đám đông ứng viên.",
+    "badge": "Chuyên nghiệp",
+    "display_order": 4,
+    "tier_level": 2,
+    "target_audience": "applicant",
+    "original_price": 79000,
+    "current_price": 59000,
+    "currency": "VND",
+    "billing_cycle_days": 30,
+    "features": {
+      "max_cv_uploads": 15,
+      "max_cover_letters_uploads": 15,
+      "max_job_applies_per_day": 30,
+      "max_self_scores_per_day": 30,
+      "ai_credits": 150,
+      "has_pro_badge": true,
+      "can_use_ai_cv_review": true
+    },
+    "display_features": [
+      "Lưu 15 CV & 15 Thư giới thiệu",
+      "Huy hiệu CV Nổi bật (Pro Badge)",
+      "Mở khóa AI Sửa lỗi CV chi tiết",
+      "Cấp 150 Credit AI / tháng"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a773605",
+    "plan_code": "app_topup_1000",
+    "name": "Nạp 1.000 Credit AI",
+    "description": "Bơm Credit sử dụng tức thì.",
+    "badge": "Nạp lẻ",
+    "display_order": 11,
+    "tier_level": 0,
+    "target_audience": "applicant",
+    "original_price": 0,
+    "current_price": 200000,
+    "currency": "VND",
+    "billing_cycle_days": 0,
+    "features": {
+      "ai_credits": 1000
+    },
+    "display_features": [
+      "+1.000 Credit AI cộng dồn vĩnh viễn"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735f2",
+    "plan_code": "hr_growth_yearly",
+    "name": "HR Growth (1 Năm)",
+    "description": "Giải pháp AI mở rộng cho SMEs.",
+    "badge": "Tiết kiệm 20%",
+    "display_order": 3,
+    "tier_level": 1,
+    "target_audience": "hr",
+    "original_price": 5988000,
+    "current_price": 4790000,
+    "currency": "VND",
+    "billing_cycle_days": 365,
+    "features": {
+      "max_active_jobs": 3,
+      "max_job_edits": 20,
+      "max_rescores_per_job": 5,
+      "monthly_ai_credits": 500,
+      "max_cv_parses_per_month": 100,
+      "can_use_reverse_matching": true,
+      "can_set_hot_job": false,
+      "can_export_analytics": false,
+      "can_customize_ai_weights": false
+    },
+    "display_features": [
+      "Chu kỳ thanh toán 1 năm",
+      "Tất cả quyền lợi HR Growth",
+      "Làm mới Credit & Quotas mỗi 30 ngày"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735f3",
+    "plan_code": "hr_pro_monthly",
+    "name": "HR Pro",
+    "description": "Phân tích và tối ưu phễu tuyển dụng.",
+    "badge": "Chuyên nghiệp",
+    "display_order": 4,
+    "tier_level": 2,
+    "target_audience": "hr",
+    "original_price": 1200000,
+    "current_price": 999000,
+    "currency": "VND",
+    "billing_cycle_days": 30,
+    "features": {
+      "max_active_jobs": 10,
+      "max_job_edits": 50,
+      "max_rescores_per_job": 10,
+      "monthly_ai_credits": 2000,
+      "max_cv_parses_per_month": 500,
+      "can_use_reverse_matching": true,
+      "can_set_hot_job": false,
+      "can_export_analytics": true,
+      "can_customize_ai_weights": false
+    },
+    "display_features": [
+      "Mở 10 chiến dịch cùng lúc",
+      "Parse 500 CV / tháng",
+      "Mở khóa Báo cáo Analytics",
+      "Cấp 2.000 Credit AI / tháng"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a773602",
+    "plan_code": "app_topup_50",
+    "name": "Nạp 50 Credit AI",
+    "description": "Bơm Credit sử dụng tức thì.",
+    "badge": "Nạp lẻ",
+    "display_order": 8,
+    "tier_level": 0,
+    "target_audience": "applicant",
+    "original_price": 0,
+    "current_price": 20000,
+    "currency": "VND",
+    "billing_cycle_days": 0,
+    "features": {
+      "ai_credits": 50
+    },
+    "display_features": [
+      "+50 Credit AI cộng dồn vĩnh viễn"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735f5",
+    "plan_code": "hr_enterprise_monthly",
+    "name": "HR Enterprise",
+    "description": "Đặc quyền tối đa cho Doanh nghiệp lớn.",
+    "badge": "Toàn năng",
+    "display_order": 6,
+    "tier_level": 3,
+    "target_audience": "hr",
+    "original_price": 2500000,
+    "current_price": 1999000,
+    "currency": "VND",
+    "billing_cycle_days": 30,
+    "features": {
+      "max_active_jobs": 999,
+      "max_job_edits": 999,
+      "max_rescores_per_job": 20,
+      "monthly_ai_credits": 5000,
+      "max_cv_parses_per_month": 2000,
+      "can_use_reverse_matching": true,
+      "can_set_hot_job": true,
+      "can_export_analytics": true,
+      "can_customize_ai_weights": true
+    },
+    "display_features": [
+      "Không giới hạn chiến dịch",
+      "Gắn nhãn HOT Job",
+      "Tinh chỉnh Trọng số AI tùy chọn",
+      "Cấp 5.000 Credit AI / tháng"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735f4",
+    "plan_code": "hr_pro_yearly",
+    "name": "HR Pro (1 Năm)",
+    "description": "Phân tích và tối ưu phễu tuyển dụng.",
+    "badge": "Tiết kiệm 20%",
+    "display_order": 5,
+    "tier_level": 2,
+    "target_audience": "hr",
+    "original_price": 11988000,
+    "current_price": 9590000,
+    "currency": "VND",
+    "billing_cycle_days": 365,
+    "features": {
+      "max_active_jobs": 10,
+      "max_job_edits": 50,
+      "max_rescores_per_job": 10,
+      "monthly_ai_credits": 2000,
+      "max_cv_parses_per_month": 500,
+      "can_use_reverse_matching": true,
+      "can_set_hot_job": false,
+      "can_export_analytics": true,
+      "can_customize_ai_weights": false
+    },
+    "display_features": [
+      "Chu kỳ thanh toán 1 năm",
+      "Tất cả quyền lợi HR Pro",
+      "Làm mới Credit & Quotas mỗi 30 ngày"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a773601",
+    "plan_code": "app_vip_yearly",
+    "name": "App VIP (1 Năm)",
+    "description": "Ưu tiên tuyệt đối, săn việc dễ dàng.",
+    "badge": "Tiết kiệm 16%",
+    "display_order": 7,
+    "tier_level": 3,
+    "target_audience": "applicant",
+    "original_price": 1188000,
+    "current_price": 990000,
+    "currency": "VND",
+    "billing_cycle_days": 365,
+    "features": {
+      "max_cv_uploads": 50,
+      "max_cover_letters_uploads": 50,
+      "max_job_applies_per_day": 100,
+      "max_self_scores_per_day": 100,
+      "ai_credits": 500,
+      "has_pro_badge": true,
+      "can_use_ai_cv_review": true
+    },
+    "display_features": [
+      "Chu kỳ thanh toán 1 năm",
+      "Tất cả quyền lợi App VIP",
+      "Làm mới Credit & Quotas mỗi 30 ngày"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a773603",
+    "plan_code": "app_topup_150",
+    "name": "Nạp 150 Credit AI",
+    "description": "Bơm Credit sử dụng tức thì.",
+    "badge": "Nạp lẻ",
+    "display_order": 9,
+    "tier_level": 0,
+    "target_audience": "applicant",
+    "original_price": 0,
+    "current_price": 50000,
+    "currency": "VND",
+    "billing_cycle_days": 0,
+    "features": {
+      "ai_credits": 150
+    },
+    "display_features": [
+      "+150 Credit AI cộng dồn vĩnh viễn"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a773604",
+    "plan_code": "app_topup_400",
+    "name": "Nạp 400 Credit AI",
+    "description": "Bơm Credit sử dụng tức thì.",
+    "badge": "Nạp lẻ",
+    "display_order": 10,
+    "tier_level": 0,
+    "target_audience": "applicant",
+    "original_price": 0,
+    "current_price": 100000,
+    "currency": "VND",
+    "billing_cycle_days": 0,
+    "features": {
+      "ai_credits": 400
+    },
+    "display_features": [
+      "+400 Credit AI cộng dồn vĩnh viễn"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a773600",
+    "plan_code": "app_vip_monthly",
+    "name": "App VIP",
+    "description": "Ưu tiên tuyệt đối, săn việc dễ dàng.",
+    "badge": "Độc quyền",
+    "display_order": 6,
+    "tier_level": 3,
+    "target_audience": "applicant",
+    "original_price": 150000,
+    "current_price": 99000,
+    "currency": "VND",
+    "billing_cycle_days": 30,
+    "features": {
+      "max_cv_uploads": 50,
+      "max_cover_letters_uploads": 50,
+      "max_job_applies_per_day": 100,
+      "max_self_scores_per_day": 100,
+      "ai_credits": 500,
+      "has_pro_badge": true,
+      "can_use_ai_cv_review": true
+    },
+    "display_features": [
+      "Lưu 50 CV & 50 Thư giới thiệu",
+      "Ưu tiên hiển thị với Nhà tuyển dụng",
+      "Mở khóa AI Sửa lỗi CV chi tiết",
+      "Cấp 500 Credit AI / tháng"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735f0",
+    "plan_code": "hr_free",
+    "name": "HR Starter",
+    "description": "Dành cho Startup trải nghiệm hệ thống ATS.",
+    "badge": "Miễn phí",
+    "display_order": 1,
+    "tier_level": 0,
+    "target_audience": "hr",
+    "original_price": 0,
+    "current_price": 0,
+    "currency": "VND",
+    "billing_cycle_days": 0,
+    "features": {
+      "max_active_jobs": 1,
+      "max_job_edits": 5,
+      "max_rescores_per_job": 2,
+      "monthly_ai_credits": 0,
+      "max_cv_parses_per_month": 20,
+      "can_use_reverse_matching": false,
+      "can_set_hot_job": false,
+      "can_export_analytics": false,
+      "can_customize_ai_weights": false
+    },
+    "display_features": [
+      "Mở 1 chiến dịch cùng lúc",
+      "Parse 20 CV / tháng",
+      "Tính năng ATS cơ bản, Chấm CV thụ động"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735f6",
+    "plan_code": "hr_enterprise_yearly",
+    "name": "HR Enterprise (1 Năm)",
+    "description": "Đặc quyền tối đa cho Doanh nghiệp lớn.",
+    "badge": "Tiết kiệm 20%",
+    "display_order": 7,
+    "tier_level": 3,
+    "target_audience": "hr",
+    "original_price": 23988000,
+    "current_price": 19190000,
+    "currency": "VND",
+    "billing_cycle_days": 365,
+    "features": {
+      "max_active_jobs": 999,
+      "max_job_edits": 999,
+      "max_rescores_per_job": 20,
+      "monthly_ai_credits": 5000,
+      "max_cv_parses_per_month": 2000,
+      "can_use_reverse_matching": true,
+      "can_set_hot_job": true,
+      "can_export_analytics": true,
+      "can_customize_ai_weights": true
+    },
+    "display_features": [
+      "Chu kỳ thanh toán 1 năm",
+      "Tất cả quyền lợi HR Enterprise",
+      "Làm mới Credit & Quotas mỗi 30 ngày"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  },
+  {
+    "_id": "6a97991f9da5a97d8a7735ff",
+    "plan_code": "app_pro_yearly",
+    "name": "App Pro (1 Năm)",
+    "description": "Nổi bật giữa đám đông ứng viên.",
+    "badge": "Tiết kiệm 16%",
+    "display_order": 5,
+    "tier_level": 2,
+    "target_audience": "applicant",
+    "original_price": 708000,
+    "current_price": 590000,
+    "currency": "VND",
+    "billing_cycle_days": 365,
+    "features": {
+      "max_cv_uploads": 15,
+      "max_cover_letters_uploads": 15,
+      "max_job_applies_per_day": 30,
+      "max_self_scores_per_day": 30,
+      "ai_credits": 150,
+      "has_pro_badge": true,
+      "can_use_ai_cv_review": true
+    },
+    "display_features": [
+      "Chu kỳ thanh toán 1 năm",
+      "Tất cả quyền lợi App Pro",
+      "Làm mới Credit & Quotas mỗi 30 ngày"
+    ],
+    "is_active": true,
+    "created_at": "2026-09-02 03:33:51.152000",
+    "updated_at": "2026-09-02 03:33:51.152000"
+  }
+]
