@@ -1,0 +1,127 @@
+[
+  {
+    "_id": "6a914ae9e228e500c5c6e6a3",
+    "user_id": "6a914ae9e228e500c5c6e6a2",
+    "created_at": "2026-08-28 08:46:33.653000",
+    "deleted_at": null,
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_location": {},
+    "headline": "",
+    "linkedin": "",
+    "portfolio": [],
+    "updated_at": "2026-09-26 03:12:40.974000"
+  },
+  {
+    "_id": "6a9fea3251ee9bb92e38317d",
+    "user_id": "6a9fea3251ee9bb92e38317c",
+    "created_at": "2026-09-08 10:57:54.826000",
+    "deleted_at": null,
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb"
+  },
+  {
+    "_id": "6a9fea3251ee9bb92e383185",
+    "user_id": "6a9fea3251ee9bb92e383184",
+    "created_at": "2026-09-08 10:57:54.826000",
+    "deleted_at": null,
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb"
+  },
+  {
+    "_id": "6a9fea3251ee9bb92e383175",
+    "user_id": "6a9fea3251ee9bb92e383174",
+    "created_at": "2026-09-08 10:57:54.825000",
+    "deleted_at": null,
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb"
+  },
+  {
+    "_id": "6a9fea3251ee9bb92e383179",
+    "user_id": "6a9fea3251ee9bb92e383178",
+    "created_at": "2026-09-08 10:57:54.825000",
+    "deleted_at": null,
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb"
+  },
+  {
+    "_id": "6a9fea3251ee9bb92e38317f",
+    "user_id": "6a9fea3251ee9bb92e38317e",
+    "created_at": "2026-09-08 10:57:54.826000",
+    "deleted_at": null,
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb"
+  },
+  {
+    "_id": "6a9fea3251ee9bb92e383183",
+    "user_id": "6a9fea3251ee9bb92e383182",
+    "created_at": "2026-09-08 10:57:54.826000",
+    "deleted_at": null,
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb"
+  },
+  {
+    "_id": "6a9fea3251ee9bb92e38317b",
+    "user_id": "6a9fea3251ee9bb92e38317a",
+    "created_at": "2026-09-08 10:57:54.826000",
+    "deleted_at": null,
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb"
+  },
+  {
+    "_id": "6aaaadba6292df43bb17ce57",
+    "user_id": "6aaaadba6292df43bb17ce56",
+    "created_at": "2026-09-16 14:54:50.106000",
+    "deleted_at": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "credits_remaining": 0,
+    "current_period_start": "2026-09-16 14:54:50.208000",
+    "current_period_end": null
+  },
+  {
+    "_id": "6a9fea3251ee9bb92e383177",
+    "user_id": "6a9fea3251ee9bb92e383176",
+    "created_at": "2026-09-08 10:57:54.825000",
+    "deleted_at": null,
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb"
+  },
+  {
+    "_id": "6a9fea3251ee9bb92e383181",
+    "user_id": "6a9fea3251ee9bb92e383180",
+    "created_at": "2026-09-08 10:57:54.826000",
+    "deleted_at": null,
+    "credits_remaining": 0,
+    "current_period_end": null,
+    "current_period_start": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb"
+  },
+  {
+    "_id": "6ab77c5d90134adbf19d8ddf",
+    "user_id": "6ab77c5d90134adbf19d8dde",
+    "created_at": "2026-09-26 08:03:41.534000",
+    "deleted_at": null,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "credits_remaining": 0,
+    "current_period_start": "2026-09-26 08:03:41.573000",
+    "current_period_end": null
+  }
+]

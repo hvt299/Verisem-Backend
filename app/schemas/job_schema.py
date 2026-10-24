@@ -11,10 +11,18 @@ class JobLevel(str, Enum):
     JUNIOR = "Junior"
     MIDDLE = "Middle"
     SENIOR = "Senior"
-    LEAD = "LEAD"
+    LEAD = "Lead"
     MANAGER = "Manager"
     DIRECTOR = "Director"
     EXECUTIVE = "Executive"
+
+    @classmethod
+    def _missing_(cls, value):
+        if isinstance(value, str):
+            for member in cls:
+                if member.value.lower() == value.lower():
+                    return member
+        return None
 
 class EmploymentType(str, Enum):
     FULL_TIME = "Full-time"
@@ -106,6 +114,7 @@ class JobCreateEnterprise(BaseModel):
 class JobResponse(JobCreateEnterprise):
     id: str
     company_name: Optional[str] = Field(default="Công ty Ẩn danh")
+    company_logo: Optional[str] = None
     status: JobStatus
     created_at: datetime
     updated_at: Optional[datetime] = None

@@ -3,7 +3,7 @@ import logging
 from typing import Dict, List
 
 import docx
-import fitz
+import pymupdf as fitz
 from docx.shared import RGBColor
 
 from app.services.nlp_engine import INDUSTRY_SKILL_MAP

@@ -96,6 +96,19 @@ async def get_blog_detail(slug: str):
 
 @router.get("/locations")
 async def get_locations():
+    from app.database.config import db_instance
+    import json
+
+    redis = db_instance.redis
+    cache_key = "cache:system:locations"
+    if redis:
+        try:
+            cached = await redis.get(cache_key)
+            if cached:
+                return json.loads(cached)
+        except Exception:
+            pass
+
     query = {"level": AdminLevel.PROVINCE.value}
     locations = await AdministrativeUnitRepository.find_many(query, limit=200)
     
@@ -109,6 +122,13 @@ async def get_locations():
         })
         
     result.sort(key=lambda x: x.get("name", ""))
+
+    if redis and result:
+        try:
+            await redis.set(cache_key, json.dumps(result), ex=86400)
+        except Exception:
+            pass
+
     return result
 
 @router.get("/languages")

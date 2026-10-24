@@ -61,116 +61,117 @@ async def bootstrap_admin(payload: BootstrapRequest):
 # ==========================================
 from app.database.config import db_instance
 import os
+import time
 import httpx
+
+_health_cache = None
+_health_cache_timestamp = 0
+HEALTH_CACHE_TTL_SECONDS = 300  # 5 minutes TTL to avoid Gemini/BGE-M3 rate limits (429/503)
 
 @router.get("/system-health")
 async def get_system_health(current_admin: CurrentUser = Depends(require_admin)):
+    global _health_cache, _health_cache_timestamp
+
+    now = time.time()
+    
+    # 1. Fast local checks (MongoDB & Redis always checked in real-time)
+    mongodb_status = "Không phản hồi"
+    try:
+        if db_instance.db is not None:
+            await db_instance.db.command("ping")
+            mongodb_status = "Hoạt động"
+    except Exception:
+        mongodb_status = "Mất kết nối"
+
+    redis_status = "Bỏ qua"
+    try:
+        if db_instance.redis is not None:
+            await db_instance.redis.ping()
+            redis_status = "Hoạt động"
+        else:
+            redis_status = "Hoạt động (Local)"
+    except Exception:
+        redis_status = "Mất kết nối"
+
+    # If external AI services were checked within TTL, reuse cached AI statuses
+    if _health_cache and (now - _health_cache_timestamp < HEALTH_CACHE_TTL_SECONDS):
+        cached_result = dict(_health_cache)
+        cached_result["mongodb"] = mongodb_status
+        cached_result["redis"] = redis_status
+        return cached_result
+
+    # 2. Check external AI services (Cached for 5 minutes)
     health = {
         "fastapi": "Hoạt động",
-        "mongodb": "Không phản hồi",
-        "redis": "Bỏ qua",
+        "mongodb": mongodb_status,
+        "redis": redis_status,
         "gemini_3_6": "Không phản hồi",
         "gemini_3_1_lite": "Không phản hồi",
         "gemini_2_5": "Không phản hồi",
         "bgem3": "Không phản hồi"
     }
-    
-    # 1. MongoDB
-    try:
-        if db_instance.db is not None:
-            await db_instance.db.command("ping")
-            health["mongodb"] = "Hoạt động"
-    except Exception:
-        pass
-        
-    # 2. Redis
-    try:
-        if db_instance.redis is not None:
-            await db_instance.redis.ping()
-            health["redis"] = "Hoạt động"
-    except Exception:
-        health["redis"] = "Mất kết nối"
-        
-    # 3. Gemini Flash
+
     gemini_key = os.getenv("GEMINI_API_KEY")
     if gemini_key:
         try:
-            async with httpx.AsyncClient(timeout=5.0) as client:
-                payload = {"contents":[{"parts":[{"text":"ping"}]}]}
-                
-                # Check 3.6 Flash
-                try:
-                    resp36 = await client.post(
-                        f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={gemini_key}",
-                        json=payload
-                    )
-                    if resp36.status_code == 200:
-                        health["gemini_3_6"] = "Hoạt động"
-                    else:
-                        health["gemini_3_6"] = f"Lỗi {resp36.status_code}"
-                except Exception as e:
-                    health["gemini_3_6"] = f"Mất kết nối"
-
-                # Check 3.1 Flash Lite
-                try:
-                    resp31 = await client.post(
-                        f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key={gemini_key}",
-                        json=payload
-                    )
-                    if resp31.status_code == 200:
-                        health["gemini_3_1_lite"] = "Hoạt động"
-                    else:
-                        health["gemini_3_1_lite"] = f"Lỗi {resp31.status_code}"
-                except Exception as e:
-                    health["gemini_3_1_lite"] = f"Mất kết nối"
-
-                # Check 2.5 Flash
-                try:
-                    resp25 = await client.post(
-                        f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={gemini_key}",
-                        json=payload
-                    )
-                    if resp25.status_code == 200:
-                        health["gemini_2_5"] = "Hoạt động"
-                    else:
-                        health["gemini_2_5"] = f"Lỗi {resp25.status_code}"
-                except Exception as e:
-                    health["gemini_2_5"] = f"Mất kết nối"
+            # Use lightweight metadata endpoint (GET /models/{model}) instead of POST generateContent
+            # This completely avoids consuming generate_content quota and prevents 429/503 errors!
+            async with httpx.AsyncClient(timeout=4.0) as client:
+                for model_key, model_name in [
+                    ("gemini_3_6", "gemini-3.6-flash"),
+                    ("gemini_3_1_lite", "gemini-3.1-flash-lite"),
+                    ("gemini_2_5", "gemini-2.5-flash")
+                ]:
+                    try:
+                        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}?key={gemini_key}"
+                        res = await client.get(url)
+                        if res.status_code == 200:
+                            health[model_key] = "Hoạt động"
+                        elif res.status_code == 429:
+                            health[model_key] = "Giới hạn Quota (429)"
+                        elif res.status_code == 503:
+                            health[model_key] = "Bảo trì (503)"
+                        else:
+                            health[model_key] = f"Lỗi {res.status_code}"
+                    except Exception:
+                        health[model_key] = "Mất kết nối"
         except Exception:
             pass
     else:
         health["gemini_3_6"] = "Thiếu API Key"
         health["gemini_3_1_lite"] = "Thiếu API Key"
         health["gemini_2_5"] = "Thiếu API Key"
-            
-    # 4. BGE-M3
+
+    # 3. Check BGE-M3 (Colab/Ngrok)
     colab_url = os.getenv("COLAB_API_URL")
     if colab_url:
         try:
             async with httpx.AsyncClient(timeout=3.0) as client:
-                # Ngrok requires bypass header if using free tier
                 resp = await client.get(
-                    colab_url, 
+                    colab_url,
                     headers={"ngrok-skip-browser-warning": "true"}
                 )
-                # If GET to a POST endpoint returns 405, FastAPI is alive and routing correctly
-                if resp.status_code == 405: 
+                if resp.status_code in [200, 405]:
                     health["bgem3"] = "Hoạt động"
+                elif resp.status_code == 429:
+                    health["bgem3"] = "Quá tải (429)"
                 else:
                     health["bgem3"] = f"Lỗi {resp.status_code}"
         except Exception:
-            pass
+            health["bgem3"] = "Mất kết nối"
     else:
         health["bgem3"] = "Chưa cấu hình URL"
 
+    _health_cache = dict(health)
+    _health_cache_timestamp = now
     return health
 
 # ==========================================
 # USER & ROLE MANAGEMENT
 # ==========================================
 @router.get("/users", dependencies=[Depends(require_admin)])
-async def list_users():
-    return await AdminService.list_users()
+async def list_users(role: Optional[str] = Query(None, description="Lọc theo role"), search: Optional[str] = Query(None, description="Tìm theo email hoặc họ tên")):
+    return await AdminService.list_users(role=role, search=search)
 
 @router.patch("/users/{user_id}/role")
 async def update_user_role(user_id: str, payload: UpdateRoleRequest, current_admin: CurrentUser = Depends(require_admin)):

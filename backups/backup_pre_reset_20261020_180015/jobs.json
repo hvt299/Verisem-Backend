@@ -1,0 +1,2136 @@
+[
+  {
+    "_id": "6a9fbbe350fec98bc02c5a67",
+    "company_id": "6a91481be228e500c5c6e6a0",
+    "title": "Senior Frontend Developer",
+    "slug": "senior-frontend-developer-c6e6a0-0",
+    "industry": "it",
+    "job_level": "Senior",
+    "employment_type": "Full-time",
+    "work_mode": "Hybrid",
+    "headcount": 1,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "ReactJS",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 3,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 45000000,
+      "max_salary": 75000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Senior Frontend Developer tại Trung tâm Phát triển Phần mềm SDC</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Senior Frontend Developer tại Trung tâm Phát triển Phần mềm SDC</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Senior Frontend Developer tại Trung tâm Phát triển Phần mềm SDC</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": true,
+    "view_count": 325,
+    "save_count": 25,
+    "num_applications": 14,
+    "created_by_user_id": "6a91481be228e500c5c6e6a1",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a70",
+    "company_id": "6a91481be228e500c5c6e6a6",
+    "title": "Senior Frontend Developer",
+    "slug": "senior-frontend-developer-c6e6a6-0",
+    "industry": "it",
+    "job_level": "Senior",
+    "employment_type": "Full-time",
+    "work_mode": "Hybrid",
+    "headcount": 1,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "ReactJS",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 3,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 45000000,
+      "max_salary": 75000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Senior Frontend Developer tại Viettel Solutions</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Senior Frontend Developer tại Viettel Solutions</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Senior Frontend Developer tại Viettel Solutions</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": true,
+    "view_count": 154,
+    "save_count": 2,
+    "num_applications": 17,
+    "created_by_user_id": "6a91481be228e500c5c6e6a7",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a73",
+    "company_id": "6a91481be228e500c5c6e6a8",
+    "title": "Senior Frontend Developer",
+    "slug": "senior-frontend-developer-c6e6a8-0",
+    "industry": "it",
+    "job_level": "Senior",
+    "employment_type": "Full-time",
+    "work_mode": "Hybrid",
+    "headcount": 1,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "ReactJS",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 3,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 45000000,
+      "max_salary": 75000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Senior Frontend Developer tại NashTech Vietnam</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Senior Frontend Developer tại NashTech Vietnam</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Senior Frontend Developer tại NashTech Vietnam</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": true,
+    "view_count": 18,
+    "save_count": 41,
+    "num_applications": 13,
+    "created_by_user_id": "6a91481be228e500c5c6e6a9",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a74",
+    "company_id": "6a91481be228e500c5c6e6a8",
+    "title": "Backend Node.js Engineer",
+    "slug": "backend-node-js-engineer-c6e6a8-1",
+    "industry": "it",
+    "job_level": "Middle",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 2,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Node.js",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 2,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 30000000,
+      "max_salary": 50000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Backend Node.js Engineer tại NashTech Vietnam</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Backend Node.js Engineer tại NashTech Vietnam</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Backend Node.js Engineer tại NashTech Vietnam</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 86,
+    "save_count": 0,
+    "num_applications": 10,
+    "created_by_user_id": "6a91481be228e500c5c6e6a9",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a68",
+    "company_id": "6a91481be228e500c5c6e6a0",
+    "title": "Backend Node.js Engineer",
+    "slug": "backend-node-js-engineer-c6e6a0-1",
+    "industry": "it",
+    "job_level": "Middle",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 2,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Node.js",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 2,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 30000000,
+      "max_salary": 50000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Backend Node.js Engineer tại Trung tâm Phát triển Phần mềm SDC</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Backend Node.js Engineer tại Trung tâm Phát triển Phần mềm SDC</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Backend Node.js Engineer tại Trung tâm Phát triển Phần mềm SDC</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 134,
+    "save_count": 38,
+    "num_applications": 0,
+    "created_by_user_id": "6a91481be228e500c5c6e6a1",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0,
+    "assigned_hr_ids": []
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a69",
+    "company_id": "6a91481be228e500c5c6e6a0",
+    "title": "Data Analyst",
+    "slug": "data-analyst-c6e6a0-2",
+    "industry": "data",
+    "job_level": "Junior",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 3,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "SQL",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 1,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 15000000,
+      "max_salary": 25000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Data Analyst tại Trung tâm Phát triển Phần mềm SDC</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Data Analyst tại Trung tâm Phát triển Phần mềm SDC</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Data Analyst tại Trung tâm Phát triển Phần mềm SDC</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 300,
+    "save_count": 1,
+    "num_applications": 10,
+    "created_by_user_id": "6a91481be228e500c5c6e6a1",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0,
+    "assigned_hr_ids": [
+      "6a91481be228e500c5c6e6a1"
+    ]
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10f5",
+    "company_id": "6a91481be228e500c5c6eb05",
+    "title": "Cửa hàng trưởng (Store Manager)",
+    "slug": "cửa-hàng-trưởng-(store-manager)-c6eb05-0",
+    "industry": "retail_lifestyle",
+    "job_level": "Manager",
+    "employment_type": "Full-time",
+    "work_mode": "Hybrid",
+    "headcount": 1,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 3,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 15000000,
+      "max_salary": 25000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Cửa hàng trưởng (Store Manager) tại PNJ</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Cửa hàng trưởng (Store Manager)</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại PNJ</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": true,
+    "view_count": 388,
+    "save_count": 23,
+    "num_applications": 8,
+    "created_by_user_id": "6a91481be228e500c5c6eb15",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10ea",
+    "company_id": "6a91481be228e500c5c6eb01",
+    "title": "Giao dịch viên (Teller)",
+    "slug": "giao-dịch-viên-(teller)-c6eb01-1",
+    "industry": "finance",
+    "job_level": "Junior",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 2,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 2,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 10000000,
+      "max_salary": 15000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Giao dịch viên (Teller) tại Techcombank</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Giao dịch viên (Teller)</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại Techcombank</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 373,
+    "save_count": 5,
+    "num_applications": 18,
+    "created_by_user_id": "6a91481be228e500c5c6eb11",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10ec",
+    "company_id": "6a91481be228e500c5c6eb02",
+    "title": "Giáo viên Tiếng Anh IELTS",
+    "slug": "giáo-viên-tiếng-anh-ielts-c6eb02-0",
+    "industry": "education",
+    "job_level": "Middle",
+    "employment_type": "Full-time",
+    "work_mode": "Hybrid",
+    "headcount": 1,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 3,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 20000000,
+      "max_salary": 40000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Giáo viên Tiếng Anh IELTS tại YOLA</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Giáo viên Tiếng Anh IELTS</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại YOLA</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": true,
+    "view_count": 214,
+    "save_count": 10,
+    "num_applications": 4,
+    "created_by_user_id": "6a91481be228e500c5c6eb12",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10ee",
+    "company_id": "6a91481be228e500c5c6eb02",
+    "title": "Chuyên viên Phát triển Chương trình học",
+    "slug": "chuyên-viên-phát-triển-chương-trình-học-c6eb02-2",
+    "industry": "education",
+    "job_level": "Senior",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 3,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 1,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 25000000,
+      "max_salary": 35000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Chuyên viên Phát triển Chương trình học tại YOLA</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Chuyên viên Phát triển Chương trình học</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại YOLA</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 418,
+    "save_count": 43,
+    "num_applications": 13,
+    "created_by_user_id": "6a91481be228e500c5c6eb12",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10f4",
+    "company_id": "6a91481be228e500c5c6eb04",
+    "title": "Performance Marketing Executive",
+    "slug": "performance-marketing-executive-c6eb04-2",
+    "industry": "marketing",
+    "job_level": "Middle",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 3,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 1,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 15000000,
+      "max_salary": 25000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Performance Marketing Executive tại Dentsu</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Performance Marketing Executive</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại Dentsu</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 420,
+    "save_count": 6,
+    "num_applications": 13,
+    "created_by_user_id": "6a91481be228e500c5c6eb14",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10f6",
+    "company_id": "6a91481be228e500c5c6eb05",
+    "title": "Nhân viên Thiết kế Trang sức 3D",
+    "slug": "nhân-viên-thiết-kế-trang-sức-3d-c6eb05-1",
+    "industry": "design",
+    "job_level": "Middle",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 2,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 2,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 12000000,
+      "max_salary": 20000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Nhân viên Thiết kế Trang sức 3D tại PNJ</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Nhân viên Thiết kế Trang sức 3D</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại PNJ</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 294,
+    "save_count": 48,
+    "num_applications": 16,
+    "created_by_user_id": "6a91481be228e500c5c6eb15",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a75",
+    "company_id": "6a91481be228e500c5c6e6a8",
+    "title": "Data Analyst",
+    "slug": "data-analyst-c6e6a8-2",
+    "industry": "data",
+    "job_level": "Junior",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 3,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "SQL",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 1,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 15000000,
+      "max_salary": 25000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Data Analyst tại NashTech Vietnam</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Data Analyst tại NashTech Vietnam</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Data Analyst tại NashTech Vietnam</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 116,
+    "save_count": 39,
+    "num_applications": 13,
+    "created_by_user_id": "6a91481be228e500c5c6e6a9",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10ed",
+    "company_id": "6a91481be228e500c5c6eb02",
+    "title": "Nhân viên Tư vấn Tuyển sinh",
+    "slug": "nhân-viên-tư-vấn-tuyển-sinh-c6eb02-1",
+    "industry": "education",
+    "job_level": "Junior",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 2,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 2,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 10000000,
+      "max_salary": 20000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Nhân viên Tư vấn Tuyển sinh tại YOLA</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Nhân viên Tư vấn Tuyển sinh</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại YOLA</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 278,
+    "save_count": 42,
+    "num_applications": 19,
+    "created_by_user_id": "6a91481be228e500c5c6eb12",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10f1",
+    "company_id": "6a91481be228e500c5c6eb03",
+    "title": "Kiến trúc sư Cảnh quan",
+    "slug": "kiến-trúc-sư-cảnh-quan-c6eb03-2",
+    "industry": "construction",
+    "job_level": "Middle",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 3,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 1,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 20000000,
+      "max_salary": 30000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Kiến trúc sư Cảnh quan tại Đất Xanh</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Kiến trúc sư Cảnh quan</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại Đất Xanh</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 100,
+    "save_count": 22,
+    "num_applications": 8,
+    "created_by_user_id": "6a91481be228e500c5c6eb13",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10f2",
+    "company_id": "6a91481be228e500c5c6eb04",
+    "title": "Digital Account Manager",
+    "slug": "digital-account-manager-c6eb04-0",
+    "industry": "marketing",
+    "job_level": "Manager",
+    "employment_type": "Full-time",
+    "work_mode": "Hybrid",
+    "headcount": 1,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 3,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 25000000,
+      "max_salary": 40000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Digital Account Manager tại Dentsu</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Digital Account Manager</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại Dentsu</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": true,
+    "view_count": 155,
+    "save_count": 29,
+    "num_applications": 18,
+    "created_by_user_id": "6a91481be228e500c5c6eb14",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a6b",
+    "company_id": "6a91481be228e500c5c6e6a2",
+    "title": "Backend Node.js Engineer",
+    "slug": "backend-node-js-engineer-c6e6a2-1",
+    "industry": "it",
+    "job_level": "Middle",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 2,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Node.js",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 2,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 30000000,
+      "max_salary": 50000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Backend Node.js Engineer tại FPT Software</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Backend Node.js Engineer tại FPT Software</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Backend Node.js Engineer tại FPT Software</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 120,
+    "save_count": 33,
+    "num_applications": 19,
+    "created_by_user_id": "6a91481be228e500c5c6e6a3",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a6f",
+    "company_id": "6a91481be228e500c5c6e6a4",
+    "title": "Data Analyst",
+    "slug": "data-analyst-c6e6a4-2",
+    "industry": "data",
+    "job_level": "Junior",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 3,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "SQL",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 1,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 15000000,
+      "max_salary": 25000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Data Analyst tại VNG Corporation</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Data Analyst tại VNG Corporation</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Data Analyst tại VNG Corporation</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 348,
+    "save_count": 7,
+    "num_applications": 6,
+    "created_by_user_id": "6a91481be228e500c5c6e6a5",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a6d",
+    "company_id": "6a91481be228e500c5c6e6a4",
+    "title": "Senior Frontend Developer",
+    "slug": "senior-frontend-developer-c6e6a4-0",
+    "industry": "it",
+    "job_level": "Senior",
+    "employment_type": "Full-time",
+    "work_mode": "Hybrid",
+    "headcount": 1,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "ReactJS",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 3,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 45000000,
+      "max_salary": 75000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Senior Frontend Developer tại VNG Corporation</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Senior Frontend Developer tại VNG Corporation</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Senior Frontend Developer tại VNG Corporation</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": true,
+    "view_count": 99,
+    "save_count": 30,
+    "num_applications": 14,
+    "created_by_user_id": "6a91481be228e500c5c6e6a5",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a71",
+    "company_id": "6a91481be228e500c5c6e6a6",
+    "title": "Backend Node.js Engineer",
+    "slug": "backend-node-js-engineer-c6e6a6-1",
+    "industry": "it",
+    "job_level": "Middle",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 2,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Node.js",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 2,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 30000000,
+      "max_salary": 50000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Backend Node.js Engineer tại Viettel Solutions</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Backend Node.js Engineer tại Viettel Solutions</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Backend Node.js Engineer tại Viettel Solutions</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 495,
+    "save_count": 25,
+    "num_applications": 7,
+    "created_by_user_id": "6a91481be228e500c5c6e6a7",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a72",
+    "company_id": "6a91481be228e500c5c6e6a6",
+    "title": "Data Analyst",
+    "slug": "data-analyst-c6e6a6-2",
+    "industry": "data",
+    "job_level": "Junior",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 3,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "SQL",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 1,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 15000000,
+      "max_salary": 25000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Data Analyst tại Viettel Solutions</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Data Analyst tại Viettel Solutions</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Data Analyst tại Viettel Solutions</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 372,
+    "save_count": 43,
+    "num_applications": 9,
+    "created_by_user_id": "6a91481be228e500c5c6e6a7",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a6c",
+    "company_id": "6a91481be228e500c5c6e6a2",
+    "title": "Data Analyst",
+    "slug": "data-analyst-c6e6a2-2",
+    "industry": "data",
+    "job_level": "Junior",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 3,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "SQL",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 1,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 15000000,
+      "max_salary": 25000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Data Analyst tại FPT Software</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Data Analyst tại FPT Software</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Data Analyst tại FPT Software</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 480,
+    "save_count": 40,
+    "num_applications": 3,
+    "created_by_user_id": "6a91481be228e500c5c6e6a3",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10eb",
+    "company_id": "6a91481be228e500c5c6eb01",
+    "title": "Trưởng phòng Khách hàng Doanh nghiệp",
+    "slug": "trưởng-phòng-khách-hàng-doanh-nghiệp-c6eb01-2",
+    "industry": "finance",
+    "job_level": "Manager",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 3,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 1,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 50000000,
+      "max_salary": 80000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Trưởng phòng Khách hàng Doanh nghiệp tại Techcombank</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Trưởng phòng Khách hàng Doanh nghiệp</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại Techcombank</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 350,
+    "save_count": 1,
+    "num_applications": 19,
+    "created_by_user_id": "6a91481be228e500c5c6eb11",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a6a",
+    "company_id": "6a91481be228e500c5c6e6a2",
+    "title": "Senior Frontend Developer",
+    "slug": "senior-frontend-developer-c6e6a2-0",
+    "industry": "it",
+    "job_level": "Senior",
+    "employment_type": "Full-time",
+    "work_mode": "Hybrid",
+    "headcount": 1,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "ReactJS",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 3,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 45000000,
+      "max_salary": 75000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Senior Frontend Developer tại FPT Software</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Senior Frontend Developer tại FPT Software</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Senior Frontend Developer tại FPT Software</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": true,
+    "view_count": 350,
+    "save_count": 26,
+    "num_applications": 12,
+    "created_by_user_id": "6a91481be228e500c5c6e6a3",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fbbe350fec98bc02c5a6e",
+    "company_id": "6a91481be228e500c5c6e6a4",
+    "title": "Backend Node.js Engineer",
+    "slug": "backend-node-js-engineer-c6e6a4-1",
+    "industry": "it",
+    "job_level": "Middle",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 2,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Node.js",
+        "weight": 0.8,
+        "min_years": 2,
+        "is_knockout": true
+      },
+      {
+        "skill_id": null,
+        "name": "English",
+        "weight": 0.2,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 2,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": [
+        "Công nghệ thông tin"
+      ]
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 30000000,
+      "max_salary": 50000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc cho vị trí Backend Node.js Engineer tại VNG Corporation</p>",
+    "requirements": "<p>Yêu cầu công việc cho vị trí Backend Node.js Engineer tại VNG Corporation</p>",
+    "benefits": "<p>Quyền lợi cho vị trí Backend Node.js Engineer tại VNG Corporation</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 204,
+    "save_count": 32,
+    "num_applications": 8,
+    "created_by_user_id": "6a91481be228e500c5c6e6a5",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10f7",
+    "company_id": "6a91481be228e500c5c6eb05",
+    "title": "Chuyên viên Thu mua (Procurement)",
+    "slug": "chuyên-viên-thu-mua-(procurement)-c6eb05-2",
+    "industry": "logistics",
+    "job_level": "Middle",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 3,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 1,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 15000000,
+      "max_salary": 22000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Chuyên viên Thu mua (Procurement) tại PNJ</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Chuyên viên Thu mua (Procurement)</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại PNJ</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 337,
+    "save_count": 15,
+    "num_applications": 6,
+    "created_by_user_id": "6a91481be228e500c5c6eb15",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10e9",
+    "company_id": "6a91481be228e500c5c6eb01",
+    "title": "Chuyên viên Phân tích Dữ liệu",
+    "slug": "chuyên-viên-phân-tích-dữ-liệu-c6eb01-0",
+    "industry": "finance",
+    "job_level": "Senior",
+    "employment_type": "Full-time",
+    "work_mode": "Hybrid",
+    "headcount": 1,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 3,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 30000000,
+      "max_salary": 50000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Chuyên viên Phân tích Dữ liệu tại Techcombank</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Chuyên viên Phân tích Dữ liệu</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại Techcombank</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": true,
+    "view_count": 185,
+    "save_count": 15,
+    "num_applications": 9,
+    "created_by_user_id": "6a91481be228e500c5c6eb11",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10ef",
+    "company_id": "6a91481be228e500c5c6eb03",
+    "title": "Chuyên viên Môi giới Bất động sản",
+    "slug": "chuyên-viên-môi-giới-bất-động-sản-c6eb03-0",
+    "industry": "realestate",
+    "job_level": "Junior",
+    "employment_type": "Full-time",
+    "work_mode": "Hybrid",
+    "headcount": 1,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 3,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 8000000,
+      "max_salary": 50000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Chuyên viên Môi giới Bất động sản tại Đất Xanh</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Chuyên viên Môi giới Bất động sản</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại Đất Xanh</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": true,
+    "view_count": 197,
+    "save_count": 29,
+    "num_applications": 18,
+    "created_by_user_id": "6a91481be228e500c5c6eb13",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10f0",
+    "company_id": "6a91481be228e500c5c6eb03",
+    "title": "Trưởng phòng Pháp lý Dự án",
+    "slug": "trưởng-phòng-pháp-lý-dự-án-c6eb03-1",
+    "industry": "realestate",
+    "job_level": "Manager",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 2,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 2,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 35000000,
+      "max_salary": 50000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Trưởng phòng Pháp lý Dự án tại Đất Xanh</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Trưởng phòng Pháp lý Dự án</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại Đất Xanh</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 491,
+    "save_count": 39,
+    "num_applications": 8,
+    "created_by_user_id": "6a91481be228e500c5c6eb13",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  },
+  {
+    "_id": "6a9fc98523432d5867fe10f3",
+    "company_id": "6a91481be228e500c5c6eb04",
+    "title": "Senior Copywriter",
+    "slug": "senior-copywriter-c6eb04-1",
+    "industry": "marketing",
+    "job_level": "Senior",
+    "employment_type": "Full-time",
+    "work_mode": "Office",
+    "headcount": 2,
+    "deadline": "2026-10-15 00:00:00",
+    "probation_period": "2 tháng",
+    "gender_requirement": "Không yêu cầu",
+    "languages": [],
+    "required_certifications": [],
+    "required_skills": [
+      {
+        "skill_id": null,
+        "name": "Giao tiếp",
+        "weight": 0.8,
+        "min_years": 1,
+        "is_knockout": false
+      },
+      {
+        "skill_id": null,
+        "name": "Tiếng Anh",
+        "weight": 0.5,
+        "min_years": 1,
+        "is_knockout": false
+      }
+    ],
+    "preferred_skills": [],
+    "min_yoe": 2,
+    "education": {
+      "min_level": "Đại học",
+      "preferred_majors": []
+    },
+    "score_weights": {
+      "skills_weight": 0.4,
+      "nlp_weight": 0.3,
+      "experience_weight": 0.2,
+      "education_weight": 0.1
+    },
+    "salary": {
+      "min_salary": 20000000,
+      "max_salary": 30000000,
+      "currency": "VND"
+    },
+    "working_hours": "08:00 - 17:30, Thứ 2 - Thứ 6",
+    "location": {
+      "country": "Việt Nam",
+      "version": "new",
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh"
+    },
+    "description": "<p>Mô tả công việc chi tiết cho vị trí Senior Copywriter tại Dentsu</p>",
+    "requirements": "<p>Yêu cầu công việc chuyên môn và kỹ năng mềm cho vị trí Senior Copywriter</p>",
+    "benefits": "<p>Chế độ đãi ngộ, phúc lợi hấp dẫn khi làm việc tại Dentsu</p>",
+    "other_info": "",
+    "status": "expired",
+    "is_hot": false,
+    "view_count": 15,
+    "save_count": 44,
+    "num_applications": 9,
+    "created_by_user_id": "6a91481be228e500c5c6eb14",
+    "created_at": "2026-09-01 00:00:00",
+    "updated_at": "2026-10-19 11:00:00.001000",
+    "edit_count": 0,
+    "rescore_count": 0
+  }
+]

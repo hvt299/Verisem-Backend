@@ -1,0 +1,284 @@
+[
+  {
+    "_id": "6aadf89c3506f4b72bd72bd6",
+    "filename": "Nguyen-Van-An-TopCV.vn-080426.172918.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1789786268/ats_cv_library/Nguyen-Van-An-TopCV_f2711701.pdf",
+    "raw_text": "Mục tiêu nghề nghiệp\nKỹ sư phần mềm với hơn 6 năm kinh nghiệm, chuyên sâu về thiết kế và phát triển\nhệ thống Backend bằng PHP & Laravel. Mục tiêu tối ưu hóa hiệu suất website, xây\ndựng hệ thống quản trị nội dung và landing page chuyên nghiệp, đồng thời áp\ndụng tư duy lập trình hướng đối tượng (OOP) để tạo ra mã nguồn sạch, dễ bảo trì.\nKinh nghiệm làm việc\nFrontend/Fullstack Developer 06/2021 - Nay\nTechCorp\n•Chủ trì phát triển hệ thống SaaS quản lý nhân sự trên nền tảng PHP và Laravel.\nNguyễn Văn An\n•Thiết kế kiến trúc cơ sở dữ liệu MySQL, thực hiện CRUD hoàn chỉnh và tối ưu\nhóa truy vấn giúp tăng 30% tốc độ tải trang.\nFrontend Web Developer\n•Xây dựng hệ thống xác thực phân quyền phức tạp và tích hợp các công cụ\n(ReactJS)\ntheo dõi dữ liệu như Google Analytics, Facebook Pixel.\n•Quản lý vận hành hệ thống trên các môi trường hosting, bảo mật và xử lý lỗi hệ\nThông tin cá nhân thống website định kỳ.\n 0901 234 567 Junior Web Developer 09/2020 - 05/2021\n✉ nguyenvanan.fe@gmail.com\nABC Solutions\n github.com/annguyen-dev\n•Lập trình và xây dựng các chức năng website doanh nghiệp bằng PHP,\n linkedin.com/in/annguyen-fe\nJavaScript, HTML và CSS.\n Quận 7, TP. Hồ Chí Minh\n•Thiết kế giao diện web thân thiện người dùng (UI/UX), đảm bảo khả năng hiển\nthị tối ưu trên mọi thiết bị di động.\nKỹ năng •Xây dựng hệ thống Landing Page và tối ưu SEO cho các dự án thương mại của\nđối tác.\nPHP, Laravel, JavaScript, ReactJS,\nNext.js, TypeScript Học vấn\nMySQL Cử nhân Kỹ thuật Phần mềm 2016 - 2020\nĐại học Khoa học Tự nhiên TP.HCM\nHTML5, CSS3, Responsive Design,\nSEO kỹ thuật, UI/UX Optimization\nGPA: 8.2/10\nGit, Github, RESTful API\nDự án\nDanh hiệu và giải thưởng Frontend Web Developer 08/2018 - 12/2018\n2019 Sinh viên 5 tốt cấp Trường E-commerce Dashboard\nXây dựng website bán hàng hoàn chỉnh với các tính năng: quản lý kho, giỏ hàng,\nChứng chỉ\nthanh toán và báo cáo doanh thu.\nSử dụng Laravel cho Backend và React cho Frontend, tích hợp RESTful API và tối\n2020\nưu hóa SEO kỹ thuật giúp tăng thứ hạng tìm kiếm.\nChứng chỉ HackerRank Frontend\nDeveloper (Advanced)\nSở thích\nXem phim, nghe nhạc\n© topcv.vn\n",
+    "cv_vector_ref": [],
+    "candidate_info": {
+      "email": "nguyenvanan.fe@gmail.com",
+      "phone": "0901234567",
+      "github": "github.com/annguyen-dev",
+      "linkedin": "linkedin.com/in/annguyen-fe",
+      "portfolio": [],
+      "skill_experience": {
+        "laravel": 5.5,
+        "mysql": 5,
+        "php": 6,
+        "react": 0.5,
+        "rest api": 0.5
+      },
+      "education_level": "Cử nhân",
+      "years_of_experience": 3.83,
+      "fraud_analysis": {
+        "detected": false,
+        "risk_score": 0,
+        "penalty": 0,
+        "reasons": [],
+        "evidence": []
+      }
+    },
+    "extracted_skills": [
+      "css",
+      "facebook pixel",
+      "google analytics",
+      "html",
+      "javascript",
+      "laravel",
+      "mysql",
+      "next.js",
+      "php",
+      "react",
+      "rest api",
+      "typescript"
+    ],
+    "uploaded_by_user_id": "6a91481be228e500c5c6e6a1",
+    "company_id": "6a91481be228e500c5c6e6a0",
+    "created_at": "2026-09-19 02:51:08.610000"
+  },
+  {
+    "_id": "6ab6b13ff6ce6206f069be5f",
+    "display_name": "Intern Mobile Developer - Nguyễn Hiệp",
+    "is_primary": true,
+    "filename": "Intern Mobile Developer - Nguyễn Hiệp.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1790357822/ats_cv_library/Intern%20Mobile%20Developer%20-%20Nguy_4a92ae39.pdf",
+    "raw_text": "NGUYỄN HIỆP\nIntern Mobile Developer\n0898534022 nguyenhiep240804@gmail.com\nhttps://github.com/Hiepn24\nHỌC VẤN MỤC TIÊU NGHỀ NGHIỆP\nĐại Học CNTT&TT Việt- Mong muốn tích lũy kinh nghiệm thực tiễn trong lĩnh vực phát triển\nHàn phần mềm. Tôi mong muốn được làm việc trong môi trường linh\nhoạt, chuyên nghiệp để nâng cao kỹ năng lập trình và hiểu rõ hơn\nChuyên ngành:Công nghệ\nvề quy trình phát triển ứng dụng di động hoàn chỉnh. Đồng thời, tôi\nphần mềm\nkỳ vọng được học hỏi từ các mentor và đóng góp giá trị thật vào\nSinh viên năm 4 (2022-nay)\ncác dự án thực tế của công ty.\nGPA: 3.35/4.0\nKINH NGHIỆM LÀM VIỆC\nToeic: 620/990\nCÔNG TY TNHH ALI MEBUS 09/25 – 01/26\nKĨ NĂNG\nVị trí: Fullstack Intern\nNgôn ngữ lập trình Trách nhiệm chính:\nXây dựng giao diện người dùng bằng React (Next.js) và viết các\nJava, JavaScript, PHP\nAPI xử lý logic bằng Node.js (NestJS).\nFramework Tích hợp thành công cổng thanh toán SePay.\nDự án thực tế: tinnhadat24h.com\nReact Native, NextJS,\nNestJS, Java Spring Boot\nCÔNG TY TNHH CÔNG NGHỆ ĐÀ NẴNG AGENCY 06/25 – 08/25\nCơ sở dữ liệu\nVị trí: PHP Intern\nFirebase, MySql, Trách nhiệm chính:\nMongoDB Tham gia viết code và phát triển các module cơ bản cho dự án\nbằng PHP theo sự hướng dẫn của mentor.\nKhác\nDỰ ÁN CÁ NHÂN\nGitHub, Figma, Linux\nUbuntu, Postman\nỨng dụng đăng tin bất động sản 10/25 – 12/25\nCHỨNG CHỈ Công nghệ sử dụng: React Native, TypeScript, Firebase\nMô tả: Là ứng dụng di động đa nền tảng hỗ trợ tìm kiếm và đăng\nJava Web Advanced\ntin bất động sản. Ứng dụng tích hợp các tính năng như bản đồ\nĐơn vị cấp: FPT Software\nGoong Map, quy trình đăng tin đa bước kèm upload ảnh qua\nNgày cấp: 24/02/2025\nCloudinary, môi giới có thể chọn các gói đăng tin và app có tích\nMinh chứng: xem chi tiết\nhợp thanh toán tự động qua SePay.\nGithub: xem chi tiết\nVideo demo: xem chi tiết\n",
+    "cv_vector_ref": [],
+    "candidate_info": {
+      "full_name": "NGUYỄN HIỆP",
+      "email": "nguyenhiep240804@gmail.com",
+      "phone": "0898534022",
+      "github": "https://github.com/hiepn24",
+      "linkedin": null,
+      "portfolio": [
+        "3.35/4.0",
+        "tinnhadat24h.com"
+      ],
+      "education_level": "Cử nhân",
+      "years_of_experience": 0.7,
+      "skill_experience": {
+        "java": 0.7,
+        "javascript": 0.7,
+        "php": 0.7,
+        "react native": 0.5,
+        "next.js": 0.5,
+        "nestjs": 0.5,
+        "java spring boot": 0.5,
+        "firebase": 0.5,
+        "mysql": 0.5,
+        "mongodb": 0.5,
+        "github": 0.7,
+        "figma": 0.5,
+        "linux ubuntu": 0.5,
+        "postman": 0.5,
+        "typescript": 0.3
+      },
+      "languages": [
+        "Tiếng Anh (Toeic 620)"
+      ],
+      "certifications": [
+        "Java Web Advanced"
+      ],
+      "job_hops": 2,
+      "gap_months": 0,
+      "fraud_analysis": {
+        "detected": false,
+        "risk_score": 0,
+        "penalty": 0,
+        "reasons": [],
+        "evidence": []
+      }
+    },
+    "extracted_skills": [
+      "figma",
+      "firebase",
+      "http",
+      "https",
+      "java",
+      "javascript",
+      "linux",
+      "mongodb",
+      "mysql",
+      "nestjs",
+      "next.js",
+      "node.js",
+      "php",
+      "postman",
+      "react",
+      "react native",
+      "spring",
+      "spring boot",
+      "toeic",
+      "typescript"
+    ],
+    "owner_user_id": "6a914ae9e228e500c5c6e6a2",
+    "created_at": "2026-09-25 17:37:03.483000"
+  },
+  {
+    "_id": "6ab66948a31f9e50492258ff",
+    "filename": "Intern_Full-stack_Web_Developer_HuaVietThai.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1790339405/ats_cv_library/Intern_Full-stack_Web_Develope_483672b0.pdf",
+    "raw_text": "Mục tiêu nghề nghiệp\nMong muốn được áp dụng những kiến thức sách vở vào môi trường làm\nviệc chuyên nghiệp, có trải nghiệm thực tế, tích lũy kinh nghiệm trong lĩnh\nvực công nghệ phần mềm và trở thành nhân viên chính thức, góp sức vào\nthành công của công ty.\nKinh nghiệm làm việc\nFullstack Intern 09/2025 - 01/2026\nCÔNG TY TNHH ALI MEBUS\nHứa Viết Thái •Xây dựng giao diện người dùng bằng React (Next.js) và viết các API\nxử lý logic bằng Node.js (NestJS).\nIntern Full-stack Web •Tích hợp thành công cổng thanh toán SePay.\n•Dự án thực tế: tinnhadat24h.com\nDeveloper\nPHP Intern 06/2025 - 08/2025\nCÔNG TY TNHH CÔNG NGHỆ ĐÀ NẴNG AGENCY\n 0766 747 419\n•Tham gia viết code và phát triển các module cơ bản cho dự án bằng\n 29/09/2004 PHP theo sự hướng dẫn của mentor.\n✉ huavietthai299@gmail.com\nChứng chỉ\n github.com/hvt299\n01/2026 TOEIC 630\n Hà Nha, Đà Nẵng\nDự án\nHọc vấn\nFull-stack Web Developer 03/2026 - Nay\nCông nghệ phần mềm (Kỹ sư)\nWebsite Phân tích, xếp hạng hồ sơ ứng viên sử dụng kỹ thuật NLP\n2022 - 2027\n•Công nghệ: NextJS, FastAPI, MongoDB, Docker, CI/CD, NLP, BGE-M3.\nĐại học CNTT & TT Việt - Hàn •Mô tả: Phát triển hệ thống ATS ứng dụng NLP nhằm tự động hóa quy\nSInh viên năm 4 trình sàng lọc hồ sơ và đánh giá ứng viên. Hệ thống bao gồm CV\nGPA: 8.39/10 Parsing, Semantic Matching (BGE-M3), Candidate Ranking và nền\nXếp loại: Giỏi tảng quản lý tuyển dụng dành cho HR và ứng viên.\n•Kết quả nổi bật: Xây dựng hệ thống ATS ứng dụng NLP tự động phân\nKỹ năng tích CV, so khớp ngữ nghĩa CV–JD và xếp hạng ứng viên; triển khai\nhoàn chỉnh kiến trúc Full-stack với NextJS, FastAPI, MongoDB, Docker\nJavaScript, TypeScript, Python\nvà CI/CD.\nNextJS, NestJS, React Native, FastAPI\nFull-stack Web Developer 02/2026 - 03/2026\nPostgreSQL, MySQL, MongoDB Website Quản lý phòng khám thú y\nGit/Github, Figma, Postman •Công nghệ: NextJS, NestJS, MongoDB.\n•Mô tả: Là giải pháp số hóa quy trình vận hành phòng khám thú y. Hệ\nDocker, CI/CD\nthống bao gồm quản lý bệnh án điện tử (EMR), theo dõi điều trị\nnội/ngoại trú, quản lý kho thuốc, tiêm chủng và thống kê hoạt động\nSở thích\nphòng khám.\nChạy bộ và chơi cầu lông •Kết quả nổi bật: Xây dựng hệ thống quản lý phòng khám thú y tích hợp\nEMR, quản lý điều trị, kho thuốc và Dashboard thống kê; triển khai\nNghiên cứu công nghệ AI mới\n© topcv.vn\nhoàn chỉnh nền tảng Full-stack với NextJS, NestJS và MongoDB.\n",
+    "cv_vector_ref": [],
+    "candidate_info": {
+      "full_name": "Hứa Viết Thái",
+      "email": "huavietthai299@gmail.com",
+      "phone": "0766747419",
+      "github": "github.com/hvt299",
+      "linkedin": null,
+      "portfolio": [
+        "tinnhadat24h.com"
+      ],
+      "skill_experience": {
+        "javascript": 1,
+        "nestjs": 1.5,
+        "next.js": 2,
+        "node.js": 1,
+        "react": 1.5,
+        "php": 0.5,
+        "ats": 0.5,
+        "ci/cd": 1,
+        "docker": 1,
+        "fastapi": 1,
+        "mongodb": 1,
+        "natural language processing": 0.5,
+        "figma": 0.5,
+        "mysql": 0.5,
+        "postgresql": 0.5,
+        "postman": 0.92,
+        "react native": 0.5,
+        "sepay": 0.42,
+        "bge-m3": 0.33,
+        "typescript": 0.92,
+        "python": 0.33,
+        "git/github": 1.17
+      },
+      "education_level": "Cử nhân",
+      "years_of_experience": 1.17,
+      "languages": [
+        "Tiếng Anh (TOEIC 630)"
+      ],
+      "certifications": [
+        "TOEIC 630"
+      ],
+      "job_hops": 2,
+      "gap_months": 1,
+      "fraud_analysis": {
+        "detected": false,
+        "risk_score": 0,
+        "penalty": 0,
+        "reasons": [],
+        "evidence": []
+      }
+    },
+    "extracted_skills": [
+      "ats",
+      "ci/cd",
+      "computer vision",
+      "docker",
+      "fastapi",
+      "figma",
+      "illustrator",
+      "javascript",
+      "mongodb",
+      "mysql",
+      "natural language processing",
+      "nestjs",
+      "next.js",
+      "node.js",
+      "php",
+      "postgresql",
+      "postman",
+      "python",
+      "react",
+      "react native",
+      "toeic",
+      "typescript"
+    ],
+    "uploaded_by_user_id": "6a91481be228e500c5c6e6a1",
+    "company_id": "6a91481be228e500c5c6e6a0",
+    "created_at": "2026-09-25 12:30:00.318000"
+  },
+  {
+    "_id": "6ab77c8a90134adbf19d8de0",
+    "display_name": "Nguyen_Hiep_Node_JS_Developer_Intern",
+    "is_primary": true,
+    "filename": "Nguyen_Hiep_Node_JS_Developer_Intern.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/image/upload/v1790409865/ats_cv_library/Nguyen_Hiep_Node_JS_Developer__97d627fd.pdf",
+    "raw_text": "NGUYEN HIEP\nNode JS Developer Intern\n0898534022 nguyenhiep240804@gmail.com\nhttps://github.com/Hiepn24\nEDUCATION CAREER GOALS\nVietnam-Korea In the short term, I aim to solidify my Node.js skills and gain hands-\non experience with backend development processes under expert\nUniversity\nmentorship. Long-term, my goal is to deliver tangible value to the\nMajor: Software\nteam's projects and secure a permanent position within the\nEngineering\ncompany\nFourth-year students (2022-\npresent)\nWORK EXPERIENCES\nGPA: 3.35/4.0\nALI MEBUS COMPANY LIMITED 09/25 – 01/26\nSKILLS\nPosition: Fullstack Intern\nProgramming language\nMain Responsibilities:\nJava, JavaScript Building user interfaces using React (Next.js) and writing APIs to\nhandle logic using Node.js (NestJS).\nFramework\nSuccessfully integrating the Sepay payment gateway,\nNextJS, NestJS, Java\nconfiguring and deploying the project to a production\nSpring Boot\nenvironment.\nDatabase Participating project: tinnhadat24h.com\nMySql, MongoDB DA NANG AGENCY TECHNOLOGY CO., LTD. 06/25 – 08/25\nOthers Position: PHP Intern\nMain Responsibilities:\nGitHub, Linux Ubuntu,\nParticipate in writing code and developing basic modules for the\nPostman\nproject using PHP under the guidance of a mentor.\nCERTIFICATES\nPERSONAL PROJECT\nJava Web Advanced\nMINNIE COFFEE 12/25 – 02/26\nIssuing unit: FPT Software\nTechnologies used: Next.js, NestJS, MongoDB, Socket.io.\nDate of issue: 24/02/2025\nDescription: A comprehensive full-stack cafe management\nToeic: 620/990 system featuring real-time online and QR-code dine-in ordering,\nintegrated secure payments, and a robust admin dashboard for\nmanaging products, tables, and tracking revenue.\nSource code: view detail\n",
+    "cv_vector_ref": [],
+    "candidate_info": {
+      "full_name": "NGUYEN HIEP",
+      "email": "nguyenhiep240804@gmail.com",
+      "phone": "0898534022",
+      "github": "https://github.com/hiepn24",
+      "linkedin": null,
+      "portfolio": [
+        "3.35/4.0",
+        "tinnhadat24h.com",
+        "socket.io"
+      ],
+      "education_level": "Cử nhân",
+      "years_of_experience": 0.5,
+      "skill_experience": {
+        "java": 0.5,
+        "javascript": 0.5,
+        "next.js": 0.5,
+        "nestjs": 0.5,
+        "spring boot": 0.5,
+        "mysql": 0.5,
+        "mongodb": 0.5,
+        "php": 0.2,
+        "github": 0.5,
+        "linux ubuntu": 0.5,
+        "postman": 0.5,
+        "socket.io": 0.2
+      },
+      "languages": [
+        "Tiếng Anh (Toeic 620)"
+      ],
+      "certifications": [
+        "Java Web Advanced"
+      ],
+      "job_hops": 2,
+      "gap_months": 0,
+      "fraud_analysis": {
+        "detected": false,
+        "risk_score": 0,
+        "penalty": 0,
+        "reasons": [],
+        "evidence": []
+      }
+    },
+    "extracted_skills": [
+      "http",
+      "https",
+      "java",
+      "javascript",
+      "linux",
+      "mongodb",
+      "mysql",
+      "nestjs",
+      "next.js",
+      "node.js",
+      "php",
+      "postman",
+      "react",
+      "spring",
+      "spring boot",
+      "toeic"
+    ],
+    "owner_user_id": "6ab77c5d90134adbf19d8dde",
+    "created_at": "2026-09-26 08:04:26.178000"
+  }
+]
