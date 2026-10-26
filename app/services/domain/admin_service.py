@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 import re
 import math
 import unidecode
+import nh3
 from bson import ObjectId
 from fastapi import HTTPException, BackgroundTasks
 
@@ -25,6 +26,7 @@ from app.repositories.support_ticket_repository import SupportTicketRepository
 from app.repositories.blog_repository import BlogRepository
 
 from app.services.audit_service import log_action
+from app.services.storage_service import upload_file_to_cloudinary
 from app.services.domain.subscription_service import SubscriptionService, OWNER_COMPANY, OWNER_APPLICANT
 from app.services.nlp_engine import refresh_system_settings, initialize_skill_map
 from app.services.email_service import send_ticket_reply_email
@@ -669,6 +671,55 @@ class AdminService:
         minutes = math.ceil(words / 200)
         return max(1, minutes)
 
+    # Chỉ cho phép các thẻ mà RichTextEditor (CKEditor) sinh ra
+    BLOG_ALLOWED_TAGS = {"p", "br", "h2", "h3", "h4", "strong", "b", "em", "i", "u", "s", "a", "ul", "ol", "li", "blockquote", "span"}
+    BLOG_ALLOWED_ATTRIBUTES = {
+        "a": {"href", "target"},
+        "p": {"style"}, "h2": {"style"}, "h3": {"style"}, "h4": {"style"}, "li": {"style"},
+    }
+
+    @staticmethod
+    def _sanitize_blog_html(html_content: str) -> str:
+        return nh3.clean(
+            html_content or "",
+            tags=AdminService.BLOG_ALLOWED_TAGS,
+            attributes=AdminService.BLOG_ALLOWED_ATTRIBUTES,
+            url_schemes={"http", "https", "mailto"},
+            link_rel="noopener noreferrer",
+        )
+
+    BLOG_IMAGE_TYPES = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp", "image/gif": ".gif"}
+    BLOG_IMAGE_MAX_SIZE = 5 * 1024 * 1024
+
+    @staticmethod
+    async def upload_blog_image(file):
+        # Không nhận SVG vì có thể chứa script
+        if file.content_type not in AdminService.BLOG_IMAGE_TYPES:
+            raise HTTPException(status_code=400, detail="Chỉ chấp nhận ảnh JPG, PNG, WEBP hoặc GIF")
+
+        content = await file.read()
+        if len(content) > AdminService.BLOG_IMAGE_MAX_SIZE:
+            raise HTTPException(status_code=400, detail="Ảnh vượt quá giới hạn 5MB")
+
+        try:
+            file_url = await upload_file_to_cloudinary(content, file.filename or "blog_image", target_folder="blog_images")
+        except Exception:
+            raise HTTPException(status_code=500, detail="Không thể tải ảnh lên lúc này")
+        return {"status": "success", "url": file_url}
+
+    @staticmethod
+    async def list_blog_posts():
+        # Trả cả bài nháp, bỏ nội dung HTML để danh sách nhẹ
+        blogs = await BlogRepository.find_many({}, projection={"content_html": 0}, sort=[("created_at", -1)], limit=500)
+        return {"status": "success", "data": blogs}
+
+    @staticmethod
+    async def get_blog_post(blog_id: str):
+        blog = await BlogRepository.get_by_id(blog_id)
+        if not blog:
+            raise HTTPException(status_code=404, detail="Không tìm thấy bài viết")
+        return {"status": "success", "data": blog}
+
     @staticmethod
     async def create_blog_post(payload, current_admin):
         base_slug = AdminService._generate_slug(payload.title)
@@ -679,9 +730,10 @@ class AdminService:
             slug = f"{base_slug}-{counter}"
             counter += 1
             
-        reading_time = AdminService._calculate_reading_time(payload.content_html)
-        
         record = payload.model_dump()
+        record["content_html"] = AdminService._sanitize_blog_html(record["content_html"])
+        reading_time = AdminService._calculate_reading_time(record["content_html"])
+
         record.update({
             "slug": slug,
             "reading_time_minutes": reading_time,
@@ -713,16 +765,9 @@ class AdminService:
         if not update_data:
             return {"status": "success", "message": "Không có dữ liệu cập nhật"}
             
-        if "title" in update_data and update_data["title"] != existing.get("title"):
-            base_slug = AdminService._generate_slug(update_data["title"])
-            slug = base_slug
-            counter = 1
-            while await BlogRepository.find_one({"slug": slug, "_id": {"$ne": ObjectId(blog_id)}}):
-                slug = f"{base_slug}-{counter}"
-                counter += 1
-            update_data["slug"] = slug
-            
+        # Giữ nguyên slug khi đổi tiêu đề để không làm hỏng các link đã chia sẻ
         if "content_html" in update_data:
+            update_data["content_html"] = AdminService._sanitize_blog_html(update_data["content_html"])
             update_data["reading_time_minutes"] = AdminService._calculate_reading_time(update_data["content_html"])
             
         update_data["updated_at"] = datetime.now(timezone.utc)
