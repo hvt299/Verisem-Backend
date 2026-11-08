@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Optional
 
-from fastapi import APIRouter, Depends, HTTPException, Body, Query, BackgroundTasks
+from fastapi import APIRouter, Depends, HTTPException, Body, Query, BackgroundTasks, UploadFile, File
 from pydantic import BaseModel, Field, EmailStr
 
 from app.core.security import CurrentUser, require_admin
@@ -351,6 +351,18 @@ async def resolve_support_ticket(ticket_id: str, payload: SupportTicketResolve, 
 # ==========================================
 # BLOG & CONTENT
 # ==========================================
+@router.get("/blogs", dependencies=[Depends(require_admin)])
+async def list_blog_posts():
+    return await AdminService.list_blog_posts()
+
+@router.post("/blogs/upload-image", dependencies=[Depends(require_admin)])
+async def upload_blog_image(file: UploadFile = File(...)):
+    return await AdminService.upload_blog_image(file)
+
+@router.get("/blogs/{blog_id}", dependencies=[Depends(require_admin)])
+async def get_blog_post(blog_id: str):
+    return await AdminService.get_blog_post(blog_id)
+
 @router.post("/blogs", dependencies=[Depends(require_admin)])
 async def create_blog_post(payload: BlogCreate, current_admin: CurrentUser = Depends(require_admin)):
     return await AdminService.create_blog_post(payload, current_admin)
@@ -361,10 +373,7 @@ async def update_blog_post(blog_id: str, payload: BlogUpdate, current_admin: Cur
 
 @router.delete("/blogs/{blog_id}", dependencies=[Depends(require_admin)])
 async def delete_blog_post(blog_id: str, current_admin: CurrentUser = Depends(require_admin)):
-    result = await BlogRepository.delete(blog_id)
-    if result == 0:
-        raise HTTPException(status_code=404, detail="Bài viết không tồn tại")
-    return {"status": "success", "message": "Xóa bài viết thành công"}
+    return await AdminService.delete_blog_post(blog_id, current_admin)
 
 # ==========================================
 # SYSTEM DATA EXPLORER (Admin Bypass)

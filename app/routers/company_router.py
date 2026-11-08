@@ -18,6 +18,7 @@ from app.repositories.administrative_unit_repository import AdministrativeUnitRe
 import re
 from app.middleware.subscription import require_tier
 from app.middleware.rate_limit import limiter
+from app.core.html_sanitizer import sanitize_rich_html
 from fastapi import Request, Response
 from pydantic import ValidationError
 from bson import ObjectId
@@ -193,6 +194,9 @@ async def update_company_settings(
     for field in allowed_string_fields:
         if field in payload and payload[field] is not None:
             update_data[field] = str(payload[field]).strip()
+
+    if "description" in update_data:
+        update_data["description"] = sanitize_rich_html(update_data["description"])
 
     # Xử lý đa ngành nghề (tối đa 3)
     if "industries" in payload and isinstance(payload["industries"], list):

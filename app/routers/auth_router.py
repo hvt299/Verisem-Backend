@@ -36,6 +36,7 @@ class RegisterRequest(UserCreate):
     address: Optional[str] = Field(default=None)
     website: Optional[str] = Field(default=None)
     invite_token: Optional[str] = Field(default=None, description="Token từ email mời")
+    cf_turnstile_response: Optional[str] = Field(default=None, description="Token xác minh Cloudflare Turnstile")
 
 class ExternalCVLinkDTO(BaseModel):
     provider: str

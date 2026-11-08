@@ -13,6 +13,7 @@ PyJWT
 passlib[bcrypt]
 bcrypt==4.0.1
 python-dotenv
+nh3
 
 # --- LLM ---
 google-genai
