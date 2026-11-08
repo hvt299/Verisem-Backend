@@ -18,11 +18,14 @@ from app.services.vector_engine import compress_jd_data, get_embedding, get_top_
 from app.services.audit_service import log_action
 from app.services.analytics_service import AnalyticsService
 from app.middleware.rate_limit import limiter
+from app.core.html_sanitizer import sanitize_rich_html
 from fastapi import Request, Response
 import os
 import httpx
 from app.core.security import ensure_job_manager, require_qstash_signature
 from pydantic import BaseModel
+
+RICH_TEXT_JOB_FIELDS = ("description", "requirements", "benefits", "other_info")
 
 router = APIRouter(prefix="/api/v1/jobs", tags=["Job Management & Ranking"])
 
@@ -89,6 +92,8 @@ async def create_job(job: JobCreateEnterprise, current_user: CurrentUser = Depen
         )
     
     job_dict = job.model_dump()
+    for field in RICH_TEXT_JOB_FIELDS:
+        job_dict[field] = sanitize_rich_html(job_dict.get(field))
 
     if current_user.role == UserRole.HR_MEMBER.value:
         job_dict["assigned_hr_ids"] = [current_user.id]
@@ -216,6 +221,10 @@ async def update_job(
 
     update_data = job_update.model_dump()
     update_data["edit_count"] = current_edits + 1
+    # Không cho đổi công ty sở hữu job qua payload (chống chuyển job sang công ty khác)
+    update_data["company_id"] = existing_job.get("company_id")
+    for field in RICH_TEXT_JOB_FIELDS:
+        update_data[field] = sanitize_rich_html(update_data.get(field))
     
     if current_user.role != UserRole.ADMIN:
         update_data.pop("is_hot", None)

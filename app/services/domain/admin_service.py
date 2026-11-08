@@ -3,7 +3,6 @@ from datetime import datetime, timezone
 import re
 import math
 import unidecode
-import nh3
 from bson import ObjectId
 from fastapi import HTTPException, BackgroundTasks
 
@@ -26,6 +25,7 @@ from app.repositories.support_ticket_repository import SupportTicketRepository
 from app.repositories.blog_repository import BlogRepository
 
 from app.services.audit_service import log_action
+from app.core.html_sanitizer import sanitize_rich_html
 from app.services.storage_service import upload_file_to_cloudinary
 from app.services.domain.subscription_service import SubscriptionService, OWNER_COMPANY, OWNER_APPLICANT
 from app.services.nlp_engine import refresh_system_settings, initialize_skill_map
@@ -671,23 +671,6 @@ class AdminService:
         minutes = math.ceil(words / 200)
         return max(1, minutes)
 
-    # Chỉ cho phép các thẻ mà RichTextEditor (CKEditor) sinh ra
-    BLOG_ALLOWED_TAGS = {"p", "br", "h2", "h3", "h4", "strong", "b", "em", "i", "u", "s", "a", "ul", "ol", "li", "blockquote", "span"}
-    BLOG_ALLOWED_ATTRIBUTES = {
-        "a": {"href", "target"},
-        "p": {"style"}, "h2": {"style"}, "h3": {"style"}, "h4": {"style"}, "li": {"style"},
-    }
-
-    @staticmethod
-    def _sanitize_blog_html(html_content: str) -> str:
-        return nh3.clean(
-            html_content or "",
-            tags=AdminService.BLOG_ALLOWED_TAGS,
-            attributes=AdminService.BLOG_ALLOWED_ATTRIBUTES,
-            url_schemes={"http", "https", "mailto"},
-            link_rel="noopener noreferrer",
-        )
-
     BLOG_IMAGE_TYPES = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp", "image/gif": ".gif"}
     BLOG_IMAGE_MAX_SIZE = 5 * 1024 * 1024
 
@@ -731,7 +714,7 @@ class AdminService:
             counter += 1
             
         record = payload.model_dump()
-        record["content_html"] = AdminService._sanitize_blog_html(record["content_html"])
+        record["content_html"] = sanitize_rich_html(record["content_html"])
         reading_time = AdminService._calculate_reading_time(record["content_html"])
 
         record.update({
@@ -767,7 +750,7 @@ class AdminService:
             
         # Giữ nguyên slug khi đổi tiêu đề để không làm hỏng các link đã chia sẻ
         if "content_html" in update_data:
-            update_data["content_html"] = AdminService._sanitize_blog_html(update_data["content_html"])
+            update_data["content_html"] = sanitize_rich_html(update_data["content_html"])
             update_data["reading_time_minutes"] = AdminService._calculate_reading_time(update_data["content_html"])
             
         update_data["updated_at"] = datetime.now(timezone.utc)

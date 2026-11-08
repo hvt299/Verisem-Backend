@@ -1,9 +1,10 @@
+from typing import Optional
 from pydantic import BaseModel, EmailStr
 
 class UserLogin(BaseModel):
     email: EmailStr
     password: str
-    cf_turnstile_response: str = None
+    cf_turnstile_response: Optional[str] = None
 
 class Token(BaseModel):
     access_token: str
