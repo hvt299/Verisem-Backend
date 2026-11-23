@@ -5,7 +5,7 @@ from fastapi import APIRouter, Depends, Body, BackgroundTasks, Request, Response
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field, field_validator
 
-from app.middleware.rate_limit import limiter
+from app.middleware.rate_limit import limiter, user_key
 from app.schemas.common_schema import UserRole
 from app.schemas.user_schema import UserCreate
 from app.schemas.auth_schema import UserLogin, Token
@@ -36,6 +36,7 @@ class RegisterRequest(UserCreate):
     address: Optional[str] = Field(default=None)
     website: Optional[str] = Field(default=None)
     invite_token: Optional[str] = Field(default=None, description="Token từ email mời")
+    cf_turnstile_response: Optional[str] = Field(default=None, description="Token xác minh Cloudflare Turnstile")
 
 class ExternalCVLinkDTO(BaseModel):
     provider: str
@@ -104,7 +105,7 @@ router = APIRouter(prefix="/api/v1/auth", tags=["Authentication"])
 # =====================================================================
 
 @router.post("/register", status_code=201)
-@limiter.limit("10/day")
+@limiter.limit("5/hour")
 async def register_user(request: Request, response: Response, background_tasks: BackgroundTasks, payload: RegisterRequest = Body(...)):
     return await AuthService.register(payload, background_tasks)
 
@@ -118,7 +119,7 @@ async def verify_email(request: Request, response: Response, token: str, backgro
 # =====================================================================
 
 @router.post("/login", response_model=Token)
-@limiter.limit("5/minute")
+@limiter.limit("20/minute")
 async def login_for_access_token(request: Request, response: Response, user_credentials: UserLogin = Body(...)):
     result = await AuthService.login(user_credentials)
     is_secure = os.getenv("ENVIRONMENT", "development").lower() == "production"
@@ -139,12 +140,12 @@ async def logout(response: Response):
     return {"message": "Đăng xuất thành công"}
 
 @router.post("/forgot-password")
-@limiter.limit("5/day")
+@limiter.limit("10/hour")
 async def forgot_password(request: Request, response: Response, background_tasks: BackgroundTasks, email: str = Body(..., embed=True)):
     return await AuthService.forgot_password(email, background_tasks)
 
 @router.post("/reset-password")
-@limiter.limit("5/day")
+@limiter.limit("10/hour")
 async def reset_password(request: Request, response: Response, payload: ResetPasswordRequest):
     return await AuthService.reset_password(payload)
 
@@ -203,7 +204,8 @@ async def update_profile(profile_data: ProfileUpdate, current_user: CurrentUser 
     return await AuthService.update_profile(current_user.id, profile_data)
 
 @router.patch("/change-password")
-async def change_password(password_data: PasswordChange, current_user: CurrentUser = Depends(get_current_user)):
+@limiter.limit("5/hour", key_func=user_key)
+async def change_password(request: Request, response: Response, password_data: PasswordChange, current_user: CurrentUser = Depends(get_current_user)):
     return await AuthService.change_password(current_user.id, password_data)
 
 @router.get("/me")

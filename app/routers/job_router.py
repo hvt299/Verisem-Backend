@@ -17,12 +17,15 @@ from app.services.nlp_engine import score_cv
 from app.services.vector_engine import compress_jd_data, get_embedding, get_top_contributing_sentences
 from app.services.audit_service import log_action
 from app.services.analytics_service import AnalyticsService
-from app.middleware.rate_limit import limiter
+from app.middleware.rate_limit import limiter, user_key, company_key
+from app.core.html_sanitizer import sanitize_rich_html
 from fastapi import Request, Response
 import os
 import httpx
 from app.core.security import ensure_job_manager, require_qstash_signature
 from pydantic import BaseModel
+
+RICH_TEXT_JOB_FIELDS = ("description", "requirements", "benefits", "other_info")
 
 router = APIRouter(prefix="/api/v1/jobs", tags=["Job Management & Ranking"])
 
@@ -73,7 +76,8 @@ async def rescore_all_applications_for_job(job_id: str, jd_data: dict, current_u
     print(f"Background Task Hoàn tất: Đã chấm lại {processed_count} CV cho Job {job_id}")
 
 @router.post("/")
-async def create_job(job: JobCreateEnterprise, current_user: CurrentUser = Depends(require_hr)):
+@limiter.limit("30/minute", key_func=user_key)
+async def create_job(request: Request, response: Response, job: JobCreateEnterprise, current_user: CurrentUser = Depends(require_hr)):
     features = await get_company_plan_features(current_user.company_id)
     max_active = features.get("max_active_jobs", 3)
     
@@ -89,6 +93,8 @@ async def create_job(job: JobCreateEnterprise, current_user: CurrentUser = Depen
         )
     
     job_dict = job.model_dump()
+    for field in RICH_TEXT_JOB_FIELDS:
+        job_dict[field] = sanitize_rich_html(job_dict.get(field))
 
     if current_user.role == UserRole.HR_MEMBER.value:
         job_dict["assigned_hr_ids"] = [current_user.id]
@@ -177,7 +183,7 @@ async def get_job_detail(job_id: str, scope_filter: dict = Depends(get_scope_fil
     return job
 
 @router.put("/{job_id}")
-@limiter.limit("20/day")
+@limiter.limit("30/minute", key_func=user_key)
 async def update_job(
     request: Request,
     response: Response,
@@ -216,6 +222,10 @@ async def update_job(
 
     update_data = job_update.model_dump()
     update_data["edit_count"] = current_edits + 1
+    # Không cho đổi công ty sở hữu job qua payload (chống chuyển job sang công ty khác)
+    update_data["company_id"] = existing_job.get("company_id")
+    for field in RICH_TEXT_JOB_FIELDS:
+        update_data[field] = sanitize_rich_html(update_data.get(field))
     
     if current_user.role != UserRole.ADMIN:
         update_data.pop("is_hot", None)
@@ -311,6 +321,10 @@ async def get_job_ranking(job_id: str, scope_filter: dict = Depends(get_scope_fi
             company = await CompanyRepository.get_by_id(job["company_id"])
             if company:
                 company["id"] = company.get("id") or str(company.pop("_id", ""))
+                # Dữ liệu cũ có thể lưu các field tham chiếu dạng ObjectId → ép về str để serialize được
+                for key, value in company.items():
+                    if isinstance(value, ObjectId):
+                        company[key] = str(value)
                 company_info = company
         except:
             pass
@@ -513,7 +527,10 @@ async def get_public_job_detail(job_id: str):
     return job
 
 @router.post("/{job_id}/rescore", dependencies=[Depends(require_hr)])
+@limiter.limit("5/hour", key_func=company_key)
 async def manual_rescore_job(
+    request: Request,
+    response: Response,
     job_id: str,
     background_tasks: BackgroundTasks,
     current_user: CurrentUser = Depends(require_hr),

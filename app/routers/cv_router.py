@@ -22,7 +22,7 @@ from app.services.audit_service import log_action
 from app.services.vector_engine import compress_jd_data, get_embedding
 from app.services.nlp_engine import GLOBAL_SYSTEM_SETTINGS
 from app.core.security import ensure_job_manager, require_hr, require_hr_or_admin, get_scope_filter, CurrentUser
-from app.middleware.rate_limit import limiter
+from app.middleware.rate_limit import limiter, user_key
 from app.middleware.subscription import require_tier, require_credits, charge_company_credits, refund_company_credits, refund_charged_credits
 from app.services.storage_service import upload_file_to_cloudinary, delete_file_from_cloudinary
 from app.services.email_service import send_interview_email
@@ -72,7 +72,7 @@ def get_notification_content(status: str, job_title: str):
 
 
 @router.post("/upload")
-@limiter.limit("50/hour")
+@limiter.limit("30/minute", key_func=user_key)
 async def upload_cv_to_pool(
     request: Request,
     response: Response,
@@ -143,7 +143,10 @@ async def upload_cv_to_pool(
     }
 
 @router.post("/{cv_id}/map")
+@limiter.limit("30/minute", key_func=user_key)
 async def map_cv_to_job(
+    request: Request,
+    response: Response,
     cv_id: str,
     payload: MapCVRequest,
     current_user: CurrentUser = Depends(require_hr),
@@ -216,7 +219,10 @@ async def map_cv_to_job(
     }
 
 @router.post("/map-batch")
+@limiter.limit("30/minute", key_func=user_key)
 async def map_multiple_cvs_to_job(
+    request: Request,
+    response: Response,
     payload: MapBatchCVRequest,
     current_user: CurrentUser = Depends(require_hr),
     scope_filter: dict = Depends(get_scope_filter)
@@ -446,7 +452,7 @@ async def delete_cv_from_pool(cv_id: str, scope_filter: dict = Depends(get_scope
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/cover-letters/upload")
-@limiter.limit("50/day")
+@limiter.limit("30/minute", key_func=user_key)
 async def upload_cover_letter_for_candidate(
     request: Request,
     response: Response,
@@ -671,7 +677,7 @@ async def get_bookmarked_candidates(current_user: CurrentUser = Depends(require_
     return records
 
 @router.post("/talent-pool/discover", dependencies=[Depends(require_hr)])
-@limiter.limit("20/day")
+@limiter.limit("10/minute", key_func=user_key)
 async def discover_talents(
     request: Request,
     response: Response,

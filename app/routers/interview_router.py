@@ -7,13 +7,13 @@ from app.repositories.interview_repository import InterviewRepository
 from app.repositories.interview_feedback_repository import InterviewFeedbackRepository
 from app.repositories.application_repository import ApplicationRepository
 from app.services.email_service import send_interview_email
-from app.middleware.rate_limit import limiter
+from app.middleware.rate_limit import limiter, user_key
 from fastapi import Request, Response
 
 router = APIRouter(prefix="/api/v1/interviews", tags=["Interview Management"])
 
 @router.post("/")
-@limiter.limit("30/day")
+@limiter.limit("60/hour", key_func=user_key)
 async def schedule_interview(
     request: Request,
     response: Response,

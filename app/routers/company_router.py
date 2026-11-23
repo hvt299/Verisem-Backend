@@ -17,7 +17,8 @@ from app.repositories.department_repository import DepartmentRepository
 from app.repositories.administrative_unit_repository import AdministrativeUnitRepository
 import re
 from app.middleware.subscription import require_tier
-from app.middleware.rate_limit import limiter
+from app.middleware.rate_limit import limiter, company_key
+from app.core.html_sanitizer import sanitize_rich_html
 from fastapi import Request, Response
 from pydantic import ValidationError
 from bson import ObjectId
@@ -194,6 +195,9 @@ async def update_company_settings(
         if field in payload and payload[field] is not None:
             update_data[field] = str(payload[field]).strip()
 
+    if "description" in update_data:
+        update_data["description"] = sanitize_rich_html(update_data["description"])
+
     # Xử lý đa ngành nghề (tối đa 3)
     if "industries" in payload and isinstance(payload["industries"], list):
         update_data["industries"] = payload["industries"][:3]
@@ -228,7 +232,7 @@ async def update_company_settings(
     }
 
 @router.post("/invite", dependencies=[Depends(require_hr)])
-@limiter.limit("20/day")
+@limiter.limit("30/day", key_func=company_key)
 async def invite_hr_member(
     request: Request,
     response: Response,

@@ -4,14 +4,18 @@ import os
 from fastapi import HTTPException
 
 async def verify_turnstile(token: str):
+    # Chỉ dùng khi chạy local / test tự động. KHÔNG bật trên production
+    if os.getenv("DISABLE_TURNSTILE", "false").lower() == "true":
+        return True
+
     secret = os.getenv('CLOUDFLARE_TURNSTILE_SECRET')
     if not secret:
         raise HTTPException(status_code=500, detail="Hệ thống chưa được cấu hình CLOUDFLARE_TURNSTILE_SECRET.")
     
     if not token:
-        raise HTTPException(status_code=400, detail="Lỗi bảo mật. Vui lòng xác nhận Captcha (Turnstile).")
+        raise HTTPException(status_code=400, detail="Vui lòng hoàn thành xác minh Cloudflare trước khi tiếp tục.")
 
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=10.0) as client:
         try:
             response = await client.post(
                 "https://challenges.cloudflare.com/turnstile/v0/siteverify",
@@ -21,10 +25,11 @@ async def verify_turnstile(token: str):
                 }
             )
             result = response.json()
-            if not result.get("success"):
-                raise HTTPException(status_code=400, detail="Xác thực người máy thất bại (Turnstile).")
-        except httpx.RequestError:
-            raise HTTPException(status_code=500, detail="Lỗi kết nối tới máy chủ xác thực.")
+        except (httpx.RequestError, ValueError):
+            raise HTTPException(status_code=503, detail="Không kết nối được máy chủ xác minh Cloudflare. Vui lòng thử lại.")
+
+    if not result.get("success"):
+        raise HTTPException(status_code=400, detail="Xác minh Cloudflare thất bại hoặc đã hết hạn. Vui lòng xác minh lại.")
     return True
 
 import secrets
@@ -52,6 +57,7 @@ from app.repositories.subscription_plan_repository import SubscriptionPlanReposi
 from app.services.audit_service import log_action
 from app.services.email_service import send_verification_email, send_reset_password_email
 from app.core.security import get_password_hash, verify_password, create_access_token, build_token_payload, JWT_SECRET, ALGORITHM
+from app.middleware.rate_limit import login_failure_throttle, forgot_password_throttle
 
 SELF_REGISTERABLE_ROLES = (UserRole.APPLICANT, UserRole.HR_OWNER)
 LINKEDIN_CLIENT_ID = os.environ.get("LINKEDIN_CLIENT_ID", "")
@@ -83,6 +89,8 @@ class AuthService:
 
     @staticmethod
     async def register(payload, background_tasks: BackgroundTasks):
+        await verify_turnstile(getattr(payload, "cf_turnstile_response", None))
+
         if payload.invite_token:
             try:
                 token_data = jwt.decode(payload.invite_token, JWT_SECRET, algorithms=[ALGORITHM])
@@ -143,9 +151,16 @@ class AuthService:
 
     @staticmethod
     async def login(credentials):
+        await verify_turnstile(credentials.cf_turnstile_response)
+
+        # Khóa theo email: chặn dò mật khẩu kể cả khi kẻ tấn công đổi IP liên tục
+        login_failure_throttle.ensure_allowed(credentials.email)
+
         user = await UserRepository.get_by_email(credentials.email)
-        if not user or not verify_password(credentials.password, user["hashed_password"]):
+        if not user or not user.get("hashed_password") or not verify_password(credentials.password, user["hashed_password"]):
+            login_failure_throttle.hit(credentials.email)
             raise HTTPException(status_code=401, detail="Email hoặc mật khẩu sai")
+        login_failure_throttle.reset(credentials.email)
         if not user.get("is_verified", False):
             raise HTTPException(status_code=401, detail="Chưa kích hoạt email!")
         return {"access_token": create_access_token(build_token_payload(user)), "token_type": "bearer"}
@@ -192,6 +207,9 @@ class AuthService:
 
     @staticmethod
     async def forgot_password(email: str, background_tasks: BackgroundTasks):
+        # Chống spam email khôi phục vào cùng một hộp thư
+        forgot_password_throttle.hit(email)
+
         user = await UserRepository.get_by_email(email)
         msg = "Nếu email tồn tại trên hệ thống, link khôi phục đã được gửi."
         if not user:

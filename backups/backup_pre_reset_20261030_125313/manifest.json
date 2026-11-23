@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-10-30T05:53:13.704181+00:00",
+  "database_name": "verisem",
+  "collections": {
+    "users": {
+      "count": 551,
+      "file": "users.json",
+      "size_bytes": 346293
+    },
+    "companies": {
+      "count": 125,
+      "file": "companies.json",
+      "size_bytes": 219419
+    },
+    "departments": {
+      "count": 0,
+      "file": "departments.json",
+      "size_bytes": 2
+    },
+    "applicant_profiles": {
+      "count": 50,
+      "file": "applicant_profiles.json",
+      "size_bytes": 86508
+    },
+    "jobs": {
+      "count": 211,
+      "file": "jobs.json",
+      "size_bytes": 4996113
+    },
+    "cvs": {
+      "count": 50,
+      "file": "cvs.json",
+      "size_bytes": 1730451
+    },
+    "cover_letters": {
+      "count": 50,
+      "file": "cover_letters.json",
+      "size_bytes": 33466
+    },
+    "applications": {
+      "count": 50,
+      "file": "applications.json",
+      "size_bytes": 220510
+    },
+    "orders": {
+      "count": 178,
+      "file": "orders.json",
+      "size_bytes": 154779
+    },
+    "subscriptions": {
+      "count": 119,
+      "file": "subscriptions.json",
+      "size_bytes": 53563
+    },
+    "quota_transactions": {
+      "count": 855,
+      "file": "quota_transactions.json",
+      "size_bytes": 429511
+    },
+    "credit_grants": {
+      "count": 119,
+      "file": "credit_grants.json",
+      "size_bytes": 39554
+    },
+    "promotions": {
+      "count": 0,
+      "file": "promotions.json",
+      "size_bytes": 2
+    },
+    "saved_jobs": {
+      "count": 0,
+      "file": "saved_jobs.json",
+      "size_bytes": 2
+    },
+    "saved_companies": {
+      "count": 0,
+      "file": "saved_companies.json",
+      "size_bytes": 2
+    },
+    "talent_pools": {
+      "count": 0,
+      "file": "talent_pools.json",
+      "size_bytes": 2
+    },
+    "matching_preferences": {
+      "count": 0,
+      "file": "matching_preferences.json",
+      "size_bytes": 2
+    },
+    "company_reviews": {
+      "count": 0,
+      "file": "company_reviews.json",
+      "size_bytes": 2
+    },
+    "interviews": {
+      "count": 0,
+      "file": "interviews.json",
+      "size_bytes": 2
+    },
+    "interview_feedbacks": {
+      "count": 0,
+      "file": "interview_feedbacks.json",
+      "size_bytes": 2
+    },
+    "reports": {
+      "count": 0,
+      "file": "reports.json",
+      "size_bytes": 2
+    },
+    "support_tickets": {
+      "count": 28,
+      "file": "support_tickets.json",
+      "size_bytes": 31136
+    },
+    "notifications": {
+      "count": 0,
+      "file": "notifications.json",
+      "size_bytes": 2
+    },
+    "audit_logs": {
+      "count": 6,
+      "file": "audit_logs.json",
+      "size_bytes": 2516
+    },
+    "refresh_tokens": {
+      "count": 0,
+      "file": "refresh_tokens.json",
+      "size_bytes": 2
+    }
+  }
+}
