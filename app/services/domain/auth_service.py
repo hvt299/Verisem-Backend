@@ -57,6 +57,7 @@ from app.repositories.subscription_plan_repository import SubscriptionPlanReposi
 from app.services.audit_service import log_action
 from app.services.email_service import send_verification_email, send_reset_password_email
 from app.core.security import get_password_hash, verify_password, create_access_token, build_token_payload, JWT_SECRET, ALGORITHM
+from app.middleware.rate_limit import login_failure_throttle, forgot_password_throttle
 
 SELF_REGISTERABLE_ROLES = (UserRole.APPLICANT, UserRole.HR_OWNER)
 LINKEDIN_CLIENT_ID = os.environ.get("LINKEDIN_CLIENT_ID", "")
@@ -152,9 +153,14 @@ class AuthService:
     async def login(credentials):
         await verify_turnstile(credentials.cf_turnstile_response)
 
+        # Khóa theo email: chặn dò mật khẩu kể cả khi kẻ tấn công đổi IP liên tục
+        login_failure_throttle.ensure_allowed(credentials.email)
+
         user = await UserRepository.get_by_email(credentials.email)
-        if not user or not verify_password(credentials.password, user["hashed_password"]):
+        if not user or not user.get("hashed_password") or not verify_password(credentials.password, user["hashed_password"]):
+            login_failure_throttle.hit(credentials.email)
             raise HTTPException(status_code=401, detail="Email hoặc mật khẩu sai")
+        login_failure_throttle.reset(credentials.email)
         if not user.get("is_verified", False):
             raise HTTPException(status_code=401, detail="Chưa kích hoạt email!")
         return {"access_token": create_access_token(build_token_payload(user)), "token_type": "bearer"}
@@ -201,6 +207,9 @@ class AuthService:
 
     @staticmethod
     async def forgot_password(email: str, background_tasks: BackgroundTasks):
+        # Chống spam email khôi phục vào cùng một hộp thư
+        forgot_password_throttle.hit(email)
+
         user = await UserRepository.get_by_email(email)
         msg = "Nếu email tồn tại trên hệ thống, link khôi phục đã được gửi."
         if not user:

@@ -382,6 +382,7 @@ BACKEND_URL=http://localhost:8000
 # Cơ sở Dữ liệu & Bộ nhớ đệm
 MONGO_URL=mongodb+srv://<USERNAME>:<PASSWORD>@cluster.mongodb.net/verisem_db?retryWrites=true&w=majority
 REDIS_URL=redis://localhost:6379/0
+FORWARDED_ALLOW_IPS=127.0.0.1
 
 # Bảo mật & Phiên làm việc JWT
 JWT_SECRET=your_super_secret_jwt_key_here

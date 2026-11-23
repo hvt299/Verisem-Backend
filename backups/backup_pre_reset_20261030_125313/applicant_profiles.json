@@ -1,0 +1,2402 @@
+[
+  {
+    "_id": "6ad888569c14d537c74aa9c5",
+    "user_id": "6ad888569c14d537c74aa993",
+    "headline": "Lead Fullstack Engineer | 5.5 năm kinh nghiệm React.js, Node.js, TypeScript & AWS",
+    "desired_job_titles": [
+      "Senior Fullstack Engineer"
+    ],
+    "expected_salary_min": 38000000,
+    "expected_salary_max": 57000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Cầu Giấy",
+      "address_detail": "Số 18 Dịch Vọng Hậu, Cầu Giấy, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Cầu Giấy",
+        "address_detail": "Số 18 Dịch Vọng Hậu, Cầu Giấy, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/nguyen.hoang.long.dev",
+    "portfolio": [
+      "https://github.com/nguyen.hoang.long.dev"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Bách Khoa Hà Nội",
+      "years_experience": 5.5
+    },
+    "primary_cv_document_id": "6ad8892712c8725f08d8f886",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a773601",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 648,
+    "hr_view_count": 190,
+    "search_appearance_count": 475,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9c6",
+    "user_id": "6ad888569c14d537c74aa994",
+    "headline": "Senior Fullstack Developer | 4.5 năm kinh nghiệm React, NestJS & PostgreSQL",
+    "desired_job_titles": [
+      "Senior Fullstack Engineer"
+    ],
+    "expected_salary_min": 35200000,
+    "expected_salary_max": 52800000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Thanh Xuân",
+      "address_detail": "Chung cư Golden Land, 275 Nguyễn Trãi, Thanh Xuân, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Thanh Xuân",
+        "address_detail": "Chung cư Golden Land, 275 Nguyễn Trãi, Thanh Xuân, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/quang.tran.engineer",
+    "portfolio": [
+      "https://github.com/quang.tran.engineer"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Trường ĐH Công Nghệ - ĐHQGHN",
+      "years_experience": 4.5
+    },
+    "primary_cv_document_id": "6ad8892712c8725f08d8f889",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fe",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 295,
+    "hr_view_count": 176,
+    "search_appearance_count": 440,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9c7",
+    "user_id": "6ad888569c14d537c74aa995",
+    "headline": "Fullstack Web Engineer | 4 năm kinh nghiệm ReactJS, NodeJS & Cloud Services",
+    "desired_job_titles": [
+      "Senior Fullstack Engineer"
+    ],
+    "expected_salary_min": 32800000,
+    "expected_salary_max": 49200000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Cầu Giấy",
+      "address_detail": "Số 45 Trần Thái Tông, Cầu Giấy, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Cầu Giấy",
+        "address_detail": "Số 45 Trần Thái Tông, Cầu Giấy, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/kiet.letuan98",
+    "portfolio": [
+      "https://github.com/kiet.letuan98"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Học viện Công nghệ Bưu chính Viễn thông",
+      "years_experience": 4.0
+    },
+    "primary_cv_document_id": "6ad8892712c8725f08d8f88c",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fe",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 145,
+    "hr_view_count": 164,
+    "search_appearance_count": 410,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9c8",
+    "user_id": "6ad888569c14d537c74aa996",
+    "headline": "Fullstack Developer | 3.5 năm kinh nghiệm React.js, Node.js & UI/UX Optimization",
+    "desired_job_titles": [
+      "Fullstack Engineer"
+    ],
+    "expected_salary_min": 30800000,
+    "expected_salary_max": 46200000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Ba Đình",
+      "address_detail": "Số 12 Liễu Giai, Ba Đình, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Ba Đình",
+        "address_detail": "Số 12 Liễu Giai, Ba Đình, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/quynhanh.phamit",
+    "portfolio": [
+      "https://github.com/quynhanh.phamit"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Bách Khoa Hà Nội",
+      "years_experience": 3.5
+    },
+    "primary_cv_document_id": "6ad8892712c8725f08d8f88f",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fc",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 46,
+    "hr_view_count": 154,
+    "search_appearance_count": 385,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9c9",
+    "user_id": "6ad888569c14d537c74aa997",
+    "headline": "Web Developer | 3 năm kinh nghiệm ReactJS, NodeJS & MySQL",
+    "desired_job_titles": [
+      "Fullstack Developer"
+    ],
+    "expected_salary_min": 28000000,
+    "expected_salary_max": 42000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Đống Đa",
+      "address_detail": "Số 89 Chùa Bộc, Đống Đa, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Đống Đa",
+        "address_detail": "Số 89 Chùa Bộc, Đống Đa, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/haidang.vu98",
+    "portfolio": [
+      "https://github.com/haidang.vu98"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Giao thông Vận tải",
+      "years_experience": 3.0
+    },
+    "primary_cv_document_id": "6ad8892712c8725f08d8f892",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fc",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 98,
+    "hr_view_count": 140,
+    "search_appearance_count": 350,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9ca",
+    "user_id": "6ad888569c14d537c74aa998",
+    "headline": "Junior/Middle Fullstack Engineer | 2.5 năm kinh nghiệm React, Express.js",
+    "desired_job_titles": [
+      "Fullstack Developer"
+    ],
+    "expected_salary_min": 25600000,
+    "expected_salary_max": 38400000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Hà Đông",
+      "address_detail": "KĐT Văn Quán, Hà Đông, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Hà Đông",
+        "address_detail": "KĐT Văn Quán, Hà Đông, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/nam.dothanh99",
+    "portfolio": [
+      "https://github.com/nam.dothanh99"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Công nghiệp Hà Nội",
+      "years_experience": 2.5
+    },
+    "primary_cv_document_id": "6ad8892712c8725f08d8f895",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 128,
+    "search_appearance_count": 320,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9cb",
+    "user_id": "6ad888569c14d537c74aa999",
+    "headline": "Junior Fullstack Developer | 1.5 năm kinh nghiệm React & Node.js",
+    "desired_job_titles": [
+      "Fullstack Developer"
+    ],
+    "expected_salary_min": 22400000,
+    "expected_salary_max": 33600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Cầu Giấy",
+      "address_detail": "Số 56 Doãn Kế Thiện, Mai Dịch, Cầu Giấy, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Cầu Giấy",
+        "address_detail": "Số 56 Doãn Kế Thiện, Mai Dịch, Cầu Giấy, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/maibui.tech",
+    "portfolio": [
+      "https://github.com/maibui.tech"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Bách Khoa Hà Nội",
+      "years_experience": 1.5
+    },
+    "primary_cv_document_id": "6ad8892812c8725f08d8f898",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 112,
+    "search_appearance_count": 280,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9cc",
+    "user_id": "6ad888569c14d537c74aa99a",
+    "headline": "Backend PHP Developer chuyển hướng Fullstack React & Node.js",
+    "desired_job_titles": [
+      "Web Developer"
+    ],
+    "expected_salary_min": 20400000,
+    "expected_salary_max": 30600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Hoàng Mai",
+      "address_detail": "KĐT Linh Đàm, Hoàng Mai, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Hoàng Mai",
+        "address_detail": "KĐT Linh Đàm, Hoàng Mai, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/phuc.hoangtrong",
+    "portfolio": [
+      "https://github.com/phuc.hoangtrong"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Viện ĐH Mở Hà Nội",
+      "years_experience": 4.0
+    },
+    "primary_cv_document_id": "6ad8892812c8725f08d8f89b",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 102,
+    "search_appearance_count": 255,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9cd",
+    "user_id": "6ad888569c14d537c74aa99b",
+    "headline": "Frontend Web Designer | HTML, CSS, jQuery & Vue.js",
+    "desired_job_titles": [
+      "Frontend Developer"
+    ],
+    "expected_salary_min": 15200000,
+    "expected_salary_max": 22800000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Bắc Từ Liêm",
+      "address_detail": "Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Bắc Từ Liêm",
+        "address_detail": "Cổ Nhuế 2, Bắc Từ Liêm, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/tientm.design",
+    "portfolio": [
+      "https://github.com/tientm.design"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cao đẳng",
+      "grad_school": "Cao đẳng FPT Polytechnic",
+      "years_experience": 2.0
+    },
+    "primary_cv_document_id": "6ad8892812c8725f08d8f89e",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 76,
+    "search_appearance_count": 190,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9ce",
+    "user_id": "6ad888569c14d537c74aa99c",
+    "headline": "Cử nhân Quản trị Kinh doanh đam mê Công nghệ Thông tin",
+    "desired_job_titles": [
+      "Tập sự Fullstack Developer"
+    ],
+    "expected_salary_min": 8800000,
+    "expected_salary_max": 13200000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Hai Bà Trưng",
+      "address_detail": "Phố Huế, Hai Bà Trưng, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Hai Bà Trưng",
+        "address_detail": "Phố Huế, Hai Bà Trưng, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/baongoc.lybusiness",
+    "portfolio": [
+      "https://github.com/baongoc.lybusiness"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Thương mại",
+      "years_experience": 0.5
+    },
+    "primary_cv_document_id": "6ad8892812c8725f08d8f8a1",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 44,
+    "search_appearance_count": 110,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9cf",
+    "user_id": "6ad888569c14d537c74aa99d",
+    "headline": "Senior AI Backend Engineer | 4.5 năm Python, FastAPI, PyTorch & Vector Database",
+    "desired_job_titles": [
+      "Backend Python / AI Engineer"
+    ],
+    "expected_salary_min": 37600000,
+    "expected_salary_max": 56400000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 7",
+      "address_detail": "Chung cư Sunrise City, Nguyễn Hữu Thọ, Quận 7, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 7",
+        "address_detail": "Chung cư Sunrise City, Nguyễn Hữu Thọ, Quận 7, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/huy.dangquoc.ai",
+    "portfolio": [
+      "https://github.com/huy.dangquoc.ai"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Thạc sĩ",
+      "grad_school": "Đại học Khoa học Tự nhiên - ĐHQG TP.HCM",
+      "years_experience": 4.5
+    },
+    "primary_cv_document_id": "6ad8892812c8725f08d8f8a4",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a773600",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 498,
+    "hr_view_count": 188,
+    "search_appearance_count": 470,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9d0",
+    "user_id": "6ad888569c14d537c74aa99e",
+    "headline": "Backend Python Developer | 3.5 năm kinh nghiệm FastAPI, PyTorch & Microservices",
+    "desired_job_titles": [
+      "Backend Python Engineer"
+    ],
+    "expected_salary_min": 34800000,
+    "expected_salary_max": 52200000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 1",
+      "address_detail": "Số 15 Lê Thánh Tôn, Bến Nghé, Quận 1, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 1",
+        "address_detail": "Số 15 Lê Thánh Tôn, Bến Nghé, Quận 1, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/tuananh.ngo.dev",
+    "portfolio": [
+      "https://github.com/tuananh.ngo.dev"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Bách Khoa TP.HCM",
+      "years_experience": 3.5
+    },
+    "primary_cv_document_id": "6ad8892912c8725f08d8f8a7",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fe",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 148,
+    "hr_view_count": 174,
+    "search_appearance_count": 435,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9d1",
+    "user_id": "6ad888569c14d537c74aa99f",
+    "headline": "AI Backend Engineer | 3 năm kinh nghiệm Python, FastAPI, MongoDB & Docker",
+    "desired_job_titles": [
+      "AI Backend Engineer"
+    ],
+    "expected_salary_min": 32400000,
+    "expected_salary_max": 48600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Thành phố Thủ Đức",
+      "address_detail": "Khu đô thị Sala, Mai Chí Thọ, Thủ Đức, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Thành phố Thủ Đức",
+        "address_detail": "Khu đô thị Sala, Mai Chí Thọ, Thủ Đức, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/nam.vohoai99",
+    "portfolio": [
+      "https://github.com/nam.vohoai99"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Công nghệ Thông tin - ĐHQG TP.HCM",
+      "years_experience": 3.0
+    },
+    "primary_cv_document_id": "6ad8892912c8725f08d8f8aa",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fe",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 144,
+    "hr_view_count": 162,
+    "search_appearance_count": 405,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9d2",
+    "user_id": "6ad888569c14d537c74aa9a0",
+    "headline": "Python Backend Developer | 3 năm kinh nghiệm FastAPI, Django & Docker",
+    "desired_job_titles": [
+      "Backend Developer"
+    ],
+    "expected_salary_min": 31200000,
+    "expected_salary_max": 46800000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 3",
+      "address_detail": "Số 204 Nam Kỳ Khởi Nghĩa, Quận 3, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 3",
+        "address_detail": "Số 204 Nam Kỳ Khởi Nghĩa, Quận 3, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/thuytrang.phan99",
+    "portfolio": [
+      "https://github.com/thuytrang.phan99"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học FPT TP.HCM",
+      "years_experience": 3.0
+    },
+    "primary_cv_document_id": "6ad8892912c8725f08d8f8ad",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fc",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 48,
+    "hr_view_count": 156,
+    "search_appearance_count": 390,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9d3",
+    "user_id": "6ad888569c14d537c74aa9a1",
+    "headline": "Python Developer | 2.5 năm kinh nghiệm Django, Flask & REST API",
+    "desired_job_titles": [
+      "Python Developer"
+    ],
+    "expected_salary_min": 28400000,
+    "expected_salary_max": 42600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận Bình Thạnh",
+      "address_detail": "Số 48 Điện Biên Phủ, Bình Thạnh, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận Bình Thạnh",
+        "address_detail": "Số 48 Điện Biên Phủ, Bình Thạnh, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/ducminh.duong98",
+    "portfolio": [
+      "https://github.com/ducminh.duong98"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Sư phạm Kỹ thuật TP.HCM",
+      "years_experience": 2.5
+    },
+    "primary_cv_document_id": "6ad8892912c8725f08d8f8b0",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fc",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 46,
+    "hr_view_count": 142,
+    "search_appearance_count": 355,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9d4",
+    "user_id": "6ad888569c14d537c74aa9a2",
+    "headline": "Data Engineer / Python Developer | 2 năm kinh nghiệm ETL & Machine Learning",
+    "desired_job_titles": [
+      "Backend Python Engineer"
+    ],
+    "expected_salary_min": 25600000,
+    "expected_salary_max": 38400000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận Phú Nhuận",
+      "address_detail": "Số 72 Phan Xích Long, Phú Nhuận, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận Phú Nhuận",
+        "address_detail": "Số 72 Phan Xích Long, Phú Nhuận, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/dung.trinhvan99",
+    "portfolio": [
+      "https://github.com/dung.trinhvan99"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Tôn Đức Thắng",
+      "years_experience": 2.0
+    },
+    "primary_cv_document_id": "6ad8892912c8725f08d8f8b3",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 128,
+    "search_appearance_count": 320,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9d5",
+    "user_id": "6ad888569c14d537c74aa9a3",
+    "headline": "AI Research Fresher | Tốt nghiệp Xuất sắc ĐH Quốc tế ĐHQG TP.HCM",
+    "desired_job_titles": [
+      "Junior AI Engineer"
+    ],
+    "expected_salary_min": 22800000,
+    "expected_salary_max": 34200000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Thành phố Thủ Đức",
+      "address_detail": "Khu phố 6, Linh Trung, Thủ Đức, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Thành phố Thủ Đức",
+        "address_detail": "Khu phố 6, Linh Trung, Thủ Đức, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/bach.caodinh2002",
+    "portfolio": [
+      "https://github.com/bach.caodinh2002"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Quốc tế - ĐHQG TP.HCM",
+      "years_experience": 0.5
+    },
+    "primary_cv_document_id": "6ad8892912c8725f08d8f8b6",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 114,
+    "search_appearance_count": 285,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9d6",
+    "user_id": "6ad888569c14d537c74aa9a4",
+    "headline": "Data Analyst muốn chuyển hướng sang AI Backend Engineering",
+    "desired_job_titles": [
+      "AI Backend Developer"
+    ],
+    "expected_salary_min": 20400000,
+    "expected_salary_max": 30600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 10",
+      "address_detail": "Số 136 Lý Thường Kiệt, Quận 10, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 10",
+        "address_detail": "Số 136 Lý Thường Kiệt, Quận 10, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/huy.lamnhat",
+    "portfolio": [
+      "https://github.com/huy.lamnhat"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Kinh tế TP.HCM (UEH)",
+      "years_experience": 2.0
+    },
+    "primary_cv_document_id": "6ad8892912c8725f08d8f8b9",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 102,
+    "search_appearance_count": 255,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9d7",
+    "user_id": "6ad888569c14d537c74aa9a5",
+    "headline": "Backend Java Developer | 3 năm kinh nghiệm Spring Boot & Microservices",
+    "desired_job_titles": [
+      "Backend Engineer"
+    ],
+    "expected_salary_min": 14400000,
+    "expected_salary_max": 21600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận Tân Bình",
+      "address_detail": "Số 10 Phổ Quang, Phường 2, Tân Bình, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận Tân Bình",
+        "address_detail": "Số 10 Phổ Quang, Phường 2, Tân Bình, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/giahuy.luu.java",
+    "portfolio": [
+      "https://github.com/giahuy.luu.java"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Bách Khoa TP.HCM",
+      "years_experience": 3.0
+    },
+    "primary_cv_document_id": "6ad8892a12c8725f08d8f8bc",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 72,
+    "search_appearance_count": 180,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9d8",
+    "user_id": "6ad888569c14d537c74aa9a6",
+    "headline": "Cử nhân Ngôn ngữ Anh yêu thích Công nghệ Trí tuệ Nhân tạo",
+    "desired_job_titles": [
+      "AI Trainee"
+    ],
+    "expected_salary_min": 8000000,
+    "expected_salary_max": 12000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 1",
+      "address_detail": "Đinh Tiên Hoàng, Đa Kao, Quận 1, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 1",
+        "address_detail": "Đinh Tiên Hoàng, Đa Kao, Quận 1, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/myduyen.ha.translator",
+    "portfolio": [
+      "https://github.com/myduyen.ha.translator"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Khoa học Xã hội và Nhân văn TP.HCM",
+      "years_experience": 0.0
+    },
+    "primary_cv_document_id": "6ad8892a12c8725f08d8f8bf",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 40,
+    "search_appearance_count": 100,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9d9",
+    "user_id": "6ad888569c14d537c74aa9a7",
+    "headline": "Lead Cloud & DevOps Engineer | 5 năm kinh nghiệm AWS, Kubernetes, Terraform & CI/CD",
+    "desired_job_titles": [
+      "Senior DevOps Engineer"
+    ],
+    "expected_salary_min": 38000000,
+    "expected_salary_max": 57000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Cầu Giấy",
+      "address_detail": "Số 9 Duy Tân, Cầu Giấy, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Cầu Giấy",
+        "address_detail": "Số 9 Duy Tân, Cầu Giấy, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/phong.tadinh.devops",
+    "portfolio": [
+      "https://github.com/phong.tadinh.devops"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Bách Khoa Hà Nội",
+      "years_experience": 5.0
+    },
+    "primary_cv_document_id": "6ad8892a12c8725f08d8f8c2",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a773601",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 547,
+    "hr_view_count": 190,
+    "search_appearance_count": 475,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9da",
+    "user_id": "6ad888569c14d537c74aa9a8",
+    "headline": "Senior DevOps Engineer | 4 năm kinh nghiệm AWS, Kubernetes & GitOps",
+    "desired_job_titles": [
+      "Senior DevOps Engineer"
+    ],
+    "expected_salary_min": 35600000,
+    "expected_salary_max": 53400000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Nam Từ Liêm",
+      "address_detail": "KĐT Mỹ Đình 1, Nam Từ Liêm, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Nam Từ Liêm",
+        "address_detail": "KĐT Mỹ Đình 1, Nam Từ Liêm, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/ducanh.bui.cloud",
+    "portfolio": [
+      "https://github.com/ducanh.bui.cloud"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Trường ĐH Công Nghệ - ĐHQGHN",
+      "years_experience": 4.0
+    },
+    "primary_cv_document_id": "6ad8892a12c8725f08d8f8c5",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fe",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 544,
+    "hr_view_count": 178,
+    "search_appearance_count": 445,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9db",
+    "user_id": "6ad888569c14d537c74aa9a9",
+    "headline": "DevOps Engineer | 3.5 năm kinh nghiệm Docker, K8s, CI/CD & Linux Administration",
+    "desired_job_titles": [
+      "DevOps Engineer"
+    ],
+    "expected_salary_min": 32800000,
+    "expected_salary_max": 49200000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Bắc Từ Liêm",
+      "address_detail": "Hoàng Quốc Việt, Bắc Từ Liêm, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Bắc Từ Liêm",
+        "address_detail": "Hoàng Quốc Việt, Bắc Từ Liêm, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/trongdai.nguyen98",
+    "portfolio": [
+      "https://github.com/trongdai.nguyen98"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Học viện Kỹ thuật Quân sự",
+      "years_experience": 3.5
+    },
+    "primary_cv_document_id": "6ad8892a12c8725f08d8f8c8",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fe",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 147,
+    "hr_view_count": 164,
+    "search_appearance_count": 410,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9dc",
+    "user_id": "6ad888569c14d537c74aa9aa",
+    "headline": "Cloud Engineer | 3 năm kinh nghiệm AWS Cloud & GitHub Actions",
+    "desired_job_titles": [
+      "DevOps Engineer"
+    ],
+    "expected_salary_min": 30400000,
+    "expected_salary_max": 45600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Đống Đa",
+      "address_detail": "Số 102 Trường Chinh, Đống Đa, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Đống Đa",
+        "address_detail": "Số 102 Trường Chinh, Đống Đa, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/son.lehong.cloud",
+    "portfolio": [
+      "https://github.com/son.lehong.cloud"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Bách Khoa Hà Nội",
+      "years_experience": 3.0
+    },
+    "primary_cv_document_id": "6ad8892a12c8725f08d8f8cb",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fc",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 448,
+    "hr_view_count": 152,
+    "search_appearance_count": 380,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9dd",
+    "user_id": "6ad888569c14d537c74aa9ab",
+    "headline": "System Administrator chuyển hướng DevOps | 3.5 năm Linux & Docker",
+    "desired_job_titles": [
+      "DevOps Engineer"
+    ],
+    "expected_salary_min": 27600000,
+    "expected_salary_max": 41400000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Thanh Xuân",
+      "address_detail": "Số 334 Nguyễn Trãi, Thanh Xuân, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Thanh Xuân",
+        "address_detail": "Số 334 Nguyễn Trãi, Thanh Xuân, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/hau.phanvan97",
+    "portfolio": [
+      "https://github.com/hau.phanvan97"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Học viện Bưu chính Viễn thông",
+      "years_experience": 3.5
+    },
+    "primary_cv_document_id": "6ad8892b12c8725f08d8f8ce",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fc",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 44,
+    "hr_view_count": 138,
+    "search_appearance_count": 345,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9de",
+    "user_id": "6ad888569c14d537c74aa9ac",
+    "headline": "Cloud DevOps | 2.5 năm GCP & Azure Cloud",
+    "desired_job_titles": [
+      "Cloud Infrastructure Engineer"
+    ],
+    "expected_salary_min": 25200000,
+    "expected_salary_max": 37800000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Hà Đông",
+      "address_detail": "Mộ Lao, Hà Đông, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Hà Đông",
+        "address_detail": "Mộ Lao, Hà Đông, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/huy.dinhquang98",
+    "portfolio": [
+      "https://github.com/huy.dinhquang98"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Công nghiệp Hà Nội",
+      "years_experience": 2.5
+    },
+    "primary_cv_document_id": "6ad8892b12c8725f08d8f8d1",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 126,
+    "search_appearance_count": 315,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9df",
+    "user_id": "6ad888569c14d537c74aa9ad",
+    "headline": "Junior DevOps Engineer | 1 năm kinh nghiệm CI/CD & Docker",
+    "desired_job_titles": [
+      "DevOps Engineer"
+    ],
+    "expected_salary_min": 22000000,
+    "expected_salary_max": 33000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Hoàng Mai",
+      "address_detail": "Tân Mai, Hoàng Mai, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Hoàng Mai",
+        "address_detail": "Tân Mai, Hoàng Mai, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/minhchau.vu.devops",
+    "portfolio": [
+      "https://github.com/minhchau.vu.devops"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Học viện Công nghệ Bưu chính Viễn thông",
+      "years_experience": 1.0
+    },
+    "primary_cv_document_id": "6ad8892b12c8725f08d8f8d4",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 110,
+    "search_appearance_count": 275,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9e0",
+    "user_id": "6ad888569c14d537c74aa9ae",
+    "headline": "Kỹ sư Mạng CCNP muốn chuyển sang mảng Cloud Infrastructure",
+    "desired_job_titles": [
+      "Cloud Infrastructure Engineer"
+    ],
+    "expected_salary_min": 20000000,
+    "expected_salary_max": 30000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Long Biên",
+      "address_detail": "Ngọc Lâm, Long Biên, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Long Biên",
+        "address_detail": "Ngọc Lâm, Long Biên, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/tuanlinh.network96",
+    "portfolio": [
+      "https://github.com/tuanlinh.network96"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Bách Khoa Hà Nội",
+      "years_experience": 4.0
+    },
+    "primary_cv_document_id": "6ad8892b12c8725f08d8f8d7",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 100,
+    "search_appearance_count": 250,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9e1",
+    "user_id": "6ad888569c14d537c74aa9af",
+    "headline": "IT Helpdesk & Hỗ trợ kỹ thuật phần cứng văn phòng",
+    "desired_job_titles": [
+      "IT Support Engineer"
+    ],
+    "expected_salary_min": 14000000,
+    "expected_salary_max": 21000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Cầu Giấy",
+      "address_detail": "Xuân Thủy, Cầu Giấy, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Cầu Giấy",
+        "address_detail": "Xuân Thủy, Cầu Giấy, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/quoctoan.ithelpdesk",
+    "portfolio": [
+      "https://github.com/quoctoan.ithelpdesk"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cao đẳng",
+      "grad_school": "Cao đẳng Công nghệ Thông tin Hà Nội",
+      "years_experience": 2.0
+    },
+    "primary_cv_document_id": "6ad8892b12c8725f08d8f8da",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 70,
+    "search_appearance_count": 175,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9e2",
+    "user_id": "6ad888569c14d537c74aa9b0",
+    "headline": "Kế toán viên doanh nghiệp tìm kiếm cơ hội mới",
+    "desired_job_titles": [
+      "Nhân viên văn phòng"
+    ],
+    "expected_salary_min": 9200000,
+    "expected_salary_max": 13800000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Hoàn Kiếm",
+      "address_detail": "Hàng Bông, Hoàn Kiếm, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Hoàn Kiếm",
+        "address_detail": "Hàng Bông, Hoàn Kiếm, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/thuylinh.phamfinance",
+    "portfolio": [
+      "https://github.com/thuylinh.phamfinance"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Học viện Tài chính",
+      "years_experience": 0.0
+    },
+    "primary_cv_document_id": "6ad8892c12c8725f08d8f8dd",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 46,
+    "search_appearance_count": 115,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9e3",
+    "user_id": "6ad888569c14d537c74aa9b1",
+    "headline": "Senior Mobile Developer | 4 năm kinh nghiệm Flutter, Dart & Clean Architecture",
+    "desired_job_titles": [
+      "Mobile Application Engineer"
+    ],
+    "expected_salary_min": 37200000,
+    "expected_salary_max": 55800000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Đống Đa",
+      "address_detail": "Số 68 Thái Hà, Trung Liệt, Đống Đa, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Đống Đa",
+        "address_detail": "Số 68 Thái Hà, Trung Liệt, Đống Đa, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/longle.mobile",
+    "portfolio": [
+      "https://github.com/longle.mobile"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Bách Khoa Hà Nội",
+      "years_experience": 4.0
+    },
+    "primary_cv_document_id": "6ad8892c12c8725f08d8f8e0",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a773600",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 498,
+    "hr_view_count": 186,
+    "search_appearance_count": 465,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9e4",
+    "user_id": "6ad888569c14d537c74aa9b2",
+    "headline": "Mobile Software Engineer | 3.5 năm Flutter & Native Android",
+    "desired_job_titles": [
+      "Mobile Engineer"
+    ],
+    "expected_salary_min": 34400000,
+    "expected_salary_max": 51600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Thanh Xuân",
+      "address_detail": "Số 19 Lê Văn Lương, Thanh Xuân, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Thanh Xuân",
+        "address_detail": "Số 19 Lê Văn Lương, Thanh Xuân, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/thuha.mobiledev",
+    "portfolio": [
+      "https://github.com/thuha.mobiledev"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Trường ĐH Công Nghệ - ĐHQGHN",
+      "years_experience": 3.5
+    },
+    "primary_cv_document_id": "6ad8892c12c8725f08d8f8e3",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fe",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 144,
+    "hr_view_count": 172,
+    "search_appearance_count": 430,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9e5",
+    "user_id": "6ad888569c14d537c74aa9b3",
+    "headline": "Flutter Developer | 3 năm kinh nghiệm BLoC Pattern & UI Animation",
+    "desired_job_titles": [
+      "Flutter Developer"
+    ],
+    "expected_salary_min": 32000000,
+    "expected_salary_max": 48000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Ba Đình",
+      "address_detail": "Số 47 Đội Cấn, Ba Đình, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Ba Đình",
+        "address_detail": "Số 47 Đội Cấn, Ba Đình, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/trong.trandinh99",
+    "portfolio": [
+      "https://github.com/trong.trandinh99"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Sư phạm Kỹ thuật Hưng Yên",
+      "years_experience": 3.0
+    },
+    "primary_cv_document_id": "6ad8892c12c8725f08d8f8e6",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fe",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 143,
+    "hr_view_count": 160,
+    "search_appearance_count": 400,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9e6",
+    "user_id": "6ad888569c14d537c74aa9b4",
+    "headline": "Cross-platform Mobile Developer | 2.5 năm Flutter & React Native",
+    "desired_job_titles": [
+      "Mobile Engineer"
+    ],
+    "expected_salary_min": 30000000,
+    "expected_salary_max": 45000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Cầu Giấy",
+      "address_detail": "Số 10 Hồ Tùng Mậu, Mai Dịch, Cầu Giấy, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Cầu Giấy",
+        "address_detail": "Số 10 Hồ Tùng Mậu, Mai Dịch, Cầu Giấy, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/khang.pham99",
+    "portfolio": [
+      "https://github.com/khang.pham99"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Công nghệ Giao thông Vận tải",
+      "years_experience": 2.5
+    },
+    "primary_cv_document_id": "6ad8892c12c8725f08d8f8e9",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fc",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 47,
+    "hr_view_count": 150,
+    "search_appearance_count": 375,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9e7",
+    "user_id": "6ad888569c14d537c74aa9b5",
+    "headline": "Flutter Developer | 2 năm kinh nghiệm phát triển ứng dụng E-Commerce",
+    "desired_job_titles": [
+      "Flutter Developer"
+    ],
+    "expected_salary_min": 27200000,
+    "expected_salary_max": 40800000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Hai Bà Trưng",
+      "address_detail": "Số 250 Bạch Mai, Hai Bà Trưng, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Hai Bà Trưng",
+        "address_detail": "Số 250 Bạch Mai, Hai Bà Trưng, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/theanh.doan98",
+    "portfolio": [
+      "https://github.com/theanh.doan98"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Viện Đại học Mở Hà Nội",
+      "years_experience": 2.0
+    },
+    "primary_cv_document_id": "6ad8892c12c8725f08d8f8ec",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fc",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 46,
+    "hr_view_count": 136,
+    "search_appearance_count": 340,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9e8",
+    "user_id": "6ad888569c14d537c74aa9b6",
+    "headline": "Android Native Developer chuyển hướng sang Flutter | 3 năm kinh nghiệm",
+    "desired_job_titles": [
+      "Mobile Developer"
+    ],
+    "expected_salary_min": 25600000,
+    "expected_salary_max": 38400000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Bắc Từ Liêm",
+      "address_detail": "Đức Thắng, Bắc Từ Liêm, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Bắc Từ Liêm",
+        "address_detail": "Đức Thắng, Bắc Từ Liêm, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/dat.maivan.android",
+    "portfolio": [
+      "https://github.com/dat.maivan.android"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Mỏ - Địa chất",
+      "years_experience": 3.0
+    },
+    "primary_cv_document_id": "6ad8892c12c8725f08d8f8ef",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 128,
+    "search_appearance_count": 320,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9e9",
+    "user_id": "6ad888569c14d537c74aa9b7",
+    "headline": "Junior Mobile Developer | Tốt nghiệp ĐH Bách Khoa Đà Nẵng",
+    "desired_job_titles": [
+      "Flutter Developer"
+    ],
+    "expected_salary_min": 22400000,
+    "expected_salary_max": 33600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Cầu Giấy",
+      "address_detail": "Trần Quốc Vượng, Cầu Giấy, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Cầu Giấy",
+        "address_detail": "Trần Quốc Vượng, Cầu Giấy, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/giabao.ho.mobile",
+    "portfolio": [
+      "https://github.com/giabao.ho.mobile"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Kỹ sư",
+      "grad_school": "Đại học Bách Khoa - ĐH Đà Nẵng",
+      "years_experience": 1.0
+    },
+    "primary_cv_document_id": "6ad8892d12c8725f08d8f8f2",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 112,
+    "search_appearance_count": 280,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9ea",
+    "user_id": "6ad888569c14d537c74aa9b8",
+    "headline": "Web Frontend Developer tìm cơ hội chuyển hướng Mobile Flutter",
+    "desired_job_titles": [
+      "Mobile Developer"
+    ],
+    "expected_salary_min": 20800000,
+    "expected_salary_max": 31200000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Đống Đa",
+      "address_detail": "Tôn Đức Thắng, Đống Đa, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Đống Đa",
+        "address_detail": "Tôn Đức Thắng, Đống Đa, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/khanhlinh.frontendweb",
+    "portfolio": [
+      "https://github.com/khanhlinh.frontendweb"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Học viện Bưu chính Viễn thông",
+      "years_experience": 1.5
+    },
+    "primary_cv_document_id": "6ad8892d12c8725f08d8f8f5",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 104,
+    "search_appearance_count": 260,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9eb",
+    "user_id": "6ad888569c14d537c74aa9b9",
+    "headline": "QC / Manual Tester ứng dụng di động",
+    "desired_job_titles": [
+      "Mobile Tester / QC"
+    ],
+    "expected_salary_min": 14800000,
+    "expected_salary_max": 22200000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Thanh Xuân",
+      "address_detail": "Khương Đình, Thanh Xuân, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Thanh Xuân",
+        "address_detail": "Khương Đình, Thanh Xuân, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/phuc.lamtester",
+    "portfolio": [
+      "https://github.com/phuc.lamtester"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Kinh doanh và Công nghệ Hà Nội",
+      "years_experience": 2.0
+    },
+    "primary_cv_document_id": "6ad8892d12c8725f08d8f8f8",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 74,
+    "search_appearance_count": 185,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9ec",
+    "user_id": "6ad888569c14d537c74aa9ba",
+    "headline": "UI/UX Mobile Designer | Thiết kế giao diện ứng dụng trên Figma",
+    "desired_job_titles": [
+      "UI/UX Designer"
+    ],
+    "expected_salary_min": 9600000,
+    "expected_salary_max": 14400000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "01",
+      "province_name": "Hà Nội",
+      "district_name": "Quận Cầu Giấy",
+      "address_detail": "Nghĩa Tân, Cầu Giấy, Hà Nội"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "01",
+        "province_name": "Hà Nội",
+        "district_name": "Quận Cầu Giấy",
+        "address_detail": "Nghĩa Tân, Cầu Giấy, Hà Nội"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/thanhhuong.designer",
+    "portfolio": [
+      "https://github.com/thanhhuong.designer"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Mỹ thuật Công nghiệp",
+      "years_experience": 1.0
+    },
+    "primary_cv_document_id": "6ad8892d12c8725f08d8f8fb",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 48,
+    "search_appearance_count": 120,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9ed",
+    "user_id": "6ad888569c14d537c74aa9bb",
+    "headline": "Lead Data Analyst | 4 năm kinh nghiệm Phân tích Dữ liệu Ngân hàng, SQL, Power BI & Python",
+    "desired_job_titles": [
+      "Senior Data Analyst"
+    ],
+    "expected_salary_min": 37600000,
+    "expected_salary_max": 56400000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 1",
+      "address_detail": "Số 40 Tôn Đức Thắng, Bến Nghé, Quận 1, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 1",
+        "address_detail": "Số 40 Tôn Đức Thắng, Bến Nghé, Quận 1, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/thuyduong.data",
+    "portfolio": [
+      "https://github.com/thuyduong.data"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Thạc sĩ",
+      "grad_school": "Đại học Kinh tế Quốc dân (NEU)",
+      "years_experience": 4.0
+    },
+    "primary_cv_document_id": "6ad8892d12c8725f08d8f8fe",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a773601",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 493,
+    "hr_view_count": 188,
+    "search_appearance_count": 470,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9ee",
+    "user_id": "6ad888569c14d537c74aa9bc",
+    "headline": "Senior BI Analyst | 3.5 năm kinh nghiệm SQL, Power BI & Data Modeling",
+    "desired_job_titles": [
+      "Senior BI Specialist"
+    ],
+    "expected_salary_min": 35200000,
+    "expected_salary_max": 52800000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 3",
+      "address_detail": "Số 180 Nguyễn Đình Chiểu, Quận 3, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 3",
+        "address_detail": "Số 180 Nguyễn Đình Chiểu, Quận 3, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/khang.tranvan.bi",
+    "portfolio": [
+      "https://github.com/khang.tranvan.bi"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Ngoại Thương (FTU)",
+      "years_experience": 3.5
+    },
+    "primary_cv_document_id": "6ad8892d12c8725f08d8f901",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fe",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 147,
+    "hr_view_count": 176,
+    "search_appearance_count": 440,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9ef",
+    "user_id": "6ad888569c14d537c74aa9bd",
+    "headline": "Data Analyst | 3 năm kinh nghiệm SQL, Power BI & Financial Reporting",
+    "desired_job_titles": [
+      "Data Analyst"
+    ],
+    "expected_salary_min": 32400000,
+    "expected_salary_max": 48600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 7",
+      "address_detail": "KĐT Phú Mỹ Hưng, Quận 7, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 7",
+        "address_detail": "KĐT Phú Mỹ Hưng, Quận 7, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/minhtu.le.data",
+    "portfolio": [
+      "https://github.com/minhtu.le.data"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Kinh tế TP.HCM (UEH)",
+      "years_experience": 3.0
+    },
+    "primary_cv_document_id": "6ad8892e12c8725f08d8f904",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fe",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 294,
+    "hr_view_count": 162,
+    "search_appearance_count": 405,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9f0",
+    "user_id": "6ad888569c14d537c74aa9be",
+    "headline": "BI Specialist | 2.5 năm kinh nghiệm Power BI, SQL & Data Visualization",
+    "desired_job_titles": [
+      "BI Specialist"
+    ],
+    "expected_salary_min": 30800000,
+    "expected_salary_max": 46200000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận Bình Thạnh",
+      "address_detail": "Số 152 Nguyễn Hữu Cảnh, Bình Thạnh, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận Bình Thạnh",
+        "address_detail": "Số 152 Nguyễn Hữu Cảnh, Bình Thạnh, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/phuongthao.data99",
+    "portfolio": [
+      "https://github.com/phuongthao.data99"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Học viện Tài chính",
+      "years_experience": 2.5
+    },
+    "primary_cv_document_id": "6ad8892e12c8725f08d8f907",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fc",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 191,
+    "hr_view_count": 154,
+    "search_appearance_count": 385,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9f1",
+    "user_id": "6ad888569c14d537c74aa9bf",
+    "headline": "Data Analyst | 2 năm kinh nghiệm SQL & Google Data Studio",
+    "desired_job_titles": [
+      "Data Analyst"
+    ],
+    "expected_salary_min": 28000000,
+    "expected_salary_max": 42000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận Tân Bình",
+      "address_detail": "Số 2 Hoàng Hoa Thám, Tân Bình, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận Tân Bình",
+        "address_detail": "Số 2 Hoàng Hoa Thám, Tân Bình, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/tuankiet.vu.analytics",
+    "portfolio": [
+      "https://github.com/tuankiet.vu.analytics"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Mở TP.HCM",
+      "years_experience": 2.0
+    },
+    "primary_cv_document_id": "6ad8892e12c8725f08d8f90a",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fc",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 96,
+    "hr_view_count": 140,
+    "search_appearance_count": 350,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9f2",
+    "user_id": "6ad888569c14d537c74aa9c0",
+    "headline": "Junior Data Analyst | 2 năm SQL & Báo cáo tài chính",
+    "desired_job_titles": [
+      "Data Analyst"
+    ],
+    "expected_salary_min": 26000000,
+    "expected_salary_max": 39000000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 10",
+      "address_detail": "Số 268 Tô Hiến Thành, Quận 10, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 10",
+        "address_detail": "Số 268 Tô Hiến Thành, Quận 10, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/hoangnam.dang99",
+    "portfolio": [
+      "https://github.com/hoangnam.dang99"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Kinh tế Quốc dân",
+      "years_experience": 2.0
+    },
+    "primary_cv_document_id": "6ad8892e12c8725f08d8f90d",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 130,
+    "search_appearance_count": 325,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9f3",
+    "user_id": "6ad888569c14d537c74aa9c1",
+    "headline": "Fresher Data Analyst | Tốt nghiệp Giỏi Thống kê Kinh tế UEH",
+    "desired_job_titles": [
+      "Junior Data Analyst"
+    ],
+    "expected_salary_min": 23200000,
+    "expected_salary_max": 34800000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 5",
+      "address_detail": "An Dương Vương, Quận 5, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 5",
+        "address_detail": "An Dương Vương, Quận 5, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/bichngoc.stats",
+    "portfolio": [
+      "https://github.com/bichngoc.stats"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Kinh tế TP.HCM (UEH)",
+      "years_experience": 0.5
+    },
+    "primary_cv_document_id": "6ad8892e12c8725f08d8f910",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 116,
+    "search_appearance_count": 290,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9f4",
+    "user_id": "6ad888569c14d537c74aa9c2",
+    "headline": "Kế toán tổng hợp muốn học hỏi phân tích dữ liệu BI",
+    "desired_job_titles": [
+      "Data Analyst"
+    ],
+    "expected_salary_min": 20400000,
+    "expected_salary_max": 30600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận Gò Vấp",
+      "address_detail": "Quang Trung, Gò Vấp, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận Gò Vấp",
+        "address_detail": "Quang Trung, Gò Vấp, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/vinhky.truongacc",
+    "portfolio": [
+      "https://github.com/vinhky.truongacc"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Tài chính - Marketing",
+      "years_experience": 3.0
+    },
+    "primary_cv_document_id": "6ad8892e12c8725f08d8f913",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 102,
+    "search_appearance_count": 255,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9f5",
+    "user_id": "6ad888569c14d537c74aa9c3",
+    "headline": "Chuyên viên Tín dụng Khách hàng Cá nhân",
+    "desired_job_titles": [
+      "Nhân viên Ngân hàng"
+    ],
+    "expected_salary_min": 15600000,
+    "expected_salary_max": 23400000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 11",
+      "address_detail": "Lạc Long Quân, Quận 11, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 11",
+        "address_detail": "Lạc Long Quân, Quận 11, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/cuong.lequoc.credit",
+    "portfolio": [
+      "https://github.com/cuong.lequoc.credit"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Ngân hàng TP.HCM (HUB)",
+      "years_experience": 2.5
+    },
+    "primary_cv_document_id": "6ad8892f12c8725f08d8f916",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 78,
+    "search_appearance_count": 195,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  },
+  {
+    "_id": "6ad888569c14d537c74aa9f6",
+    "user_id": "6ad888569c14d537c74aa9c4",
+    "headline": "Cử nhân Quản trị Khách sạn & Lễ tân",
+    "desired_job_titles": [
+      "Nhân viên Lễ tân"
+    ],
+    "expected_salary_min": 8400000,
+    "expected_salary_max": 12600000,
+    "currency": "VND",
+    "current_location": {
+      "province_code": "79",
+      "province_name": "Hồ Chí Minh",
+      "district_name": "Quận 4",
+      "address_detail": "Bến Vân Đồn, Quận 4, TP.HCM"
+    },
+    "preferred_locations": [
+      {
+        "province_code": "79",
+        "province_name": "Hồ Chí Minh",
+        "district_name": "Quận 4",
+        "address_detail": "Bến Vân Đồn, Quận 4, TP.HCM"
+      }
+    ],
+    "willing_to_relocate": false,
+    "availability_date": null,
+    "linkedin": "https://linkedin.com/in/thuyhoang.hospitality",
+    "portfolio": [
+      "https://github.com/thuyhoang.hospitality"
+    ],
+    "industry_specific_data": {
+      "highest_degree": "Cử nhân",
+      "grad_school": "Đại học Văn Lang",
+      "years_experience": 0.0
+    },
+    "primary_cv_document_id": "6ad8892f12c8725f08d8f919",
+    "external_cv_links": [],
+    "is_searchable": true,
+    "current_plan_id": "6a97991f9da5a97d8a7735fb",
+    "current_period_start": "2026-10-06 09:39:33.899000",
+    "current_period_end": "2026-11-05 09:39:33.899000",
+    "credits_remaining": 0,
+    "hr_view_count": 42,
+    "search_appearance_count": 105,
+    "created_at": "2026-09-21 09:39:33.899000",
+    "updated_at": "2026-10-21 09:39:33.899000",
+    "billing_migrated_at": "2026-10-21 20:20:47.123000"
+  }
+]

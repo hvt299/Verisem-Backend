@@ -1,0 +1,502 @@
+[
+  {
+    "_id": "6ad8892712c8725f08d8f885",
+    "owner_user_id": "6ad888569c14d537c74aa993",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Nguyễn Hoàng Long",
+    "filename": "CoverLetter_Nguyễn_Hoàng_Long.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Nguyễn_Hoàng_Long.pdf",
+    "content": "Kính gửi Ban Tuyển dụng FPT Software,\n\nTôi là Nguyễn Hoàng Long, Kỹ sư Fullstack với hơn 5.5 năm kinh nghiệm chuyên sâu trong hệ sinh thái React.js, Node.js/TypeScript và điện toán đám mây AWS. Trong suốt quá trình làm việc tại Tiki và SmartOSC, tôi đã trực tiếp thiết kế và bảo trì các hệ thống Enterprise phục vụ hàng chục ngàn người dùng đồng thời, với trọng tâm là tối ưu hóa hiệu năng PostgreSQL và độ tin cậy của dịch vụ.\n\nĐược biết FPT Software đang mở rộng các dự án chuyển đổi số quy mô lớn cho đối tác toàn cầu, tôi rất mong muốn được đóng góp năng lực kỹ thuật và kinh nghiệm dẫn dắt dự án để cùng công ty phát triển các sản phẩm phần mềm chuẩn quốc tế.\n\nTrân trọng,\nNguyễn Hoàng Long",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892712c8725f08d8f888",
+    "owner_user_id": "6ad888569c14d537c74aa994",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Trần Minh Quang",
+    "filename": "CoverLetter_Trần_Minh_Quang.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Trần_Minh_Quang.pdf",
+    "content": "Dear Hiring Team at FPT Software,\n\nI am writing to express my strong interest in the Senior Fullstack Engineer position. With 4.5 years of hands-on experience mastering TypeScript across both frontend (React.js, Next.js) and backend (Node.js, NestJS, PostgreSQL), I have led the architecture of mission-critical business modules handling millions of daily records at MISA.\n\nI am confident that my technical expertise, problem-solving mindset, and professional English proficiency will make an immediate positive impact on your enterprise delivery team.\n\nSincerely,\nTran Minh Quang",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892712c8725f08d8f88b",
+    "owner_user_id": "6ad888569c14d537c74aa995",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Lê Tuấn Kiệt",
+    "filename": "CoverLetter_Lê_Tuấn_Kiệt.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Lê_Tuấn_Kiệt.pdf",
+    "content": "Kính gửi Bộ phận Tuyển dụng FPT Software,\n\nTôi có 4 năm kinh nghiệm làm việc trong môi trường outsource phần mềm quốc tế tại KMS Technology. Tôi thông thạo ReactJS và NodeJS, luôn chú trọng đến tính mở rộng và bảo mật của ứng dụng. Rất mong có cơ hội trao đổi trực tiếp tại buổi phỏng vấn.\n\nTrân trọng,\nLê Tuấn Kiệt",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892712c8725f08d8f88e",
+    "owner_user_id": "6ad888569c14d537c74aa996",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Phạm Quỳnh Anh",
+    "filename": "CoverLetter_Phạm_Quỳnh_Anh.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Phạm_Quỳnh_Anh.pdf",
+    "content": "Kính gửi Ban Tuyển dụng FPT Software,\n\nTôi là Phạm Quỳnh Anh, tốt nghiệp loại Giỏi ĐH Bách Khoa Hà Nội và có 3.5 năm kinh nghiệm Fullstack. Tôi tự tin khả năng nắm bắt nhanh các công nghệ mới và phối hợp hiệu quả trong nhóm dự án Agile.\n\nTrân trọng,\nPhạm Quỳnh Anh",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892712c8725f08d8f891",
+    "owner_user_id": "6ad888569c14d537c74aa997",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Vũ Hải Đăng",
+    "filename": "CoverLetter_Vũ_Hải_Đăng.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Vũ_Hải_Đăng.pdf",
+    "content": "Kính gửi Quý công ty FPT Software,\n\nTôi đã có 3 năm kinh nghiệm phát triển web với React và Node.js. Tôi rất mong có cơ hội học hỏi và nâng cao trình độ kỹ thuật tại môi trường chuyên nghiệp của FPT.\n\nTrân trọng,\nVũ Hải Đăng",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892712c8725f08d8f894",
+    "owner_user_id": "6ad888569c14d537c74aa998",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Đỗ Thành Nam",
+    "filename": "CoverLetter_Đỗ_Thành_Nam.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Đỗ_Thành_Nam.pdf",
+    "content": "Kính gửi FPT Software, tôi gửi hồ sơ ứng tuyển vị trí Fullstack Engineer với mong muốn đóng góp sức trẻ và kinh nghiệm lập trình React/Node.js của mình.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892812c8725f08d8f897",
+    "owner_user_id": "6ad888569c14d537c74aa999",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Bùi Thị Mai",
+    "filename": "CoverLetter_Bùi_Thị_Mai.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Bùi_Thị_Mai.pdf",
+    "content": "Kính gửi Anh/Chị Tuyển dụng, em là sinh viên mới tốt nghiệp Bách Khoa có 1.5 năm kinh nghiệm, mong muốn ứng tuyển thử sức với dự án Enterprise lớn của FPT Software.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892812c8725f08d8f89a",
+    "owner_user_id": "6ad888569c14d537c74aa99a",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Hoàng Trọng Phúc",
+    "filename": "CoverLetter_Hoàng_Trọng_Phúc.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Hoàng_Trọng_Phúc.pdf",
+    "content": "Kính gửi công ty, tôi có 4 năm kinh nghiệm lập trình phần mềm và đang chủ động chuyển dịch chuyên môn sang React & Node.js. Rất mong được công ty tạo cơ hội.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892812c8725f08d8f89d",
+    "owner_user_id": "6ad888569c14d537c74aa99b",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Trương Minh Tiến",
+    "filename": "CoverLetter_Trương_Minh_Tiến.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Trương_Minh_Tiến.pdf",
+    "content": "Tôi nộp CV ứng tuyển vị trí lập trình viên với mong muốn học hỏi thêm về Node.js.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892812c8725f08d8f8a0",
+    "owner_user_id": "6ad888569c14d537c74aa99c",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Lý Bảo Ngọc",
+    "filename": "CoverLetter_Lý_Bảo_Ngọc.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Lý_Bảo_Ngọc.pdf",
+    "content": "Em tốt nghiệp ngành Quản trị Kinh doanh nhưng rất yêu thích lập trình và mong muốn được đào tạo từ đầu tại FPT.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892812c8725f08d8f8a3",
+    "owner_user_id": "6ad888569c14d537c74aa99d",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Đặng Quốc Huy",
+    "filename": "CoverLetter_Đặng_Quốc_Huy.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Đặng_Quốc_Huy.pdf",
+    "content": "Dear VNG Talent Team,\n\nI am writing to express my eager desire to join VNG Corporation as a Backend Python / AI Engineer. Holding a Master's degree in Computer Science with 4.5 years building production AI services at VinAI, I specialize in low-latency FastAPI architectures, PyTorch pipelines, and scalable vector search on Milvus.\n\nWith VNG's ambitious AI strategy in Vietnam, I am ready to deploy high-impact models serving tens of millions of active users.\n\nBest regards,\nDang Quoc Huy",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892812c8725f08d8f8a6",
+    "owner_user_id": "6ad888569c14d537c74aa99e",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Ngô Tuấn Anh",
+    "filename": "CoverLetter_Ngô_Tuấn_Anh.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Ngô_Tuấn_Anh.pdf",
+    "content": "Kính gửi Ban Tuyển dụng VNG, tôi có 3.5 năm phát triển backend Python tại MoMo, chuyên tích hợp model AI vào microservices. Tôi tin rằng năng lực của mình sẽ đóng góp tốt cho các dịch vụ số của VNG.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892912c8725f08d8f8a9",
+    "owner_user_id": "6ad888569c14d537c74aa99f",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Võ Hoài Nam",
+    "filename": "CoverLetter_Võ_Hoài_Nam.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Võ_Hoài_Nam.pdf",
+    "content": "Kính gửi Bộ phận Tuyển dụng VNG, tôi có 3 năm kinh nghiệm làm việc với FastAPI và PyTorch tại Katalon. Rất mong được tham gia phỏng vấn chuyên môn tại VNG Campus.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892912c8725f08d8f8ac",
+    "owner_user_id": "6ad888569c14d537c74aa9a0",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Phan Thùy Trang",
+    "filename": "CoverLetter_Phan_Thùy_Trang.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Phan_Thùy_Trang.pdf",
+    "content": "Dear VNG Recruitment Team, I have 3 years of software engineering experience focusing on Python FastAPI and containerized microservices. I am enthusiastic about applying my skills to VNG's innovative AI products.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892912c8725f08d8f8af",
+    "owner_user_id": "6ad888569c14d537c74aa9a1",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Dương Đức Minh",
+    "filename": "CoverLetter_Dương_Đức_Minh.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Dương_Đức_Minh.pdf",
+    "content": "Kính gửi VNG, tôi có 2.5 năm kinh nghiệm lập trình backend bằng Python và đang nghiên cứu sâu về PyTorch. Rất mong được gia nhập đội ngũ VNG.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892912c8725f08d8f8b2",
+    "owner_user_id": "6ad888569c14d537c74aa9a2",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Trịnh Văn Dũng",
+    "filename": "CoverLetter_Trịnh_Văn_Dũng.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Trịnh_Văn_Dũng.pdf",
+    "content": "Kính gửi Ban Tuyển dụng, em từng có thời gian thực tập tại ZaloPay và mong muốn trở lại cống hiến cho VNG ở vị trí Backend AI.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892912c8725f08d8f8b5",
+    "owner_user_id": "6ad888569c14d537c74aa9a3",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Cao Đình Bách",
+    "filename": "CoverLetter_Cao_Đình_Bách.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Cao_Đình_Bách.pdf",
+    "content": "Dear VNG Team, I recently graduated with High Distinction in Data Science and published a paper on NLP. I aspire to bring my algorithmic expertise to VNG.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892912c8725f08d8f8b8",
+    "owner_user_id": "6ad888569c14d537c74aa9a4",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Lâm Nhật Huy",
+    "filename": "CoverLetter_Lâm_Nhật_Huy.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Lâm_Nhật_Huy.pdf",
+    "content": "Kính gửi công ty, tôi đã có 2 năm phân tích dữ liệu và tự học FastAPI để ứng tuyển vị trí này.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892a12c8725f08d8f8bb",
+    "owner_user_id": "6ad888569c14d537c74aa9a5",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Lưu Gia Huy",
+    "filename": "CoverLetter_Lưu_Gia_Huy.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Lưu_Gia_Huy.pdf",
+    "content": "Tôi là kỹ sư backend Java có 3 năm kinh nghiệm muốn thử sức với lĩnh vực AI tại VNG.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892a12c8725f08d8f8be",
+    "owner_user_id": "6ad888569c14d537c74aa9a6",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Hà Mỹ Duyên",
+    "filename": "CoverLetter_Hà_Mỹ_Duyên.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Hà_Mỹ_Duyên.pdf",
+    "content": "Em có tiếng Anh IELTS 8.0 và muốn học việc về AI tại VNG.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892a12c8725f08d8f8c1",
+    "owner_user_id": "6ad888569c14d537c74aa9a7",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Tạ Đình Phong",
+    "filename": "CoverLetter_Tạ_Đình_Phong.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Tạ_Đình_Phong.pdf",
+    "content": "Kính gửi Ban Tuyển dụng Tổng Công ty Giải pháp Doanh nghiệp Viettel,\n\nTôi là Tạ Đình Phong, kỹ sư tốt nghiệp ĐH Bách Khoa Hà Nội với 5 năm kinh nghiệm chuyên sâu trong kiến trúc điện toán đám mây AWS và điều phối container Kubernetes quy mô lớn tại các tổ chức tài chính hàng đầu. Sở hữu chứng chỉ AWS Solutions Architect và nền tảng viễn thông vững vàng, tôi tự tin sẽ đóng góp xuất sắc vào sứ mệnh xây dựng hạ tầng số an toàn, bảo mật và chịu tải cao của Viettel Solutions.\n\nTrân trọng,\nTạ Đình Phong",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892a12c8725f08d8f8c4",
+    "owner_user_id": "6ad888569c14d537c74aa9a8",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Bùi Đức Anh",
+    "filename": "CoverLetter_Bùi_Đức_Anh.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Bùi_Đức_Anh.pdf",
+    "content": "Dear Viettel Solutions Hiring Team,\n\nI have 4 years of proven hands-on experience designing cloud infrastructure on AWS and deploying production Kubernetes workloads. Having managed enterprise migrations at CMC Telecom, I am eager to contribute to Viettel's telecom cloud solutions.\n\nBest regards,\nBui Duc Anh",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892a12c8725f08d8f8c7",
+    "owner_user_id": "6ad888569c14d537c74aa9a9",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Nguyễn Trọng Đại",
+    "filename": "CoverLetter_Nguyễn_Trọng_Đại.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Nguyễn_Trọng_Đại.pdf",
+    "content": "Kính gửi Ban Lãnh đạo Viettel Solutions, tôi là cựu học viên Học viện Kỹ thuật Quân sự có 3.5 năm công tác trong ngành an toàn thông tin quân đội. Tôi mong muốn tiếp tục cống hiến cho Viettel.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892a12c8725f08d8f8ca",
+    "owner_user_id": "6ad888569c14d537c74aa9aa",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Lê Hồng Sơn",
+    "filename": "CoverLetter_Lê_Hồng_Sơn.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Lê_Hồng_Sơn.pdf",
+    "content": "Kính gửi Viettel Solutions, tôi có 3 năm kinh nghiệm Cloud AWS và chứng chỉ AWS Solutions Architect. Rất mong được trao đổi chi tiết tại buổi phỏng vấn.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892b12c8725f08d8f8cd",
+    "owner_user_id": "6ad888569c14d537c74aa9ab",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Phan Văn Hậu",
+    "filename": "CoverLetter_Phan_Văn_Hậu.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Phan_Văn_Hậu.pdf",
+    "content": "Kính gửi Viettel Solutions, tôi có 3.5 năm kinh nghiệm quản trị hệ thống Linux và đang bổ sung kiến thức về Kubernetes để chuyển đổi vị trí DevOps.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892b12c8725f08d8f8d0",
+    "owner_user_id": "6ad888569c14d537c74aa9ac",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Đinh Quang Huy",
+    "filename": "CoverLetter_Đinh_Quang_Huy.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Đinh_Quang_Huy.pdf",
+    "content": "Kính gửi Viettel Solutions, tôi muốn ứng tuyển để mở rộng sang mảng AWS Cloud và viễn thông doanh nghiệp.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892b12c8725f08d8f8d3",
+    "owner_user_id": "6ad888569c14d537c74aa9ad",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Vũ Minh Châu",
+    "filename": "CoverLetter_Vũ_Minh_Châu.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Vũ_Minh_Châu.pdf",
+    "content": "Kính gửi Viettel Solutions, em mới tốt nghiệp có 1 năm kinh nghiệm làm DevOps và mong muốn được đào tạo nâng cao.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892b12c8725f08d8f8d6",
+    "owner_user_id": "6ad888569c14d537c74aa9ae",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Nguyễn Tuấn Linh",
+    "filename": "CoverLetter_Nguyễn_Tuấn_Linh.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Nguyễn_Tuấn_Linh.pdf",
+    "content": "Tôi có 4 năm kinh nghiệm mạng viễn thông và muốn ứng tuyển vào hạ tầng đám mây Viettel.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892b12c8725f08d8f8d9",
+    "owner_user_id": "6ad888569c14d537c74aa9af",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Trần Quốc Toản",
+    "filename": "CoverLetter_Trần_Quốc_Toản.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Trần_Quốc_Toản.pdf",
+    "content": "Tôi có 2 năm sửa chữa máy tính muốn ứng tuyển vào làm hạ tầng máy chủ.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892b12c8725f08d8f8dc",
+    "owner_user_id": "6ad888569c14d537c74aa9b0",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Phạm Thùy Linh",
+    "filename": "CoverLetter_Phạm_Thùy_Linh.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Phạm_Thùy_Linh.pdf",
+    "content": "Tôi nộp CV ứng tuyển vào Viettel Solutions.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892c12c8725f08d8f8df",
+    "owner_user_id": "6ad888569c14d537c74aa9b1",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Lê Hoàng Long",
+    "filename": "CoverLetter_Lê_Hoàng_Long.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Lê_Hoàng_Long.pdf",
+    "content": "Kính gửi Ban Tuyển dụng VNPAY,\n\nTôi là Lê Hoàng Long, kỹ sư lập trình di động với 4 năm kinh nghiệm thực chiến chuyên sâu với Flutter và Dart trong lĩnh vực Fintech tại ZaloPay. Tôi luôn đặt tính bảo mật, hiệu năng ổn định và trải nghiệm mượt mà của khách hàng lên hàng đầu.\n\nVới mong muốn đồng hành cùng nền tảng thanh toán điện tử số 1 Việt Nam, tôi rất vinh hạnh được cống hiến năng lực kỹ thuật của mình tại VNPAY.\n\nTrân trọng,\nLê Hoàng Long",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892c12c8725f08d8f8e2",
+    "owner_user_id": "6ad888569c14d537c74aa9b2",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Nguyễn Thị Thu Hà",
+    "filename": "CoverLetter_Nguyễn_Thị_Thu_Hà.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Nguyễn_Thị_Thu_Hà.pdf",
+    "content": "Kính gửi VNPAY, tôi có 3.5 năm kinh nghiệm lập trình ứng dụng tài chính trên Flutter. Tôi tự tin vào khả năng viết code sạch, dễ bảo trì và phối hợp nhóm tốt.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892c12c8725f08d8f8e5",
+    "owner_user_id": "6ad888569c14d537c74aa9b3",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Trần Đình Trọng",
+    "filename": "CoverLetter_Trần_Đình_Trọng.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Trần_Đình_Trọng.pdf",
+    "content": "Kính gửi VNPAY, tôi có 3 năm kinh nghiệm phát triển ứng dụng ví AppotaPay bằng Flutter. Rất mong được gặp gỡ phỏng vấn trực tiếp tại VNPAY Tower.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892c12c8725f08d8f8e8",
+    "owner_user_id": "6ad888569c14d537c74aa9b4",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Phạm Tuấn Khang",
+    "filename": "CoverLetter_Phạm_Tuấn_Khang.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Phạm_Tuấn_Khang.pdf",
+    "content": "Dear VNPAY Hiring Team, I have 2.5 years of experience building cross-platform applications with Flutter and React Native. I look forward to contributing to your mobile engineering team.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892c12c8725f08d8f8eb",
+    "owner_user_id": "6ad888569c14d537c74aa9b5",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Đoàn Thế Anh",
+    "filename": "CoverLetter_Đoàn_Thế_Anh.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Đoàn_Thế_Anh.pdf",
+    "content": "Kính gửi VNPAY, tôi có 2 năm kinh nghiệm lập trình Flutter và mong muốn được làm việc trong môi trường thanh toán điện tử lớn.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892c12c8725f08d8f8ee",
+    "owner_user_id": "6ad888569c14d537c74aa9b6",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Mai Văn Đạt",
+    "filename": "CoverLetter_Mai_Văn_Đạt.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Mai_Văn_Đạt.pdf",
+    "content": "Kính gửi VNPAY, tôi có nền tảng Android Native vững vàng và có thể làm cầu nối Native Module rất tốt cho ứng dụng Flutter.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892d12c8725f08d8f8f1",
+    "owner_user_id": "6ad888569c14d537c74aa9b7",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Hồ Gia Bảo",
+    "filename": "CoverLetter_Hồ_Gia_Bảo.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Hồ_Gia_Bảo.pdf",
+    "content": "Kính gửi VNPAY, em mới ra trường có 1 năm kinh nghiệm làm việc tại FPT Software và mong muốn gắn bó lâu dài với VNPAY.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892d12c8725f08d8f8f4",
+    "owner_user_id": "6ad888569c14d537c74aa9b8",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Nguyễn Khánh Linh",
+    "filename": "CoverLetter_Nguyễn_Khánh_Linh.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Nguyễn_Khánh_Linh.pdf",
+    "content": "Kính gửi Khối Mobile VNPAY, em đang làm Web tại công ty và mong muốn chuyển sang Khối Kỹ thuật ứng dụng di động.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892d12c8725f08d8f8f7",
+    "owner_user_id": "6ad888569c14d537c74aa9b9",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Lâm Văn Phúc",
+    "filename": "CoverLetter_Lâm_Văn_Phúc.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Lâm_Văn_Phúc.pdf",
+    "content": "Tôi có 2 năm test ứng dụng di động muốn nộp vào VNPAY.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892d12c8725f08d8f8fa",
+    "owner_user_id": "6ad888569c14d537c74aa9ba",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Bùi Thanh Hương",
+    "filename": "CoverLetter_Bùi_Thanh_Hương.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Bùi_Thanh_Hương.pdf",
+    "content": "Em thiết kế UI/UX cho ứng dụng mobile rất đẹp và muốn ứng tuyển vào VNPAY.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892d12c8725f08d8f8fd",
+    "owner_user_id": "6ad888569c14d537c74aa9bb",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Nguyễn Thùy Dương",
+    "filename": "CoverLetter_Nguyễn_Thùy_Dương.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Nguyễn_Thùy_Dương.pdf",
+    "content": "Kính gửi Khối Phân tích Dữ liệu Ngân hàng Techcombank,\n\nTôi là Nguyễn Thùy Dương, Thạc sĩ Kinh tế Lượng với 4 năm kinh nghiệm trực tiếp tại Khối Dữ liệu của MBBank. Tôi sở hữu chứng chỉ Microsoft Certified Data Analyst và năng lực kết hợp giữa tư duy mô hình hóa tài chính cùng kỹ thuật truy vấn dữ liệu lớn SQL/Python.\n\nNgưỡng mộ định hướng chuyển đổi số lấy dữ liệu làm trọng tâm của Techcombank, tôi rất mong muốn được đóng góp chuyên môn phân tích để mang lại giá trị kinh doanh tối ưu nhất cho ngân hàng.\n\nTrân trọng,\nNguyễn Thùy Dương",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892d12c8725f08d8f900",
+    "owner_user_id": "6ad888569c14d537c74aa9bc",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Trần Văn Khang",
+    "filename": "CoverLetter_Trần_Văn_Khang.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Trần_Văn_Khang.pdf",
+    "content": "Dear Techcombank Hiring Team,\n\nI have 3.5 years of experience delivering impactful business intelligence solutions at Shopee Vietnam. Combining strong commercial acumen from Foreign Trade University with advanced SQL and Power BI modeling skills, I am excited to apply for the Senior Data Analyst position.\n\nSincerely,\nTran Van Khang",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892e12c8725f08d8f903",
+    "owner_user_id": "6ad888569c14d537c74aa9bd",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Lê Minh Tú",
+    "filename": "CoverLetter_Lê_Minh_Tú.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Lê_Minh_Tú.pdf",
+    "content": "Kính gửi Techcombank, tôi có 3 năm kinh nghiệm làm việc với dữ liệu ngân hàng tại OCB. Tôi tự tin vào khả năng phân tích số liệu chuẩn xác và mong muốn được phỏng vấn trực tiếp.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892e12c8725f08d8f906",
+    "owner_user_id": "6ad888569c14d537c74aa9be",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Phạm Phương Thảo",
+    "filename": "CoverLetter_Phạm_Phương_Thảo.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Phạm_Phương_Thảo.pdf",
+    "content": "Kính gửi Ban Tuyển dụng Techcombank, tôi có 2.5 năm kinh nghiệm thiết kế báo cáo dữ liệu Power BI tại MWG và muốn áp dụng kinh nghiệm vào lĩnh vực ngân hàng.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892e12c8725f08d8f909",
+    "owner_user_id": "6ad888569c14d537c74aa9bf",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Vũ Tuấn Kiệt",
+    "filename": "CoverLetter_Vũ_Tuấn_Kiệt.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Vũ_Tuấn_Kiệt.pdf",
+    "content": "Kính gửi Techcombank, tôi có 2 năm phân tích dữ liệu bán lẻ và mong muốn được phát triển trong ngành tài chính.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892e12c8725f08d8f90c",
+    "owner_user_id": "6ad888569c14d537c74aa9c0",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Đặng Hoàng Nam",
+    "filename": "CoverLetter_Đặng_Hoàng_Nam.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Đặng_Hoàng_Nam.pdf",
+    "content": "Kính gửi Techcombank, tôi có bằng Tài chính Ngân hàng và 2 năm kinh nghiệm dữ liệu chứng khoán.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892e12c8725f08d8f90f",
+    "owner_user_id": "6ad888569c14d537c74aa9c1",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Nguyễn Bích Ngọc",
+    "filename": "CoverLetter_Nguyễn_Bích_Ngọc.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Nguyễn_Bích_Ngọc.pdf",
+    "content": "Kính gửi Techcombank, em vừa tốt nghiệp loại Giỏi chuyên ngành Thống kê và mong muốn được ứng tuyển vị trí phân tích dữ liệu.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892e12c8725f08d8f912",
+    "owner_user_id": "6ad888569c14d537c74aa9c2",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Trương Vĩnh Kỳ",
+    "filename": "CoverLetter_Trương_Vĩnh_Kỳ.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Trương_Vĩnh_Kỳ.pdf",
+    "content": "Tôi có 3 năm làm kế toán và đang học thêm khóa học SQL/Power BI để chuyển đổi ngành nghề.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892f12c8725f08d8f915",
+    "owner_user_id": "6ad888569c14d537c74aa9c3",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Lê Quốc Cường",
+    "filename": "CoverLetter_Lê_Quốc_Cường.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Lê_Quốc_Cường.pdf",
+    "content": "Tôi có 2.5 năm làm việc tại VPBank muốn ứng tuyển vào vị trí văn phòng tại Techcombank.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  },
+  {
+    "_id": "6ad8892f12c8725f08d8f918",
+    "owner_user_id": "6ad888569c14d537c74aa9c4",
+    "company_id": null,
+    "display_name": "Thư Giới Thiệu - Hoàng Thị Thùy",
+    "filename": "CoverLetter_Hoàng_Thị_Thùy.pdf",
+    "file_url": "https://res.cloudinary.com/dvwfbvxbb/raw/upload/v1/verisem/cover_letters/CoverLetter_Hoàng_Thị_Thùy.pdf",
+    "content": "Em muốn tìm kiếm công việc mới tại ngân hàng Techcombank.",
+    "created_at": "2026-10-11 09:43:02.707000"
+  }
+]

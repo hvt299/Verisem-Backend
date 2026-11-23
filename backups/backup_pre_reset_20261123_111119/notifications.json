@@ -1,0 +1,596 @@
+[
+  {
+    "_id": "6ae9e26555b02e86fed465d7",
+    "recipient_user_id": "6ad888569c14d537c74aa997",
+    "recipient_type": "applicant",
+    "sender_id": "6ad7c1d7d2623ce816f48936",
+    "sender_type": "hr_user",
+    "action_type": "application_updated",
+    "title": "Cập nhật trạng thái",
+    "message": "Trạng thái hồ sơ của bạn cho vị trí 'Senior Fullstack Engineer (ReactJS / NodeJS / TypeScript)' đã được cập nhật thành 'expired'.",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6ad8892712c8725f08d8f893"
+    },
+    "payload": {
+      "job_title": "Senior Fullstack Engineer (ReactJS / NodeJS / TypeScript)",
+      "status": "expired"
+    },
+    "action_url": "/applicant/my-applications",
+    "status": "unread",
+    "created_at": "2026-11-03 13:32:21.688000"
+  },
+  {
+    "_id": "6ae9e26a55b02e86fed465d9",
+    "recipient_user_id": "6ad888569c14d537c74aa997",
+    "recipient_type": "applicant",
+    "sender_id": "6ad7c1d7d2623ce816f48936",
+    "sender_type": "hr_user",
+    "action_type": "application_updated",
+    "title": "Hồ sơ đang được xem xét",
+    "message": "Hồ sơ của bạn cho vị trí 'Senior Fullstack Engineer (ReactJS / NodeJS / TypeScript)' đang được HR xem xét kỹ lưỡng.",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6ad8892712c8725f08d8f893"
+    },
+    "payload": {
+      "job_title": "Senior Fullstack Engineer (ReactJS / NodeJS / TypeScript)",
+      "status": "reviewing"
+    },
+    "action_url": "/applicant/my-applications",
+    "status": "unread",
+    "created_at": "2026-11-03 13:32:26.051000"
+  },
+  {
+    "_id": "6b03b5a660a15dec13e0f20a",
+    "recipient_user_id": "6ad7c1d7d2623ce816f489d1",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9bf",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior Data Analyst & Business Intelligence Specialist (SQL, Power BI, Python)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b5a660a15dec13e0f209"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d08",
+      "applicant_name": "05_CV_Vũ_Tuấn_Kiệt"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d08",
+    "status": "unread",
+    "created_at": "2026-11-23 03:40:22.961000"
+  },
+  {
+    "_id": "6b03b62260a15dec13e0f20c",
+    "recipient_user_id": "6ad7c1d7d2623ce816f489d1",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9be",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior Data Analyst & Business Intelligence Specialist (SQL, Power BI, Python)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b62260a15dec13e0f20b"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d08",
+      "applicant_name": "04_CV_Phạm_Phương_Thảo"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d08",
+    "status": "unread",
+    "created_at": "2026-11-23 03:42:26.696000"
+  },
+  {
+    "_id": "6b03b64360a15dec13e0f20e",
+    "recipient_user_id": "6ad7c1d7d2623ce816f489d1",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9bd",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior Data Analyst & Business Intelligence Specialist (SQL, Power BI, Python)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b64360a15dec13e0f20d"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d08",
+      "applicant_name": "03_CV_Lê_Minh_Tú"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d08",
+    "status": "unread",
+    "created_at": "2026-11-23 03:42:59.171000"
+  },
+  {
+    "_id": "6b03b66460a15dec13e0f210",
+    "recipient_user_id": "6ad7c1d7d2623ce816f489d1",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9bc",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior Data Analyst & Business Intelligence Specialist (SQL, Power BI, Python)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b66460a15dec13e0f20f"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d08",
+      "applicant_name": "02_CV_Trần_Văn_Khang"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d08",
+    "status": "unread",
+    "created_at": "2026-11-23 03:43:32.465000"
+  },
+  {
+    "_id": "6b03b68660a15dec13e0f212",
+    "recipient_user_id": "6ad7c1d7d2623ce816f489d1",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9bb",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior Data Analyst & Business Intelligence Specialist (SQL, Power BI, Python)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b68660a15dec13e0f211"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d08",
+      "applicant_name": "01_CV_Nguyễn_Thùy_Dương (3)"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d08",
+    "status": "unread",
+    "created_at": "2026-11-23 03:44:06.076000"
+  },
+  {
+    "_id": "6b03b70260a15dec13e0f214",
+    "recipient_user_id": "6ad7c1d7d2623ce816f4894a",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9b5",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Mobile Application Engineer (Flutter / Dart / Clean Architecture)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b70260a15dec13e0f213"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d07",
+      "applicant_name": "05_CV_Đoàn_Thế_Anh"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d07",
+    "status": "unread",
+    "created_at": "2026-11-23 03:46:10.672000"
+  },
+  {
+    "_id": "6b03b71c60a15dec13e0f216",
+    "recipient_user_id": "6ad7c1d7d2623ce816f4894a",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9b4",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Mobile Application Engineer (Flutter / Dart / Clean Architecture)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b71c60a15dec13e0f215"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d07",
+      "applicant_name": "04_CV_Phạm_Tuấn_Khang"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d07",
+    "status": "unread",
+    "created_at": "2026-11-23 03:46:36.339000"
+  },
+  {
+    "_id": "6b03b73360a15dec13e0f218",
+    "recipient_user_id": "6ad7c1d7d2623ce816f4894a",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9b3",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Mobile Application Engineer (Flutter / Dart / Clean Architecture)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b73260a15dec13e0f217"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d07",
+      "applicant_name": "03_CV_Trần_Đình_Trọng"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d07",
+    "status": "unread",
+    "created_at": "2026-11-23 03:46:59.005000"
+  },
+  {
+    "_id": "6b03b81b60a15dec13e0f21c",
+    "recipient_user_id": "6ad7c1d7d2623ce816f4894a",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9b2",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Mobile Application Engineer (Flutter / Dart / Clean Architecture)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b81b60a15dec13e0f21b"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d07",
+      "applicant_name": "02_CV_Nguyễn_Thị_Thu_Hà"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d07",
+    "status": "unread",
+    "created_at": "2026-11-23 03:50:51.347000"
+  },
+  {
+    "_id": "6b03b83860a15dec13e0f21e",
+    "recipient_user_id": "6ad7c1d7d2623ce816f4894a",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9b1",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Mobile Application Engineer (Flutter / Dart / Clean Architecture)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b83860a15dec13e0f21d"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d07",
+      "applicant_name": "01_CV_Lê_Hoàng_Long"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d07",
+    "status": "unread",
+    "created_at": "2026-11-23 03:51:20.501000"
+  },
+  {
+    "_id": "6b03b8b860a15dec13e0f220",
+    "recipient_user_id": "6ad7c1d7d2623ce816f48940",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9ab",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior DevOps & Cloud Infrastructure Engineer (AWS, Kubernetes, CI/CD)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b8b860a15dec13e0f21f"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d06",
+      "applicant_name": "05_CV_Phan_Văn_Hậu"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d06",
+    "status": "unread",
+    "created_at": "2026-11-23 03:53:28.412000"
+  },
+  {
+    "_id": "6b03b8d260a15dec13e0f222",
+    "recipient_user_id": "6ad7c1d7d2623ce816f48940",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9aa",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior DevOps & Cloud Infrastructure Engineer (AWS, Kubernetes, CI/CD)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b8d160a15dec13e0f221"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d06",
+      "applicant_name": "04_CV_Lê_Hồng_Sơn"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d06",
+    "status": "unread",
+    "created_at": "2026-11-23 03:53:54.020000"
+  },
+  {
+    "_id": "6b03b8f260a15dec13e0f224",
+    "recipient_user_id": "6ad7c1d7d2623ce816f48940",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9a9",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior DevOps & Cloud Infrastructure Engineer (AWS, Kubernetes, CI/CD)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b8f260a15dec13e0f223"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d06",
+      "applicant_name": "03_CV_Nguyễn_Trọng_Đại"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d06",
+    "status": "unread",
+    "created_at": "2026-11-23 03:54:26.990000"
+  },
+  {
+    "_id": "6b03b90b60a15dec13e0f226",
+    "recipient_user_id": "6ad7c1d7d2623ce816f48940",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9a8",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior DevOps & Cloud Infrastructure Engineer (AWS, Kubernetes, CI/CD)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b90b60a15dec13e0f225"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d06",
+      "applicant_name": "02_CV_Bùi_Đức_Anh"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d06",
+    "status": "unread",
+    "created_at": "2026-11-23 03:54:51.556000"
+  },
+  {
+    "_id": "6b03b92760a15dec13e0f228",
+    "recipient_user_id": "6ad7c1d7d2623ce816f48940",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9a7",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior DevOps & Cloud Infrastructure Engineer (AWS, Kubernetes, CI/CD)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b92760a15dec13e0f227"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d06",
+      "applicant_name": "01_CV_Tạ_Đình_Phong"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d06",
+    "status": "unread",
+    "created_at": "2026-11-23 03:55:19.277000"
+  },
+  {
+    "_id": "6b03b9b460a15dec13e0f22a",
+    "recipient_user_id": "6ad7c1d7d2623ce816f4893b",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9a1",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Backend Python / AI Engineer (FastAPI, PyTorch, Vector Search)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03b9b460a15dec13e0f229"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d05",
+      "applicant_name": "05_CV_Dương_Đức_Minh"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d05",
+    "status": "unread",
+    "created_at": "2026-11-23 03:57:40.456000"
+  },
+  {
+    "_id": "6b03ba1d60a15dec13e0f22e",
+    "recipient_user_id": "6ad7c1d7d2623ce816f4893b",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa9a0",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Backend Python / AI Engineer (FastAPI, PyTorch, Vector Search)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03ba1c60a15dec13e0f22d"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d05",
+      "applicant_name": "04_CV_Phan_Thùy_Trang"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d05",
+    "status": "unread",
+    "created_at": "2026-11-23 03:59:25.011000"
+  },
+  {
+    "_id": "6b03ba3d60a15dec13e0f230",
+    "recipient_user_id": "6ad7c1d7d2623ce816f4893b",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa99f",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Backend Python / AI Engineer (FastAPI, PyTorch, Vector Search)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03ba3d60a15dec13e0f22f"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d05",
+      "applicant_name": "03_CV_Võ_Hoài_Nam"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d05",
+    "status": "unread",
+    "created_at": "2026-11-23 03:59:57.735000"
+  },
+  {
+    "_id": "6b03ba4e60a15dec13e0f232",
+    "recipient_user_id": "6ad7c1d7d2623ce816f4893b",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa99e",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Backend Python / AI Engineer (FastAPI, PyTorch, Vector Search)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03ba4e60a15dec13e0f231"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d05",
+      "applicant_name": "02_CV_Ngô_Tuấn_Anh"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d05",
+    "status": "unread",
+    "created_at": "2026-11-23 04:00:14.543000"
+  },
+  {
+    "_id": "6b03ba6e60a15dec13e0f234",
+    "recipient_user_id": "6ad7c1d7d2623ce816f4893b",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa99d",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Backend Python / AI Engineer (FastAPI, PyTorch, Vector Search)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03ba6e60a15dec13e0f233"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d05",
+      "applicant_name": "01_CV_Đặng_Quốc_Huy"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d05",
+    "status": "unread",
+    "created_at": "2026-11-23 04:00:46.521000"
+  },
+  {
+    "_id": "6b03bb2760a15dec13e0f236",
+    "recipient_user_id": "6ad7c1d7d2623ce816f48936",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa997",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior Fullstack Engineer (ReactJS / NodeJS / TypeScript)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03bb2760a15dec13e0f235"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d04",
+      "applicant_name": "05_CV_Vũ_Hải_Đăng"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d04",
+    "status": "unread",
+    "created_at": "2026-11-23 04:03:51.229000"
+  },
+  {
+    "_id": "6b03bb3d60a15dec13e0f238",
+    "recipient_user_id": "6ad7c1d7d2623ce816f48936",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa996",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior Fullstack Engineer (ReactJS / NodeJS / TypeScript)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03bb3d60a15dec13e0f237"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d04",
+      "applicant_name": "04_CV_Phạm_Quỳnh_Anh"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d04",
+    "status": "unread",
+    "created_at": "2026-11-23 04:04:13.929000"
+  },
+  {
+    "_id": "6b03bb4d60a15dec13e0f23a",
+    "recipient_user_id": "6ad7c1d7d2623ce816f48936",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa995",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior Fullstack Engineer (ReactJS / NodeJS / TypeScript)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03bb4d60a15dec13e0f239"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d04",
+      "applicant_name": "03_CV_Lê_Tuấn_Kiệt"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d04",
+    "status": "unread",
+    "created_at": "2026-11-23 04:04:29.555000"
+  },
+  {
+    "_id": "6b03bb5d60a15dec13e0f23c",
+    "recipient_user_id": "6ad7c1d7d2623ce816f48936",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa994",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior Fullstack Engineer (ReactJS / NodeJS / TypeScript)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03bb5d60a15dec13e0f23b"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d04",
+      "applicant_name": "02_CV_Trần_Minh_Quang"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d04",
+    "status": "unread",
+    "created_at": "2026-11-23 04:04:45.596000"
+  },
+  {
+    "_id": "6b03bb7260a15dec13e0f23e",
+    "recipient_user_id": "6ad7c1d7d2623ce816f48936",
+    "recipient_type": "hr_user",
+    "sender_id": "6ad888569c14d537c74aa993",
+    "sender_type": "applicant",
+    "action_type": "new_cv_received",
+    "title": "Hồ sơ ứng tuyển mới",
+    "message": "Bạn có 1 hồ sơ mới cho vị trí 'Senior Fullstack Engineer (ReactJS / NodeJS / TypeScript)'",
+    "type": "info",
+    "entity_ref": {
+      "type": "application",
+      "id": "6b03bb7260a15dec13e0f23d"
+    },
+    "payload": {
+      "job_id": "6ad88827b5c6b8a420364d04",
+      "applicant_name": "01_CV_Nguyễn_Hoàng_Long"
+    },
+    "action_url": "/hr/jobs/6ad88827b5c6b8a420364d04",
+    "status": "unread",
+    "created_at": "2026-11-23 04:05:06.728000"
+  }
+]

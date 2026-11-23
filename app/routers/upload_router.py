@@ -4,7 +4,7 @@ from app.services.storage_service import upload_file_to_cloudinary
 from app.schemas.common_schema import UserRole, CompanyStatus
 from datetime import datetime, timezone
 from app.repositories.company_repository import CompanyRepository
-from app.middleware.rate_limit import limiter
+from app.middleware.rate_limit import limiter, user_key, company_key
 from fastapi import Request, Response
 
 router = APIRouter(prefix="/api/v1/upload", tags=["Upload"])
@@ -12,7 +12,7 @@ router = APIRouter(prefix="/api/v1/upload", tags=["Upload"])
 MAX_FILE_SIZE = 5 * 1024 * 1024
 
 @router.post("")
-@limiter.limit("50/day")
+@limiter.limit("20/minute;300/day", key_func=user_key)
 async def upload_general_file(
     request: Request,
     response: Response,
@@ -33,10 +33,10 @@ async def upload_general_file(
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/kyc-document")
-@limiter.limit("10/day")
+@limiter.limit("10/day", key_func=company_key)
 async def upload_kyc_document(
     request: Request,
-    repsonse: Response,
+    response: Response,
     file: UploadFile = File(..., description="Ảnh/PDF giấy phép ĐKKD"),
     current_user = Depends(get_current_user)
 ):

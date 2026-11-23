@@ -24,7 +24,7 @@ from app.services.analytics_service import AnalyticsService
 from app.services.nlp_engine import extract_text, analyze_cv_text, score_cv
 from app.services.vector_engine import compress_cv_data, get_cv_embeddings, get_top_contributing_sentences
 from app.services.document_forensics import detect_hidden_text
-from app.middleware.rate_limit import limiter
+from app.middleware.rate_limit import limiter, user_key
 from app.services.storage_service import upload_file_to_cloudinary, delete_file_from_cloudinary, is_safe_url
 from typing import Optional
 
@@ -254,7 +254,7 @@ async def get_applicant_plan_features(user_id: str) -> dict:
     return await SubscriptionService.get_features(OWNER_APPLICANT, user_id)
 
 @router.post("/library/upload")
-@limiter.limit("20/day")
+@limiter.limit("10/minute", key_func=user_key)
 async def upload_cv_to_library(
     request: Request,
     response: Response,
@@ -337,7 +337,7 @@ async def upload_cv_to_library(
     }
 
 @router.post("/library/url")
-@limiter.limit("20/day")
+@limiter.limit("10/minute", key_func=user_key)
 async def add_cv_via_url(
     request: Request,
     response: Response,
@@ -388,7 +388,7 @@ async def add_cv_via_url(
     }
 
 @router.post("/jobs/{job_id}")
-@limiter.limit("20/day")
+@limiter.limit("10/minute", key_func=user_key)
 async def apply_to_job(
     request: Request,
     response: Response,
@@ -506,7 +506,7 @@ async def get_my_cv_library(current_applicant: CurrentUser = Depends(require_app
     return cvs
 
 @router.post("/self-score")
-@limiter.limit("20/day")
+@limiter.limit("5/minute", key_func=user_key)
 async def self_score_cv(
     request: Request,
     response: Response,
@@ -674,7 +674,7 @@ async def get_unread_notifications_count(current_user: CurrentUser = Depends(get
 from app.repositories.cover_letter_repository import CoverLetterRepository
 
 @router.post("/cover-letters/upload")
-@limiter.limit("20/day")
+@limiter.limit("10/minute", key_func=user_key)
 async def upload_cover_letter(
     request: Request,
     response: Response,
@@ -716,7 +716,7 @@ async def upload_cover_letter(
     }
 
 @router.post("/cover-letters/url")
-@limiter.limit("20/day")
+@limiter.limit("10/minute", key_func=user_key)
 async def add_cover_letter_via_url(
     request: Request,
     response: Response,

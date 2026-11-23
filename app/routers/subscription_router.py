@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, Request, Response
-from app.middleware.rate_limit import limiter
+from app.middleware.rate_limit import limiter, user_key
 import os
 import urllib.parse
 from app.services.nlp_engine import GLOBAL_SYSTEM_SETTINGS
@@ -55,7 +55,7 @@ async def get_transactions(current_user: CurrentUser = Depends(get_current_user)
     return {"status": "success", "data": transactions}
 
 @router.post("/checkout/{plan_code}")
-@limiter.limit("20/day")
+@limiter.limit("10/hour", key_func=user_key)
 async def create_checkout_session(request: Request, response: Response, plan_code: str, current_user: CurrentUser = Depends(get_current_user)):
     plan = await SubscriptionPlanRepository.find_one({"plan_code": plan_code, "is_active": True})
     if not plan:
@@ -113,6 +113,7 @@ async def get_my_order(order_code: str, current_user: CurrentUser = Depends(get_
     return {"status": "success", "data": SubscriptionService.present_order(order)}
 
 @router.post("/webhook/sepay")
+@limiter.exempt
 async def sepay_webhook(request: Request):
     # Fail closed: chưa cấu hình token thì từ chối toàn bộ
     sepay_token = os.getenv("SEPAY_WEBHOOK_TOKEN", "")

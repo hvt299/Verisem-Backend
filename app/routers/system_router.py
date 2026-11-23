@@ -1,4 +1,5 @@
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query, Request, Response
+from app.middleware.rate_limit import limiter
 from typing import Optional
 import re
 from bson import ObjectId
@@ -27,7 +28,8 @@ from app.services.nlp_engine import GLOBAL_SYSTEM_SETTINGS
 router = APIRouter(prefix="/api/v1/system", tags=["System & Master Data"])
 
 @router.post("/reports")
-async def submit_report(payload: ReportCreate):
+@limiter.limit("5/hour")
+async def submit_report(request: Request, response: Response, payload: ReportCreate):
     record = payload.model_dump()
     record["created_at"] = datetime.now(timezone.utc)
     record["updated_at"] = datetime.now(timezone.utc)
@@ -40,7 +42,10 @@ from fastapi import Depends
 import uuid
 
 @router.post("/support-tickets")
+@limiter.limit("5/hour")
 async def submit_support_ticket(
+    request: Request,
+    response: Response,
     payload: SupportTicketCreate,
     current_user: Optional[CurrentUser] = Depends(get_current_user_optional)
 ):
